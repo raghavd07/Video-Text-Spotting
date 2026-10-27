@@ -1,0 +1,83 @@
+LOGO — VIDEO TEXT SPOTTING PROJECT
+===================================
+
+Project Location:
+E:\Logo_Video_Text_Spotting
+
+
+HOW TO START WORKING
+====================
+
+1. Open PowerShell.
+
+2. Go to the project folder:
+
+cd E:\Logo_Video_Text_Spotting
+
+3. Activate the Python virtual environment:
+
+.\.venv\Scripts\Activate.ps1
+
+4. Confirm that the virtual environment is active.
+
+The terminal should show:
+
+(.venv) PS E:\Logo_Video_Text_Spotting>
+
+
+5. Verify Python:
+
+python --version
+
+Expected:
+Python 3.11.0
+
+
+6. Verify PyTorch and GPU:
+
+python -c "import torch; print('PyTorch:', torch.__version__); print('CUDA:', torch.version.cuda); print('CUDA available:', torch.cuda.is_available()); print('GPU:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'Not detected')"
+
+
+CURRENT VERIFIED ENVIRONMENT
+============================
+
+Python:
+3.11.0
+
+NumPy:
+1.26.4
+
+PyTorch:
+2.1.2+cu121
+
+CUDA Runtime:
+12.1
+
+GPU:
+NVIDIA GeForce RTX 3050 6GB Laptop GPU
+
+CUDA Available:
+True
+
+
+IMPORTANT
+=========
+
+- Always activate .venv before working on the project.
+- Do NOT install packages globally.
+- Do NOT create another virtual environment unless necessary.
+- Do NOT install CUDA Toolkit just because "nvcc" is unavailable.
+- Do NOT randomly upgrade/downgrade PyTorch.
+- Follow the project setup steps before installing additional dependencies.
+
+
+TO STOP WORKING
+===============
+
+Simply close PowerShell, or run:
+
+deactivate
+
+
+PROJECT:
+LOGO: Video Text Spotting with Language Collaboration and Glyph Perception Model

@@ -1,0 +1,58 @@
+# env / caches
+.venv/
+.venv-paddle/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# data and outputs (never commit)
+data/
+datasets/
+runs/
+checkpoints/
+outputs/
+
+# weights
+*.ckpt
+*.pth
+*.pt
+*.pdparams
+*.pdopt
+*.pdmodel
+*.pdiparams
+
+# LaTeX build files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+
+# third-party clones (own git repos; re-clone per docs/env_setup.md)
+third_party/
+
+# logs and media
+logs/
+*.mp4
+*.avi
+
+# model weights dirs
+models/
+
+# IDE / OS
+.vscode/
+.idea/
+.claude/
+Thumbs.db
+.DS_Store

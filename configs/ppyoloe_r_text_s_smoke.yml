@@ -1,0 +1,20 @@
+# Smoke run: 1 epoch on det_dota/train_smoke.json (200 images). save_dir is set by tools/train_detector.py.
+_BASE_: ['ppyoloe_r_text_s.yml']
+
+epoch: 1
+log_iter: 10
+LearningRate:
+  base_lr: 0.002
+  schedulers:
+    - !CosineDecay
+      max_epochs: 1
+    - !LinearWarmup
+      start_factor: 0.
+      steps: 20
+
+TrainDataset:
+  !COCODataSet
+    image_dir: frames
+    anno_path: det_dota/train_smoke.json
+    dataset_dir: data
+    data_fields: ['image', 'gt_bbox', 'gt_class', 'is_crowd', 'gt_poly']

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "logo"
+version = "0.1.0"
+description = "LOGO video text spotting re-implementation (arXiv 2405.19194) + C2/C3 extensions"
+requires-python = ">=3.11"
+dependencies = ["numpy==1.26.4", "PyYAML>=6.0"]  # torch 2.1.2+cu121 installed separately (see README)
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

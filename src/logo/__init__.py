@@ -1,0 +1,1 @@
+"""LOGO: video text spotting."""
