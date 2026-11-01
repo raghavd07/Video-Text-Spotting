@@ -14,8 +14,14 @@ accuracy on positives. Best checkpoint = max (tb_acc, word_acc).
 
 Writes runs/<exp_id>/{config.yaml, log.txt, metrics.json (meta.lsc_train),
 checkpoints/epoch_XX.pth, checkpoints/best.pth}. Checkpoints are {"model": state_dict, "opt": None}
-and load directly with ABINetRecognizer(ckpt). --smoke: 200 train / 200 val samples, 1 epoch,
-exp_id <exp_id>_smoke.
+and load directly with ABINetRecognizer(ckpt).
+
+glyph.enabled: adds logo.glyph.branch.GlyphHead on forward-hooked backbone features (F0, F1, F2)
+and trains with L_lsc = L_rec + glyph.weight * L_seg (glyph.loss mse|bce) against the pseudo-masks in
+<data_root>/train/masks.tsv (GlyphLSCDataset). The head is training-only; it is saved separately as
+checkpoints/glyph_{epoch_XX,best}.pth so the model checkpoints stay unchanged.
+
+--smoke: 200 train / 200 val samples, 1 epoch, exp_id <exp_id>_smoke.
 
 Usage: python -m logo.lsc.train_lsc --config configs/E3-lsc.yaml [--smoke] [--device cuda]
 """
@@ -33,6 +39,8 @@ import torch
 import yaml
 from torch.utils.data import DataLoader, Subset
 
+from logo.glyph.branch import SEG_LOSSES, GlyphAux
+from logo.glyph.dataset import GlyphLSCDataset
 from logo.lsc.abinet_wrapper import ABINET_ROOT, DEFAULT_CKPT, _import_abinet, decode, make_config
 from logo.lsc.dataset import LSCDataset
 from logo.utils.io import get_logger, load_json, load_yaml, save_json, set_seed
@@ -41,6 +49,7 @@ from logo.utils.paths import project_root
 TRAIN_DEFAULTS = dict(data_root="data/lsc", epochs=10, batch_size=48, val_batch_size=64, lr=1e-4,
                       lr_final=1e-5, decay_epoch=6, accum_steps=1, amp=True, clip_grad=20.0,
                       num_workers=2, log_every=50, smoke_samples=200)
+GLYPH_DEFAULTS = dict(enabled=False, weight=1.0, loss="mse", masks_tsv="masks.tsv", neg_zero=False)
 
 
 def _import_losses():
@@ -63,6 +72,16 @@ def train_settings(cfg: dict) -> dict:
     if tc["batch_size"] < 1 or tc["accum_steps"] < 1 or tc["epochs"] < 1:
         raise ValueError("lsc.train: batch_size, accum_steps and epochs must be >= 1")
     return tc
+
+
+def glyph_settings(cfg: dict) -> dict:
+    """glyph{} merged over GLYPH_DEFAULTS."""
+    gc = dict(GLYPH_DEFAULTS, **(cfg.get("glyph") or {}))
+    gc["enabled"], gc["neg_zero"] = bool(gc["enabled"]), bool(gc["neg_zero"])
+    gc["weight"], gc["loss"] = float(gc["weight"]), str(gc["loss"]).lower()
+    if gc["loss"] not in SEG_LOSSES:
+        raise ValueError(f"glyph.loss must be one of {SEG_LOSSES}, got {gc['loss']!r}")
+    return gc
 
 
 def lr_at(epoch: int, tc: dict) -> float:
@@ -131,8 +150,11 @@ def _as_float(o):
     return o
 
 
-def _backward_batch(model, crit, x, gt, lengths, micro, scale, scaler, use_amp):
-    """Forward + backward one loader batch in chunks of `micro`; returns (loss, {name: loss})."""
+def _backward_batch(model, crit, x, gt, lengths, micro, scale, scaler, use_amp, glyph=None,
+                    masks=None, valid=None):
+    """Forward + backward one loader batch in chunks of `micro`; returns (loss, {name: loss}).
+
+    With `glyph` (GlyphAux) the loss is L_rec + glyph.weight * L_seg(masks, valid)."""
     n = x.shape[0]
     total, parts = 0.0, Counter()
     for s in range(0, n, micro):
@@ -140,11 +162,16 @@ def _backward_batch(model, crit, x, gt, lengths, micro, scale, scaler, use_amp):
         w = (e - s) / n
         with torch.autocast("cuda", dtype=torch.float16, enabled=use_amp):
             out = model(x[s:e])
+            sm_logits = glyph.logits() if glyph is not None else None
         loss = crit(_as_float(out), gt[s:e], lengths[s:e])
-        scaler.scale(loss * (w * scale)).backward()
-        total += loss.item() * w
         for k, v in crit.last_losses.items():
             parts[k] += v.item() * w
+        if glyph is not None:
+            l_seg = glyph.loss(sm_logits, masks[s:e], valid[s:e])
+            parts["seg_loss"] += l_seg.item() * w
+            loss = loss + glyph.weight * l_seg
+        scaler.scale(loss * (w * scale)).backward()
+        total += loss.item() * w
     return total, dict(parts)
 
 
@@ -196,6 +223,7 @@ def train(cfg: dict, smoke: bool = False, device=None) -> dict:
     """Runs the fine-tuning described by `cfg`; returns meta.lsc_train."""
     root = project_root()
     tc = train_settings(cfg)
+    gc = glyph_settings(cfg)
     seed = int(cfg["seed"])
     exp_id = f"{cfg['exp_id']}_smoke" if smoke else str(cfg["exp_id"])
     epochs = 1 if smoke else tc["epochs"]
@@ -217,6 +245,7 @@ def train(cfg: dict, smoke: bool = False, device=None) -> dict:
     dump = copy.deepcopy(cfg)
     dump["exp_id"] = exp_id
     dump.setdefault("lsc", {})["train"] = dict(tc, smoke=bool(smoke))
+    dump["glyph"] = gc
     (run_dir / "config.yaml").write_text(yaml.safe_dump(dump, sort_keys=False), encoding="utf-8")
 
     model, config, charset = build_model(init_ckpt, device)
@@ -224,7 +253,11 @@ def train(cfg: dict, smoke: bool = False, device=None) -> dict:
         raise ValueError(f"MultiLosses supports iter_size 1 or 3, got {model.iter_size}")
     max_len = int(config.dataset_max_length)
     out_hw = (int(config.dataset_image_height), int(config.dataset_image_width))
-    train_ds = LSCDataset(data_root / "train", train=True, out_hw=out_hw, max_length=max_len)
+    if gc["enabled"]:
+        train_ds = GlyphLSCDataset(data_root / "train", train=True, out_hw=out_hw, max_length=max_len,
+                                   masks_tsv=gc["masks_tsv"], neg_zero=gc["neg_zero"])
+    else:
+        train_ds = LSCDataset(data_root / "train", train=True, out_hw=out_hw, max_length=max_len)
     val_ds = LSCDataset(data_root / "val", train=False, out_hw=out_hw, max_length=max_len)
     if smoke:
         train_ds = _subset(train_ds, tc["smoke_samples"], seed)
@@ -236,17 +269,25 @@ def train(cfg: dict, smoke: bool = False, device=None) -> dict:
     val_dl = _loader(val_ds, tc["val_batch_size"], False, tc["num_workers"], seed, pin)
 
     crit = _import_losses().MultiLosses(one_hot=True)
+    glyph = None
+    if gc["enabled"]:
+        with torch.random.fork_rng(devices=[]):  # head init leaves the global RNG (data aug) untouched
+            torch.manual_seed(seed)
+            glyph = GlyphAux(model, weight=gc["weight"], kind=gc["loss"])
+        glyph.head.to(device)
     params = [p for p in model.parameters() if p.requires_grad]
+    if glyph is not None:
+        params += list(glyph.head.parameters())
     opt = torch.optim.Adam(params, lr=lr_at(0, tc), betas=(0.9, 0.999))
     scaler = torch.cuda.amp.GradScaler(enabled=use_amp)
     accum, micro = tc["accum_steps"], tc["batch_size"]
-    log.info("exp=%s smoke=%s device=%s amp=%s init=%s train=%d val=%d bs=%d accum=%d epochs=%d",
-             exp_id, smoke, device, use_amp, init_ckpt, len(train_ds), len(val_ds), tc["batch_size"],
-             accum, epochs)
+    log.info("exp=%s smoke=%s device=%s amp=%s init=%s train=%d val=%d bs=%d accum=%d epochs=%d "
+             "glyph=%s", exp_id, smoke, device, use_amp, init_ckpt, len(train_ds), len(val_ds),
+             tc["batch_size"], accum, epochs, gc if gc["enabled"] else "off")
 
     result = {"exp_id": exp_id, "smoke": bool(smoke), "init_ckpt": str(init_ckpt),
               "data_root": str(data_root), "num_train": len(train_ds), "num_val": len(val_ds),
-              "settings": tc, "epochs": [], "best": None, "best_ckpt": None}
+              "settings": tc, "glyph": gc, "epochs": [], "best": None, "best_ckpt": None}
     best_key = None
     step = 0
     for ep in range(epochs):
@@ -254,19 +295,27 @@ def train(cfg: dict, smoke: bool = False, device=None) -> dict:
         for g in opt.param_groups:
             g["lr"] = lr
         model.train()
+        if glyph is not None:
+            glyph.head.train()
         opt.zero_grad(set_to_none=True)
         t0, win, seen = time.time(), 0, 0
         loss_sum, part_sum = 0.0, Counter()
-        for it, (x, texts) in enumerate(train_dl):
+        for it, batch in enumerate(train_dl):
+            x, texts = batch[0], batch[1]
             gt, lengths = encode_labels(list(texts), charset)
             x, gt, lengths = x.to(device, non_blocking=True), gt.to(device), lengths.to(device)
+            masks = valid = None
+            if glyph is not None:
+                masks, valid = batch[2].to(device, non_blocking=True), batch[3].to(device)
             while True:
                 try:
                     loss, parts = _backward_batch(model, crit, x, gt, lengths, micro, 1.0 / accum,
-                                                  scaler, use_amp)
+                                                  scaler, use_amp, glyph, masks, valid)
                     break
                 except torch.cuda.OutOfMemoryError:
                     opt.zero_grad(set_to_none=True)  # drop the partial accumulation window
+                    if glyph is not None:
+                        glyph.tap.clear()
                     win = 0
                     if micro == 1:
                         raise
@@ -293,6 +342,11 @@ def train(cfg: dict, smoke: bool = False, device=None) -> dict:
         val = evaluate(model, crit, val_dl, charset, device, use_amp)
         ck = ckpt_dir / f"epoch_{ep + 1:02d}.pth"
         torch.save({"model": model.state_dict(), "opt": None}, ck)
+        if glyph is not None:
+            glyph.tap.clear()  # evaluate() ran the hooks too
+            gstate = {"glyph_head": glyph.head.state_dict(), "channels": list(glyph.head.channels),
+                      "settings": gc}
+            torch.save(gstate, ckpt_dir / f"glyph_epoch_{ep + 1:02d}.pth")
         rec = {"epoch": ep + 1, "lr": lr, "steps": step, "micro_batch": micro,
                "train_loss": train_loss, "train_losses": {k: v / max(seen, 1) for k, v in part_sum.items()},
                "val": val, "ckpt": str(ck), "sec": time.time() - t0}
@@ -300,6 +354,8 @@ def train(cfg: dict, smoke: bool = False, device=None) -> dict:
         if best_key is None or key > best_key:
             best_key = key
             torch.save({"model": model.state_dict(), "opt": None}, ckpt_dir / "best.pth")
+            if glyph is not None:
+                torch.save(gstate, ckpt_dir / "glyph_best.pth")
             result["best"] = {"epoch": ep + 1, **val}
             result["best_ckpt"] = str(ckpt_dir / "best.pth")
         result["epochs"].append(rec)
@@ -308,6 +364,8 @@ def train(cfg: dict, smoke: bool = False, device=None) -> dict:
                  "(pos %d, neg %d) %.0fs%s", ep + 1, epochs, lr, train_loss, val["loss"], val["tb_acc"],
                  val["word_acc"], val["num_pos"], val["num_neg"], rec["sec"],
                  " *best*" if result["best"]["epoch"] == ep + 1 else "")
+    if glyph is not None:
+        glyph.tap.remove()
     log.info("best epoch %d: tb_acc %.2f%% word_acc %.2f%% -> %s", result["best"]["epoch"],
              result["best"]["tb_acc"], result["best"]["word_acc"], result["best_ckpt"])
     return result

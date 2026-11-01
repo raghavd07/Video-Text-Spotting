@@ -1,0 +1,47 @@
+exp_id: det_yolo11s_obb_text
+dataset: icdar2015v
+split: val
+seed: 42
+detector:
+  weights: runs/det_yolo11s_obb_text/train/weights/best.pt  # from tools/train_obb.py (Plan B)
+  batch_size: 2
+  save_thr: 0.1
+  input_hw: [576, 1024]
+  device: gpu
+  half: true
+  max_det: 300
+  nms_iou: 0.7
+  obb_data:
+    root: data/obb
+    stride: 5
+    val_stride: 10
+    mask_dont_care: true
+  train:                       # tools/train_obb.py (Ultralytics YOLO.train)
+    init: models/yolo_obb/yolo11s-obb.pt  # DOTA-pretrained
+    epochs: 50
+    batch: 4                   # 6 GB GPU at imgsz 1024 with AMP
+    imgsz: 1024
+    workers: 0                 # 7.6 GB host RAM: worker processes OOM on mosaic buffers
+    patience: 15
+    close_mosaic: 5
+    fliplr: 0.5
+    degrees: 0.0
+    smoke_fraction: 0.1        # --smoke: 1 epoch on ~200 train images
+    val_conf: 0.05             # validator conf; ultralytics default 0.001 -> rotated-NMS CUDA OOM on 6 GB
+lsc:
+  ckpt: null
+  det_thr: 0.3
+  iou_neg: 0.05
+fusion:
+  mode: hard
+  w: 0.5
+tracker:
+  type: simple
+  thr: 0.5
+voting:
+  enabled: false
+  tau: 0.5
+  min_len: 3
+eval:
+  iou: 0.5
+  spotting: true

@@ -1,0 +1,28 @@
+exp_id: E4-lsc
+dataset: icdar2015v
+split: val
+seed: 42
+detector: {}
+pipeline:                      # scripts/run_pipeline.py; CLI --det_exp/--lsc_exp override
+  det_exp: det_ppyoloe_r_text_s
+lsc:
+  ckpt: runs/E3-lsc/checkpoints/best.pth  # fine-tuned LSC
+  det_thr: 0.3
+  iou_neg: 0.05
+  infer:
+    batch_size: 64
+    amp: true
+fusion:                        # hard fusion: score_fused = 0.5*det + 0.5*lang_hard
+  mode: hard
+  w: 0.5
+tracker:
+  type: simple
+  thr: 0.5
+voting:
+  enabled: false
+  tau: 0.5
+  min_len: 3
+eval:
+  iou: 0.5
+  spotting: true
+  det_score_thr: 0.5           # det eval keeps score_fused > this

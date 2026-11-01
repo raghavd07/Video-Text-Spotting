@@ -1,0 +1,48 @@
+exp_id: E5-lst
+dataset: icdar2015v
+split: val
+seed: 42
+detector: {}
+pipeline:                      # tools/build_lst_cache.py reads lsc_exp; train cache was built from E3-lsc
+  det_exp: det_ppyoloe_r_text_s
+  lsc_exp: E3-lsc
+lsc:
+  ckpt: runs/E3-lsc/checkpoints/best.pth
+  det_thr: 0.3
+  iou_neg: 0.05
+fusion:
+  mode: hard
+  w: 0.5
+tracker:
+  type: lst
+  thr: 0.4                     # run_track: drop score_fused < thr before matching (0.3 for dstext)
+  traj_thr: 0.6                # run_track: drop trajectories with mean score < traj_thr
+  overlap_thr: 0.2             # GoMatching VIDEO_TEST.OVERLAP_THRESH
+  ckpt: runs/E5-lst/checkpoints/best.pth
+  # LST architecture / loss keys not set here use logo.tracking.lst_adapter.LST_DEFAULTS
+  train:                       # logo.tracking.train_lst
+    train_split: train
+    val_split: val
+    iters: 30000                # GoMatching_ICDAR15 SOLVER.MAX_ITER
+    lr: 5.0e-5                 # AdamW, linear warm-up then cosine to min_lr
+    weight_decay: 1.0e-4        # detectron2 default
+    warmup_iters: 1000          # detectron2 SOLVER defaults (unset in GoMatching configs)
+    warmup_factor: 0.001
+    min_lr: 0.0
+    clip_len: 6                # auto-reduced by 1 on CUDA OOM, never below min_clip_len
+    min_clip_len: 2
+    stride: 1
+    amp: true
+    num_workers: 0
+    log_every: 20
+    val_every: 1000
+    smoke_iters: 200
+    smoke_val_every: 100
+    smoke_val_videos: 2
+voting:
+  enabled: false
+  tau: 0.5
+  min_len: 3
+eval:
+  iou: 0.5
+  spotting: true

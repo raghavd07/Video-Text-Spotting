@@ -4,25 +4,25 @@ split: val
 seed: 42
 detector: {}
 lsc:
-  ckpt: third_party/ABINet/workdir/train-abinet/best-train-abinet.pth  # init weights
+  ckpt: third_party/ABINet/workdir/train-abinet/best-train-abinet.pth # init weights
   det_thr: 0.3
   iou_neg: 0.05
-  infer:                       # logo.lsc.run_lsc
+  infer: # logo.lsc.run_lsc
     batch_size: 64
     amp: true
   stride: 1
   train:
-    data_root: data/lsc        # built by tools/build_lsc_dataset.py ({train,val}/labels.tsv)
+    data_root: data/lsc # built by tools/build_lsc_dataset.py ({train,val}/labels.tsv)
     epochs: 10
-    batch_size: 24             # x accum_steps 2 = effective 48 (48 OOMs on the 3050 + 8 GB host); halved on CUDA OOM
-    val_batch_size: 64
+    batch_size: 4 #change to 24 again # x accum_steps 2 = effective 48 (48 OOMs on the 3050 + 8 GB host); halved on CUDA OOM
+    val_batch_size: 2 #change to 64
     lr: 1.0e-4
     lr_final: 1.0e-5
-    decay_epoch: 6             # 0-based: epochs 1-6 at lr, 7-10 at lr_final
+    decay_epoch: 6 # 0-based: epochs 1-6 at lr, 7-10 at lr_final
     accum_steps: 2
     amp: true
     clip_grad: 20.0
-    num_workers: 2
+    num_workers: 0 #change to 2
     log_every: 50
     smoke_samples: 200
 fusion:

@@ -1,4 +1,4 @@
-# Data report
+﻿# Data report
 
 ## Inventory
 
@@ -49,7 +49,7 @@
 <!-- dataset_stats:start -->
 ## Statistics
 
-### 2026-10-26 - `tools/dataset_stats.py`
+### 2026-11-01 - `tools/dataset_stats.py`
 
 | dataset | split | videos | frames | instances | tracks | dont_care_pct | height_median_px | small_pct |
 |---|---|---|---|---|---|---|---|---|
@@ -71,3 +71,17 @@
 
 ![small text share](figs/small_text_share.png)
 <!-- dataset_stats:end -->
+## Annotation Conversion
+
+### 2026-11-01 - `tools/convert_annotations.py --raw-root data/raw --out data/processed`
+
+| dataset | videos | frames | instances | dont_care | dup_dropped | dup_reid | quality_fixed | size_flagged |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| icdar2013v | 13 | 5487 | 26134 | 3033 | 0 | 0 | 0 | 0 |
+| icdar2015v | 25 | 13450 | 71794 | 26839 | 0 | 1 | 1 | 0 |
+| dstext | 50 | 12103 | 853704 | 146634 | 92255 | 1 | 0 | 0 |
+
+- Parser tests: `pytest -q tests/test_parsers.py` — 9 passed.
+- DONT-CARE rule: transcription `###` is converted to `dont_care=true`.
+- Duplicate annotation IDs with conflicting boxes were re-identified where reported by the converter.
+

@@ -1,0 +1,55 @@
+exp_id: E5-embed
+dataset: icdar2015v
+split: val
+seed: 42
+detector: {}
+pipeline:                      # run_track reads lsc feats from lsc_exp; the cache was built from E3-lsc
+  det_exp: det_ppyoloe_r_text_s
+  lsc_exp: E3-lsc
+lsc:
+  ckpt: runs/E3-lsc/checkpoints/best.pth
+  det_thr: 0.3
+  iou_neg: 0.05
+fusion:
+  mode: hard
+  w: 0.5
+tracker:
+  type: embed                  # P21F fallback: simple tracker + appearance cost
+  thr: 0.5                     # unused by simple/embed trackers
+  high_thr: 0.6
+  low_thr: 0.3
+  iou_gate: 0.3
+  max_age: 15
+  text_window: 10
+  lam: 0.5                     # cost = (1-lam)*(1-IoU) + lam*cos_dist (stage 1 only)
+  emb_gate: 0.0                # > 0 also admits pairs with cos_dist < emb_gate when IoU < iou_gate
+  emb_momentum: 0.9            # track embedding EMA
+  ckpt: runs/E5-embed/checkpoints/best.pth
+  train:                       # logo.tracking.train_embed
+    train_split: train
+    val_split: val
+    iters: 3000
+    lr: 1.0e-4
+    weight_decay: 1.0e-4
+    warmup_iters: 100
+    warmup_factor: 0.001
+    min_lr: 0.0
+    clip_len: 6                # positives/negatives within a 6-frame window
+    stride: 1
+    temperature: 0.1           # SupCon
+    emb_dim: 128
+    hidden: 256
+    init_ckpt: ""              # e.g. runs/E5-lst/checkpoints/best.pth to start VPMM from LST
+    amp: true
+    log_every: 20
+    val_every: 250
+    smoke_iters: 100
+    smoke_val_every: 50
+    smoke_val_videos: 2
+voting:
+  enabled: false
+  tau: 0.5
+  min_len: 3
+eval:
+  iou: 0.5
+  spotting: true

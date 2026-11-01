@@ -1,0 +1,23 @@
+exp_id: freeze_baseline
+dataset: icdar2015v
+split: val
+seed: 42
+det_exp: det_yolo11s_obb_text  # Plan B detector (tools/train_obb.py + infer_obb); overrides rows' pipeline.det_exp
+exp_suffix: _yolo              # rows run as <exp_id>_yolo: earlier E4/E5 runs are not overwritten
+rows:                          # ablation, in report order (tools/freeze_baseline.py)
+  - {label: Baseline, config: configs/E4-base.yaml}
+  - {label: +LSC hard, config: configs/E4-lsc.yaml}
+  - {label: +GS, config: configs/E4-glyph.yaml}
+  - {label: +VPMM/LST, config: configs/E5-lst.yaml, lsc_exp: E4-lsc}  # same LSC ckpt as E3-lsc, on det_exp boxes
+metrics: [det.f, track.MOTA, track.MOTP, track.IDF1, spot.MOTA, spot.MOTP, spot.IDF1]
+paper_table_v:                 # arXiv 2405.19194 Table V, same metric order; null = not reported
+  Baseline: {det.f: null, track.MOTA: null, track.MOTP: null, track.IDF1: null, spot.MOTA: null, spot.MOTP: null, spot.IDF1: null}
+  +LSC hard: {det.f: null, track.MOTA: null, track.MOTP: null, track.IDF1: null, spot.MOTA: null, spot.MOTP: null, spot.IDF1: null}
+  +GS: {det.f: null, track.MOTA: null, track.MOTP: null, track.IDF1: null, spot.MOTA: null, spot.MOTP: null, spot.IDF1: null}
+  +VPMM/LST: {det.f: null, track.MOTA: null, track.MOTP: null, track.IDF1: null, spot.MOTA: null, spot.MOTP: null, spot.IDF1: null}
+repro:
+  row: +LSC hard               # re-run with --force; metrics must match within tol (percent points)
+  tol: 0.3
+profile:                       # tools/profile_efficiency.py
+  frames: 200
+  warmup: 5
