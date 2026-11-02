@@ -5,7 +5,8 @@ Stages run in that order (whatever order --stage lists them in). Each one reads 
   lsc   runs/<lsc_exp>/lsc/<ds>/<video>.{json,_feats.npy}         logo.lsc.run_lsc; check only if lsc_exp != exp_id
   fuse  runs/<exp_id>/fuse/<ds>/<video>.json                      logo.scoring.run_fuse
   track runs/<exp_id>/track/<ds>/<video>.jsonl                    logo.tracking.run_track
-  vote  runs/<exp_id>/vote/<ds>/<video>.jsonl                     pass-through copy of track until P26
+  vote  runs/<exp_id>/vote/<ds>/<video>.jsonl                     logo.voting.track_vote if voting.enabled,
+                                                                  else a pass-through copy of track
   eval  runs/<exp_id>/metrics.json                                det on fuse (score_fused > eval.det_score_thr),
                                                                   track + spot (if eval.spotting) on vote
 A stage is skipped when all its outputs exist, unless --force or an earlier stage ran in this call.
@@ -36,6 +37,7 @@ from logo.scoring import run_fuse
 from logo.tracking import run_track
 from logo.utils.io import get_logger, load_json, load_yaml, save_json, set_seed
 from logo.utils.paths import check_dataset, check_split, project_root
+from logo.voting import track_vote
 
 _spec = importlib.util.spec_from_file_location(
     "evaluate_tool", Path(__file__).resolve().parents[1] / "tools" / "evaluate.py")
@@ -197,8 +199,10 @@ def run_pipeline(cfg: dict, stages: list[str], root: Path, log, force: bool = Fa
             elif stage == "vote":
                 require(outputs("track", root, cfg, ds, split, videos, det_exp, lsc_exp), "vote input")
                 if (cfg.get("voting") or {}).get("enabled"):
-                    log.warning("voting.enabled is set but track voting arrives in P26; copying tracks")
-                copy_votes(root, cfg, ds, videos)
+                    stats = track_vote.run(cfg, ds, videos, root, log)
+                else:
+                    stats = copy_votes(root, cfg, ds, videos)
+                write_run_files(cfg, run_dir, stats, key=f"vote_{ds}_{split}")
             elif stage == "eval":
                 require(outputs("fuse", root, cfg, ds, split, videos, det_exp, lsc_exp)
                         + outputs("vote", root, cfg, ds, split, videos, det_exp, lsc_exp), "eval input")

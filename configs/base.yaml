@@ -13,6 +13,7 @@ lsc:
 fusion:
   mode: hard
   w: 0.5
+  soft_source: p_eos           # mode soft: p_eos (lang = 1 - p_eos) | text_conf
 tracker:
   type: simple
   thr: 0.5

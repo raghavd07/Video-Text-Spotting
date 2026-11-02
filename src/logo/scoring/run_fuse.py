@@ -1,4 +1,7 @@
-"""Fusion stage: lsc json -> fused json (lsc objects plus score_fused = fuse(score, lang_hard)).
+"""Fusion stage: lsc json -> fused json (lsc objects plus score_fused = fuse(score, lang)).
+
+lang = lang_hard (fusion.mode hard) or, for mode soft, 1 - p_eos / text_conf (fusion.soft_source, default
+p_eos); see logo.scoring.fusion.lang_score.
 
 Reads runs/<lsc_exp>/lsc/<ds>/<video>.json, writes runs/<exp_id>/fuse/<ds>/<video>.json and
 runs/<exp_id>/{config.yaml,log.txt,metrics.json meta.fuse_<ds>_<split>}. feat_idx still refers to
@@ -15,31 +18,36 @@ import sys
 from pathlib import Path
 
 from logo.detector.infer_paddle import read_videos, write_run_files
-from logo.scoring.fusion import fuse
+from logo.scoring.fusion import fuse, lang_score
 from logo.utils.io import get_logger, load_json, load_yaml, save_json, set_seed
 from logo.utils.paths import DATASETS, check_split, project_root
 
 STAGE = "fuse"
 
 
-def fuse_video(lsc: dict, mode: str, w: float) -> dict:
-    frames = {fid: [{**o, "score_fused": fuse(o["score"], o["lang_hard"], mode, w)} for o in objs]
+def soft_source(cfg: dict) -> str:
+    return (cfg.get("fusion") or {}).get("soft_source") or "p_eos"
+
+
+def fuse_video(lsc: dict, mode: str, w: float, source: str = "p_eos") -> dict:
+    frames = {fid: [{**o, "score_fused": fuse(o["score"], lang_score(o, mode, source), mode, w)} for o in objs]
               for fid, objs in lsc["frames"].items()}
     return {**{k: v for k, v in lsc.items() if k != "frames"}, "frames": frames}
 
 
 def run(cfg: dict, ds: str, videos: list[str], root: Path, log, lsc_exp: str) -> dict:
-    mode, w = cfg["fusion"]["mode"], float(cfg["fusion"]["w"])
+    mode, w, source = cfg["fusion"]["mode"], float(cfg["fusion"]["w"]), soft_source(cfg)
     lsc_dir = root / "runs" / lsc_exp / "lsc" / ds
     out_dir = root / "runs" / cfg["exp_id"] / STAGE / ds
     n = 0
     for video in videos:
-        fused = fuse_video(load_json(lsc_dir / f"{video}.json"), mode, w)
+        fused = fuse_video(load_json(lsc_dir / f"{video}.json"), mode, w, source)
         save_json(fused, out_dir / f"{video}.json")
         k = sum(len(v) for v in fused["frames"].values())
         n += k
         log.info("%s: %d boxes fused", video, k)
-    return {"videos": len(videos), "boxes": n, "mode": mode, "w": w, "lsc_exp": lsc_exp}
+    return {"videos": len(videos), "boxes": n, "mode": mode, "w": w,
+            **({"soft_source": source} if mode == "soft" else {}), "lsc_exp": lsc_exp}
 
 
 def main(argv=None) -> int:

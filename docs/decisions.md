@@ -11,3 +11,7 @@ One entry per decision: date, task id, what, why, impact on comparability with t
 
 
 
+|2026-11-02|P28|held-out icdar2015v: test|Test videos and frames available; test labels/evaluation readiness must be verified|Detector inference completed; end-to-end metrics not yet verified|
+|2026-11-02|P28|held-out icdar2013v: val|Test labels unavailable; validation used for tuning|Optimistic estimate; not a held-out test result|
+
+|2026-11-02|P28|held-out icdar2015v: val|Test ground-truth labels unavailable|Validation metrics reported; no test score claimed|

@@ -1,0 +1,21 @@
+exp_id: ablation
+dataset: icdar2015v
+split: val
+seed: 42                       # tools/bootstrap_ci.py resampling seed
+det_exp: det_yolo11s_obb_text  # as configs/freeze_baseline.yaml: overrides rows' pipeline.det_exp
+exp_suffix: _yolo              # first four rows reuse the frozen P23 runs (<exp_id>_yolo)
+rows:                          # tools/run_ablation.py, in table order
+  # label, config, optional lsc_exp (a row exp_id before the suffix), exp_id (new run id before the
+  # suffix; required when two rows share a config), set {dotted.config.key: value} applied last
+  - {label: Baseline, config: configs/E4-base.yaml}
+  - {label: +LSC hard, config: configs/E4-lsc.yaml}
+  - {label: +GS, config: configs/E4-glyph.yaml}
+  - {label: +VPMM/LST, config: configs/E5-lst.yaml, lsc_exp: E4-lsc}  # = reproduced LOGO
+  - {label: +soft, config: configs/E5-lst.yaml, lsc_exp: E4-lsc, exp_id: A-soft,
+     set: {fusion.mode: soft, fusion.w: 0.5, fusion.soft_source: p_eos}}
+  - {label: +voting, config: configs/E5-lst.yaml, lsc_exp: E4-lsc, exp_id: A-vote,
+     set: {voting.enabled: true, voting.tau: 0.5, voting.min_len: 3}}  # set tau/min_len from sweep_voting
+  - {label: all, config: configs/E5-lst.yaml, lsc_exp: E4-lsc, exp_id: A-all,
+     set: {fusion.mode: soft, fusion.w: 0.5, fusion.soft_source: p_eos,
+           voting.enabled: true, voting.tau: 0.5, voting.min_len: 3}}
+metrics: [det.f, track.MOTA, track.MOTP, track.IDF1, spot.MOTA, spot.MOTP, spot.IDF1]

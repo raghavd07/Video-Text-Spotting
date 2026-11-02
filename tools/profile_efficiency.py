@@ -15,9 +15,12 @@ e2e.det_included says whether it was found.
 Frames: frames 1.. of the split's videos in split order until N frames are taken (frame files on disk).
 Writes runs/<exp_id>/profile/efficiency_<ds>_<split>.json (merged per stage) and
 runs/<exp_id>/{config.yaml,log.txt,metrics.json meta.efficiency_<ds>_<split>}.
+--final_json (needs --final) also merges the result into runs/FINAL-efficiency.json under datasets.<ds>
+(params, peak_mem_mb = peak VRAM, ms_per_frame per stage + e2e); scripts/final_eval.py writes it too.
+--dataset / --split replace the config's (e.g. a det config on another dataset's held-out split).
 
 Usage: python tools/profile_efficiency.py --config configs/E5-lst.yaml [--frames 200] [--warmup 5]
-           [--device cuda] [--final]
+           [--device cuda] [--final] [--final_json] [--dataset DS] [--split SPLIT]
        python tools/profile_efficiency.py --config configs/det_ppyoloe_r_text_s.yaml --stages det   (logo-paddle)
 """
 from __future__ import annotations
@@ -38,6 +41,7 @@ from logo.utils.paths import check_dataset, check_split, project_root
 
 STAGES = ("det", "lsc", "fuse", "vpmm", "track")
 TORCH_STAGES = STAGES[1:]
+STAGE_KEYS = ("params", "peak_mem_mb", "ms_per_frame")
 
 
 def out_path(root: Path, exp: str, ds: str, split: str) -> Path:
@@ -82,6 +86,28 @@ def e2e(stages: dict) -> dict:
             "params": int(sum(s.get("params", 0) for s in stages.values())),
             "max_peak_mem_mb": max(peaks) if peaks else None, "det_included": "det" in stages,
             "stages": [k for k in STAGES if k in stages]}
+
+
+def final_efficiency_path(root: Path) -> Path:
+    return root / "runs" / "FINAL-efficiency.json"
+
+
+def final_entry(res: dict) -> dict:
+    """Per-dataset FINAL-efficiency.json entry of a profile() result."""
+    return {"exp_id": res["exp_id"], "split": res["split"], "frames": res["frames"], "warmup": res["warmup"],
+            "videos": res["videos"], "device": res.get("device"),
+            "stages": {k: {m: v.get(m) for m in STAGE_KEYS} for k, v in res["stages"].items()},
+            "e2e": res["e2e"]}
+
+
+def update_final_efficiency(root: Path, res: dict, meta: Optional[dict] = None) -> dict:
+    """Merges profile() result `res` into runs/FINAL-efficiency.json (datasets.<ds>; meta updated)."""
+    p = final_efficiency_path(root)
+    out = load_json(p) if p.is_file() else {}
+    out.setdefault("datasets", {})[res["dataset"]] = final_entry(res)
+    out.setdefault("meta", {}).update(meta or {})
+    save_json(out, p)
+    return out
 
 
 # ------------------------------------------------------------------------------------------------ det
@@ -340,8 +366,14 @@ def main(argv=None) -> int:
     ap.add_argument("--warmup", type=int, default=5)
     ap.add_argument("--device", default=None, help="torch: cuda|cpu; det: gpu|cpu")
     ap.add_argument("--final", action="store_true", help="allow split=test (rule 5)")
+    ap.add_argument("--final_json", action="store_true", help="also merge into runs/FINAL-efficiency.json")
+    ap.add_argument("--dataset", default=None, help="default: config dataset")
+    ap.add_argument("--split", default=None, help="default: config split")
     args = ap.parse_args(argv)
     cfg = copy.deepcopy(load_yaml(args.config))
+    cfg.update({k: v for k, v in (("dataset", args.dataset), ("split", args.split)) if v})
+    if args.final_json and not args.final:
+        ap.error("--final_json needs --final")
     if cfg.get("split") == "test" and not args.final:
         ap.error("config split is test: pass --final")
     stages = [s.strip() for s in args.stages.split(",") if s.strip()]
@@ -349,6 +381,8 @@ def main(argv=None) -> int:
         ap.error(f"--stages must be a comma list of {STAGES}")
     root = project_root()
     res = profile(cfg, root, args.frames, args.warmup, stages, args.device, args.final)
+    if args.final_json:
+        update_final_efficiency(root, res, {"seed": int(cfg["seed"])})
     print(f"{cfg['exp_id']}: " + " | ".join(f"{k} {v['ms_per_frame']} ms" for k, v in res["stages"].items())
           + f" | total {res['e2e']['total_ms_per_frame']} ms/frame, {res['e2e']['fps']} FPS")
     return 0

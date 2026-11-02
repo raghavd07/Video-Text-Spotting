@@ -180,3 +180,19 @@ def test_cli_rejects_test_split_and_bad_stage(root, tmp_path):
     with pytest.raises(SystemExit):
         rp.main(["--config", str(p), "--final", "--stage", "det,bogus"])
     assert rp.parse_stages("eval,det, fuse") == ["det", "fuse", "eval"]
+
+
+def test_vote_stage_enabled(root):
+    cfg = make_cfg("V", 0.5)
+    run(root, cfg)
+    assert load_json(root / "runs/V/metrics.json")["meta"]["vote_icdar2015v_val"]["mode"] == "pass-through"
+    cfg["voting"] = {"enabled": True, "tau": 0.5, "min_len": NF + 1}  # every track is shorter -> all removed
+    rep = run(root, cfg, stages=("vote", "eval"), force=True)
+    assert rep["vote"]["status"] == "ran"
+    assert (root / "runs/V/vote" / DS / "v1.jsonl").read_text(encoding="utf-8") == ""
+    meta = load_json(root / "runs/V/metrics.json")["meta"]["vote_icdar2015v_val"]
+    assert meta["mode"] == "vote" and meta["tracks_in"] == 2 and meta["tracks_out"] == 0
+    cfg["voting"]["min_len"] = 1
+    run(root, cfg, stages=("vote", "eval"), force=True)
+    m = load_json(root / "runs/V/metrics.json")
+    assert m["meta"]["vote_icdar2015v_val"]["tracks_out"] == 2 and m["spot"]["MOTA"] == pytest.approx(100.0)
