@@ -1,0 +1,17 @@
+# Published numbers (percent) for the 'Reported' block of paper/tables/comparison_<ds>.tex.
+# The only hand-typed numbers in the paper tables. null -> "--". Per dataset, a list of:
+#   method: str, cite: BibTeX key or null, source: short free text or null,
+#   track: {MOTA, MOTP, IDF1, MT, ML}, spot: {MOTA, MOTP, IDF1}
+icdar2015v:
+  - method: LOGO
+    cite: null
+    source: arXiv 2405.19194
+    track: {MOTA: null, MOTP: null, IDF1: null, MT: null, ML: null}
+    spot: {MOTA: null, MOTP: null, IDF1: null}
+icdar2013v:
+  - method: LOGO
+    cite: null
+    source: arXiv 2405.19194
+    track: {MOTA: null, MOTP: null, IDF1: null, MT: null, ML: null}
+    spot: {MOTA: null, MOTP: null, IDF1: null}
+dstext: []

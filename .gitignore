@@ -56,3 +56,19 @@ models/
 .claude/
 Thumbs.db
 .DS_Store
+
+# local runtime logs (contain environment dumps) and scratch notes
+log/
+cmd.txt
+
+# internal working notes and planning documents (not part of the code base)
+LOGO AI Prompt Pack.*
+LOGO_AI_Prompt_Pack.*
+PROJECT_STATE.md
+startproject.txt
+ARCHITECTURE.*
+train.py
+
+# project deliverables kept locally
+*.pptx
+docs/LOGO_Technical_Documentation.pdf

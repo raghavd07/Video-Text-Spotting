@@ -1,0 +1,15 @@
+# P29: tools/make_tables.py + tools/make_figures.py (outputs runs/paper/, paper/tables, docs/tables, paper/figs)
+exp_id: paper
+seed: 42                                   # failure-montage sampling
+comparison:
+  reported: configs/reported_numbers.yaml  # published numbers, filled by hand ('Reported' block only)
+  ours:                                    # reproduced rows; dataset/split from runs/<exp_id>/config.yaml
+    - {label: LOGO (reproduced), exp_id: E5-lst_yolo}
+    - {label: LOGO + C2 + C3 (final), exp_id: FINAL-icdar2015v}
+    - {label: LOGO + C2 + C3 (final), exp_id: FINAL-icdar2013v}
+threshold:
+  w: 0.5                                   # fusion.w shown in S2 (nearest swept w)
+figures:
+  rescore:  {exp_id: FINAL-icdar2015v, video: null, frame: null}    # null: first split video / frame with most boxes
+  overlay:  {exp_id: FINAL-icdar2015v, stage: vote, video: null, frames: 4}
+  failures: {exp_id: FINAL-icdar2015v, stage: vote, per_cat: 3, iou: null}  # iou null: run config eval.iou
