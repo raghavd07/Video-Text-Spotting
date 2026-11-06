@@ -1,0 +1,52 @@
+Metadata-Version: 2.4
+Name: paddledet
+Version: 0.0.0
+Summary: Object detection and instance segmentation toolkit based on PaddlePaddle
+Home-page: https://github.com/PaddlePaddle/PaddleDetection
+Download-URL: https://github.com/PaddlePaddle/PaddleDetection.git
+Author: PaddlePaddle
+License: Apache License 2.0
+Keywords: ppdet paddle ppyolo
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy<1.24
+Requires-Dist: tqdm
+Requires-Dist: typeguard
+Requires-Dist: visualdl>=2.2.0
+Requires-Dist: opencv-python<=4.6.0
+Requires-Dist: PyYAML
+Requires-Dist: shapely
+Requires-Dist: scipy
+Requires-Dist: terminaltables
+Requires-Dist: Cython
+Requires-Dist: pycocotools
+Requires-Dist: setuptools
+Requires-Dist: Pillow
+Requires-Dist: lap
+Requires-Dist: motmetrics
+Requires-Dist: sklearn==0.0
+Requires-Dist: pyclipper
+Requires-Dist: imgaug>=0.4.0
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+README_cn.md
