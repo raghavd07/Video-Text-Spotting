@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: logo
+Version: 0.1.0
+Summary: LOGO video text spotting re-implementation (arXiv 2405.19194) + C2/C3 extensions
+Requires-Python: >=3.11
+Requires-Dist: numpy==1.26.4
+Requires-Dist: PyYAML>=6.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
