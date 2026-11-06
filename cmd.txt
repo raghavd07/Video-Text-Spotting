@@ -1,0 +1,2 @@
+.venv\Scripts\python scripts/demo.py --video in.mp4 --out out.mp4 --config configs/FINAL.yaml --device cpu
+.venv\Scripts\python scripts/demo.py --video inn.mp4 --out outt.mp4 --config configs/FINAL.yaml --device cpu

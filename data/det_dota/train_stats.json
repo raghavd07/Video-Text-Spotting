@@ -1,0 +1,1 @@
+{"split":"train","stride":2,"datasets":["icdar2013v","icdar2015v","dstext"],"videos":69,"images":3394,"boxes":18837,"dont_care_omitted":12057,"degenerate_dropped":0,"frames_only_dont_care":543,"frames_no_boxes":1224,"frames_missing":6819}

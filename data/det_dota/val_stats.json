@@ -1,0 +1,1 @@
+{"split":"val","stride":2,"datasets":["icdar2013v","icdar2015v","dstext"],"videos":19,"images":761,"boxes":3601,"dont_care_omitted":1216,"degenerate_dropped":0,"frames_only_dont_care":262,"frames_no_boxes":542,"frames_missing":1995}
