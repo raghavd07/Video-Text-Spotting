@@ -1,0 +1,5 @@
+path: E:/Logo_Video_Text_Spotting/data/obb/icdar2015v
+names:
+  0: text
+train: images/train
+val: images/val
