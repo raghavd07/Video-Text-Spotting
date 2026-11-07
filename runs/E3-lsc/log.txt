@@ -1,0 +1,318 @@
+2026-10-31 23:41:16,409 WARNING run_lsc: not using a fine-tuned checkpoint of this exp: E:\Logo_Video_Text_Spotting\third_party\ABINet\workdir\train-abinet\best-train-abinet.pth
+2026-10-31 23:41:19,316 INFO run_lsc: exp=E3-lsc det_exp=E3-lsc datasets=['icdar2015v'] splits=['val'] ckpt=E:\Logo_Video_Text_Spotting\third_party\ABINet\workdir\train-abinet\best-train-abinet.pth device=cuda bs=64 amp=True
+2026-10-31 23:41:19,320 INFO run_lsc: === icdar2015v/val: 5 videos
+2026-11-01 00:18:26,548 WARNING run_lsc: not using a fine-tuned checkpoint of this exp: E:\Logo_Video_Text_Spotting\third_party\ABINet\workdir\train-abinet\best-train-abinet.pth
+2026-11-01 00:18:29,699 INFO run_lsc: exp=E3-lsc det_exp=det_yolo11s_obb_dota datasets=['icdar2015v'] splits=['val'] ckpt=E:\Logo_Video_Text_Spotting\third_party\ABINet\workdir\train-abinet\best-train-abinet.pth device=cuda bs=64 amp=True
+2026-11-01 00:18:29,702 INFO run_lsc: === icdar2015v/val: 5 videos
+2026-11-01 00:18:32,534 INFO run_lsc: Video_2_1_2: 19 boxes > 0.30, lang_hard=1: 19
+2026-11-01 00:18:41,021 INFO run_lsc: Video_37_2_3: 2747 boxes > 0.30, lang_hard=1: 2747
+2026-11-01 00:18:41,488 INFO run_lsc: Video_45_6_4: 29 boxes > 0.30, lang_hard=1: 29
+2026-11-01 00:18:41,782 INFO run_lsc: Video_47_6_4: 11 boxes > 0.30, lang_hard=1: 11
+2026-11-01 00:18:42,807 INFO run_lsc: Video_4_4_2: 189 boxes > 0.30, lang_hard=1: 189
+2026-11-01 00:18:42,814 INFO run_lsc: icdar2015v/val: {'videos': 5, 'boxes': 2995, 'lang_hard_pos': 2995, 'det_exp': 'det_yolo11s_obb_dota', 'det_thr': 0.3, 'seconds': 13.1, 'ms_per_box': 4.376, 'ckpt': 'E:\\Logo_Video_Text_Spotting\\third_party\\ABINet\\workdir\\train-abinet\\best-train-abinet.pth', 'device': 'cuda', 'batch_size': 64, 'amp': True, 'peak_gpu_mem_mb': 515.2}
+2026-11-01 00:22:57,928 INFO run_fuse: exp=E3-lsc lsc_exp=E3-lsc fusion={'mode': 'hard', 'w': 0.5}
+2026-11-01 00:22:57,988 INFO run_fuse: Video_2_1_2: 19 boxes fused
+2026-11-01 00:22:58,210 INFO run_fuse: Video_37_2_3: 2747 boxes fused
+2026-11-01 00:22:58,326 INFO run_fuse: Video_45_6_4: 29 boxes fused
+2026-11-01 00:22:58,372 INFO run_fuse: Video_47_6_4: 11 boxes fused
+2026-11-01 00:22:58,423 INFO run_fuse: Video_4_4_2: 189 boxes fused
+2026-11-01 00:22:58,467 INFO run_fuse: icdar2015v/val: {'videos': 5, 'boxes': 2995, 'mode': 'hard', 'w': 0.5, 'lsc_exp': 'E3-lsc'}
+2026-11-01 00:23:15,309 INFO run_fuse: exp=E3-lsc lsc_exp=E3-lsc fusion={'mode': 'hard', 'w': 0.5}
+2026-11-01 00:23:15,313 INFO run_fuse: Video_2_1_2: 19 boxes fused
+2026-11-01 00:23:15,381 INFO run_fuse: Video_37_2_3: 2747 boxes fused
+2026-11-01 00:23:15,428 INFO run_fuse: Video_45_6_4: 29 boxes fused
+2026-11-01 00:23:15,432 INFO run_fuse: Video_47_6_4: 11 boxes fused
+2026-11-01 00:23:15,439 INFO run_fuse: Video_4_4_2: 189 boxes fused
+2026-11-01 00:23:15,453 INFO run_fuse: icdar2015v/val: {'videos': 5, 'boxes': 2995, 'mode': 'hard', 'w': 0.5, 'lsc_exp': 'E3-lsc'}
+2026-11-01 00:30:59,075 INFO evaluate: mode=det iou=0.50 videos=5 gt=data\processed\icdar2015v pred=runs\det_yolo11s_obb_dota\det\icdar2015v
+2026-11-01 00:30:59,076 INFO evaluate: keeping predictions with score > 0.300
+2026-11-01 00:31:01,818 INFO evaluate: det: precision=0.13 recall=0.06 f=0.08
+2026-11-01 00:32:53,835 INFO evaluate: mode=det iou=0.50 videos=5 gt=data\processed\icdar2015v pred=runs\E3-lsc\fuse\icdar2015v
+2026-11-01 00:32:53,835 INFO evaluate: keeping predictions with score_fused > 0.300
+2026-11-01 00:32:54,823 INFO evaluate: det: precision=0.13 recall=0.06 f=0.08
+2026-11-01 00:33:14,965 INFO evaluate: mode=det iou=0.50 videos=5 gt=data\processed\icdar2015v pred=runs\E3-lsc\fuse\icdar2015v
+2026-11-01 00:33:14,965 INFO evaluate: keeping predictions with score_fused > 0.500
+2026-11-01 00:33:15,794 INFO evaluate: det: precision=0.13 recall=0.06 f=0.08
+2026-11-01 00:36:26,710 WARNING run_lsc: not using a fine-tuned checkpoint of this exp: E:\Logo_Video_Text_Spotting\third_party\ABINet\workdir\train-abinet\best-train-abinet.pth
+2026-11-01 00:36:29,088 INFO run_lsc: exp=E3-lsc det_exp=E3-lsc datasets=['icdar2015v'] splits=['val'] ckpt=E:\Logo_Video_Text_Spotting\third_party\ABINet\workdir\train-abinet\best-train-abinet.pth device=cuda bs=64 amp=True
+2026-11-01 00:36:29,090 INFO run_lsc: === icdar2015v/val: 5 videos
+2026-11-01 00:36:29,092 INFO run_lsc: skip Video_2_1_2 (exists)
+2026-11-01 00:36:29,094 INFO run_lsc: skip Video_37_2_3 (exists)
+2026-11-01 00:36:29,095 INFO run_lsc: skip Video_45_6_4 (exists)
+2026-11-01 00:36:29,097 INFO run_lsc: skip Video_47_6_4 (exists)
+2026-11-01 00:36:29,098 INFO run_lsc: skip Video_4_4_2 (exists)
+2026-11-01 00:36:29,108 INFO run_lsc: icdar2015v/val: {'videos': 0, 'boxes': 0, 'lang_hard_pos': 0, 'det_exp': 'E3-lsc', 'det_thr': 0.3, 'seconds': 0.01, 'ms_per_box': None, 'ckpt': 'E:\\Logo_Video_Text_Spotting\\third_party\\ABINet\\workdir\\train-abinet\\best-train-abinet.pth', 'device': 'cuda', 'batch_size': 64, 'amp': True, 'peak_gpu_mem_mb': 142.3}
+2026-11-01 00:36:45,124 INFO run_fuse: exp=E3-lsc lsc_exp=E3-lsc fusion={'mode': 'hard', 'w': 0.5}
+2026-11-01 00:36:45,128 INFO run_fuse: Video_2_1_2: 19 boxes fused
+2026-11-01 00:36:45,202 INFO run_fuse: Video_37_2_3: 2747 boxes fused
+2026-11-01 00:36:45,254 INFO run_fuse: Video_45_6_4: 29 boxes fused
+2026-11-01 00:36:45,259 INFO run_fuse: Video_47_6_4: 11 boxes fused
+2026-11-01 00:36:45,273 INFO run_fuse: Video_4_4_2: 189 boxes fused
+2026-11-01 00:36:45,297 INFO run_fuse: icdar2015v/val: {'videos': 5, 'boxes': 2995, 'mode': 'hard', 'w': 0.5, 'lsc_exp': 'E3-lsc'}
+2026-11-01 00:37:29,346 INFO evaluate: mode=det iou=0.50 videos=5 gt=data\processed\icdar2015v pred=runs\det_yolo11s_obb_dota\det\icdar2015v
+2026-11-01 00:37:29,346 INFO evaluate: keeping predictions with score > 0.300
+2026-11-01 00:37:30,075 INFO evaluate: det: precision=0.13 recall=0.06 f=0.08
+2026-11-01 00:37:34,255 INFO evaluate: mode=det iou=0.50 videos=5 gt=data\processed\icdar2015v pred=runs\det_yolo11s_obb_dota\det\icdar2015v
+2026-11-01 00:37:34,255 INFO evaluate: keeping predictions with score > 0.300
+2026-11-01 00:37:35,035 INFO evaluate: det: precision=0.13 recall=0.06 f=0.08
+2026-11-01 00:37:39,231 INFO evaluate: mode=det iou=0.50 videos=5 gt=data\processed\icdar2015v pred=runs\E3-lsc\fuse\icdar2015v
+2026-11-01 00:37:39,232 INFO evaluate: keeping predictions with score_fused > 0.500
+2026-11-01 00:37:40,183 INFO evaluate: det: precision=0.13 recall=0.06 f=0.08
+2026-11-01 01:54:58,273 INFO build_lsc_dataset: exp=E3-lsc det_exp=det_yolo11s_obb_dota datasets=['icdar2015v'] splits=['train'] out=E:\Logo_Video_Text_Spotting\data\lsc
+2026-11-01 01:54:58,362 WARNING build_lsc_dataset: icdar2015v/Video_10_1_1: no det json at E:\Logo_Video_Text_Spotting\runs\det_yolo11s_obb_dota\det\icdar2015v\Video_10_1_1.json, no negatives
+2026-11-01 01:54:58,523 WARNING build_lsc_dataset: icdar2015v/Video_13_4_1: no det json at E:\Logo_Video_Text_Spotting\runs\det_yolo11s_obb_dota\det\icdar2015v\Video_13_4_1.json, no negatives
+2026-11-01 01:54:58,793 WARNING build_lsc_dataset: icdar2015v/Video_16_3_2: no det json at E:\Logo_Video_Text_Spotting\runs\det_yolo11s_obb_dota\det\icdar2015v\Video_16_3_2.json, no negatives
+2026-11-01 01:54:58,944 WARNING build_lsc_dataset: icdar2015v/Video_18_3_1: no det json at E:\Logo_Video_Text_Spotting\runs\det_yolo11s_obb_dota\det\icdar2015v\Video_18_3_1.json, no negatives
+2026-11-01 01:54:59,040 WARNING build_lsc_dataset: icdar2015v/Video_19_5_1: no det json at E:\Logo_Video_Text_Spotting\runs\det_yolo11s_obb_dota\det\icdar2015v\Video_19_5_1.json, no negatives
+2026-11-01 01:54:59,210 WARNING build_lsc_dataset: icdar2015v/Video_21_5_1: no det json at E:\Logo_Video_Text_Spotting\runs\det_yolo11s_obb_dota\det\icdar2015v\Video_21_5_1.json, no negatives
+2026-11-01 01:54:59,626 WARNING build_lsc_dataset: icdar2015v/Video_25_5_2: no det json at E:\Logo_Video_Text_Spotting\runs\det_yolo11s_obb_dota\det\icdar2015v\Video_25_5_2.json, no negatives
+2026-11-01 01:55:00,516 WARNING build_lsc_dataset: icdar2015v/Video_26_5_2: no det json at E:\Logo_Video_Text_Spotting\runs\det_yolo11s_obb_dota\det\icdar2015v\Video_26_5_2.json, no negatives
+2026-11-01 01:55:00,708 WARNING build_lsc_dataset: icdar2015v/Video_28_1_1: no det json at E:\Logo_Video_Text_Spotting\runs\det_yolo11s_obb_dota\det\icdar2015v\Video_28_1_1.json, no negatives
+2026-11-01 01:55:00,913 WARNING build_lsc_dataset: icdar2015v/Video_33_2_3: no det json at E:\Logo_Video_Text_Spotting\runs\det_yolo11s_obb_dota\det\icdar2015v\Video_33_2_3.json, no negatives
+2026-11-01 01:55:01,120 WARNING build_lsc_dataset: icdar2015v/Video_36_2_3: no det json at E:\Logo_Video_Text_Spotting\runs\det_yolo11s_obb_dota\det\icdar2015v\Video_36_2_3.json, no negatives
+2026-11-01 01:55:01,275 WARNING build_lsc_dataset: icdar2015v/Video_40_2_3: no det json at E:\Logo_Video_Text_Spotting\runs\det_yolo11s_obb_dota\det\icdar2015v\Video_40_2_3.json, no negatives
+2026-11-01 01:55:01,460 WARNING build_lsc_dataset: icdar2015v/Video_41_2_3: no det json at E:\Logo_Video_Text_Spotting\runs\det_yolo11s_obb_dota\det\icdar2015v\Video_41_2_3.json, no negatives
+2026-11-01 01:55:01,682 WARNING build_lsc_dataset: icdar2015v/Video_42_2_3: no det json at E:\Logo_Video_Text_Spotting\runs\det_yolo11s_obb_dota\det\icdar2015v\Video_42_2_3.json, no negatives
+2026-11-01 01:55:01,927 WARNING build_lsc_dataset: icdar2015v/Video_46_6_4: no det json at E:\Logo_Video_Text_Spotting\runs\det_yolo11s_obb_dota\det\icdar2015v\Video_46_6_4.json, no negatives
+2026-11-01 01:55:02,393 WARNING build_lsc_dataset: icdar2015v/Video_51_7_4: no det json at E:\Logo_Video_Text_Spotting\runs\det_yolo11s_obb_dota\det\icdar2015v\Video_51_7_4.json, no negatives
+2026-11-01 01:55:02,672 WARNING build_lsc_dataset: icdar2015v/Video_52_7_4: no det json at E:\Logo_Video_Text_Spotting\runs\det_yolo11s_obb_dota\det\icdar2015v\Video_52_7_4.json, no negatives
+2026-11-01 01:55:02,876 WARNING build_lsc_dataset: icdar2015v/Video_54_7_4: no det json at E:\Logo_Video_Text_Spotting\runs\det_yolo11s_obb_dota\det\icdar2015v\Video_54_7_4.json, no negatives
+2026-11-01 01:55:03,092 WARNING build_lsc_dataset: icdar2015v/Video_7_5_1: no det json at E:\Logo_Video_Text_Spotting\runs\det_yolo11s_obb_dota\det\icdar2015v\Video_7_5_1.json, no negatives
+2026-11-01 01:55:03,218 WARNING build_lsc_dataset: icdar2015v/Video_8_5_1: no det json at E:\Logo_Video_Text_Spotting\runs\det_yolo11s_obb_dota\det\icdar2015v\Video_8_5_1.json, no negatives
+2026-11-01 01:55:03,322 WARNING build_lsc_dataset: train: 0 samples after balancing (pos=35832 neg=0)
+2026-11-01 01:55:03,327 INFO build_lsc_dataset: train: candidates pos=35832 neg=0 -> kept 0+0 (E:\Logo_Video_Text_Spotting\data\lsc\train)
+2026-11-01 02:08:24,995 INFO build_lsc_dataset: exp=E3-lsc det_exp=det_yolo11s_obb_dota datasets=['icdar2015v'] splits=['train'] out=E:\Logo_Video_Text_Spotting\data\lsc
+2026-11-01 02:08:56,795 INFO build_lsc_dataset: train: candidates pos=35832 neg=1784 -> kept 1784+1784 (E:\Logo_Video_Text_Spotting\data\lsc\train)
+2026-11-01 02:15:32,630 INFO build_lsc_dataset: exp=E3-lsc det_exp=det_yolo11s_obb_dota datasets=['icdar2015v'] splits=['val'] out=E:\Logo_Video_Text_Spotting\data\lsc
+2026-11-01 02:16:05,536 INFO build_lsc_dataset: val: candidates pos=7214 neg=2513 -> kept 2513+2513 (E:\Logo_Video_Text_Spotting\data\lsc\val)
+2026-11-01 09:07:21,821 INFO train_lsc: exp=E3-lsc smoke=False device=cuda amp=True init=E:\Logo_Video_Text_Spotting\third_party\ABINet\workdir\train-abinet\best-train-abinet.pth train=3568 val=5026 bs=4 accum=2 epochs=10 glyph=off
+2026-11-01 09:07:36,201 INFO train_lsc: ep 1 step 50 loss 4.2404 lr 1.0e-04
+2026-11-01 09:07:54,176 INFO train_lsc: ep 1 step 100 loss 4.3681 lr 1.0e-04
+2026-11-01 09:08:11,951 INFO train_lsc: ep 1 step 150 loss 1.8987 lr 1.0e-04
+2026-11-01 09:08:25,260 INFO train_lsc: ep 1 step 200 loss 4.6491 lr 1.0e-04
+2026-11-01 09:08:38,667 INFO train_lsc: ep 1 step 250 loss 1.2175 lr 1.0e-04
+2026-11-01 09:08:58,032 INFO train_lsc: ep 1 step 300 loss 0.4516 lr 1.0e-04
+2026-11-01 09:09:14,174 INFO train_lsc: ep 1 step 350 loss 1.1784 lr 1.0e-04
+2026-11-01 09:09:27,077 INFO train_lsc: ep 1 step 400 loss 0.5503 lr 1.0e-04
+2026-11-01 09:12:31,437 INFO train_lsc: ep 1/10 lr 1.0e-04 train_loss 2.5581 | val loss 2.0455 tb_acc 92.90% word_acc 64.62% (pos 2513, neg 2513) 309s *best*
+2026-11-01 09:12:32,386 INFO train_lsc: ep 2 step 450 loss 2.7726 lr 1.0e-04
+2026-11-01 09:12:45,780 INFO train_lsc: ep 2 step 500 loss 0.1480 lr 1.0e-04
+2026-11-01 09:13:02,787 INFO train_lsc: ep 2 step 550 loss 3.4318 lr 1.0e-04
+2026-11-01 09:13:15,573 INFO train_lsc: ep 2 step 600 loss 0.5184 lr 1.0e-04
+2026-11-01 09:13:26,380 INFO train_lsc: ep 2 step 650 loss 4.2508 lr 1.0e-04
+2026-11-01 09:13:37,527 INFO train_lsc: ep 2 step 700 loss 0.1052 lr 1.0e-04
+2026-11-01 09:13:53,310 INFO train_lsc: ep 2 step 750 loss 1.4912 lr 1.0e-04
+2026-11-01 09:14:09,532 INFO train_lsc: ep 2 step 800 loss 0.0848 lr 1.0e-04
+2026-11-01 09:14:20,433 INFO train_lsc: ep 2 step 850 loss 5.3129 lr 1.0e-04
+2026-11-01 09:16:10,074 INFO train_lsc: ep 2/10 lr 1.0e-04 train_loss 1.3760 | val loss 2.7131 tb_acc 89.73% word_acc 63.19% (pos 2513, neg 2513) 219s
+2026-11-01 09:16:11,989 INFO train_lsc: ep 3 step 900 loss 0.8836 lr 1.0e-04
+2026-11-01 09:16:23,104 INFO train_lsc: ep 3 step 950 loss 0.1291 lr 1.0e-04
+2026-11-01 09:16:34,537 INFO train_lsc: ep 3 step 1000 loss 0.3736 lr 1.0e-04
+2026-11-01 09:16:49,348 INFO train_lsc: ep 3 step 1050 loss 0.4413 lr 1.0e-04
+2026-11-01 09:17:05,912 INFO train_lsc: ep 3 step 1100 loss 1.1092 lr 1.0e-04
+2026-11-01 09:17:17,479 INFO train_lsc: ep 3 step 1150 loss 1.9658 lr 1.0e-04
+2026-11-01 09:17:28,282 INFO train_lsc: ep 3 step 1200 loss 1.9112 lr 1.0e-04
+2026-11-01 09:17:39,146 INFO train_lsc: ep 3 step 1250 loss 0.7148 lr 1.0e-04
+2026-11-01 09:17:55,334 INFO train_lsc: ep 3 step 1300 loss 0.5617 lr 1.0e-04
+2026-11-01 09:19:42,149 INFO train_lsc: ep 3/10 lr 1.0e-04 train_loss 1.1090 | val loss 2.6821 tb_acc 90.51% word_acc 68.01% (pos 2513, neg 2513) 212s
+2026-11-01 09:19:45,609 INFO train_lsc: ep 4 step 1350 loss 0.2683 lr 1.0e-04
+2026-11-01 09:20:00,880 INFO train_lsc: ep 4 step 1400 loss 1.6947 lr 1.0e-04
+2026-11-01 09:20:14,966 INFO train_lsc: ep 4 step 1450 loss 0.1211 lr 1.0e-04
+2026-11-01 09:20:27,607 INFO train_lsc: ep 4 step 1500 loss 0.8619 lr 1.0e-04
+2026-11-01 09:20:41,497 INFO train_lsc: ep 4 step 1550 loss 0.7834 lr 1.0e-04
+2026-11-01 09:20:57,028 INFO train_lsc: ep 4 step 1600 loss 0.4706 lr 1.0e-04
+2026-11-01 09:21:11,611 INFO train_lsc: ep 4 step 1650 loss 0.0889 lr 1.0e-04
+2026-11-01 09:21:22,294 INFO train_lsc: ep 4 step 1700 loss 0.4655 lr 1.0e-04
+2026-11-01 09:21:33,418 INFO train_lsc: ep 4 step 1750 loss 0.6166 lr 1.0e-04
+2026-11-01 09:23:26,871 INFO train_lsc: ep 4/10 lr 1.0e-04 train_loss 0.9693 | val loss 2.8317 tb_acc 91.05% word_acc 70.67% (pos 2513, neg 2513) 225s
+2026-11-01 09:23:30,411 INFO train_lsc: ep 5 step 1800 loss 1.4800 lr 1.0e-04
+2026-11-01 09:23:42,492 INFO train_lsc: ep 5 step 1850 loss 0.1077 lr 1.0e-04
+2026-11-01 09:23:58,985 INFO train_lsc: ep 5 step 1900 loss 2.6404 lr 1.0e-04
+2026-11-01 09:24:13,370 INFO train_lsc: ep 5 step 1950 loss 0.6575 lr 1.0e-04
+2026-11-01 09:24:24,570 INFO train_lsc: ep 5 step 2000 loss 0.0167 lr 1.0e-04
+2026-11-01 09:24:35,725 INFO train_lsc: ep 5 step 2050 loss 1.6454 lr 1.0e-04
+2026-11-01 09:24:51,009 INFO train_lsc: ep 5 step 2100 loss 0.0137 lr 1.0e-04
+2026-11-01 09:25:07,550 INFO train_lsc: ep 5 step 2150 loss 0.2472 lr 1.0e-04
+2026-11-01 09:25:18,967 INFO train_lsc: ep 5 step 2200 loss 1.8209 lr 1.0e-04
+2026-11-01 09:27:03,395 INFO train_lsc: ep 5/10 lr 1.0e-04 train_loss 0.7932 | val loss 2.3171 tb_acc 94.79% word_acc 69.52% (pos 2513, neg 2513) 216s *best*
+2026-11-01 09:27:07,898 INFO train_lsc: ep 6 step 2250 loss 0.0436 lr 1.0e-04
+2026-11-01 09:27:18,563 INFO train_lsc: ep 6 step 2300 loss 0.0245 lr 1.0e-04
+2026-11-01 09:27:29,340 INFO train_lsc: ep 6 step 2350 loss 0.8551 lr 1.0e-04
+2026-11-01 09:27:40,621 INFO train_lsc: ep 6 step 2400 loss 2.6709 lr 1.0e-04
+2026-11-01 09:27:55,642 INFO train_lsc: ep 6 step 2450 loss 0.0583 lr 1.0e-04
+2026-11-01 09:28:11,414 INFO train_lsc: ep 6 step 2500 loss 4.1214 lr 1.0e-04
+2026-11-01 09:28:22,780 INFO train_lsc: ep 6 step 2550 loss 0.8694 lr 1.0e-04
+2026-11-01 09:28:33,991 INFO train_lsc: ep 6 step 2600 loss 0.5020 lr 1.0e-04
+2026-11-01 09:28:47,640 INFO train_lsc: ep 6 step 2650 loss 1.4075 lr 1.0e-04
+2026-11-01 09:30:38,575 INFO train_lsc: ep 6/10 lr 1.0e-04 train_loss 0.7246 | val loss 2.6487 tb_acc 93.24% word_acc 65.58% (pos 2513, neg 2513) 215s
+2026-11-01 09:30:44,408 INFO train_lsc: ep 7 step 2700 loss 0.1292 lr 1.0e-05
+2026-11-01 09:30:57,629 INFO train_lsc: ep 7 step 2750 loss 0.7280 lr 1.0e-05
+2026-11-01 09:31:10,944 INFO train_lsc: ep 7 step 2800 loss 6.3638 lr 1.0e-05
+2026-11-01 09:31:21,524 INFO train_lsc: ep 7 step 2850 loss 0.4867 lr 1.0e-05
+2026-11-01 09:31:32,074 INFO train_lsc: ep 7 step 2900 loss 0.5721 lr 1.0e-05
+2026-11-01 09:31:44,832 INFO train_lsc: ep 7 step 2950 loss 0.0888 lr 1.0e-05
+2026-11-01 09:32:01,053 INFO train_lsc: ep 7 step 3000 loss 0.4466 lr 1.0e-05
+2026-11-01 09:32:15,035 INFO train_lsc: ep 7 step 3050 loss 0.5522 lr 1.0e-05
+2026-11-01 09:32:26,470 INFO train_lsc: ep 7 step 3100 loss 0.3984 lr 1.0e-05
+2026-11-01 09:34:02,407 INFO train_lsc: ep 7/10 lr 1.0e-05 train_loss 0.5772 | val loss 2.7485 tb_acc 92.40% word_acc 70.55% (pos 2513, neg 2513) 204s
+2026-11-01 09:34:09,023 INFO train_lsc: ep 8 step 3150 loss 0.3029 lr 1.0e-05
+2026-11-01 09:34:19,833 INFO train_lsc: ep 8 step 3200 loss 0.3384 lr 1.0e-05
+2026-11-01 09:34:30,466 INFO train_lsc: ep 8 step 3250 loss 0.1493 lr 1.0e-05
+2026-11-01 09:34:41,470 INFO train_lsc: ep 8 step 3300 loss 0.0342 lr 1.0e-05
+2026-11-01 09:34:54,424 INFO train_lsc: ep 8 step 3350 loss 0.0275 lr 1.0e-05
+2026-11-01 09:35:06,714 INFO train_lsc: ep 8 step 3400 loss 0.1766 lr 1.0e-05
+2026-11-01 09:35:17,400 INFO train_lsc: ep 8 step 3450 loss 0.6899 lr 1.0e-05
+2026-11-01 09:35:27,930 INFO train_lsc: ep 8 step 3500 loss 0.5106 lr 1.0e-05
+2026-11-01 09:35:38,494 INFO train_lsc: ep 8 step 3550 loss 0.1027 lr 1.0e-05
+2026-11-01 09:37:32,741 INFO train_lsc: ep 8/10 lr 1.0e-05 train_loss 0.5068 | val loss 2.5840 tb_acc 94.01% word_acc 70.43% (pos 2513, neg 2513) 210s
+2026-11-01 09:37:39,882 INFO train_lsc: ep 9 step 3600 loss 1.1858 lr 1.0e-05
+2026-11-01 09:37:56,062 INFO train_lsc: ep 9 step 3650 loss 0.2844 lr 1.0e-05
+2026-11-01 09:38:11,492 INFO train_lsc: ep 9 step 3700 loss 0.0845 lr 1.0e-05
+2026-11-01 09:38:22,381 INFO train_lsc: ep 9 step 3750 loss 0.1046 lr 1.0e-05
+2026-11-01 09:38:33,154 INFO train_lsc: ep 9 step 3800 loss 0.2282 lr 1.0e-05
+2026-11-01 09:38:45,366 INFO train_lsc: ep 9 step 3850 loss 0.1051 lr 1.0e-05
+2026-11-01 09:38:57,956 INFO train_lsc: ep 9 step 3900 loss 0.1679 lr 1.0e-05
+2026-11-01 09:39:10,253 INFO train_lsc: ep 9 step 3950 loss 0.1317 lr 1.0e-05
+2026-11-01 09:39:20,849 INFO train_lsc: ep 9 step 4000 loss 0.9383 lr 1.0e-05
+2026-11-01 09:41:15,990 INFO train_lsc: ep 9/10 lr 1.0e-05 train_loss 0.5166 | val loss 2.6604 tb_acc 92.74% word_acc 70.87% (pos 2513, neg 2513) 223s
+2026-11-01 09:41:23,766 INFO train_lsc: ep 10 step 4050 loss 0.0254 lr 1.0e-05
+2026-11-01 09:41:34,312 INFO train_lsc: ep 10 step 4100 loss 0.0123 lr 1.0e-05
+2026-11-01 09:41:48,107 INFO train_lsc: ep 10 step 4150 loss 0.0622 lr 1.0e-05
+2026-11-01 09:42:04,579 INFO train_lsc: ep 10 step 4200 loss 0.3772 lr 1.0e-05
+2026-11-01 09:42:16,781 INFO train_lsc: ep 10 step 4250 loss 2.0717 lr 1.0e-05
+2026-11-01 09:42:27,616 INFO train_lsc: ep 10 step 4300 loss 1.0909 lr 1.0e-05
+2026-11-01 09:42:38,344 INFO train_lsc: ep 10 step 4350 loss 0.6122 lr 1.0e-05
+2026-11-01 09:42:51,840 INFO train_lsc: ep 10 step 4400 loss 0.3529 lr 1.0e-05
+2026-11-01 09:43:02,938 INFO train_lsc: ep 10 step 4450 loss 0.2344 lr 1.0e-05
+2026-11-01 09:44:46,535 INFO train_lsc: ep 10/10 lr 1.0e-05 train_loss 0.4567 | val loss 2.6528 tb_acc 93.65% word_acc 71.91% (pos 2513, neg 2513) 211s
+2026-11-01 09:44:46,536 INFO train_lsc: best epoch 5: tb_acc 94.79% word_acc 69.52% -> E:\Logo_Video_Text_Spotting\runs\E3-lsc\checkpoints\best.pth
+2026-11-01 09:49:20,483 INFO run_lsc: exp=E3-lsc det_exp=det_yolo11s_obb_dota datasets=['icdar2015v'] splits=['val'] ckpt=E:\Logo_Video_Text_Spotting\runs\E3-lsc\checkpoints\best.pth device=cuda bs=64 amp=True
+2026-11-01 09:49:20,486 INFO run_lsc: === icdar2015v/val: 5 videos
+2026-11-01 09:49:22,754 INFO run_lsc: Video_2_1_2: 19 boxes > 0.30, lang_hard=1: 5
+2026-11-01 09:49:34,678 INFO run_lsc: Video_37_2_3: 2747 boxes > 0.30, lang_hard=1: 207
+2026-11-01 09:49:35,354 INFO run_lsc: Video_45_6_4: 29 boxes > 0.30, lang_hard=1: 3
+2026-11-01 09:49:35,815 INFO run_lsc: Video_47_6_4: 11 boxes > 0.30, lang_hard=1: 0
+2026-11-01 09:49:38,144 INFO run_lsc: Video_4_4_2: 189 boxes > 0.30, lang_hard=1: 1
+2026-11-01 09:49:38,157 INFO run_lsc: icdar2015v/val: {'videos': 5, 'boxes': 2995, 'lang_hard_pos': 216, 'det_exp': 'det_yolo11s_obb_dota', 'det_thr': 0.3, 'seconds': 17.66, 'ms_per_box': 5.896, 'ckpt': 'E:\\Logo_Video_Text_Spotting\\runs\\E3-lsc\\checkpoints\\best.pth', 'device': 'cuda', 'batch_size': 64, 'amp': True, 'peak_gpu_mem_mb': 515.2}
+2026-11-01 09:52:51,121 INFO run_lsc: exp=E3-lsc det_exp=det_yolo11s_obb_dota datasets=['icdar2015v'] splits=['val'] ckpt=E:\Logo_Video_Text_Spotting\runs\E3-lsc\checkpoints\best.pth device=cuda bs=64 amp=True
+2026-11-01 09:52:51,122 INFO run_lsc: === icdar2015v/val: 5 videos
+2026-11-01 09:52:51,813 INFO run_lsc: Video_2_1_2: 19 boxes > 0.30, lang_hard=1: 5
+2026-11-01 09:52:59,706 INFO run_lsc: Video_37_2_3: 2747 boxes > 0.30, lang_hard=1: 207
+2026-11-01 09:53:00,136 INFO run_lsc: Video_45_6_4: 29 boxes > 0.30, lang_hard=1: 3
+2026-11-01 09:53:00,414 INFO run_lsc: Video_47_6_4: 11 boxes > 0.30, lang_hard=1: 0
+2026-11-01 09:53:01,405 INFO run_lsc: Video_4_4_2: 189 boxes > 0.30, lang_hard=1: 1
+2026-11-01 09:53:01,431 INFO run_lsc: icdar2015v/val: {'videos': 5, 'boxes': 2995, 'lang_hard_pos': 216, 'det_exp': 'det_yolo11s_obb_dota', 'det_thr': 0.3, 'seconds': 10.28, 'ms_per_box': 3.434, 'ckpt': 'E:\\Logo_Video_Text_Spotting\\runs\\E3-lsc\\checkpoints\\best.pth', 'device': 'cuda', 'batch_size': 64, 'amp': True, 'peak_gpu_mem_mb': 515.2}
+2026-11-01 09:53:12,049 INFO run_fuse: exp=E3-lsc lsc_exp=E3-lsc fusion={'mode': 'hard', 'w': 0.5}
+2026-11-01 09:53:12,067 INFO run_fuse: Video_2_1_2: 19 boxes fused
+2026-11-01 09:53:12,155 INFO run_fuse: Video_37_2_3: 2747 boxes fused
+2026-11-01 09:53:12,205 INFO run_fuse: Video_45_6_4: 29 boxes fused
+2026-11-01 09:53:12,222 INFO run_fuse: Video_47_6_4: 11 boxes fused
+2026-11-01 09:53:12,243 INFO run_fuse: Video_4_4_2: 189 boxes fused
+2026-11-01 09:53:12,260 INFO run_fuse: icdar2015v/val: {'videos': 5, 'boxes': 2995, 'mode': 'hard', 'w': 0.5, 'lsc_exp': 'E3-lsc'}
+2026-11-01 10:22:40,170 INFO run_lsc: exp=E3-lsc det_exp=E3-lsc datasets=['icdar2015v'] splits=['val'] ckpt=E:\Logo_Video_Text_Spotting\runs\E3-lsc\checkpoints\best.pth device=cuda bs=64 amp=True
+2026-11-01 10:22:40,172 INFO run_lsc: === icdar2015v/val: 5 videos
+2026-11-01 10:22:40,172 INFO run_lsc: skip Video_2_1_2 (exists)
+2026-11-01 10:22:40,174 INFO run_lsc: skip Video_37_2_3 (exists)
+2026-11-01 10:22:40,174 INFO run_lsc: skip Video_45_6_4 (exists)
+2026-11-01 10:22:40,174 INFO run_lsc: skip Video_47_6_4 (exists)
+2026-11-01 10:22:40,174 INFO run_lsc: skip Video_4_4_2 (exists)
+2026-11-01 10:22:40,180 INFO run_lsc: icdar2015v/val: {'videos': 0, 'boxes': 0, 'lang_hard_pos': 0, 'det_exp': 'E3-lsc', 'det_thr': 0.3, 'seconds': 0.0, 'ms_per_box': None, 'ckpt': 'E:\\Logo_Video_Text_Spotting\\runs\\E3-lsc\\checkpoints\\best.pth', 'device': 'cuda', 'batch_size': 64, 'amp': True, 'peak_gpu_mem_mb': 142.3}
+2026-11-01 10:22:56,249 INFO run_fuse: exp=E3-lsc lsc_exp=E3-lsc fusion={'mode': 'hard', 'w': 0.5}
+2026-11-01 10:22:56,252 INFO run_fuse: Video_2_1_2: 19 boxes fused
+2026-11-01 10:22:56,317 INFO run_fuse: Video_37_2_3: 2747 boxes fused
+2026-11-01 10:22:56,366 INFO run_fuse: Video_45_6_4: 29 boxes fused
+2026-11-01 10:22:56,370 INFO run_fuse: Video_47_6_4: 11 boxes fused
+2026-11-01 10:22:56,378 INFO run_fuse: Video_4_4_2: 189 boxes fused
+2026-11-01 10:22:56,415 INFO run_fuse: icdar2015v/val: {'videos': 5, 'boxes': 2995, 'mode': 'hard', 'w': 0.5, 'lsc_exp': 'E3-lsc'}
+2026-11-01 10:28:03,887 INFO make_glyph_masks: exp=E3-lsc splits=['train'] root=E:\Logo_Video_Text_Spotting\data\lsc n_init=3 morph=True
+2026-11-01 10:28:27,649 INFO make_glyph_masks: train: 1784 masks (1784 new, 0 kept, 1 empty) fg_mean=0.368
+2026-11-01 15:07:10,903 INFO build_lst_cache: exp=E3-lsc fuse_exp=E3-lsc lsc_exp=E3-lsc score_thr=0.3 iou=0.5
+2026-11-01 15:14:39,198 INFO run_lsc: exp=E3-lsc det_exp=det_yolo11s_obb_dota datasets=['icdar2015v'] splits=['train'] ckpt=E:\Logo_Video_Text_Spotting\runs\E3-lsc\checkpoints\best.pth device=cuda bs=64 amp=True
+2026-11-01 15:14:39,199 INFO run_lsc: === icdar2015v/train: 20 videos
+2026-11-01 15:14:41,771 INFO run_lsc: Video_10_1_1: 126 boxes > 0.30, lang_hard=1: 20
+2026-11-01 15:14:44,030 INFO run_lsc: Video_13_4_1: 97 boxes > 0.30, lang_hard=1: 0
+2026-11-01 15:14:48,121 INFO run_lsc: Video_16_3_2: 637 boxes > 0.30, lang_hard=1: 4
+2026-11-01 15:14:50,191 INFO run_lsc: Video_18_3_1: 169 boxes > 0.30, lang_hard=1: 112
+2026-11-01 15:14:50,945 INFO run_lsc: Video_19_5_1: 25 boxes > 0.30, lang_hard=1: 0
+2026-11-01 15:14:51,824 INFO run_lsc: Video_21_5_1: 31 boxes > 0.30, lang_hard=1: 0
+2026-11-01 15:14:56,455 INFO run_lsc: Video_25_5_2: 443 boxes > 0.30, lang_hard=1: 27
+2026-11-01 15:14:56,818 INFO run_lsc: Video_26_5_2: 11 boxes > 0.30, lang_hard=1: 0
+2026-11-01 15:14:57,613 INFO run_lsc: Video_28_1_1: 28 boxes > 0.30, lang_hard=1: 25
+2026-11-01 15:15:01,821 INFO run_lsc: Video_33_2_3: 326 boxes > 0.30, lang_hard=1: 16
+2026-11-01 15:15:02,422 INFO run_lsc: Video_36_2_3: 21 boxes > 0.30, lang_hard=1: 0
+2026-11-01 15:15:04,211 INFO run_lsc: Video_40_2_3: 106 boxes > 0.30, lang_hard=1: 7
+2026-11-01 15:15:09,340 INFO run_lsc: Video_41_2_3: 576 boxes > 0.30, lang_hard=1: 28
+2026-11-01 15:15:12,346 INFO run_lsc: Video_42_2_3: 202 boxes > 0.30, lang_hard=1: 13
+2026-11-01 15:15:12,760 INFO run_lsc: Video_46_6_4: 13 boxes > 0.30, lang_hard=1: 0
+2026-11-01 15:15:13,399 INFO run_lsc: Video_51_7_4: 31 boxes > 0.30, lang_hard=1: 1
+2026-11-01 15:15:14,851 INFO run_lsc: Video_52_7_4: 80 boxes > 0.30, lang_hard=1: 0
+2026-11-01 15:15:15,961 INFO run_lsc: Video_54_7_4: 68 boxes > 0.30, lang_hard=1: 0
+2026-11-01 15:15:15,979 INFO run_lsc: Video_7_5_1: 0 boxes > 0.30, lang_hard=1: 0
+2026-11-01 15:15:16,503 INFO run_lsc: Video_8_5_1: 29 boxes > 0.30, lang_hard=1: 0
+2026-11-01 15:15:16,518 INFO run_lsc: icdar2015v/train: {'videos': 20, 'boxes': 3019, 'lang_hard_pos': 253, 'det_exp': 'det_yolo11s_obb_dota', 'det_thr': 0.3, 'seconds': 37.3, 'ms_per_box': 12.356, 'ckpt': 'E:\\Logo_Video_Text_Spotting\\runs\\E3-lsc\\checkpoints\\best.pth', 'device': 'cuda', 'batch_size': 64, 'amp': True, 'peak_gpu_mem_mb': 515.3}
+2026-11-01 15:18:09,857 INFO run_fuse: exp=E3-lsc lsc_exp=E3-lsc fusion={'mode': 'hard', 'w': 0.5}
+2026-11-01 15:18:09,879 INFO run_fuse: Video_10_1_1: 126 boxes fused
+2026-11-01 15:18:09,906 INFO run_fuse: Video_13_4_1: 97 boxes fused
+2026-11-01 15:18:09,957 INFO run_fuse: Video_16_3_2: 637 boxes fused
+2026-11-01 15:18:09,977 INFO run_fuse: Video_18_3_1: 169 boxes fused
+2026-11-01 15:18:10,000 INFO run_fuse: Video_19_5_1: 25 boxes fused
+2026-11-01 15:18:10,021 INFO run_fuse: Video_21_5_1: 31 boxes fused
+2026-11-01 15:18:10,098 INFO run_fuse: Video_25_5_2: 443 boxes fused
+2026-11-01 15:18:10,129 INFO run_fuse: Video_26_5_2: 11 boxes fused
+2026-11-01 15:18:10,151 INFO run_fuse: Video_28_1_1: 28 boxes fused
+2026-11-01 15:18:10,183 INFO run_fuse: Video_33_2_3: 326 boxes fused
+2026-11-01 15:18:10,196 INFO run_fuse: Video_36_2_3: 21 boxes fused
+2026-11-01 15:18:10,214 INFO run_fuse: Video_40_2_3: 106 boxes fused
+2026-11-01 15:18:10,241 INFO run_fuse: Video_41_2_3: 576 boxes fused
+2026-11-01 15:18:10,260 INFO run_fuse: Video_42_2_3: 202 boxes fused
+2026-11-01 15:18:10,270 INFO run_fuse: Video_46_6_4: 13 boxes fused
+2026-11-01 15:18:10,281 INFO run_fuse: Video_51_7_4: 31 boxes fused
+2026-11-01 15:18:10,303 INFO run_fuse: Video_52_7_4: 80 boxes fused
+2026-11-01 15:18:10,317 INFO run_fuse: Video_54_7_4: 68 boxes fused
+2026-11-01 15:18:10,330 INFO run_fuse: Video_7_5_1: 0 boxes fused
+2026-11-01 15:18:10,342 INFO run_fuse: Video_8_5_1: 29 boxes fused
+2026-11-01 15:18:10,358 INFO run_fuse: icdar2015v/train: {'videos': 20, 'boxes': 3019, 'mode': 'hard', 'w': 0.5, 'lsc_exp': 'E3-lsc'}
+2026-11-01 15:27:20,624 INFO run_fuse: exp=E3-lsc lsc_exp=E3-lsc fusion={'mode': 'hard', 'w': 0.5}
+2026-11-01 15:27:20,629 INFO run_fuse: Video_10_1_1: 126 boxes fused
+2026-11-01 15:27:20,635 INFO run_fuse: Video_13_4_1: 97 boxes fused
+2026-11-01 15:27:20,657 INFO run_fuse: Video_16_3_2: 637 boxes fused
+2026-11-01 15:27:20,663 INFO run_fuse: Video_18_3_1: 169 boxes fused
+2026-11-01 15:27:20,667 INFO run_fuse: Video_19_5_1: 25 boxes fused
+2026-11-01 15:27:20,671 INFO run_fuse: Video_21_5_1: 31 boxes fused
+2026-11-01 15:27:20,751 INFO run_fuse: Video_25_5_2: 443 boxes fused
+2026-11-01 15:27:20,755 INFO run_fuse: Video_26_5_2: 11 boxes fused
+2026-11-01 15:27:20,759 INFO run_fuse: Video_28_1_1: 28 boxes fused
+2026-11-01 15:27:20,770 INFO run_fuse: Video_33_2_3: 326 boxes fused
+2026-11-01 15:27:20,773 INFO run_fuse: Video_36_2_3: 21 boxes fused
+2026-11-01 15:27:20,777 INFO run_fuse: Video_40_2_3: 106 boxes fused
+2026-11-01 15:27:20,796 INFO run_fuse: Video_41_2_3: 576 boxes fused
+2026-11-01 15:27:20,803 INFO run_fuse: Video_42_2_3: 202 boxes fused
+2026-11-01 15:27:20,807 INFO run_fuse: Video_46_6_4: 13 boxes fused
+2026-11-01 15:27:20,812 INFO run_fuse: Video_51_7_4: 31 boxes fused
+2026-11-01 15:27:20,818 INFO run_fuse: Video_52_7_4: 80 boxes fused
+2026-11-01 15:27:20,822 INFO run_fuse: Video_54_7_4: 68 boxes fused
+2026-11-01 15:27:20,824 INFO run_fuse: Video_7_5_1: 0 boxes fused
+2026-11-01 15:27:20,827 INFO run_fuse: Video_8_5_1: 29 boxes fused
+2026-11-01 15:27:20,852 INFO run_fuse: icdar2015v/train: {'videos': 20, 'boxes': 3019, 'mode': 'hard', 'w': 0.5, 'lsc_exp': 'E3-lsc'}
+2026-11-01 15:29:59,139 INFO build_lst_cache: exp=E3-lsc fuse_exp=E3-lsc lsc_exp=E3-lsc score_thr=0.3 iou=0.5
+2026-11-01 15:29:59,260 INFO build_lst_cache: Video_10_1_1: frames=336 instances=26 matched=2 tracks=2
+2026-11-01 15:29:59,327 INFO build_lst_cache: Video_13_4_1: frames=576 instances=33 matched=0 tracks=0
+2026-11-01 15:29:59,450 INFO build_lst_cache: Video_16_3_2: frames=301 instances=229 matched=3 tracks=1
+2026-11-01 15:29:59,543 INFO build_lst_cache: Video_18_3_1: frames=198 instances=125 matched=67 tracks=10
+2026-11-01 15:29:59,582 INFO build_lst_cache: Video_19_5_1: frames=408 instances=6 matched=0 tracks=0
+2026-11-01 15:29:59,677 INFO build_lst_cache: Video_21_5_1: frames=960 instances=5 matched=0 tracks=0
+2026-11-01 15:29:59,776 INFO build_lst_cache: Video_25_5_2: frames=1860 instances=125 matched=1 tracks=1
+2026-11-01 15:29:59,806 INFO build_lst_cache: Video_26_5_2: frames=387 instances=0 matched=0 tracks=0
+2026-11-01 15:29:59,844 INFO build_lst_cache: Video_28_1_1: frames=432 instances=25 matched=1 tracks=1
+2026-11-01 15:29:59,899 INFO build_lst_cache: Video_33_2_3: frames=480 instances=46 matched=6 tracks=3
+2026-11-01 15:29:59,940 INFO build_lst_cache: Video_36_2_3: frames=336 instances=4 matched=0 tracks=0
+2026-11-01 15:30:00,014 INFO build_lst_cache: Video_40_2_3: frames=408 instances=38 matched=4 tracks=3
+2026-11-01 15:30:00,141 INFO build_lst_cache: Video_41_2_3: frames=528 instances=236 matched=29 tracks=2
+2026-11-01 15:30:00,213 INFO build_lst_cache: Video_42_2_3: frames=504 instances=62 matched=13 tracks=3
+2026-11-01 15:30:00,249 INFO build_lst_cache: Video_46_6_4: frames=722 instances=1 matched=0 tracks=0
+2026-11-01 15:30:00,284 INFO build_lst_cache: Video_51_7_4: frames=450 instances=3 matched=0 tracks=0
+2026-11-01 15:30:00,317 INFO build_lst_cache: Video_52_7_4: frames=450 instances=3 matched=0 tracks=0
+2026-11-01 15:30:00,347 INFO build_lst_cache: Video_54_7_4: frames=480 instances=1 matched=0 tracks=0
+2026-11-01 15:30:00,357 INFO build_lst_cache: Video_7_5_1: frames=264 instances=0 matched=0 tracks=0
+2026-11-01 15:30:00,384 INFO build_lst_cache: Video_8_5_1: frames=240 instances=6 matched=0 tracks=0
+2026-11-01 15:30:00,389 INFO build_lst_cache: icdar2015v/train: {'videos_built': 20, 'videos_kept': 0, 'instances': 974, 'matched': 126, 'matched_frac': 0.1294, 'gt_tracks_hit': 26, 'score_thr': 0.3, 'iou': 0.5, 'fuse_exp': 'E3-lsc', 'lsc_exp': 'E3-lsc', 'seconds': 1.24}
