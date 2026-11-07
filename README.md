@@ -74,8 +74,45 @@ uv pip install gradio==4.44.1
 python scripts/demo.py --gradio        # then open http://127.0.0.1:7860
 ```
 
-> **Note:** trained weights are not included in this repository. Train them yourself (see below)
-> and place them where the configs expect, for example `runs/E3-lsc/checkpoints/best.pth`.
+> **Note:** trained weights are not included in this repository, and `runs/` and `third_party/` are
+> gitignored. Train them yourself (see below) or copy them in, and place them where the configs expect.
+> The final pipeline (`configs/FINAL.yaml`) needs these files:
+>
+> | Component | Path |
+> | --- | --- |
+> | Detector (YOLO11s-OBB) | `runs/det_yolo11s_obb_text/train/weights/best.pt` |
+> | ABINet source | `third_party/ABINet/` (clone of FangShancheng/ABINet) |
+> | LSC (fine-tuned ABINet) | `runs/E3-lsc/checkpoints/best.pth` |
+> | Tracker (VPMM + LST-Matcher) | `runs/E5-lst/checkpoints/best.pth` |
+> | LST-Matcher source | `third_party/GoMatching/` (clone of Hxyz-123/GoMatching) |
+>
+> If your copy was made with Git LFS, the checkpoints may be pointer files. Run
+> `git lfs pull`, or `git lfs fetch origin --include="<path>"` for one file and copy it from
+> `.git/lfs/objects`.
+
+### 3. Web app (browser upload)
+
+`scripts/serve_api.py` is a FastAPI server that runs the same `scripts/demo.py` pipeline as a background
+job. The React frontend (in the separate `Video-Text-Spotting-Frontend` repository) talks to it.
+
+```bash
+uv pip install -r requirements-api.txt
+python scripts/serve_api.py            # http://127.0.0.1:8000, serves configs/FINAL.yaml
+python scripts/serve_api.py --config E4-base --port 8001   # serve another config
+```
+
+- `GET /api/health` reports the device and each required file above (`model.requirements`, `model.missing`).
+- `POST /api/jobs` (multipart `video`) starts a job. It returns HTTP 503 listing the exact missing paths if a
+  required file is absent, and 422 for an unsupported file type.
+- Each job is saved in `runs/api/jobs/<job-id>/`: the upload, `output.mp4`, browser-playable
+  `output_web.mp4` and `source_web.mp4` (H.264, with the source audio kept as AAC), `result.json`, `log.txt`.
+- Checkpoint paths resolve against the repository root, so the server can be started from any directory.
+- `logo.pretrained` (EasyOCR instead of your trained models) is available only if a client asks for the
+  `pretrained` config. The web UI never does.
+
+**Known limits:** motion blur and very small text cause misreads that the track vote cannot always fix, and
+speed on a 2 GB MX350 is about 2–11 frames per second. Offline tests of blur-aware re-voting did not beat the
+C3 voting, so it is unchanged.
 
 ---
 
@@ -176,7 +213,7 @@ src/logo/          the Python package
   eval/            detection, tracking and spotting metrics
   utils/           I/O, geometry, paths
 configs/           experiment configs (base.yaml documents every key)
-scripts/           main entry points: data prep, pipeline, final eval, demo
+scripts/           main entry points: data prep, pipeline, final eval, demo, serve_api (web app backend)
 tools/             training, sweeps, ablations, analysis, tables and figures
 splits/            train / val / test video lists per dataset
 tests/             pytest suite (CPU-only, synthetic data)

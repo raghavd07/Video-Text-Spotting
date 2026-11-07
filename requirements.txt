@@ -12,3 +12,4 @@ pyclipper
 scikit-learn
 motmetrics
 matplotlib
+ultralytics==8.3.40   # Plan B detector (YOLO11-OBB), used by configs/FINAL.yaml

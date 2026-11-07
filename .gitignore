@@ -8,8 +8,8 @@ __pycache__/
 .ipynb_checkpoints/
 
 # data and outputs (never commit)
-data/
-datasets/
+/data/
+/datasets/
 runs/
 checkpoints/
 outputs/

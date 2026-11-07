@@ -1,0 +1,10 @@
+# Extra dependencies for scripts/serve_api.py (HTTP API used by the web frontend).
+# Install on top of requirements.txt:  uv pip install -r requirements-api.txt
+fastapi==0.115.6
+uvicorn==0.32.1
+python-multipart==0.0.20
+# Pretrained pipeline (logo.pretrained): works without project-trained weights
+easyocr==1.7.2
+opencv-python-headless==4.10.0.84   # pulled in by easyocr; pinned to match opencv-python / numpy 1.26
+# Browser-playable H.264 copies of source and output videos (bundled ffmpeg binary)
+imageio-ffmpeg==0.5.1
