@@ -1,0 +1,43 @@
+2026-11-02 10:42:14,769 INFO final_eval: === icdar2015v: held-out split val (5 videos), config configs\FINAL.yaml sha256 cd53f0d6d7e0
+2026-11-02 10:42:14,773 INFO run_pipeline: pipeline exp=FINAL-icdar2015v ds=icdar2015v split=val videos=5 stages=det,lsc,fuse,track,vote,eval det_exp=det_yolo11s_obb_text lsc_exp=FINAL-icdar2015v force=False
+2026-11-02 10:42:14,776 INFO run_pipeline: stage det   checked 0.00 s
+2026-11-02 10:42:20,954 INFO run_pipeline: lsc recognizer: ckpt=E:\Logo_Video_Text_Spotting\runs\E3-lsc\checkpoints\best.pth device=cuda bs=64 amp=True
+2026-11-02 10:42:31,335 INFO run_pipeline: Video_2_1_2: 1174 boxes > 0.30, lang_hard=1: 1059
+2026-11-02 10:42:56,887 INFO run_pipeline: Video_37_2_3: 3880 boxes > 0.30, lang_hard=1: 3646
+2026-11-02 10:43:11,297 INFO run_pipeline: Video_45_6_4: 1252 boxes > 0.30, lang_hard=1: 1059
+2026-11-02 10:43:23,284 INFO run_pipeline: Video_47_6_4: 595 boxes > 0.30, lang_hard=1: 532
+2026-11-02 10:43:28,264 INFO run_pipeline: Video_4_4_2: 590 boxes > 0.30, lang_hard=1: 474
+2026-11-02 10:43:28,270 INFO run_pipeline: stage lsc   ran     73.49 s
+2026-11-02 10:43:28,621 INFO run_pipeline: Video_2_1_2: 1174 boxes fused
+2026-11-02 10:43:29,097 INFO run_pipeline: Video_37_2_3: 3880 boxes fused
+2026-11-02 10:43:29,201 INFO run_pipeline: Video_45_6_4: 1252 boxes fused
+2026-11-02 10:43:29,266 INFO run_pipeline: Video_47_6_4: 595 boxes fused
+2026-11-02 10:43:29,346 INFO run_pipeline: Video_4_4_2: 590 boxes fused
+2026-11-02 10:43:29,373 INFO run_pipeline: stage fuse  ran     1.10 s
+2026-11-02 10:43:38,564 INFO run_pipeline: Video_2_1_2: 974 boxes, 68 tracks
+2026-11-02 10:43:49,099 INFO run_pipeline: Video_37_2_3: 3646 boxes, 130 tracks
+2026-11-02 10:43:55,066 INFO run_pipeline: Video_45_6_4: 1028 boxes, 142 tracks
+2026-11-02 10:44:00,227 INFO run_pipeline: Video_47_6_4: 535 boxes, 37 tracks
+2026-11-02 10:44:03,882 INFO run_pipeline: Video_4_4_2: 361 boxes, 81 tracks
+2026-11-02 10:44:03,914 INFO run_pipeline: stage track ran     34.54 s
+2026-11-02 10:44:04,119 INFO run_pipeline: Video_2_1_2: 46/68 tracks kept, 944/974 boxes
+2026-11-02 10:44:04,464 INFO run_pipeline: Video_37_2_3: 91/130 tracks kept, 3596/3646 boxes
+2026-11-02 10:44:04,598 INFO run_pipeline: Video_45_6_4: 98/142 tracks kept, 963/1028 boxes
+2026-11-02 10:44:04,684 INFO run_pipeline: Video_47_6_4: 27/37 tracks kept, 523/535 boxes
+2026-11-02 10:44:04,777 INFO run_pipeline: Video_4_4_2: 52/81 tracks kept, 319/361 boxes
+2026-11-02 10:44:04,806 INFO run_pipeline: stage vote  ran     0.89 s
+2026-11-02 10:44:18,684 INFO run_pipeline: eval det: precision=81.11 recall=66.95 f=73.35
+2026-11-02 10:44:18,685 INFO run_pipeline: eval track: MOTA=45.80 MOTP=74.58 IDF1=53.06 MT=40.97 ML=39.65
+2026-11-02 10:44:18,687 INFO run_pipeline: eval spot: MOTA=-13.13 MOTP=76.94 IDF1=32.15 MT=9.25 ML=71.81
+2026-11-02 10:44:18,688 INFO run_pipeline: stage eval  ran     13.88 s
+2026-11-02 10:44:18,800 INFO final_eval: FINAL icdar2015v det: precision=81.11 recall=66.95 f=73.35
+2026-11-02 10:44:18,801 INFO final_eval: FINAL icdar2015v track: MOTA=45.80 MOTP=74.58 IDF1=53.06 MT=40.97 ML=39.65
+2026-11-02 10:44:18,802 INFO final_eval: FINAL icdar2015v spot: MOTA=-13.13 MOTP=76.94 IDF1=32.15 MT=9.25 ML=71.81
+2026-11-02 10:44:40,119 INFO final_eval: lsc: {'params': 36738703, 'peak_mem_mb': 303.4, 'frames': 200, 'ms_per_frame': 66.582, 'boxes': 175, 'batch_size': 64}
+2026-11-02 10:44:40,120 INFO final_eval: fuse: {'params': 0, 'peak_mem_mb': None, 'frames': 200, 'ms_per_frame': 0.004}
+2026-11-02 10:44:40,120 INFO final_eval: vpmm: {'params': 14946304, 'peak_mem_mb': 198.1, 'frames': 200, 'ms_per_frame': 7.214, 'ckpt': 'E:\\Logo_Video_Text_Spotting\\runs\\E5-lst\\checkpoints\\best.pth'}
+2026-11-02 10:44:40,121 INFO final_eval: track: {'params': 27289600, 'peak_mem_mb': 169.6, 'frames': 200, 'ms_per_frame': 9.574, 'type': 'lst', 'thr': 0.4, 'traj_thr': 0.6}
+2026-11-02 10:44:40,121 INFO final_eval: e2e: {'total_ms_per_frame': 109.031, 'fps': 9.17, 'params': 88673781, 'max_peak_mem_mb': 303.4, 'det_included': True, 'stages': ['det', 'lsc', 'fuse', 'vpmm', 'track']}
+2026-11-02 13:15:49,065 INFO error_analysis: error_analysis exp=FINAL-icdar2015v ds=icdar2015v split=val videos=5 iou=0.50 tracks=E:\Logo_Video_Text_Spotting\runs\FINAL-icdar2015v\vote\icdar2015v
+2026-11-02 13:15:56,730 INFO error_analysis: totals: missed_gt=2607 false_positive=950 wrong_text=2266 id_switch=353 fragmentation=202
+2026-11-02 13:15:56,731 INFO error_analysis: The two largest error categories are missed GT (2607, 40.9% of all errors) and wrong transcription (2266, 35.5%).

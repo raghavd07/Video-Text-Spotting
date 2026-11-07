@@ -1,0 +1,99 @@
+2026-11-01 22:12:58,602 INFO train_obb: exp=det_yolo11s_obb_text init=E:\Logo_Video_Text_Spotting\models\yolo_obb\yolo11s-obb.pt train kwargs={'data': 'E:/Logo_Video_Text_Spotting/data/obb/icdar2015v/icdar2015v.yaml', 'epochs': 50, 'batch': 4, 'imgsz': 1024, 'workers': 0, 'patience': 15, 'close_mosaic': 5, 'fliplr': 0.5, 'degrees': 0.0, 'conf': 0.05, 'fraction': 1.0, 'device': 0, 'amp': True, 'seed': 42, 'deterministic': True, 'project': 'E:/Logo_Video_Text_Spotting/runs/det_yolo11s_obb_text', 'name': 'train', 'exist_ok': True, 'plots': False, 'verbose': True}
+2026-11-02 01:22:21,211 INFO train_obb: done: {'finished': True, 'best': 'E:/Logo_Video_Text_Spotting/runs/det_yolo11s_obb_text/train/weights/best.pt', 'seconds': 11362.6, 'smoke': False, 'data': 'E:/Logo_Video_Text_Spotting/data/obb/icdar2015v/icdar2015v.yaml', 'epochs': 50, 'batch': 4, 'imgsz': 1024, 'workers': 0, 'patience': 15, 'close_mosaic': 5, 'fliplr': 0.5, 'degrees': 0.0, 'conf': 0.05, 'fraction': 1.0, 'device': 0, 'amp': True, 'seed': 42, 'deterministic': True, 'project': 'E:/Logo_Video_Text_Spotting/runs/det_yolo11s_obb_text', 'name': 'train', 'exist_ok': True, 'plots': False, 'verbose': True}
+2026-11-02 01:22:43,226 INFO infer_obb: exp=det_yolo11s_obb_text ds=icdar2015v split=val videos=5 device=gpu
+2026-11-02 01:23:04,427 INFO infer_obb: Video_2_1_2: 452 frames, 1568 boxes, 41.7 ms/frame
+2026-11-02 01:23:25,234 INFO infer_obb: Video_37_2_3: 456 frames, 4608 boxes, 45.6 ms/frame
+2026-11-02 01:23:59,471 INFO infer_obb: Video_45_6_4: 780 frames, 1527 boxes, 43.9 ms/frame
+2026-11-02 01:24:33,254 INFO infer_obb: Video_47_6_4: 780 frames, 752 boxes, 43.3 ms/frame
+2026-11-02 01:24:55,866 INFO infer_obb: Video_4_4_2: 662 frames, 934 boxes, 34.1 ms/frame
+2026-11-02 01:24:55,902 INFO infer_obb: done: 5 videos, 3130 frames, 41.62 ms/frame (model 22.9), peak GPU mem 225.0 MB
+2026-11-02 01:25:09,943 INFO profile_efficiency: det: {'params': 9699174, 'peak_mem_mb': 209.0, 'frames': 200, 'ms_per_frame': 25.657, 'input_hw': [576, 1024]}
+2026-11-02 01:25:09,943 INFO profile_efficiency: e2e: {'total_ms_per_frame': 25.657, 'fps': 38.98, 'params': 9699174, 'max_peak_mem_mb': 209.0, 'det_included': True, 'stages': ['det']}
+2026-11-02 01:30:33,346 INFO infer_obb: exp=det_yolo11s_obb_text ds=icdar2015v split=val videos=5 device=gpu
+2026-11-02 01:30:34,465 INFO infer_obb: skip Video_2_1_2 (exists)
+2026-11-02 01:30:34,465 INFO infer_obb: skip Video_37_2_3 (exists)
+2026-11-02 01:30:34,465 INFO infer_obb: skip Video_45_6_4 (exists)
+2026-11-02 01:30:34,466 INFO infer_obb: skip Video_47_6_4 (exists)
+2026-11-02 01:30:34,466 INFO infer_obb: skip Video_4_4_2 (exists)
+2026-11-02 01:30:34,506 INFO infer_obb: done: 0 videos, 0 frames, None ms/frame (model None), peak GPU mem 0.0 MB
+2026-11-02 01:33:19,236 INFO infer_obb: exp=det_yolo11s_obb_text ds=icdar2015v split=val videos=5 device=gpu
+2026-11-02 01:33:31,114 INFO infer_obb: Video_2_1_2: 452 frames, 1568 boxes, 24.2 ms/frame
+2026-11-02 01:33:44,413 INFO infer_obb: Video_37_2_3: 456 frames, 4608 boxes, 29.2 ms/frame
+2026-11-02 01:34:05,694 INFO infer_obb: Video_45_6_4: 780 frames, 1527 boxes, 27.3 ms/frame
+2026-11-02 01:34:36,559 INFO infer_obb: Video_47_6_4: 780 frames, 752 boxes, 39.6 ms/frame
+2026-11-02 01:34:48,282 INFO infer_obb: Video_4_4_2: 662 frames, 934 boxes, 17.7 ms/frame
+2026-11-02 01:34:48,296 INFO infer_obb: done: 5 videos, 3130 frames, 28.14 ms/frame (model 20.0), peak GPU mem 225.0 MB
+2026-11-02 08:43:47,390 INFO infer_obb: exp=det_yolo11s_obb_text ds=icdar2015v split=test videos=24 device=gpu
+2026-11-02 08:53:04,023 INFO infer_obb: exp=det_yolo11s_obb_text ds=icdar2015v split=test videos=24 device=gpu
+2026-11-02 08:53:23,979 INFO infer_obb: Video_11_4_1: 312 frames, 5432 boxes, 59.1 ms/frame
+2026-11-02 08:53:36,790 INFO infer_obb: Video_15_4_1: 216 frames, 8302 boxes, 59.3 ms/frame
+2026-11-02 08:53:52,351 INFO infer_obb: Video_17_3_1: 264 frames, 8970 boxes, 58.9 ms/frame
+2026-11-02 08:54:15,259 INFO infer_obb: Video_1_1_2: 602 frames, 1669 boxes, 38.0 ms/frame
+2026-11-02 08:55:02,177 INFO infer_obb: Video_20_5_1: 912 frames, 2531 boxes, 51.4 ms/frame
+2026-11-02 08:55:37,331 INFO infer_obb: Video_22_5_1: 648 frames, 1746 boxes, 54.2 ms/frame
+2026-11-02 08:56:18,994 INFO infer_obb: Video_23_5_2: 1020 frames, 4571 boxes, 40.8 ms/frame
+2026-11-02 08:57:00,774 INFO infer_obb: Video_24_5_2: 1050 frames, 1640 boxes, 39.8 ms/frame
+2026-11-02 08:57:16,732 INFO infer_obb: Video_30_2_3: 264 frames, 10216 boxes, 60.4 ms/frame
+2026-11-02 08:57:33,497 INFO infer_obb: Video_32_2_3: 312 frames, 2101 boxes, 53.7 ms/frame
+2026-11-02 08:57:54,544 INFO infer_obb: Video_34_2_3: 384 frames, 2026 boxes, 54.8 ms/frame
+2026-11-02 08:58:13,053 INFO infer_obb: Video_35_2_3: 336 frames, 6783 boxes, 55.1 ms/frame
+2026-11-02 09:04:09,371 INFO infer_obb: Video_38_2_3: 684 frames, 13899 boxes, 520.9 ms/frame
+2026-11-02 09:04:41,454 INFO infer_obb: Video_39_2_3: 438 frames, 4108 boxes, 73.2 ms/frame
+2026-11-02 09:05:33,795 INFO infer_obb: Video_43_6_4: 1020 frames, 768 boxes, 51.3 ms/frame
+2026-11-02 09:07:23,041 INFO infer_obb: Video_44_6_4: 1980 frames, 1963 boxes, 55.2 ms/frame
+2026-11-02 09:07:49,939 INFO infer_obb: Video_48_6_4: 510 frames, 867 boxes, 52.7 ms/frame
+2026-11-02 09:08:34,399 INFO infer_obb: Video_49_6_4: 900 frames, 1191 boxes, 49.4 ms/frame
+2026-11-02 09:08:54,414 INFO infer_obb: Video_50_7_4: 360 frames, 2025 boxes, 55.6 ms/frame
+2026-11-02 09:09:19,859 INFO infer_obb: Video_53_7_4: 450 frames, 1625 boxes, 56.5 ms/frame
+2026-11-02 09:09:39,760 INFO infer_obb: Video_55_3_2: 480 frames, 8122 boxes, 41.4 ms/frame
+2026-11-02 09:10:03,290 INFO infer_obb: Video_5_3_2: 542 frames, 6761 boxes, 43.4 ms/frame
+2026-11-02 09:10:10,403 INFO infer_obb: Video_6_3_2: 162 frames, 2224 boxes, 43.9 ms/frame
+2026-11-02 09:10:39,242 INFO infer_obb: Video_9_1_1: 528 frames, 2694 boxes, 54.6 ms/frame
+2026-11-02 09:10:39,269 INFO infer_obb: done: 24 videos, 14374 frames, 73.31 ms/frame (model 49.68), peak GPU mem 225.0 MB
+2026-11-02 09:11:39,861 INFO infer_obb: exp=det_yolo11s_obb_text ds=icdar2015v split=test videos=24 device=gpu
+2026-11-02 09:11:41,414 INFO infer_obb: skip Video_11_4_1 (exists)
+2026-11-02 09:11:41,415 INFO infer_obb: skip Video_15_4_1 (exists)
+2026-11-02 09:11:41,415 INFO infer_obb: skip Video_17_3_1 (exists)
+2026-11-02 09:11:41,415 INFO infer_obb: skip Video_1_1_2 (exists)
+2026-11-02 09:11:41,416 INFO infer_obb: skip Video_20_5_1 (exists)
+2026-11-02 09:11:41,416 INFO infer_obb: skip Video_22_5_1 (exists)
+2026-11-02 09:11:41,416 INFO infer_obb: skip Video_23_5_2 (exists)
+2026-11-02 09:11:41,416 INFO infer_obb: skip Video_24_5_2 (exists)
+2026-11-02 09:11:41,417 INFO infer_obb: skip Video_30_2_3 (exists)
+2026-11-02 09:11:41,417 INFO infer_obb: skip Video_32_2_3 (exists)
+2026-11-02 09:11:41,417 INFO infer_obb: skip Video_34_2_3 (exists)
+2026-11-02 09:11:41,418 INFO infer_obb: skip Video_35_2_3 (exists)
+2026-11-02 09:11:41,418 INFO infer_obb: skip Video_38_2_3 (exists)
+2026-11-02 09:11:41,418 INFO infer_obb: skip Video_39_2_3 (exists)
+2026-11-02 09:11:41,419 INFO infer_obb: skip Video_43_6_4 (exists)
+2026-11-02 09:11:41,419 INFO infer_obb: skip Video_44_6_4 (exists)
+2026-11-02 09:11:41,419 INFO infer_obb: skip Video_48_6_4 (exists)
+2026-11-02 09:11:41,419 INFO infer_obb: skip Video_49_6_4 (exists)
+2026-11-02 09:11:41,420 INFO infer_obb: skip Video_50_7_4 (exists)
+2026-11-02 09:11:41,420 INFO infer_obb: skip Video_53_7_4 (exists)
+2026-11-02 09:11:41,420 INFO infer_obb: skip Video_55_3_2 (exists)
+2026-11-02 09:11:41,421 INFO infer_obb: skip Video_5_3_2 (exists)
+2026-11-02 09:11:41,421 INFO infer_obb: skip Video_6_3_2 (exists)
+2026-11-02 09:11:41,421 INFO infer_obb: skip Video_9_1_1 (exists)
+2026-11-02 09:11:41,460 INFO infer_obb: done: 0 videos, 0 frames, None ms/frame (model None), peak GPU mem 0.0 MB
+2026-11-02 09:11:57,908 INFO profile_efficiency: det: {'params': 9699174, 'peak_mem_mb': 209.0, 'frames': 200, 'ms_per_frame': 38.566, 'input_hw': [576, 1024]}
+2026-11-02 09:11:57,910 INFO profile_efficiency: e2e: {'total_ms_per_frame': 38.566, 'fps': 25.93, 'params': 9699174, 'max_peak_mem_mb': 209.0, 'det_included': True, 'stages': ['det']}
+2026-11-02 10:15:02,145 INFO infer_obb: exp=det_yolo11s_obb_text ds=icdar2015v split=val videos=5 device=gpu
+2026-11-02 10:15:36,960 INFO infer_obb: Video_2_1_2: 452 frames, 1568 boxes, 69.2 ms/frame
+2026-11-02 10:16:16,572 INFO infer_obb: Video_37_2_3: 456 frames, 4608 boxes, 86.8 ms/frame
+2026-11-02 10:17:10,675 INFO infer_obb: Video_45_6_4: 780 frames, 1527 boxes, 69.3 ms/frame
+2026-11-02 10:18:13,190 INFO infer_obb: Video_47_6_4: 780 frames, 752 boxes, 80.1 ms/frame
+2026-11-02 10:18:55,211 INFO infer_obb: Video_4_4_2: 662 frames, 934 boxes, 63.4 ms/frame
+2026-11-02 10:18:55,257 INFO infer_obb: done: 5 videos, 3130 frames, 73.34 ms/frame (model 44.05), peak GPU mem 225.0 MB
+2026-11-02 10:26:27,585 INFO infer_obb: exp=det_yolo11s_obb_text ds=icdar2015v split=val videos=5 device=gpu
+2026-11-02 10:27:00,381 INFO infer_obb: Video_2_1_2: 452 frames, 1568 boxes, 66.3 ms/frame
+2026-11-02 10:27:34,801 INFO infer_obb: Video_37_2_3: 456 frames, 4608 boxes, 75.5 ms/frame
+2026-11-02 10:28:24,051 INFO infer_obb: Video_45_6_4: 780 frames, 1527 boxes, 63.1 ms/frame
+2026-11-02 10:29:17,495 INFO infer_obb: Video_47_6_4: 780 frames, 752 boxes, 68.5 ms/frame
+2026-11-02 10:29:48,305 INFO infer_obb: Video_4_4_2: 662 frames, 934 boxes, 46.5 ms/frame
+2026-11-02 10:29:48,346 INFO infer_obb: done: 5 videos, 3130 frames, 63.22 ms/frame (model 44.9), peak GPU mem 225.0 MB
+2026-11-02 10:33:26,226 INFO infer_obb: exp=det_yolo11s_obb_text ds=icdar2013v split=val videos=3 device=gpu
+2026-11-02 10:34:05,307 INFO infer_obb: Video_26_5_2: 387 frames, 2145 boxes, 90.6 ms/frame
+2026-11-02 10:34:59,030 INFO infer_obb: Video_41_2_3: 528 frames, 2804 boxes, 101.7 ms/frame
+2026-11-02 10:35:53,092 INFO infer_obb: Video_42_2_3: 504 frames, 5265 boxes, 107.2 ms/frame
+2026-11-02 10:35:53,125 INFO infer_obb: done: 3 videos, 1419 frames, 100.67 ms/frame (model 63.55), peak GPU mem 225.0 MB

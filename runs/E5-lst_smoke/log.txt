@@ -1,0 +1,28 @@
+2026-11-01 15:44:31,489 INFO train_lst: exp=E5-lst_smoke smoke=True device=cuda amp=True feats=[26,512] train=20 videos/10220 clips val=2 videos params=42235904 iters=200
+2026-11-01 15:44:35,426 INFO train_lst: iter 20/200 loss_long_asso 1.5717 loss_short_asso 0.8773 loss 2.4490 lr 5.00e-05 skipped 863 3.9s peak 822 MB
+2026-11-01 15:44:37,965 INFO train_lst: iter 40/200 loss_long_asso 12.5884 loss_short_asso 10.4222 loss 23.0106 lr 4.85e-05 skipped 1930 6.5s peak 822 MB
+2026-11-01 15:44:40,603 INFO train_lst: iter 60/200 loss_long_asso 4.2745 loss_short_asso 2.6052 loss 6.8798 lr 4.42e-05 skipped 2647 9.1s peak 822 MB
+2026-11-01 15:44:43,791 INFO train_lst: iter 80/200 loss_long_asso 5.9978 loss_short_asso 2.2544 loss 8.2522 lr 3.75e-05 skipped 3697 12.3s peak 822 MB
+2026-11-01 15:44:46,588 INFO train_lst: iter 100/200 loss_long_asso 1.3311 loss_short_asso 1.2131 loss 2.5442 lr 2.93e-05 skipped 4315 15.1s peak 822 MB
+2026-11-01 15:44:51,384 INFO train_lst: val iter 100: IDF1 0.11 MOTA -7.61 MOTP 76.43 MT 0.0 ML 100.0 *best*
+2026-11-01 15:44:53,981 INFO train_lst: iter 120/200 loss_long_asso 0.6686 loss_short_asso 0.4850 loss 1.1536 lr 2.07e-05 skipped 4933 22.5s peak 822 MB
+2026-11-01 15:44:56,757 INFO train_lst: iter 140/200 loss_long_asso 3.9455 loss_short_asso 1.7836 loss 5.7291 lr 1.25e-05 skipped 5640 25.3s peak 822 MB
+2026-11-01 15:44:59,993 INFO train_lst: iter 160/200 loss_long_asso 0.7239 loss_short_asso 0.7894 loss 1.5134 lr 5.85e-06 skipped 6506 28.5s peak 822 MB
+2026-11-01 15:45:02,601 INFO train_lst: iter 180/200 loss_long_asso 1.6730 loss_short_asso 0.3509 loss 2.0239 lr 1.51e-06 skipped 7032 31.1s peak 822 MB
+2026-11-01 15:45:05,892 INFO train_lst: iter 200/200 loss_long_asso 0.8260 loss_short_asso 0.6075 loss 1.4335 lr 0.00e+00 skipped 7850 34.4s peak 822 MB
+2026-11-01 15:45:09,422 INFO train_lst: val iter 200: IDF1 0.11 MOTA -7.61 MOTP 76.43 MT 0.0 ML 100.0
+2026-11-01 15:45:09,442 INFO train_lst: done: 200 iters, best iter 100 IDF1 0.10672358591248667, peak VRAM 822 MB alloc / 856 MB reserved
+2026-11-01 15:49:10,722 INFO train_lst: exp=E5-lst_smoke smoke=True device=cuda amp=True feats=[26,512] train=20 videos/10220 clips val=2 videos params=42235904 iters=200
+2026-11-01 15:49:14,210 INFO train_lst: iter 20/200 loss_long_asso 1.5717 loss_short_asso 0.8773 loss 2.4490 lr 5.00e-05 skipped 863 3.5s peak 822 MB
+2026-11-01 15:49:16,524 INFO train_lst: iter 40/200 loss_long_asso 12.5884 loss_short_asso 10.4222 loss 23.0106 lr 4.85e-05 skipped 1930 5.8s peak 822 MB
+2026-11-01 15:49:18,674 INFO train_lst: iter 60/200 loss_long_asso 4.2745 loss_short_asso 2.6052 loss 6.8798 lr 4.42e-05 skipped 2647 8.0s peak 822 MB
+2026-11-01 15:49:21,083 INFO train_lst: iter 80/200 loss_long_asso 5.9978 loss_short_asso 2.2544 loss 8.2522 lr 3.75e-05 skipped 3697 10.4s peak 822 MB
+2026-11-01 15:49:23,090 INFO train_lst: iter 100/200 loss_long_asso 1.3311 loss_short_asso 1.2131 loss 2.5442 lr 2.93e-05 skipped 4315 12.4s peak 822 MB
+2026-11-01 15:49:27,471 INFO train_lst: val iter 100: IDF1 0.11 MOTA -7.61 MOTP 76.43 MT 0.0 ML 100.0 *best*
+2026-11-01 15:49:29,631 INFO train_lst: iter 120/200 loss_long_asso 0.6686 loss_short_asso 0.4850 loss 1.1536 lr 2.07e-05 skipped 4933 18.9s peak 822 MB
+2026-11-01 15:49:31,790 INFO train_lst: iter 140/200 loss_long_asso 3.9455 loss_short_asso 1.7836 loss 5.7291 lr 1.25e-05 skipped 5640 21.1s peak 822 MB
+2026-11-01 15:49:34,136 INFO train_lst: iter 160/200 loss_long_asso 0.7239 loss_short_asso 0.7894 loss 1.5134 lr 5.85e-06 skipped 6506 23.4s peak 822 MB
+2026-11-01 15:49:36,043 INFO train_lst: iter 180/200 loss_long_asso 1.6730 loss_short_asso 0.3509 loss 2.0239 lr 1.51e-06 skipped 7032 25.3s peak 822 MB
+2026-11-01 15:49:38,573 INFO train_lst: iter 200/200 loss_long_asso 0.8260 loss_short_asso 0.6075 loss 1.4335 lr 0.00e+00 skipped 7850 27.9s peak 822 MB
+2026-11-01 15:49:42,131 INFO train_lst: val iter 200: IDF1 0.11 MOTA -7.61 MOTP 76.43 MT 0.0 ML 100.0
+2026-11-01 15:49:42,168 INFO train_lst: done: 200 iters, best iter 100 IDF1 0.10672358591248667, peak VRAM 822 MB alloc / 856 MB reserved

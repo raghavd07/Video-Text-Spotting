@@ -1,0 +1,11 @@
+2026-11-02 08:30:01,229 INFO bootstrap_ci: bootstrap E4-base_yolo vs E5-lst_yolo: dMOTA=-0.49[-4.15,8.15] dIDF1=-5.85[-11.72,8.63]
+2026-11-02 08:34:00,395 INFO run_ablation: ablation ds=icdar2015v split=val rows=['Baseline', '+LSC hard', '+GS', '+VPMM/LST', '+soft', '+voting', 'all'] force=False
+2026-11-02 08:34:00,397 INFO run_ablation: row +LSC hard  E4-lsc_yolo    skipped  0.0 s
+2026-11-02 08:34:00,398 INFO run_ablation: row Baseline   E4-base_yolo   skipped  0.0 s
+2026-11-02 08:34:00,399 INFO run_ablation: row +GS        E4-glyph_yolo  skipped  0.0 s
+2026-11-02 08:34:00,400 INFO run_ablation: row +VPMM/LST  E5-lst_yolo    skipped  0.0 s
+2026-11-02 08:34:19,519 INFO run_ablation: row +soft      A-soft_yolo    ran      19.1 s
+2026-11-02 08:34:36,310 INFO run_ablation: row +voting    A-vote_yolo    ran      16.8 s
+2026-11-02 08:34:53,714 INFO run_ablation: row all        A-all_yolo     ran      17.4 s
+2026-11-02 08:35:00,042 INFO bootstrap_ci: bootstrap E4-base_yolo vs E5-lst_yolo: dMOTA=-0.49[-4.15,8.15] dIDF1=-5.85[-11.72,8.63]
+2026-11-02 08:35:05,387 INFO bootstrap_ci: bootstrap E5-lst_yolo vs A-all_yolo: dMOTA=0.28[-0.36,1.75] dIDF1=1.11[-0.09,3.42]

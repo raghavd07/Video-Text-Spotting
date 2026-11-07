@@ -1,0 +1,55 @@
+2026-10-26 22:21:00,043 INFO infer_paddle: exp=det_ppyoloe_r_s_dota ds=icdar2015v split=val videos=1 device=gpu
+2026-10-26 22:23:38,669 INFO infer_paddle: exp=det_ppyoloe_r_s_dota ds=icdar2015v split=val videos=1 device=cpu
+2026-10-26 22:24:25,619 INFO infer_paddle: exp=det_ppyoloe_r_s_dota ds=icdar2015v split=val videos=1 device=cpu
+2026-10-26 22:25:36,119 INFO infer_paddle: exp=det_ppyoloe_r_s_dota ds=icdar2015v split=val videos=1 device=cpu
+2026-10-26 22:29:40,992 INFO infer_paddle: exp=det_ppyoloe_r_s_dota ds=icdar2015v split=val videos=1 device=cpu
+2026-10-26 22:29:58,415 INFO infer_paddle: Video_2_1_2: 10 frames, 3 boxes, 957.5 ms/frame
+2026-10-26 22:29:58,417 INFO infer_paddle: done: 1 videos, 10 frames, 959.6 ms/frame (model 892.89), peak GPU mem None MB
+2026-10-26 22:30:12,695 INFO infer_paddle: exp=det_ppyoloe_r_s_dota ds=icdar2015v split=val videos=1 device=cpu
+2026-10-26 22:30:19,326 INFO infer_paddle: skip Video_2_1_2 (exists)
+2026-10-26 22:30:19,400 INFO infer_paddle: done: 0 videos, 0 frames, None ms/frame (model None), peak GPU mem None MB
+2026-10-26 22:34:00,911 INFO infer_paddle: exp=det_ppyoloe_r_s_dota ds=icdar2015v split=val videos=1 device=cpu
+2026-10-26 22:34:08,201 INFO infer_paddle: skip Video_2_1_2 (exists)
+2026-10-26 22:34:08,248 INFO infer_paddle: done: 0 videos, 0 frames, None ms/frame (model None), peak GPU mem None MB
+2026-10-26 22:38:49,727 INFO infer_paddle: exp=det_ppyoloe_r_s_dota ds=icdar2015v split=val videos=1 device=cpu
+2026-10-26 22:39:15,248 INFO infer_paddle: Video_2_1_2: 10 frames, 3 boxes, 1266.9 ms/frame
+2026-10-26 22:39:15,258 INFO infer_paddle: done: 1 videos, 10 frames, 1269.68 ms/frame (model 1189.74), peak GPU mem None MB
+2026-10-26 22:46:52,338 INFO infer_paddle: exp=det_ppyoloe_r_s_dota ds=icdar2015v split=val videos=1 device=cpu
+2026-10-26 22:47:06,986 INFO infer_paddle: Video_2_1_2: 10 frames, 3 boxes, 559.1 ms/frame
+2026-10-26 22:47:07,040 INFO infer_paddle: done: 1 videos, 10 frames, 559.82 ms/frame (model 526.9), peak GPU mem None MB
+2026-10-27 08:23:48,083 INFO make_glyph_masks: exp=det_ppyoloe_r_s_dota splits=['train'] root=E:\Logo_Video_Text_Spotting\data\lsc n_init=3 morph=True
+2026-10-27 08:26:02,429 INFO make_glyph_masks: exp=det_ppyoloe_r_s_dota splits=['train'] root=E:\Logo_Video_Text_Spotting\data\lsc n_init=3 morph=True
+2026-10-27 08:34:15,536 INFO make_glyph_masks: exp=det_ppyoloe_r_s_dota splits=['train', 'val'] root=E:\Logo_Video_Text_Spotting\data\lsc n_init=3 morph=True
+2026-10-27 08:34:23,223 INFO make_glyph_masks: exp=det_ppyoloe_r_s_dota splits=['train', 'val'] root=E:\Logo_Video_Text_Spotting\data\lsc n_init=3 morph=True
+2026-10-27 08:34:29,749 INFO build_lsc_dataset: exp=det_ppyoloe_r_s_dota det_exp=det_ppyoloe_r_s_dota datasets=['icdar2015v'] splits=['train', 'val'] out=E:\Logo_Video_Text_Spotting\data\lsc
+2026-10-27 08:34:29,846 WARNING build_lsc_dataset: icdar2015v/Video_10_1_1: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_10_1_1.json, no negatives
+2026-10-27 08:34:30,015 WARNING build_lsc_dataset: icdar2015v/Video_13_4_1: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_13_4_1.json, no negatives
+2026-10-27 08:34:30,264 WARNING build_lsc_dataset: icdar2015v/Video_16_3_2: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_16_3_2.json, no negatives
+2026-10-27 08:34:30,415 WARNING build_lsc_dataset: icdar2015v/Video_18_3_1: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_18_3_1.json, no negatives
+2026-10-27 08:34:30,520 WARNING build_lsc_dataset: icdar2015v/Video_19_5_1: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_19_5_1.json, no negatives
+2026-10-27 08:34:30,697 WARNING build_lsc_dataset: icdar2015v/Video_21_5_1: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_21_5_1.json, no negatives
+2026-10-27 08:34:31,101 WARNING build_lsc_dataset: icdar2015v/Video_25_5_2: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_25_5_2.json, no negatives
+2026-10-27 08:34:31,865 WARNING build_lsc_dataset: icdar2015v/Video_26_5_2: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_26_5_2.json, no negatives
+2026-10-27 08:34:32,020 WARNING build_lsc_dataset: icdar2015v/Video_28_1_1: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_28_1_1.json, no negatives
+2026-10-27 08:34:32,189 WARNING build_lsc_dataset: icdar2015v/Video_33_2_3: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_33_2_3.json, no negatives
+2026-10-27 08:34:32,385 WARNING build_lsc_dataset: icdar2015v/Video_36_2_3: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_36_2_3.json, no negatives
+2026-10-27 08:34:32,540 WARNING build_lsc_dataset: icdar2015v/Video_40_2_3: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_40_2_3.json, no negatives
+2026-10-27 08:34:32,716 WARNING build_lsc_dataset: icdar2015v/Video_41_2_3: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_41_2_3.json, no negatives
+2026-10-27 08:34:32,950 WARNING build_lsc_dataset: icdar2015v/Video_42_2_3: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_42_2_3.json, no negatives
+2026-10-27 08:34:33,153 WARNING build_lsc_dataset: icdar2015v/Video_46_6_4: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_46_6_4.json, no negatives
+2026-10-27 08:34:33,458 WARNING build_lsc_dataset: icdar2015v/Video_51_7_4: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_51_7_4.json, no negatives
+2026-10-27 08:34:33,642 WARNING build_lsc_dataset: icdar2015v/Video_52_7_4: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_52_7_4.json, no negatives
+2026-10-27 08:34:33,921 WARNING build_lsc_dataset: icdar2015v/Video_54_7_4: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_54_7_4.json, no negatives
+2026-10-27 08:34:34,115 WARNING build_lsc_dataset: icdar2015v/Video_7_5_1: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_7_5_1.json, no negatives
+2026-10-27 08:34:34,224 WARNING build_lsc_dataset: icdar2015v/Video_8_5_1: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_8_5_1.json, no negatives
+2026-10-27 08:34:34,310 WARNING build_lsc_dataset: train: 0 samples after balancing (pos=35832 neg=0)
+2026-10-27 08:34:34,313 INFO build_lsc_dataset: train: candidates pos=35832 neg=0 -> kept 0+0 (E:\Logo_Video_Text_Spotting\data\lsc\train)
+2026-10-27 08:34:34,514 WARNING build_lsc_dataset: icdar2015v/Video_37_2_3: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_37_2_3.json, no negatives
+2026-10-27 08:34:34,707 WARNING build_lsc_dataset: icdar2015v/Video_45_6_4: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_45_6_4.json, no negatives
+2026-10-27 08:34:35,013 WARNING build_lsc_dataset: icdar2015v/Video_47_6_4: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_47_6_4.json, no negatives
+2026-10-27 08:34:35,300 WARNING build_lsc_dataset: icdar2015v/Video_4_4_2: no det json at E:\Logo_Video_Text_Spotting\runs\det_ppyoloe_r_s_dota\det\icdar2015v\Video_4_4_2.json, no negatives
+2026-10-27 08:34:35,554 WARNING build_lsc_dataset: val: 0 samples after balancing (pos=7214 neg=0)
+2026-10-27 08:34:35,556 INFO build_lsc_dataset: val: candidates pos=7214 neg=0 -> kept 0+0 (E:\Logo_Video_Text_Spotting\data\lsc\val)
+2026-10-27 08:34:42,426 INFO make_glyph_masks: exp=det_ppyoloe_r_s_dota splits=['train', 'val'] root=E:\Logo_Video_Text_Spotting\data\lsc n_init=3 morph=True
+2026-10-27 08:34:42,427 INFO make_glyph_masks: train: 0 masks (0 new, 0 kept, 0 empty) fg_mean=0.000
+2026-10-27 08:34:42,446 INFO make_glyph_masks: val: 0 masks (0 new, 0 kept, 0 empty) fg_mean=0.000

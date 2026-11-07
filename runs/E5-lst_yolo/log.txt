@@ -1,0 +1,98 @@
+2026-11-02 01:26:50,342 INFO run_pipeline: pipeline exp=E5-lst_yolo ds=icdar2015v split=val videos=5 stages=det,lsc,fuse,track,vote,eval det_exp=det_yolo11s_obb_text lsc_exp=E4-lsc_yolo force=False
+2026-11-02 01:26:50,344 INFO run_pipeline: stage det   checked 0.00 s
+2026-11-02 01:26:50,346 INFO run_pipeline: stage lsc   checked 0.00 s
+2026-11-02 01:26:50,394 INFO run_pipeline: Video_2_1_2: 1174 boxes fused
+2026-11-02 01:26:50,599 INFO run_pipeline: Video_37_2_3: 3880 boxes fused
+2026-11-02 01:26:50,634 INFO run_pipeline: Video_45_6_4: 1252 boxes fused
+2026-11-02 01:26:50,655 INFO run_pipeline: Video_47_6_4: 595 boxes fused
+2026-11-02 01:26:50,673 INFO run_pipeline: Video_4_4_2: 590 boxes fused
+2026-11-02 01:26:50,675 INFO run_pipeline: stage fuse  ran     0.33 s
+2026-11-02 01:26:53,878 INFO run_pipeline: Video_2_1_2: 984 boxes, 74 tracks
+2026-11-02 01:26:57,521 INFO run_pipeline: Video_37_2_3: 3590 boxes, 132 tracks
+2026-11-02 01:26:59,741 INFO run_pipeline: Video_45_6_4: 1027 boxes, 141 tracks
+2026-11-02 01:27:01,667 INFO run_pipeline: Video_47_6_4: 519 boxes, 39 tracks
+2026-11-02 01:27:02,951 INFO run_pipeline: Video_4_4_2: 364 boxes, 87 tracks
+2026-11-02 01:27:02,962 INFO run_pipeline: stage track ran     12.29 s
+2026-11-02 01:27:03,095 INFO run_pipeline: stage vote  ran     0.13 s
+2026-11-02 01:27:08,078 INFO run_pipeline: eval det: precision=82.32 recall=66.40 f=73.51
+2026-11-02 01:27:08,079 INFO run_pipeline: eval track: MOTA=45.52 MOTP=74.69 IDF1=51.95 MT=44.49 ML=36.56
+2026-11-02 01:27:08,079 INFO run_pipeline: eval spot: MOTA=-10.47 MOTP=77.43 IDF1=30.31 MT=11.89 ML=63.88
+2026-11-02 01:27:08,079 INFO run_pipeline: stage eval  ran     4.98 s
+2026-11-02 01:36:11,761 INFO run_pipeline: pipeline exp=E5-lst_yolo ds=icdar2015v split=val videos=5 stages=det,lsc,fuse,track,vote,eval det_exp=det_yolo11s_obb_text lsc_exp=E4-lsc_yolo force=False
+2026-11-02 01:36:11,766 INFO run_pipeline: stage det   checked 0.00 s
+2026-11-02 01:36:11,773 INFO run_pipeline: stage lsc   checked 0.01 s
+2026-11-02 01:36:11,777 INFO run_pipeline: stage fuse  skipped 0.00 s
+2026-11-02 01:36:11,781 INFO run_pipeline: stage track skipped 0.00 s
+2026-11-02 01:36:11,787 INFO run_pipeline: stage vote  skipped 0.01 s
+2026-11-02 01:36:11,816 INFO run_pipeline: stage eval  skipped 0.03 s
+2026-11-02 11:28:18,501 INFO sweep_fusion: exp=E5-lst_yolo ds=icdar2015v split=val lsc_exp=E4-lsc_yolo tracker=lst modes=['hard', 'soft'] ws=[0.3, 0.5, 0.7] thrs=[0.4, 0.5, 0.6, 0.7, 0.8, 0.9] soft_source=p_eos
+2026-11-02 11:31:18,812 INFO sweep_fusion: Video_2_1_2: tracked 36 settings
+2026-11-02 11:37:28,173 INFO sweep_fusion: Video_37_2_3: tracked 36 settings
+2026-11-02 11:40:58,514 INFO sweep_fusion: Video_45_6_4: tracked 36 settings
+2026-11-02 12:51:38,955 INFO sweep_fusion: exp=E5-lst_yolo ds=icdar2015v split=val lsc_exp=E4-lsc_yolo tracker=lst modes=['hard', 'soft'] ws=[0.3, 0.5, 0.7] thrs=[0.4, 0.5, 0.6, 0.7, 0.8, 0.9] soft_source=p_eos
+2026-11-02 12:54:31,467 INFO sweep_fusion: Video_2_1_2: tracked 36 settings
+2026-11-02 13:00:08,728 INFO sweep_fusion: Video_37_2_3: tracked 36 settings
+2026-11-02 13:03:28,474 INFO sweep_fusion: Video_45_6_4: tracked 36 settings
+2026-11-02 13:06:12,763 INFO sweep_fusion: Video_47_6_4: tracked 36 settings
+2026-11-02 13:07:56,455 INFO sweep_fusion: Video_4_4_2: tracked 36 settings
+2026-11-02 13:08:06,528 INFO sweep_fusion: hard w=0.30 thr=0.40 track MOTA=45.36 IDF1=52.24 | spot MOTA=-10.31 IDF1=30.49
+2026-11-02 13:08:15,380 INFO sweep_fusion: hard w=0.30 thr=0.50 track MOTA=45.52 IDF1=52.61 | spot MOTA=-10.34 IDF1=30.66
+2026-11-02 13:08:23,655 INFO sweep_fusion: hard w=0.30 thr=0.60 track MOTA=46.77 IDF1=51.92 | spot MOTA=-6.64 IDF1=30.60
+2026-11-02 13:08:31,430 INFO sweep_fusion: hard w=0.30 thr=0.70 track MOTA=46.74 IDF1=54.71 | spot MOTA=-1.32 IDF1=33.88
+2026-11-02 13:08:38,749 INFO sweep_fusion: hard w=0.30 thr=0.80 track MOTA=40.57 IDF1=45.34 | spot MOTA=4.57 IDF1=29.66
+2026-11-02 13:08:42,853 INFO sweep_fusion: hard w=0.30 thr=0.90 track MOTA=1.89 IDF1=3.53 | spot MOTA=0.29 IDF1=2.72
+2026-11-02 13:08:51,731 INFO sweep_fusion: hard w=0.50 thr=0.40 track MOTA=45.76 IDF1=52.19 | spot MOTA=-10.47 IDF1=30.31
+2026-11-02 13:09:00,269 INFO sweep_fusion: hard w=0.50 thr=0.50 track MOTA=45.91 IDF1=52.19 | spot MOTA=-10.04 IDF1=30.40
+2026-11-02 13:09:08,518 INFO sweep_fusion: hard w=0.50 thr=0.60 track MOTA=45.91 IDF1=52.19 | spot MOTA=-10.04 IDF1=30.40
+2026-11-02 13:09:16,740 INFO sweep_fusion: hard w=0.50 thr=0.70 track MOTA=46.78 IDF1=51.87 | spot MOTA=-7.18 IDF1=31.20
+2026-11-02 13:09:24,403 INFO sweep_fusion: hard w=0.50 thr=0.80 track MOTA=46.31 IDF1=55.71 | spot MOTA=0.55 IDF1=34.45
+2026-11-02 13:09:29,976 INFO sweep_fusion: hard w=0.50 thr=0.90 track MOTA=20.61 IDF1=26.22 | spot MOTA=1.18 IDF1=17.55
+2026-11-02 13:09:38,342 INFO sweep_fusion: hard w=0.70 thr=0.40 track MOTA=45.91 IDF1=52.19 | spot MOTA=-10.04 IDF1=30.40
+2026-11-02 13:09:46,901 INFO sweep_fusion: hard w=0.70 thr=0.50 track MOTA=45.91 IDF1=52.19 | spot MOTA=-10.04 IDF1=30.40
+2026-11-02 13:09:55,255 INFO sweep_fusion: hard w=0.70 thr=0.60 track MOTA=45.91 IDF1=52.19 | spot MOTA=-10.04 IDF1=30.40
+2026-11-02 13:10:03,405 INFO sweep_fusion: hard w=0.70 thr=0.70 track MOTA=45.91 IDF1=52.19 | spot MOTA=-10.04 IDF1=30.40
+2026-11-02 13:10:11,729 INFO sweep_fusion: hard w=0.70 thr=0.80 track MOTA=46.30 IDF1=53.27 | spot MOTA=-8.57 IDF1=31.19
+2026-11-02 13:10:19,393 INFO sweep_fusion: hard w=0.70 thr=0.90 track MOTA=44.33 IDF1=52.17 | spot MOTA=3.30 IDF1=32.89
+2026-11-02 13:10:28,260 INFO sweep_fusion: soft w=0.30 thr=0.40 track MOTA=45.31 IDF1=54.17 | spot MOTA=-10.56 IDF1=31.69
+2026-11-02 13:10:36,675 INFO sweep_fusion: soft w=0.30 thr=0.50 track MOTA=45.51 IDF1=52.96 | spot MOTA=-10.33 IDF1=30.67
+2026-11-02 13:10:44,877 INFO sweep_fusion: soft w=0.30 thr=0.60 track MOTA=46.55 IDF1=52.50 | spot MOTA=-6.76 IDF1=31.05
+2026-11-02 13:10:52,922 INFO sweep_fusion: soft w=0.30 thr=0.70 track MOTA=46.71 IDF1=54.68 | spot MOTA=-0.73 IDF1=34.17
+2026-11-02 13:10:59,795 INFO sweep_fusion: soft w=0.30 thr=0.80 track MOTA=40.45 IDF1=44.92 | spot MOTA=4.87 IDF1=29.65
+2026-11-02 13:11:03,559 INFO sweep_fusion: soft w=0.30 thr=0.90 track MOTA=1.90 IDF1=3.45 | spot MOTA=0.39 IDF1=2.73
+2026-11-02 13:11:11,844 INFO sweep_fusion: soft w=0.50 thr=0.40 track MOTA=45.16 IDF1=52.93 | spot MOTA=-10.77 IDF1=30.97
+2026-11-02 13:11:20,181 INFO sweep_fusion: soft w=0.50 thr=0.50 track MOTA=45.38 IDF1=52.72 | spot MOTA=-10.84 IDF1=30.67
+2026-11-02 13:11:28,578 INFO sweep_fusion: soft w=0.50 thr=0.60 track MOTA=45.86 IDF1=52.49 | spot MOTA=-10.04 IDF1=30.61
+2026-11-02 13:11:36,536 INFO sweep_fusion: soft w=0.50 thr=0.70 track MOTA=47.67 IDF1=52.48 | spot MOTA=-6.43 IDF1=31.65
+2026-11-02 13:11:44,544 INFO sweep_fusion: soft w=0.50 thr=0.80 track MOTA=46.48 IDF1=55.36 | spot MOTA=2.05 IDF1=34.71
+2026-11-02 13:11:50,096 INFO sweep_fusion: soft w=0.50 thr=0.90 track MOTA=20.09 IDF1=25.30 | spot MOTA=1.48 IDF1=17.10
+2026-11-02 13:11:58,535 INFO sweep_fusion: soft w=0.70 thr=0.40 track MOTA=45.13 IDF1=52.59 | spot MOTA=-10.73 IDF1=30.63
+2026-11-02 13:12:07,014 INFO sweep_fusion: soft w=0.70 thr=0.50 track MOTA=45.29 IDF1=52.75 | spot MOTA=-10.65 IDF1=30.71
+2026-11-02 13:12:15,357 INFO sweep_fusion: soft w=0.70 thr=0.60 track MOTA=45.81 IDF1=52.91 | spot MOTA=-10.15 IDF1=30.76
+2026-11-02 13:12:23,659 INFO sweep_fusion: soft w=0.70 thr=0.70 track MOTA=46.34 IDF1=52.52 | spot MOTA=-9.74 IDF1=30.51
+2026-11-02 13:12:31,787 INFO sweep_fusion: soft w=0.70 thr=0.80 track MOTA=47.56 IDF1=55.12 | spot MOTA=-6.31 IDF1=32.68
+2026-11-02 13:12:39,088 INFO sweep_fusion: soft w=0.70 thr=0.90 track MOTA=44.07 IDF1=52.11 | spot MOTA=5.14 IDF1=33.66
+2026-11-02 13:12:42,571 INFO sweep_fusion: best spotting: soft w=0.50 thr=0.80 (IDF1 34.71, MOTA 2.05)
+2026-11-02 13:13:16,999 INFO sweep_voting: exp=E5-lst_yolo ds=icdar2015v split=val track_exp=E5-lst_yolo taus=[0.0, 0.3, 0.5, 0.7] min_lens=[1, 3, 5, 10]
+2026-11-02 13:13:17,655 INFO sweep_voting: Video_2_1_2: voted 16 settings
+2026-11-02 13:13:19,389 INFO sweep_voting: Video_37_2_3: voted 16 settings
+2026-11-02 13:13:19,892 INFO sweep_voting: Video_45_6_4: voted 16 settings
+2026-11-02 13:13:20,214 INFO sweep_voting: Video_47_6_4: voted 16 settings
+2026-11-02 13:13:20,433 INFO sweep_voting: Video_4_4_2: voted 16 settings
+2026-11-02 13:13:28,542 INFO sweep_voting: off: tracks=473 track MOTA=45.52 IDF1=51.95 | spot MOTA=-10.47 IDF1=30.31
+2026-11-02 13:13:36,478 INFO sweep_voting: tau_0.00/min_len_1: tracks=473 track MOTA=45.52 IDF1=51.95 | spot MOTA=-15.08 IDF1=30.68
+2026-11-02 13:13:44,810 INFO sweep_voting: tau_0.00/min_len_3: tracks=308 track MOTA=46.23 IDF1=52.26 | spot MOTA=-13.89 IDF1=30.81
+2026-11-02 13:13:52,884 INFO sweep_voting: tau_0.00/min_len_5: tracks=217 track MOTA=46.41 IDF1=52.49 | spot MOTA=-11.88 IDF1=31.13
+2026-11-02 13:14:00,301 INFO sweep_voting: tau_0.00/min_len_10: tracks=131 track MOTA=45.79 IDF1=52.53 | spot MOTA=-8.69 IDF1=31.33
+2026-11-02 13:14:08,286 INFO sweep_voting: tau_0.30/min_len_1: tracks=473 track MOTA=45.52 IDF1=51.95 | spot MOTA=-15.08 IDF1=30.68
+2026-11-02 13:14:16,152 INFO sweep_voting: tau_0.30/min_len_3: tracks=308 track MOTA=46.23 IDF1=52.26 | spot MOTA=-13.89 IDF1=30.81
+2026-11-02 13:14:23,872 INFO sweep_voting: tau_0.30/min_len_5: tracks=217 track MOTA=46.41 IDF1=52.49 | spot MOTA=-11.88 IDF1=31.13
+2026-11-02 13:14:31,602 INFO sweep_voting: tau_0.30/min_len_10: tracks=131 track MOTA=45.79 IDF1=52.53 | spot MOTA=-8.69 IDF1=31.33
+2026-11-02 13:14:39,661 INFO sweep_voting: tau_0.50/min_len_1: tracks=473 track MOTA=45.52 IDF1=51.95 | spot MOTA=-15.08 IDF1=30.68
+2026-11-02 13:14:47,706 INFO sweep_voting: tau_0.50/min_len_3: tracks=308 track MOTA=46.23 IDF1=52.26 | spot MOTA=-13.89 IDF1=30.81
+2026-11-02 13:14:55,420 INFO sweep_voting: tau_0.50/min_len_5: tracks=217 track MOTA=46.41 IDF1=52.49 | spot MOTA=-11.88 IDF1=31.13
+2026-11-02 13:15:03,251 INFO sweep_voting: tau_0.50/min_len_10: tracks=131 track MOTA=45.79 IDF1=52.53 | spot MOTA=-8.69 IDF1=31.33
+2026-11-02 13:15:11,241 INFO sweep_voting: tau_0.70/min_len_1: tracks=469 track MOTA=45.88 IDF1=52.11 | spot MOTA=-14.64 IDF1=30.78
+2026-11-02 13:15:19,026 INFO sweep_voting: tau_0.70/min_len_3: tracks=305 track MOTA=46.58 IDF1=52.40 | spot MOTA=-13.45 IDF1=30.91
+2026-11-02 13:15:26,997 INFO sweep_voting: tau_0.70/min_len_5: tracks=214 track MOTA=46.76 IDF1=52.64 | spot MOTA=-11.44 IDF1=31.23
+2026-11-02 13:15:34,454 INFO sweep_voting: tau_0.70/min_len_10: tracks=129 track MOTA=46.09 IDF1=52.68 | spot MOTA=-8.33 IDF1=31.41
+2026-11-02 13:15:34,500 INFO sweep_voting: best spotting: tau=0.70 min_len=10 (IDF1 31.41, MOTA -8.33); off IDF1 30.31

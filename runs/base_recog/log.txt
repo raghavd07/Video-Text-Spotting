@@ -1,0 +1,7 @@
+2026-11-01 01:49:19,346 INFO eval_recognition: ds=icdar2015v split=val videos=5 device=cuda fp16=True c=26 d=512 ckpt=third_party\ABINet\workdir\train-abinet\best-train-abinet.pth
+2026-11-01 01:49:23,596 INFO eval_recognition: Video_2_1_2: 768 words, acc 70.83%
+2026-11-01 01:49:38,085 INFO eval_recognition: Video_37_2_3: 4451 words, acc 72.10%
+2026-11-01 01:49:43,701 INFO eval_recognition: Video_45_6_4: 1027 words, acc 78.58%
+2026-11-01 01:49:49,457 INFO eval_recognition: Video_47_6_4: 832 words, acc 72.48%
+2026-11-01 01:49:50,259 INFO eval_recognition: Video_4_4_2: 136 words, acc 65.44%
+2026-11-01 01:49:50,264 INFO eval_recognition: icdar2015v/val: word_acc 72.80% (5252/7214), skipped {'dont_care': 2440, 'non_alnum': 0, 'missing_frames': 0} -> E:\Logo_Video_Text_Spotting\runs\base_recog\recog\icdar2015v\val_predictions.csv

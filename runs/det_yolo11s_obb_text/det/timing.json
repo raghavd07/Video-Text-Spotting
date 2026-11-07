@@ -1,0 +1,1 @@
+{"videos":3,"frames":1419,"batch_size":2,"input_hw":[576,1024],"save_thr":0.1,"ms_per_frame":100.67,"ms_per_frame_model":63.55,"peak_gpu_mem_mb":225.0,"amp":true}

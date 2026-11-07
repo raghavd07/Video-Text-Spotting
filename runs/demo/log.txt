@@ -1,0 +1,30 @@
+2026-11-02 13:27:45,569 INFO demo: demo video=C:\Users\dsair\AppData\Local\Temp\claude\e--Logo-Video-Text-Spotting\dcf51691-cf8d-455d-ba5c-5eb6d2493a28\scratchpad\clip.mp4 out=C:\Users\dsair\AppData\Local\Temp\claude\e--Logo-Video-Text-Spotting\dcf51691-cf8d-455d-ba5c-5eb6d2493a28\scratchpad\clip_out.mp4 exp=A-all_yolo ds=icdar2015v detector=obb device=cuda
+2026-11-02 13:28:04,094 INFO demo: demo: 60 frames, 61 boxes, 223.8 ms/frame
+2026-11-02 13:28:04,105 INFO demo: done: 1 videos, 60 frames, 223.81 ms/frame (model 173.15), peak GPU mem 217.9 MB
+2026-11-02 13:28:05,467 INFO demo: lsc recognizer: ckpt=E:\Logo_Video_Text_Spotting\runs\E3-lsc\checkpoints\best.pth device=cuda bs=64 amp=True
+2026-11-02 13:28:06,918 INFO demo: demo: 29 boxes > 0.30, lang_hard=1: 10
+2026-11-02 13:28:06,985 INFO demo: demo: 29 boxes fused
+2026-11-02 13:28:09,713 INFO demo: demo: 16 boxes, 4 tracks
+2026-11-02 13:28:09,759 INFO demo: demo: 3/4 tracks kept, 15/16 boxes
+2026-11-02 13:28:11,065 INFO demo: demo done: 3 tracks, 2.64 fps (det->vote)
+2026-11-02 13:43:52,731 INFO demo: demo video=in.mp4 out=out.mp4 exp=A-all_yolo ds=icdar2015v detector=obb device=cpu
+2026-11-02 13:52:14,402 INFO demo: demo: 2770 frames, 6699 boxes, 176.8 ms/frame
+2026-11-02 13:52:14,422 INFO demo: done: 1 videos, 2770 frames, 176.82 ms/frame (model 158.02), peak GPU mem None MB
+2026-11-02 13:52:15,659 INFO demo: lsc recognizer: ckpt=E:\Logo_Video_Text_Spotting\runs\E3-lsc\checkpoints\best.pth device=cpu bs=64 amp=False
+2026-11-02 14:02:53,531 INFO demo: demo: 5870 boxes > 0.30, lang_hard=1: 5833
+2026-11-02 14:02:54,033 INFO demo: demo: 5870 boxes fused
+2026-11-02 14:03:30,078 INFO demo: demo: 5834 boxes, 111 tracks
+2026-11-02 14:03:30,565 INFO demo: demo: 91/111 tracks kept, 5809/5834 boxes
+2026-11-02 14:04:01,781 INFO demo: demo done: 91 tracks, 2.37 fps (det->vote)
+2026-11-04 11:42:09,366 INFO demo: demo video=inn.mp4 out=outt.mp4 exp=A-all_yolo ds=icdar2015v detector=obb device=gpu
+2026-11-04 11:43:00,328 INFO demo: demo: 127 frames, 1673 boxes, 346.1 ms/frame
+2026-11-04 11:43:00,339 INFO demo: done: 1 videos, 127 frames, 346.17 ms/frame (model 317.79), peak GPU mem None MB
+2026-11-04 11:43:34,345 INFO demo: demo video=inn.mp4 out=outt.mp4 exp=A-all_yolo ds=icdar2015v detector=obb device=cpu
+2026-11-04 11:44:20,777 INFO demo: demo: 127 frames, 1673 boxes, 326.5 ms/frame
+2026-11-04 11:44:20,784 INFO demo: done: 1 videos, 127 frames, 326.57 ms/frame (model 301.67), peak GPU mem None MB
+2026-11-04 11:44:21,731 INFO demo: lsc recognizer: ckpt=E:\Logo_Video_Text_Spotting\runs\E3-lsc\checkpoints\best.pth device=cpu bs=64 amp=False
+2026-11-04 11:45:28,053 INFO demo: demo: 612 boxes > 0.30, lang_hard=1: 539
+2026-11-04 11:45:28,139 INFO demo: demo: 612 boxes fused
+2026-11-04 11:45:31,993 INFO demo: demo: 538 boxes, 89 tracks
+2026-11-04 11:45:32,080 INFO demo: demo: 52/89 tracks kept, 491/538 boxes
+2026-11-04 11:45:34,987 INFO demo: demo done: 52 tracks, 1.10 fps (det->vote)

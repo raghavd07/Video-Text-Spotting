@@ -1,0 +1,4 @@
+exp_id: runs
+eval:
+  iou: 0.5
+  spotting: true

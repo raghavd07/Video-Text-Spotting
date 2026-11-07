@@ -1,0 +1,86 @@
+2026-10-26 22:55:00,662 INFO prepare_obb_data: train/Video_10_1_1: 68 frames (stride 5)
+2026-10-26 22:55:03,103 INFO prepare_obb_data: train/Video_13_4_1: 116 frames (stride 5)
+2026-10-26 22:55:04,307 INFO prepare_obb_data: train/Video_16_3_2: 61 frames (stride 5)
+2026-10-26 22:55:06,173 INFO prepare_obb_data: train/Video_18_3_1: 40 frames (stride 5)
+2026-10-26 22:55:08,481 INFO prepare_obb_data: train/Video_19_5_1: 82 frames (stride 5)
+2026-10-26 22:55:11,619 INFO prepare_obb_data: train/Video_21_5_1: 192 frames (stride 5)
+2026-10-26 22:55:14,624 INFO prepare_obb_data: train/Video_25_5_2: 372 frames (stride 5)
+2026-10-26 22:55:15,474 INFO prepare_obb_data: train/Video_26_5_2: 78 frames (stride 5)
+2026-10-26 22:55:17,364 INFO prepare_obb_data: train/Video_28_1_1: 87 frames (stride 5)
+2026-10-26 22:55:18,653 INFO prepare_obb_data: train/Video_33_2_3: 96 frames (stride 5)
+2026-10-26 22:55:18,779 INFO prepare_obb_data: train/Video_36_2_3: 68 frames (stride 5)
+2026-10-26 22:55:20,188 INFO prepare_obb_data: train/Video_40_2_3: 82 frames (stride 5)
+2026-10-26 22:55:20,493 INFO prepare_obb_data: train/Video_41_2_3: 106 frames (stride 5)
+2026-10-26 22:55:22,413 INFO prepare_obb_data: train/Video_42_2_3: 101 frames (stride 5)
+2026-10-26 22:55:22,699 INFO prepare_obb_data: train/Video_46_6_4: 145 frames (stride 5)
+2026-10-26 22:55:24,049 INFO prepare_obb_data: train/Video_51_7_4: 90 frames (stride 5)
+2026-10-26 22:55:24,189 INFO prepare_obb_data: train/Video_52_7_4: 90 frames (stride 5)
+2026-10-26 22:55:26,319 INFO prepare_obb_data: train/Video_54_7_4: 96 frames (stride 5)
+2026-10-26 22:55:26,951 INFO prepare_obb_data: train/Video_7_5_1: 53 frames (stride 5)
+2026-10-26 22:55:27,797 INFO prepare_obb_data: train/Video_8_5_1: 48 frames (stride 5)
+2026-10-26 22:55:27,797 INFO prepare_obb_data: train: {'videos': 20, 'images': 2071, 'boxes': 7607, 'dont_care': 4779, 'empty': 701, 'missing_frames': 0, 'skipped_existing': 0, 'link': 1225, 'copy': 0, 'masked': 846}
+2026-10-26 22:55:28,425 INFO prepare_obb_data: val/Video_2_1_2: 46 frames (stride 10)
+2026-10-26 22:55:28,667 INFO prepare_obb_data: val/Video_37_2_3: 46 frames (stride 10)
+2026-10-26 22:55:29,715 INFO prepare_obb_data: val/Video_45_6_4: 78 frames (stride 10)
+2026-10-26 22:55:30,544 INFO prepare_obb_data: val/Video_47_6_4: 78 frames (stride 10)
+2026-10-26 22:55:31,023 INFO prepare_obb_data: val/Video_4_4_2: 67 frames (stride 10)
+2026-10-26 22:55:31,024 INFO prepare_obb_data: val: {'videos': 5, 'images': 315, 'boxes': 738, 'dont_care': 243, 'empty': 158, 'missing_frames': 0, 'skipped_existing': 0, 'link': 194, 'copy': 0, 'masked': 121}
+2026-11-01 00:12:45,617 INFO infer_obb: exp=det_yolo11s_obb_dota ds=icdar2015v split=val videos=5 device=gpu
+2026-11-01 00:13:09,943 INFO infer_obb: Video_2_1_2: 452 frames, 83 boxes, 50.3 ms/frame
+2026-11-01 00:13:31,020 INFO infer_obb: Video_37_2_3: 456 frames, 6824 boxes, 46.2 ms/frame
+2026-11-01 00:14:07,786 INFO infer_obb: Video_45_6_4: 780 frames, 209 boxes, 47.1 ms/frame
+2026-11-01 00:14:42,932 INFO infer_obb: Video_47_6_4: 780 frames, 92 boxes, 45.0 ms/frame
+2026-11-01 00:15:09,219 INFO infer_obb: Video_4_4_2: 662 frames, 858 boxes, 39.7 ms/frame
+2026-11-01 00:15:09,250 INFO infer_obb: done: 5 videos, 3130 frames, 45.38 ms/frame (model 23.81), peak GPU mem 225.0 MB
+2026-11-01 01:44:41,699 INFO prepare_obb_data: train/Video_10_1_1: 68 frames (stride 5)
+2026-11-01 01:44:41,789 INFO prepare_obb_data: train/Video_13_4_1: 116 frames (stride 5)
+2026-11-01 01:44:41,868 INFO prepare_obb_data: train/Video_16_3_2: 61 frames (stride 5)
+2026-11-01 01:44:41,942 INFO prepare_obb_data: train/Video_18_3_1: 40 frames (stride 5)
+2026-11-01 01:44:42,025 INFO prepare_obb_data: train/Video_19_5_1: 82 frames (stride 5)
+2026-11-01 01:44:42,164 INFO prepare_obb_data: train/Video_21_5_1: 192 frames (stride 5)
+2026-11-01 01:44:42,465 INFO prepare_obb_data: train/Video_25_5_2: 372 frames (stride 5)
+2026-11-01 01:44:42,529 INFO prepare_obb_data: train/Video_26_5_2: 78 frames (stride 5)
+2026-11-01 01:44:42,592 INFO prepare_obb_data: train/Video_28_1_1: 87 frames (stride 5)
+2026-11-01 01:44:42,689 INFO prepare_obb_data: train/Video_33_2_3: 96 frames (stride 5)
+2026-11-01 01:44:42,755 INFO prepare_obb_data: train/Video_36_2_3: 68 frames (stride 5)
+2026-11-01 01:44:42,836 INFO prepare_obb_data: train/Video_40_2_3: 82 frames (stride 5)
+2026-11-01 01:44:42,972 INFO prepare_obb_data: train/Video_41_2_3: 106 frames (stride 5)
+2026-11-01 01:44:43,083 INFO prepare_obb_data: train/Video_42_2_3: 101 frames (stride 5)
+2026-11-01 01:44:43,177 INFO prepare_obb_data: train/Video_46_6_4: 145 frames (stride 5)
+2026-11-01 01:44:43,252 INFO prepare_obb_data: train/Video_51_7_4: 90 frames (stride 5)
+2026-11-01 01:44:43,325 INFO prepare_obb_data: train/Video_52_7_4: 90 frames (stride 5)
+2026-11-01 01:44:43,404 INFO prepare_obb_data: train/Video_54_7_4: 96 frames (stride 5)
+2026-11-01 01:44:43,444 INFO prepare_obb_data: train/Video_7_5_1: 53 frames (stride 5)
+2026-11-01 01:44:43,479 INFO prepare_obb_data: train/Video_8_5_1: 48 frames (stride 5)
+2026-11-01 01:44:43,479 INFO prepare_obb_data: train: {'videos': 20, 'images': 2071, 'boxes': 7607, 'dont_care': 4779, 'empty': 701, 'missing_frames': 0, 'skipped_existing': 2071, 'link': 0, 'copy': 0, 'masked': 0}
+2026-11-01 01:44:43,513 INFO prepare_obb_data: val/Video_2_1_2: 46 frames (stride 10)
+2026-11-01 01:44:43,570 INFO prepare_obb_data: val/Video_37_2_3: 46 frames (stride 10)
+2026-11-01 01:44:43,630 INFO prepare_obb_data: val/Video_45_6_4: 78 frames (stride 10)
+2026-11-01 01:44:43,686 INFO prepare_obb_data: val/Video_47_6_4: 78 frames (stride 10)
+2026-11-01 01:44:43,725 INFO prepare_obb_data: val/Video_4_4_2: 67 frames (stride 10)
+2026-11-01 01:44:43,726 INFO prepare_obb_data: val: {'videos': 5, 'images': 315, 'boxes': 738, 'dont_care': 243, 'empty': 158, 'missing_frames': 0, 'skipped_existing': 315, 'link': 0, 'copy': 0, 'masked': 0}
+2026-11-01 01:45:34,264 INFO infer_obb: exp=det_yolo11s_obb_dota ds=icdar2015v split=val videos=1 device=gpu
+2026-11-01 01:45:35,681 INFO infer_obb: skip Video_2_1_2 (exists)
+2026-11-01 01:45:35,701 INFO infer_obb: done: 0 videos, 0 frames, None ms/frame (model None), peak GPU mem 0.0 MB
+2026-11-01 01:59:11,952 INFO infer_obb: exp=det_yolo11s_obb_dota ds=icdar2015v split=train videos=20 device=gpu
+2026-11-01 01:59:33,812 INFO infer_obb: Video_10_1_1: 336 frames, 531 boxes, 60.5 ms/frame
+2026-11-01 02:00:05,961 INFO infer_obb: Video_13_4_1: 576 frames, 242 boxes, 55.8 ms/frame
+2026-11-01 02:00:18,557 INFO infer_obb: Video_16_3_2: 301 frames, 1587 boxes, 41.8 ms/frame
+2026-11-01 02:00:28,942 INFO infer_obb: Video_18_3_1: 198 frames, 478 boxes, 52.4 ms/frame
+2026-11-01 02:00:49,252 INFO infer_obb: Video_19_5_1: 408 frames, 74 boxes, 49.8 ms/frame
+2026-11-01 02:01:40,961 INFO infer_obb: Video_21_5_1: 960 frames, 175 boxes, 53.9 ms/frame
+2026-11-01 02:02:56,674 INFO infer_obb: Video_25_5_2: 1860 frames, 1751 boxes, 40.7 ms/frame
+2026-11-01 02:03:13,188 INFO infer_obb: Video_26_5_2: 387 frames, 99 boxes, 42.7 ms/frame
+2026-11-01 02:03:40,733 INFO infer_obb: Video_28_1_1: 432 frames, 117 boxes, 63.7 ms/frame
+2026-11-01 02:04:17,886 INFO infer_obb: Video_33_2_3: 480 frames, 1072 boxes, 77.4 ms/frame
+2026-11-01 02:04:32,317 INFO infer_obb: Video_36_2_3: 336 frames, 94 boxes, 42.9 ms/frame
+2026-11-01 02:04:52,719 INFO infer_obb: Video_40_2_3: 408 frames, 355 boxes, 50.0 ms/frame
+2026-11-01 02:05:21,116 INFO infer_obb: Video_41_2_3: 528 frames, 1166 boxes, 53.8 ms/frame
+2026-11-01 02:05:48,447 INFO infer_obb: Video_42_2_3: 504 frames, 840 boxes, 54.2 ms/frame
+2026-11-01 02:06:23,351 INFO infer_obb: Video_46_6_4: 722 frames, 64 boxes, 48.3 ms/frame
+2026-11-01 02:06:46,284 INFO infer_obb: Video_51_7_4: 450 frames, 315 boxes, 50.9 ms/frame
+2026-11-01 02:07:10,643 INFO infer_obb: Video_52_7_4: 450 frames, 1599 boxes, 54.1 ms/frame
+2026-11-01 02:07:36,489 INFO infer_obb: Video_54_7_4: 480 frames, 188 boxes, 53.8 ms/frame
+2026-11-01 02:07:50,585 INFO infer_obb: Video_7_5_1: 264 frames, 10 boxes, 53.4 ms/frame
+2026-11-01 02:08:03,063 INFO infer_obb: Video_8_5_1: 240 frames, 135 boxes, 52.0 ms/frame
+2026-11-01 02:08:03,090 INFO infer_obb: done: 20 videos, 10320 frames, 51.32 ms/frame (model 26.25), peak GPU mem 225.0 MB

@@ -1,0 +1,4 @@
+2026-10-27 08:49:49,394 INFO infer_paddle: exp=det_ppyoloe_r_text_s ds=icdar2015v split=val videos=1 device=cpu
+2026-11-01 01:42:40,175 INFO infer_paddle: exp=det_ppyoloe_r_text_s ds=icdar2015v split=val videos=1 device=gpu
+2026-11-01 20:58:33,372 INFO infer_paddle: exp=det_ppyoloe_r_text_s ds=icdar2015v split=val videos=5 device=gpu
+2026-11-01 21:06:09,028 INFO infer_paddle: exp=det_ppyoloe_r_text_s ds=icdar2015v split=val videos=5 device=gpu

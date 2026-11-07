@@ -1,0 +1,1 @@
+{"exp_id":"det_yolo11s_obb_text","dataset":"icdar2015v","split":"test","frames":200,"warmup":5,"videos":["Video_11_4_1"],"stages":{"det":{"params":9699174,"peak_mem_mb":209.0,"frames":200,"ms_per_frame":38.566,"input_hw":[576,1024]}},"e2e":{"total_ms_per_frame":38.566,"fps":25.93,"params":9699174,"max_peak_mem_mb":209.0,"det_included":true,"stages":["det"]}}
