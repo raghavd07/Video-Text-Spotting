@@ -1,0 +1,67 @@
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+======================= Modified FLAGS detected =======================
+FLAGS(name='FLAGS_selected_gpus', current_value='0', default_value='')
+=======================================================================
+loading annotations into memory...
+Done (t=0.17s)
+creating index...
+index created!
+[10/27 08:51:29] ppdet.data.source.coco INFO: Load [3394 samples valid, 0 samples invalid] in file data\det_dota/train.json.
+W1027 08:51:29.269484 29356 gpu_resources.cc:119] Please NOTE: device: 0, GPU Compute Capability: 8.6, Driver API Version: 13.1, Runtime API Version: 11.8
+W1027 08:51:30.114758 29356 gpu_resources.cc:164] device: 0, cuDNN Version: 8.9.
+[10/27 08:51:30] ppdet.utils.checkpoint INFO: The shape [15] in pretrained weight yolo_head.pred_cls.0.bias is unmatched with the shape [1] in model yolo_head.pred_cls.0.bias. And the weight yolo_head.pred_cls.0.bias will not be loaded
+[10/27 08:51:30] ppdet.utils.checkpoint INFO: The shape [15, 384, 3, 3] in pretrained weight yolo_head.pred_cls.0.weight is unmatched with the shape [1, 384, 3, 3] in model yolo_head.pred_cls.0.weight. And the weight yolo_head.pred_cls.0.weight will not be loaded
+[10/27 08:51:30] ppdet.utils.checkpoint INFO: The shape [15] in pretrained weight yolo_head.pred_cls.1.bias is unmatched with the shape [1] in model yolo_head.pred_cls.1.bias. And the weight yolo_head.pred_cls.1.bias will not be loaded
+[10/27 08:51:30] ppdet.utils.checkpoint INFO: The shape [15, 192, 3, 3] in pretrained weight yolo_head.pred_cls.1.weight is unmatched with the shape [1, 192, 3, 3] in model yolo_head.pred_cls.1.weight. And the weight yolo_head.pred_cls.1.weight will not be loaded
+[10/27 08:51:30] ppdet.utils.checkpoint INFO: The shape [15] in pretrained weight yolo_head.pred_cls.2.bias is unmatched with the shape [1] in model yolo_head.pred_cls.2.bias. And the weight yolo_head.pred_cls.2.bias will not be loaded
+[10/27 08:51:30] ppdet.utils.checkpoint INFO: The shape [15, 96, 3, 3] in pretrained weight yolo_head.pred_cls.2.weight is unmatched with the shape [1, 96, 3, 3] in model yolo_head.pred_cls.2.weight. And the weight yolo_head.pred_cls.2.weight will not be loaded
+[10/27 08:51:30] ppdet.utils.checkpoint INFO: Finish loading model weights: models/pp_yoloe_r/ppyoloe_r_crn_s_3x_dota.pdparams
+Traceback (most recent call last):
+  File "E:\Logo_Video_Text_Spotting\third_party\PaddleDetection\tools\train.py", line 209, in <module>
+    main()
+  File "E:\Logo_Video_Text_Spotting\third_party\PaddleDetection\tools\train.py", line 205, in main
+    run(FLAGS, cfg)
+  File "E:\Logo_Video_Text_Spotting\third_party\PaddleDetection\tools\train.py", line 158, in run
+    trainer.train(FLAGS.eval)
+  File "E:\Logo_Video_Text_Spotting\third_party\PaddleDetection\ppdet\engine\trainer.py", line 577, in train
+    outputs = model(data)
+              ^^^^^^^^^^^
+  File "E:\Logo_Video_Text_Spotting\.venv-paddle\Lib\site-packages\paddle\nn\layer\layers.py", line 1429, in __call__
+    return self.forward(*inputs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Logo_Video_Text_Spotting\third_party\PaddleDetection\ppdet\modeling\architectures\meta_arch.py", line 60, in forward
+    out = self.get_loss()
+          ^^^^^^^^^^^^^^^
+  File "E:\Logo_Video_Text_Spotting\third_party\PaddleDetection\ppdet\modeling\architectures\yolo.py", line 147, in get_loss
+    return self._forward()
+           ^^^^^^^^^^^^^^^
+  File "E:\Logo_Video_Text_Spotting\third_party\PaddleDetection\ppdet\modeling\architectures\yolo.py", line 93, in _forward
+    yolo_losses = self.yolo_head(neck_feats, self.inputs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Logo_Video_Text_Spotting\.venv-paddle\Lib\site-packages\paddle\nn\layer\layers.py", line 1429, in __call__
+    return self.forward(*inputs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Logo_Video_Text_Spotting\third_party\PaddleDetection\ppdet\modeling\heads\ppyoloe_r_head.py", line 180, in forward
+    return self.forward_train(feats, targets)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Logo_Video_Text_Spotting\third_party\PaddleDetection\ppdet\modeling\heads\ppyoloe_r_head.py", line 204, in forward_train
+    return self.get_loss([
+           ^^^^^^^^^^^^^^^
+  File "E:\Logo_Video_Text_Spotting\third_party\PaddleDetection\ppdet\modeling\heads\ppyoloe_r_head.py", line 275, in get_loss
+    self.assigner(
+  File "E:\Logo_Video_Text_Spotting\.venv-paddle\Lib\site-packages\paddle\nn\layer\layers.py", line 1429, in __call__
+    return self.forward(*inputs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Logo_Video_Text_Spotting\.venv-paddle\Lib\site-packages\decorator\__init__.py", line 247, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Logo_Video_Text_Spotting\.venv-paddle\Lib\site-packages\paddle\base\dygraph\base.py", line 352, in _decorate_function
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Logo_Video_Text_Spotting\third_party\PaddleDetection\ppdet\modeling\assigners\rotated_task_aligned_assigner.py", line 95, in forward
+    ious = rotated_iou_similarity(gt_bboxes, pred_bboxes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Logo_Video_Text_Spotting\third_party\PaddleDetection\ppdet\modeling\rbox_utils.py", line 290, in rotated_iou_similarity
+    from ext_op import rbox_iou
+ModuleNotFoundError: No module named 'ext_op'

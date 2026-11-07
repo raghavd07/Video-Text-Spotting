@@ -1,0 +1,6 @@
+2026-10-26 20:17:46,122 INFO viz_gt: icdar2015v/Video_4_4_2: 662 frames -> docs\figs\viz\icdar2015v_Video_4_4_2.mp4
+2026-10-26 20:17:46,556 ERROR viz_gt: Video_11_4_1 is in the icdar2015v test split; pass --final
+2026-10-26 20:36:29,333 INFO viz_gt: icdar2015v/Video_10_1_1: 336 frames -> runs\viz.mp4
+2026-10-26 20:37:26,337 INFO viz_gt: icdar2015v/Video_10_1_1: 336 frames -> runs\viz.mp4
+2026-10-27 08:40:45,506 INFO viz_gt: icdar2015v/Video_2_1_2: 452 frames -> runs\viz.mp4
+2026-11-01 01:37:46,937 INFO viz_gt: icdar2015v/Video_2_1_2: 452 frames -> runs\viz.mp4

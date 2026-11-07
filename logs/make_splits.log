@@ -1,0 +1,29 @@
+2026-10-26 12:07:52 INFO make_splits: icdar2013v train: 10 videos -> E:\Logo_Video_Text_Spotting\splits\icdar2013v_train.txt
+2026-10-26 12:07:52 INFO make_splits: icdar2013v val: 3 videos -> E:\Logo_Video_Text_Spotting\splits\icdar2013v_val.txt
+2026-10-26 12:07:52 INFO make_splits: icdar2013v test: 15 videos -> E:\Logo_Video_Text_Spotting\splits\icdar2013v_test.txt
+2026-10-26 12:08:07 INFO make_splits: icdar2015v train: 20 videos -> E:\Logo_Video_Text_Spotting\splits\icdar2015v_train.txt
+2026-10-26 12:08:07 INFO make_splits: icdar2015v val: 5 videos -> E:\Logo_Video_Text_Spotting\splits\icdar2015v_val.txt
+2026-10-26 12:08:07 INFO make_splits: icdar2015v test: 24 videos -> E:\Logo_Video_Text_Spotting\splits\icdar2015v_test.txt
+2026-10-26 12:10:33 INFO make_splits: dstext train: 39 videos -> E:\Logo_Video_Text_Spotting\splits\dstext_train.txt
+2026-10-26 12:10:33 INFO make_splits: dstext val: 11 videos -> E:\Logo_Video_Text_Spotting\splits\dstext_val.txt
+2026-10-26 12:10:33 INFO make_splits: dstext test: 50 videos -> E:\Logo_Video_Text_Spotting\splits\dstext_test.txt
+2026-10-26 20:16:53,739 INFO make_splits: icdar2013v: train 10 / val 3 / test 15 (seed 42, val_frac 0.20) unchanged
+2026-10-26 20:16:53,778 INFO make_splits: icdar2015v: train 20 / val 5 / test 24 (seed 42, val_frac 0.20) unchanged
+2026-10-26 20:16:53,778 WARNING make_splits: icdar2015v: 24/24 test videos have no annotations; val acts as the held-out test set
+2026-10-26 20:16:53,834 INFO make_splits: dstext: train 39 / val 11 / test 50 (seed 42, val_frac 0.20) unchanged
+2026-10-26 20:16:53,834 WARNING make_splits: dstext: 50/50 test videos have no annotations; val acts as the held-out test set
+2026-10-26 20:38:18,289 INFO make_splits: icdar2013v: train 10 / val 3 / test 15 (seed 42, val_frac 0.20) unchanged
+2026-10-26 20:38:18,325 INFO make_splits: icdar2015v: train 20 / val 5 / test 24 (seed 42, val_frac 0.20) unchanged
+2026-10-26 20:38:18,325 WARNING make_splits: icdar2015v: 24/24 test videos have no annotations; val acts as the held-out test set
+2026-10-26 20:38:18,381 INFO make_splits: dstext: train 39 / val 11 / test 50 (seed 42, val_frac 0.20) unchanged
+2026-10-26 20:38:18,381 WARNING make_splits: dstext: 50/50 test videos have no annotations; val acts as the held-out test set
+2026-10-27 08:42:16,639 INFO make_splits: icdar2013v: train 10 / val 3 / test 15 (seed 42, val_frac 0.20) unchanged
+2026-10-27 08:42:16,678 INFO make_splits: icdar2015v: train 20 / val 5 / test 24 (seed 42, val_frac 0.20) unchanged
+2026-10-27 08:42:16,679 WARNING make_splits: icdar2015v: 24/24 test videos have no annotations; val acts as the held-out test set
+2026-10-27 08:42:16,731 INFO make_splits: dstext: train 39 / val 11 / test 50 (seed 42, val_frac 0.20) unchanged
+2026-10-27 08:42:16,731 WARNING make_splits: dstext: 50/50 test videos have no annotations; val acts as the held-out test set
+2026-11-01 01:38:54,272 INFO make_splits: icdar2013v: train 10 / val 3 / test 15 (seed 42, val_frac 0.20) unchanged
+2026-11-01 01:38:54,311 INFO make_splits: icdar2015v: train 20 / val 5 / test 24 (seed 42, val_frac 0.20) unchanged
+2026-11-01 01:38:54,311 WARNING make_splits: icdar2015v: 24/24 test videos have no annotations; val acts as the held-out test set
+2026-11-01 01:38:54,384 INFO make_splits: dstext: train 39 / val 11 / test 50 (seed 42, val_frac 0.20) unchanged
+2026-11-01 01:38:54,384 WARNING make_splits: dstext: 50/50 test videos have no annotations; val acts as the held-out test set

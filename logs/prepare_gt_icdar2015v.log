@@ -1,0 +1,26 @@
+2026-10-26 12:07:55 INFO prepare_gt: train/Video_10_1_1: 1280x960 frames=336 objects=11559 dont_care=4401
+2026-10-26 12:07:55 INFO prepare_gt: train/Video_13_4_1: 1280x960 frames=576 objects=1635 dont_care=1238
+2026-10-26 12:07:56 INFO prepare_gt: train/Video_16_3_2: 720x480 frames=301 objects=6450 dont_care=3108
+2026-10-26 12:07:57 INFO prepare_gt: train/Video_18_3_1: 1280x960 frames=198 objects=8979 dont_care=6040
+2026-10-26 12:07:58 INFO prepare_gt: train/Video_19_5_1: 1280x960 frames=408 objects=2509 dont_care=1595
+2026-10-26 12:07:58 INFO prepare_gt: train/Video_21_5_1: 1280x960 frames=960 objects=1923 dont_care=1483
+2026-10-26 12:07:59 INFO prepare_gt: train/Video_25_5_2: 800x480 frames=1860 objects=7025 dont_care=3924
+2026-10-26 12:08:00 INFO prepare_gt: train/Video_26_5_2: 800x480 frames=387 objects=1356 dont_care=380
+2026-10-26 12:08:00 INFO prepare_gt: train/Video_28_1_1: 1280x960 frames=432 objects=442 dont_care=223
+2026-10-26 12:08:00 INFO prepare_gt: train/Video_2_1_2: 720x480 frames=452 objects=1862 dont_care=1094
+2026-10-26 12:08:01 INFO prepare_gt: train/Video_33_2_3: 1280x720 frames=480 objects=3077 dont_care=215
+2026-10-26 12:08:01 INFO prepare_gt: train/Video_36_2_3: 1280x720 frames=336 objects=2133 dont_care=0
+2026-10-26 12:08:02 INFO prepare_gt: train/Video_37_2_3: 1280x720 frames=456 objects=4530 dont_care=79
+2026-10-26 12:08:02 INFO prepare_gt: train/Video_40_2_3: 1280x720 frames=408 objects=2485 dont_care=207
+2026-10-26 12:08:03 INFO prepare_gt: train/Video_41_2_3: 1280x720 frames=528 objects=2334 dont_care=22
+2026-10-26 12:08:03 INFO prepare_gt: train/Video_42_2_3: 1280x720 frames=504 objects=4402 dont_care=475
+2026-10-26 12:08:04 INFO prepare_gt: train/Video_45_6_4: 1280x720 frames=780 objects=1480 dont_care=453
+2026-10-26 12:08:04 INFO prepare_gt: train/Video_46_6_4: 1280x720 frames=722 objects=1081 dont_care=25
+2026-10-26 12:08:04 INFO prepare_gt: train/Video_47_6_4: 1280x720 frames=780 objects=1222 dont_care=390
+2026-10-26 12:08:04 INFO prepare_gt: train/Video_4_4_2: 720x480 frames=662 objects=560 dont_care=424
+2026-10-26 12:08:04 INFO prepare_gt: train/Video_51_7_4: 1280x720 frames=450 objects=970 dont_care=218
+2026-10-26 12:08:05 INFO prepare_gt: train/Video_52_7_4: 1280x720 frames=450 objects=1339 dont_care=0
+2026-10-26 12:08:05 INFO prepare_gt: train/Video_54_7_4: 1280x720 frames=480 objects=1593 dont_care=645
+2026-10-26 12:08:05 INFO prepare_gt: train/Video_7_5_1: 1280x960 frames=264 objects=493 dont_care=78
+2026-10-26 12:08:05 INFO prepare_gt: train/Video_8_5_1: 1280x960 frames=240 objects=355 dont_care=122
+2026-10-26 12:08:05 INFO prepare_gt: done: 25 converted, 0 without GT

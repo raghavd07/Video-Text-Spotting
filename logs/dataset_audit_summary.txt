@@ -1,0 +1,56 @@
+LOGO PROJECT — DATASET AUDIT CHECKPOINT
+=======================================
+
+Status: DONE FOR TODAY
+Date: 2026-10-16
+
+DATASET INVENTORY
+-----------------
+DSText:
+- Train: 50 videos, 50 XML files
+- Test: 50 videos, no local annotation files found
+
+ICDAR2013:
+- Train: 13 videos, 13 XML files
+- Test: 15 videos, 15 XML files
+
+ICDAR2015:
+- Train: 25 videos, 25 regular GT TXT files,
+  25 per-video vocabulary files
+- Test: 24 videos, no regular GT TXT files found,
+  24 per-video vocabulary files
+
+DSTEXT TRAIN ANNOTATION AUDIT
+-----------------------------
+- XML files: 50
+- Frames: 12,103
+- Text objects: 945,959
+- Four-point objects: 945,959
+- Blank/whitespace transcriptions: 146
+- ##DONT#CARE## annotations: 160,987
+- XML read errors: 0
+
+VISUAL INSPECTION
+-----------------
+- Successfully opened sample videos and displayed frames.
+- Inspected XML annotation coordinates.
+- Tested polygon overlays and zoomed annotation crops.
+- Polygon point ordering requires further validation.
+- Original annotations have not been modified.
+
+OPEN ISSUES
+-----------
+1. Locate or verify official DSText test ground truth.
+2. Locate or verify regular ICDAR2015 test ground truth.
+3. Investigate the 146 whitespace transcriptions.
+4. Confirm annotation geometry and frame alignment.
+5. Check official LOGO implementation and dependencies
+   before beginning baseline reproduction.
+
+NEXT SESSION
+------------
+Resume with dataset audit documentation and remaining
+ground-truth checks. Then prepare a reproducible dataset
+reader and validate annotations before model training.
+
+No model training has started.
