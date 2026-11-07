@@ -1,0 +1,582 @@
+2026-11-01 15:44:25,054 INFO build_lst_cache: exp=E5-lst fuse_exp=E3-lsc lsc_exp=E3-lsc score_thr=0.3 iou=0.5
+2026-11-01 15:44:25,092 INFO build_lst_cache: Video_2_1_2: frames=452 instances=5 matched=0 tracks=0
+2026-11-01 15:44:25,255 INFO build_lst_cache: Video_37_2_3: frames=456 instances=398 matched=3 tracks=1
+2026-11-01 15:44:25,288 INFO build_lst_cache: Video_45_6_4: frames=780 instances=6 matched=0 tracks=0
+2026-11-01 15:44:25,322 INFO build_lst_cache: Video_47_6_4: frames=780 instances=3 matched=0 tracks=0
+2026-11-01 15:44:25,359 INFO build_lst_cache: Video_4_4_2: frames=662 instances=36 matched=0 tracks=0
+2026-11-01 15:44:25,361 INFO build_lst_cache: icdar2015v/val: {'videos_built': 5, 'videos_kept': 0, 'instances': 448, 'matched': 3, 'matched_frac': 0.0067, 'gt_tracks_hit': 1, 'score_thr': 0.3, 'iou': 0.5, 'fuse_exp': 'E3-lsc', 'lsc_exp': 'E3-lsc', 'seconds': 0.3}
+2026-11-01 15:52:49,421 INFO train_lst: exp=E5-lst smoke=False device=cuda amp=True feats=[26,512] train=20 videos/10220 clips val=5 videos params=42235904 iters=30000
+2026-11-01 15:52:56,378 INFO train_lst: iter 20/30000 loss_long_asso 1.4344 loss_short_asso 0.8248 loss 2.2591 lr 1.05e-06 skipped 863 7.0s peak 822 MB
+2026-11-01 15:52:59,000 INFO train_lst: iter 40/30000 loss_long_asso 3.3957 loss_short_asso 1.9652 loss 5.3608 lr 2.05e-06 skipped 1930 9.6s peak 822 MB
+2026-11-01 15:53:01,845 INFO train_lst: iter 60/30000 loss_long_asso 3.0353 loss_short_asso 1.8853 loss 4.9206 lr 3.05e-06 skipped 2647 12.4s peak 822 MB
+2026-11-01 15:53:05,052 INFO train_lst: iter 80/30000 loss_long_asso 10.6695 loss_short_asso 3.6691 loss 14.3385 lr 4.05e-06 skipped 3697 15.6s peak 822 MB
+2026-11-01 15:53:07,433 INFO train_lst: iter 100/30000 loss_long_asso 1.4086 loss_short_asso 1.0321 loss 2.4407 lr 5.05e-06 skipped 4315 18.0s peak 822 MB
+2026-11-01 15:53:09,547 INFO train_lst: iter 120/30000 loss_long_asso 0.5631 loss_short_asso 0.5066 loss 1.0697 lr 6.04e-06 skipped 4933 20.1s peak 822 MB
+2026-11-01 15:53:11,729 INFO train_lst: iter 140/30000 loss_long_asso 3.6441 loss_short_asso 2.5820 loss 6.2262 lr 7.04e-06 skipped 5640 22.3s peak 822 MB
+2026-11-01 15:53:14,103 INFO train_lst: iter 160/30000 loss_long_asso 0.6673 loss_short_asso 0.5893 loss 1.2566 lr 8.04e-06 skipped 6506 24.7s peak 822 MB
+2026-11-01 15:53:16,052 INFO train_lst: iter 180/30000 loss_long_asso 0.6889 loss_short_asso 0.3563 loss 1.0452 lr 9.04e-06 skipped 7032 26.6s peak 822 MB
+2026-11-01 15:53:18,414 INFO train_lst: iter 200/30000 loss_long_asso 1.8331 loss_short_asso 1.2274 loss 3.0605 lr 1.00e-05 skipped 7850 29.0s peak 822 MB
+2026-11-01 15:53:20,982 INFO train_lst: iter 220/30000 loss_long_asso 0.7465 loss_short_asso 0.5697 loss 1.3162 lr 1.10e-05 skipped 8879 31.6s peak 822 MB
+2026-11-01 15:53:23,653 INFO train_lst: iter 240/30000 loss_long_asso 0.4965 loss_short_asso 0.6192 loss 1.1157 lr 1.20e-05 skipped 9955 34.2s peak 822 MB
+2026-11-01 15:53:26,085 INFO train_lst: iter 260/30000 loss_long_asso 1.1592 loss_short_asso 0.9029 loss 2.0621 lr 1.30e-05 skipped 10966 36.7s peak 822 MB
+2026-11-01 15:53:28,338 INFO train_lst: iter 280/30000 loss_long_asso 0.8832 loss_short_asso 0.4918 loss 1.3749 lr 1.40e-05 skipped 11766 38.9s peak 822 MB
+2026-11-01 15:53:30,122 INFO train_lst: iter 300/30000 loss_long_asso 0.7276 loss_short_asso 0.6034 loss 1.3309 lr 1.50e-05 skipped 12148 40.7s peak 822 MB
+2026-11-01 15:53:32,148 INFO train_lst: iter 320/30000 loss_long_asso 1.8866 loss_short_asso 1.0596 loss 2.9461 lr 1.60e-05 skipped 12811 42.7s peak 822 MB
+2026-11-01 15:53:35,119 INFO train_lst: iter 340/30000 loss_long_asso 0.9205 loss_short_asso 0.7083 loss 1.6288 lr 1.70e-05 skipped 14215 45.7s peak 822 MB
+2026-11-01 15:53:37,804 INFO train_lst: iter 360/30000 loss_long_asso 0.9706 loss_short_asso 0.3611 loss 1.3317 lr 1.80e-05 skipped 15148 48.4s peak 822 MB
+2026-11-01 15:53:40,849 INFO train_lst: iter 380/30000 loss_long_asso 1.6463 loss_short_asso 0.8361 loss 2.4824 lr 1.90e-05 skipped 16054 51.4s peak 822 MB
+2026-11-01 15:53:43,805 INFO train_lst: iter 400/30000 loss_long_asso 0.6600 loss_short_asso 0.3658 loss 1.0258 lr 2.00e-05 skipped 16817 54.4s peak 822 MB
+2026-11-01 15:53:46,646 INFO train_lst: iter 420/30000 loss_long_asso 0.4546 loss_short_asso 0.2150 loss 0.6696 lr 2.10e-05 skipped 17614 57.2s peak 822 MB
+2026-11-01 15:53:49,342 INFO train_lst: iter 440/30000 loss_long_asso 0.4789 loss_short_asso 0.3370 loss 0.8159 lr 2.20e-05 skipped 18337 59.9s peak 822 MB
+2026-11-01 15:53:51,865 INFO train_lst: iter 460/30000 loss_long_asso 1.6144 loss_short_asso 1.6827 loss 3.2971 lr 2.30e-05 skipped 19018 62.4s peak 822 MB
+2026-11-01 15:53:54,623 INFO train_lst: iter 480/30000 loss_long_asso 0.3877 loss_short_asso 0.3129 loss 0.7006 lr 2.40e-05 skipped 19799 65.2s peak 822 MB
+2026-11-01 15:53:57,760 INFO train_lst: iter 500/30000 loss_long_asso 0.4536 loss_short_asso 0.2021 loss 0.6557 lr 2.50e-05 skipped 20599 68.3s peak 822 MB
+2026-11-01 15:54:00,755 INFO train_lst: iter 520/30000 loss_long_asso 0.5228 loss_short_asso 0.5053 loss 1.0281 lr 2.60e-05 skipped 21555 71.3s peak 822 MB
+2026-11-01 15:54:04,460 INFO train_lst: iter 540/30000 loss_long_asso 0.6766 loss_short_asso 0.6629 loss 1.3396 lr 2.70e-05 skipped 22706 75.0s peak 822 MB
+2026-11-01 15:54:07,149 INFO train_lst: iter 560/30000 loss_long_asso 0.7377 loss_short_asso 0.2911 loss 1.0288 lr 2.80e-05 skipped 23492 77.7s peak 822 MB
+2026-11-01 15:54:09,548 INFO train_lst: iter 580/30000 loss_long_asso 1.5996 loss_short_asso 1.4933 loss 3.0930 lr 2.90e-05 skipped 24458 80.1s peak 822 MB
+2026-11-01 15:54:11,843 INFO train_lst: iter 600/30000 loss_long_asso 0.6003 loss_short_asso 0.5217 loss 1.1220 lr 3.00e-05 skipped 25213 82.4s peak 822 MB
+2026-11-01 15:54:14,034 INFO train_lst: iter 620/30000 loss_long_asso 0.3212 loss_short_asso 0.2366 loss 0.5577 lr 3.10e-05 skipped 25972 84.6s peak 822 MB
+2026-11-01 15:54:16,268 INFO train_lst: iter 640/30000 loss_long_asso 0.5585 loss_short_asso 0.2773 loss 0.8357 lr 3.20e-05 skipped 26780 86.8s peak 822 MB
+2026-11-01 15:54:18,300 INFO train_lst: iter 660/30000 loss_long_asso 1.6092 loss_short_asso 0.5145 loss 2.1236 lr 3.30e-05 skipped 27225 88.9s peak 822 MB
+2026-11-01 15:54:20,409 INFO train_lst: iter 680/30000 loss_long_asso 0.3996 loss_short_asso 0.2355 loss 0.6350 lr 3.40e-05 skipped 27812 91.0s peak 822 MB
+2026-11-01 15:54:22,977 INFO train_lst: iter 700/30000 loss_long_asso 1.5138 loss_short_asso 0.4705 loss 1.9843 lr 3.50e-05 skipped 28883 93.6s peak 822 MB
+2026-11-01 15:54:25,173 INFO train_lst: iter 720/30000 loss_long_asso 0.2604 loss_short_asso 0.1801 loss 0.4404 lr 3.60e-05 skipped 29735 95.7s peak 822 MB
+2026-11-01 15:54:27,103 INFO train_lst: iter 740/30000 loss_long_asso 0.6386 loss_short_asso 0.6176 loss 1.2562 lr 3.70e-05 skipped 30235 97.7s peak 822 MB
+2026-11-01 15:54:29,344 INFO train_lst: iter 760/30000 loss_long_asso 0.8598 loss_short_asso 0.5402 loss 1.4000 lr 3.80e-05 skipped 31029 99.9s peak 822 MB
+2026-11-01 15:54:31,505 INFO train_lst: iter 780/30000 loss_long_asso 0.9640 loss_short_asso 0.6256 loss 1.5896 lr 3.90e-05 skipped 31814 102.1s peak 822 MB
+2026-11-01 15:54:33,334 INFO train_lst: iter 800/30000 loss_long_asso 0.5852 loss_short_asso 0.8240 loss 1.4092 lr 4.00e-05 skipped 32230 103.9s peak 822 MB
+2026-11-01 15:54:35,936 INFO train_lst: iter 820/30000 loss_long_asso 1.1148 loss_short_asso 0.4459 loss 1.5608 lr 4.10e-05 skipped 33231 106.5s peak 822 MB
+2026-11-01 15:54:37,871 INFO train_lst: iter 840/30000 loss_long_asso 0.6387 loss_short_asso 0.1566 loss 0.7952 lr 4.20e-05 skipped 33775 108.4s peak 822 MB
+2026-11-01 15:54:40,709 INFO train_lst: iter 860/30000 loss_long_asso 0.6808 loss_short_asso 1.0280 loss 1.7087 lr 4.30e-05 skipped 34814 111.3s peak 822 MB
+2026-11-01 15:54:43,785 INFO train_lst: iter 880/30000 loss_long_asso 0.3584 loss_short_asso 0.2590 loss 0.6174 lr 4.40e-05 skipped 35994 114.4s peak 822 MB
+2026-11-01 15:54:46,683 INFO train_lst: iter 900/30000 loss_long_asso 5.1925 loss_short_asso 1.5504 loss 6.7429 lr 4.50e-05 skipped 36931 117.3s peak 822 MB
+2026-11-01 15:54:49,323 INFO train_lst: iter 920/30000 loss_long_asso 2.4638 loss_short_asso 0.1702 loss 2.6340 lr 4.60e-05 skipped 37623 119.9s peak 822 MB
+2026-11-01 15:54:52,320 INFO train_lst: iter 940/30000 loss_long_asso 0.7388 loss_short_asso 0.3377 loss 1.0765 lr 4.70e-05 skipped 38563 122.9s peak 822 MB
+2026-11-01 15:54:55,170 INFO train_lst: iter 960/30000 loss_long_asso 0.2930 loss_short_asso 0.3791 loss 0.6721 lr 4.80e-05 skipped 39480 125.7s peak 822 MB
+2026-11-01 15:54:58,200 INFO train_lst: iter 980/30000 loss_long_asso 0.4188 loss_short_asso 0.1658 loss 0.5846 lr 4.90e-05 skipped 40631 128.8s peak 822 MB
+2026-11-01 15:55:00,731 INFO train_lst: iter 1000/30000 loss_long_asso 2.1079 loss_short_asso 2.1112 loss 4.2191 lr 5.00e-05 skipped 41535 131.3s peak 822 MB
+2026-11-01 15:55:08,185 INFO train_lst: val iter 1000: IDF1 0.08 MOTA -6.09 MOTP 76.43 MT 0.0 ML 100.0 *best*
+2026-11-01 15:55:10,350 INFO train_lst: iter 1020/30000 loss_long_asso 0.7991 loss_short_asso 0.2831 loss 1.0822 lr 5.00e-05 skipped 42152 140.9s peak 822 MB
+2026-11-01 15:55:12,503 INFO train_lst: iter 1040/30000 loss_long_asso 0.3003 loss_short_asso 3.5110 loss 3.8113 lr 5.00e-05 skipped 43019 143.1s peak 822 MB
+2026-11-01 15:55:14,275 INFO train_lst: iter 1060/30000 loss_long_asso 1.1533 loss_short_asso 0.1955 loss 1.3489 lr 5.00e-05 skipped 43401 144.9s peak 822 MB
+2026-11-01 15:55:16,500 INFO train_lst: iter 1080/30000 loss_long_asso 0.5211 loss_short_asso 0.4515 loss 0.9726 lr 5.00e-05 skipped 44307 147.1s peak 822 MB
+2026-11-01 15:55:18,900 INFO train_lst: iter 1100/30000 loss_long_asso 0.3843 loss_short_asso 0.2325 loss 0.6168 lr 5.00e-05 skipped 45223 149.5s peak 822 MB
+2026-11-01 15:55:20,890 INFO train_lst: iter 1120/30000 loss_long_asso 0.1160 loss_short_asso 0.3437 loss 0.4598 lr 5.00e-05 skipped 45821 151.5s peak 822 MB
+2026-11-01 15:55:23,199 INFO train_lst: iter 1140/30000 loss_long_asso 0.1989 loss_short_asso 0.8818 loss 1.0807 lr 5.00e-05 skipped 46833 153.8s peak 822 MB
+2026-11-01 15:55:25,588 INFO train_lst: iter 1160/30000 loss_long_asso 4.8447 loss_short_asso 2.2701 loss 7.1148 lr 5.00e-05 skipped 47778 156.2s peak 822 MB
+2026-11-01 15:55:27,759 INFO train_lst: iter 1180/30000 loss_long_asso 0.3078 loss_short_asso 0.1796 loss 0.4874 lr 5.00e-05 skipped 48604 158.3s peak 822 MB
+2026-11-01 15:55:30,048 INFO train_lst: iter 1200/30000 loss_long_asso 0.4387 loss_short_asso 0.4308 loss 0.8696 lr 5.00e-05 skipped 49532 160.6s peak 822 MB
+2026-11-01 15:55:32,388 INFO train_lst: iter 1220/30000 loss_long_asso 0.6773 loss_short_asso 0.4887 loss 1.1661 lr 5.00e-05 skipped 50474 163.0s peak 822 MB
+2026-11-01 15:55:34,513 INFO train_lst: iter 1240/30000 loss_long_asso 0.2059 loss_short_asso 0.1598 loss 0.3657 lr 5.00e-05 skipped 51189 165.1s peak 822 MB
+2026-11-01 15:55:36,525 INFO train_lst: iter 1260/30000 loss_long_asso 0.1804 loss_short_asso 0.0582 loss 0.2386 lr 5.00e-05 skipped 51852 167.1s peak 822 MB
+2026-11-01 15:55:39,234 INFO train_lst: iter 1280/30000 loss_long_asso 0.8138 loss_short_asso 1.9619 loss 2.7757 lr 5.00e-05 skipped 52502 169.8s peak 822 MB
+2026-11-01 15:55:42,263 INFO train_lst: iter 1300/30000 loss_long_asso 0.9151 loss_short_asso 0.2525 loss 1.1676 lr 5.00e-05 skipped 53233 172.8s peak 822 MB
+2026-11-01 15:55:45,176 INFO train_lst: iter 1320/30000 loss_long_asso 0.4134 loss_short_asso 0.3399 loss 0.7533 lr 5.00e-05 skipped 53898 175.8s peak 822 MB
+2026-11-01 15:55:47,953 INFO train_lst: iter 1340/30000 loss_long_asso 0.0669 loss_short_asso 0.0163 loss 0.0831 lr 5.00e-05 skipped 54654 178.5s peak 822 MB
+2026-11-01 15:55:51,552 INFO train_lst: iter 1360/30000 loss_long_asso 0.6729 loss_short_asso 0.2663 loss 0.9392 lr 5.00e-05 skipped 55879 182.1s peak 822 MB
+2026-11-01 15:55:54,458 INFO train_lst: iter 1380/30000 loss_long_asso 0.2725 loss_short_asso 0.1117 loss 0.3841 lr 5.00e-05 skipped 56606 185.0s peak 822 MB
+2026-11-01 15:55:57,834 INFO train_lst: iter 1400/30000 loss_long_asso 0.2091 loss_short_asso 0.1472 loss 0.3563 lr 5.00e-05 skipped 57623 188.4s peak 822 MB
+2026-11-01 15:56:00,825 INFO train_lst: iter 1420/30000 loss_long_asso 2.4305 loss_short_asso 0.9949 loss 3.4254 lr 5.00e-05 skipped 58495 191.4s peak 822 MB
+2026-11-01 15:56:03,384 INFO train_lst: iter 1440/30000 loss_long_asso 0.6765 loss_short_asso 0.4201 loss 1.0965 lr 5.00e-05 skipped 59033 194.0s peak 822 MB
+2026-11-01 15:56:06,672 INFO train_lst: iter 1460/30000 loss_long_asso 0.1977 loss_short_asso 0.1731 loss 0.3708 lr 5.00e-05 skipped 60219 197.2s peak 822 MB
+2026-11-01 15:56:09,114 INFO train_lst: iter 1480/30000 loss_long_asso 0.3684 loss_short_asso 0.1393 loss 0.5077 lr 5.00e-05 skipped 61071 199.7s peak 822 MB
+2026-11-01 15:56:11,647 INFO train_lst: iter 1500/30000 loss_long_asso 0.2579 loss_short_asso 0.3536 loss 0.6115 lr 5.00e-05 skipped 62119 202.2s peak 822 MB
+2026-11-01 15:56:14,363 INFO train_lst: iter 1520/30000 loss_long_asso 0.3086 loss_short_asso 0.0874 loss 0.3960 lr 5.00e-05 skipped 63282 204.9s peak 822 MB
+2026-11-01 15:56:16,806 INFO train_lst: iter 1540/30000 loss_long_asso 0.3831 loss_short_asso 0.2481 loss 0.6312 lr 5.00e-05 skipped 64198 207.4s peak 822 MB
+2026-11-01 15:56:18,851 INFO train_lst: iter 1560/30000 loss_long_asso 0.5809 loss_short_asso 1.3071 loss 1.8880 lr 5.00e-05 skipped 64896 209.4s peak 822 MB
+2026-11-01 15:56:20,951 INFO train_lst: iter 1580/30000 loss_long_asso 0.1812 loss_short_asso 0.1387 loss 0.3199 lr 5.00e-05 skipped 65657 211.5s peak 822 MB
+2026-11-01 15:56:23,590 INFO train_lst: iter 1600/30000 loss_long_asso 0.3235 loss_short_asso 0.1640 loss 0.4875 lr 4.99e-05 skipped 66690 214.2s peak 822 MB
+2026-11-01 15:56:25,586 INFO train_lst: iter 1620/30000 loss_long_asso 0.0634 loss_short_asso 0.0193 loss 0.0827 lr 4.99e-05 skipped 67339 216.2s peak 822 MB
+2026-11-01 15:56:27,857 INFO train_lst: iter 1640/30000 loss_long_asso 0.4232 loss_short_asso 0.3831 loss 0.8063 lr 4.99e-05 skipped 68094 218.4s peak 822 MB
+2026-11-01 15:56:29,923 INFO train_lst: iter 1660/30000 loss_long_asso 0.0036 loss_short_asso 0.2130 loss 0.2166 lr 4.99e-05 skipped 68817 220.5s peak 822 MB
+2026-11-01 15:56:32,193 INFO train_lst: iter 1680/30000 loss_long_asso 0.9673 loss_short_asso 0.8719 loss 1.8391 lr 4.99e-05 skipped 69469 222.8s peak 822 MB
+2026-11-01 15:56:34,348 INFO train_lst: iter 1700/30000 loss_long_asso 0.1646 loss_short_asso 0.0493 loss 0.2139 lr 4.99e-05 skipped 70072 224.9s peak 822 MB
+2026-11-01 15:56:36,483 INFO train_lst: iter 1720/30000 loss_long_asso 0.3249 loss_short_asso 0.3734 loss 0.6983 lr 4.99e-05 skipped 70619 227.1s peak 822 MB
+2026-11-01 15:56:39,432 INFO train_lst: iter 1740/30000 loss_long_asso 0.0946 loss_short_asso 0.0630 loss 0.1576 lr 4.99e-05 skipped 71473 230.0s peak 822 MB
+2026-11-01 15:56:42,703 INFO train_lst: iter 1760/30000 loss_long_asso 0.4855 loss_short_asso 0.6262 loss 1.1117 lr 4.99e-05 skipped 72390 233.3s peak 822 MB
+2026-11-01 15:56:45,487 INFO train_lst: iter 1780/30000 loss_long_asso 0.0832 loss_short_asso 0.0798 loss 0.1631 lr 4.99e-05 skipped 73085 236.1s peak 822 MB
+2026-11-01 15:56:48,810 INFO train_lst: iter 1800/30000 loss_long_asso 0.1525 loss_short_asso 0.1345 loss 0.2870 lr 4.99e-05 skipped 74057 239.4s peak 822 MB
+2026-11-01 15:56:51,544 INFO train_lst: iter 1820/30000 loss_long_asso 0.3141 loss_short_asso 0.4469 loss 0.7610 lr 4.99e-05 skipped 74713 242.1s peak 822 MB
+2026-11-01 15:56:54,552 INFO train_lst: iter 1840/30000 loss_long_asso 0.5857 loss_short_asso 0.2591 loss 0.8448 lr 4.99e-05 skipped 75664 245.1s peak 822 MB
+2026-11-01 15:56:57,078 INFO train_lst: iter 1860/30000 loss_long_asso 1.6382 loss_short_asso 0.8807 loss 2.5189 lr 4.99e-05 skipped 76315 247.7s peak 822 MB
+2026-11-01 15:56:59,999 INFO train_lst: iter 1880/30000 loss_long_asso 0.3131 loss_short_asso 0.0716 loss 0.3848 lr 4.99e-05 skipped 77245 250.6s peak 822 MB
+2026-11-01 15:57:03,233 INFO train_lst: iter 1900/30000 loss_long_asso 0.0960 loss_short_asso 0.0452 loss 0.1412 lr 4.99e-05 skipped 78091 253.8s peak 822 MB
+2026-11-01 15:57:06,606 INFO train_lst: iter 1920/30000 loss_long_asso 0.1919 loss_short_asso 0.1380 loss 0.3299 lr 4.99e-05 skipped 79117 257.2s peak 822 MB
+2026-11-01 15:57:08,810 INFO train_lst: iter 1940/30000 loss_long_asso 0.8415 loss_short_asso 0.6222 loss 1.4636 lr 4.99e-05 skipped 79897 259.4s peak 822 MB
+2026-11-01 15:57:11,252 INFO train_lst: iter 1960/30000 loss_long_asso 0.2311 loss_short_asso 0.0375 loss 0.2685 lr 4.99e-05 skipped 80879 261.8s peak 822 MB
+2026-11-01 15:57:13,447 INFO train_lst: iter 1980/30000 loss_long_asso 0.3239 loss_short_asso 0.1590 loss 0.4829 lr 4.99e-05 skipped 81718 264.0s peak 822 MB
+2026-11-01 15:57:15,480 INFO train_lst: iter 2000/30000 loss_long_asso 0.2737 loss_short_asso 0.1055 loss 0.3791 lr 4.99e-05 skipped 82352 266.1s peak 822 MB
+2026-11-01 15:57:21,727 INFO train_lst: val iter 2000: IDF1 0.08 MOTA -6.09 MOTP 76.43 MT 0.0 ML 100.0
+2026-11-01 15:57:24,357 INFO train_lst: iter 2020/30000 loss_long_asso 0.0756 loss_short_asso 0.0444 loss 0.1200 lr 4.98e-05 skipped 83500 274.9s peak 822 MB
+2026-11-01 15:57:26,111 INFO train_lst: iter 2040/30000 loss_long_asso 0.0351 loss_short_asso 0.0086 loss 0.0438 lr 4.98e-05 skipped 83912 276.7s peak 822 MB
+2026-11-01 15:57:29,296 INFO train_lst: iter 2060/30000 loss_long_asso 1.4310 loss_short_asso 0.7044 loss 2.1354 lr 4.98e-05 skipped 85529 279.9s peak 822 MB
+2026-11-01 15:57:31,281 INFO train_lst: iter 2080/30000 loss_long_asso 0.0513 loss_short_asso 0.0332 loss 0.0845 lr 4.98e-05 skipped 86237 281.9s peak 822 MB
+2026-11-01 15:57:33,318 INFO train_lst: iter 2100/30000 loss_long_asso 0.4375 loss_short_asso 0.3184 loss 0.7560 lr 4.98e-05 skipped 86895 283.9s peak 822 MB
+2026-11-01 15:57:35,333 INFO train_lst: iter 2120/30000 loss_long_asso 0.3933 loss_short_asso 0.0810 loss 0.4743 lr 4.98e-05 skipped 87448 285.9s peak 822 MB
+2026-11-01 15:57:37,650 INFO train_lst: iter 2140/30000 loss_long_asso 0.0807 loss_short_asso 0.0681 loss 0.1488 lr 4.98e-05 skipped 88085 288.2s peak 822 MB
+2026-11-01 15:57:40,947 INFO train_lst: iter 2160/30000 loss_long_asso 0.1019 loss_short_asso 0.0524 loss 0.1543 lr 4.98e-05 skipped 89097 291.5s peak 822 MB
+2026-11-01 15:57:43,698 INFO train_lst: iter 2180/30000 loss_long_asso 0.2197 loss_short_asso 0.0175 loss 0.2372 lr 4.98e-05 skipped 89854 294.3s peak 822 MB
+2026-11-01 15:57:46,213 INFO train_lst: iter 2200/30000 loss_long_asso 0.3718 loss_short_asso 0.5899 loss 0.9617 lr 4.98e-05 skipped 90514 296.8s peak 822 MB
+2026-11-01 15:57:49,444 INFO train_lst: iter 2220/30000 loss_long_asso 0.1353 loss_short_asso 0.0330 loss 0.1683 lr 4.98e-05 skipped 91553 300.0s peak 822 MB
+2026-11-01 15:57:51,826 INFO train_lst: iter 2240/30000 loss_long_asso 0.0511 loss_short_asso 0.0340 loss 0.0852 lr 4.98e-05 skipped 92255 302.4s peak 822 MB
+2026-11-01 15:57:55,285 INFO train_lst: iter 2260/30000 loss_long_asso 0.1930 loss_short_asso 0.2517 loss 0.4447 lr 4.98e-05 skipped 93310 305.9s peak 822 MB
+2026-11-01 15:57:58,136 INFO train_lst: iter 2280/30000 loss_long_asso 0.0678 loss_short_asso 0.0375 loss 0.1053 lr 4.98e-05 skipped 94162 308.7s peak 822 MB
+2026-11-01 15:58:01,353 INFO train_lst: iter 2300/30000 loss_long_asso 0.4639 loss_short_asso 0.2352 loss 0.6990 lr 4.98e-05 skipped 95211 311.9s peak 822 MB
+2026-11-01 15:58:03,870 INFO train_lst: iter 2320/30000 loss_long_asso 0.0375 loss_short_asso 0.0165 loss 0.0540 lr 4.97e-05 skipped 95724 314.4s peak 822 MB
+2026-11-01 15:58:06,717 INFO train_lst: iter 2340/30000 loss_long_asso 0.2035 loss_short_asso 0.1772 loss 0.3807 lr 4.97e-05 skipped 96561 317.3s peak 822 MB
+2026-11-01 15:58:08,795 INFO train_lst: iter 2360/30000 loss_long_asso 0.1211 loss_short_asso 0.0556 loss 0.1767 lr 4.97e-05 skipped 97253 319.4s peak 822 MB
+2026-11-01 15:58:11,407 INFO train_lst: iter 2380/30000 loss_long_asso 0.0390 loss_short_asso 0.0020 loss 0.0410 lr 4.97e-05 skipped 98082 322.0s peak 822 MB
+2026-11-01 15:58:13,784 INFO train_lst: iter 2400/30000 loss_long_asso 0.1920 loss_short_asso 0.1546 loss 0.3466 lr 4.97e-05 skipped 98862 324.4s peak 822 MB
+2026-11-01 15:58:16,295 INFO train_lst: iter 2420/30000 loss_long_asso 0.3841 loss_short_asso 0.0004 loss 0.3845 lr 4.97e-05 skipped 99780 326.9s peak 822 MB
+2026-11-01 15:58:18,378 INFO train_lst: iter 2440/30000 loss_long_asso 0.3470 loss_short_asso 0.4045 loss 0.7515 lr 4.97e-05 skipped 100314 329.0s peak 822 MB
+2026-11-01 15:58:21,063 INFO train_lst: iter 2460/30000 loss_long_asso 0.1414 loss_short_asso 0.0362 loss 0.1776 lr 4.97e-05 skipped 101103 331.6s peak 822 MB
+2026-11-01 15:58:23,681 INFO train_lst: iter 2480/30000 loss_long_asso 0.1374 loss_short_asso 0.0051 loss 0.1425 lr 4.97e-05 skipped 102020 334.3s peak 822 MB
+2026-11-01 15:58:26,212 INFO train_lst: iter 2500/30000 loss_long_asso 0.2255 loss_short_asso 0.0419 loss 0.2674 lr 4.97e-05 skipped 102774 336.8s peak 822 MB
+2026-11-01 15:58:28,763 INFO train_lst: iter 2520/30000 loss_long_asso 0.2655 loss_short_asso 0.1069 loss 0.3724 lr 4.97e-05 skipped 103641 339.3s peak 822 MB
+2026-11-01 15:58:31,002 INFO train_lst: iter 2540/30000 loss_long_asso 0.9156 loss_short_asso 0.2125 loss 1.1281 lr 4.97e-05 skipped 104364 341.6s peak 822 MB
+2026-11-01 15:58:33,783 INFO train_lst: iter 2560/30000 loss_long_asso 0.0691 loss_short_asso 0.0292 loss 0.0983 lr 4.96e-05 skipped 105558 344.4s peak 822 MB
+2026-11-01 15:58:36,174 INFO train_lst: iter 2580/30000 loss_long_asso 0.1416 loss_short_asso 0.0334 loss 0.1749 lr 4.96e-05 skipped 106497 346.8s peak 822 MB
+2026-11-01 15:58:38,828 INFO train_lst: iter 2600/30000 loss_long_asso 0.0203 loss_short_asso 0.0001 loss 0.0204 lr 4.96e-05 skipped 107450 349.4s peak 822 MB
+2026-11-01 15:58:41,168 INFO train_lst: iter 2620/30000 loss_long_asso 1.1863 loss_short_asso 0.3076 loss 1.4938 lr 4.96e-05 skipped 108075 351.7s peak 822 MB
+2026-11-01 15:58:43,737 INFO train_lst: iter 2640/30000 loss_long_asso 0.1142 loss_short_asso 0.0686 loss 0.1828 lr 4.96e-05 skipped 108851 354.3s peak 822 MB
+2026-11-01 15:58:46,638 INFO train_lst: iter 2660/30000 loss_long_asso 2.6717 loss_short_asso 0.9988 loss 3.6705 lr 4.96e-05 skipped 109737 357.2s peak 822 MB
+2026-11-01 15:58:48,773 INFO train_lst: iter 2680/30000 loss_long_asso 0.0001 loss_short_asso 0.0000 loss 0.0001 lr 4.96e-05 skipped 110248 359.4s peak 822 MB
+2026-11-01 15:58:52,262 INFO train_lst: iter 2700/30000 loss_long_asso 0.2400 loss_short_asso 0.5318 loss 0.7718 lr 4.96e-05 skipped 111584 362.8s peak 822 MB
+2026-11-01 15:58:54,920 INFO train_lst: iter 2720/30000 loss_long_asso 0.8991 loss_short_asso 0.8705 loss 1.7695 lr 4.96e-05 skipped 112431 365.5s peak 822 MB
+2026-11-01 15:58:56,766 INFO train_lst: iter 2740/30000 loss_long_asso 0.2442 loss_short_asso 0.3675 loss 0.6117 lr 4.96e-05 skipped 113123 367.3s peak 822 MB
+2026-11-01 15:58:58,513 INFO train_lst: iter 2760/30000 loss_long_asso 0.0008 loss_short_asso 0.0031 loss 0.0039 lr 4.95e-05 skipped 113830 369.1s peak 822 MB
+2026-11-01 15:59:00,391 INFO train_lst: iter 2780/30000 loss_long_asso 0.1923 loss_short_asso 0.0370 loss 0.2293 lr 4.95e-05 skipped 114360 371.0s peak 822 MB
+2026-11-01 15:59:02,545 INFO train_lst: iter 2800/30000 loss_long_asso 0.1078 loss_short_asso 0.0376 loss 0.1454 lr 4.95e-05 skipped 114946 373.1s peak 822 MB
+2026-11-01 15:59:05,369 INFO train_lst: iter 2820/30000 loss_long_asso 0.0332 loss_short_asso 0.0109 loss 0.0441 lr 4.95e-05 skipped 116222 375.9s peak 822 MB
+2026-11-01 15:59:07,846 INFO train_lst: iter 2840/30000 loss_long_asso 0.1462 loss_short_asso 0.1026 loss 0.2488 lr 4.95e-05 skipped 117159 378.4s peak 822 MB
+2026-11-01 15:59:10,162 INFO train_lst: iter 2860/30000 loss_long_asso 0.2725 loss_short_asso 0.0224 loss 0.2949 lr 4.95e-05 skipped 118059 380.7s peak 822 MB
+2026-11-01 15:59:12,266 INFO train_lst: iter 2880/30000 loss_long_asso 0.1389 loss_short_asso 0.0094 loss 0.1482 lr 4.95e-05 skipped 118714 382.8s peak 822 MB
+2026-11-01 15:59:14,384 INFO train_lst: iter 2900/30000 loss_long_asso 0.3791 loss_short_asso 0.1481 loss 0.5272 lr 4.95e-05 skipped 119533 385.0s peak 822 MB
+2026-11-01 15:59:16,545 INFO train_lst: iter 2920/30000 loss_long_asso 0.0596 loss_short_asso 0.0284 loss 0.0880 lr 4.95e-05 skipped 120230 387.1s peak 822 MB
+2026-11-01 15:59:19,137 INFO train_lst: iter 2940/30000 loss_long_asso 0.0060 loss_short_asso 0.0000 loss 0.0060 lr 4.94e-05 skipped 121447 389.7s peak 822 MB
+2026-11-01 15:59:21,307 INFO train_lst: iter 2960/30000 loss_long_asso 0.2370 loss_short_asso 0.0262 loss 0.2632 lr 4.94e-05 skipped 122125 391.9s peak 822 MB
+2026-11-01 15:59:23,565 INFO train_lst: iter 2980/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.94e-05 skipped 123028 394.1s peak 822 MB
+2026-11-01 15:59:25,726 INFO train_lst: iter 3000/30000 loss_long_asso 0.1124 loss_short_asso 0.0536 loss 0.1660 lr 4.94e-05 skipped 123712 396.3s peak 822 MB
+2026-11-01 15:59:32,686 INFO train_lst: val iter 3000: IDF1 0.08 MOTA -6.09 MOTP 76.43 MT 0.0 ML 100.0
+2026-11-01 15:59:34,976 INFO train_lst: iter 3020/30000 loss_long_asso 2.9276 loss_short_asso 2.2153 loss 5.1429 lr 4.94e-05 skipped 124525 405.6s peak 822 MB
+2026-11-01 15:59:37,504 INFO train_lst: iter 3040/30000 loss_long_asso 0.0709 loss_short_asso 0.0057 loss 0.0767 lr 4.94e-05 skipped 125491 408.1s peak 822 MB
+2026-11-01 15:59:40,747 INFO train_lst: iter 3060/30000 loss_long_asso 0.2786 loss_short_asso 0.0122 loss 0.2908 lr 4.94e-05 skipped 126383 411.3s peak 822 MB
+2026-11-01 15:59:44,043 INFO train_lst: iter 3080/30000 loss_long_asso 0.0769 loss_short_asso 0.0285 loss 0.1054 lr 4.94e-05 skipped 127265 414.6s peak 822 MB
+2026-11-01 15:59:46,980 INFO train_lst: iter 3100/30000 loss_long_asso 0.0630 loss_short_asso 0.0618 loss 0.1247 lr 4.94e-05 skipped 128066 417.6s peak 822 MB
+2026-11-01 15:59:49,857 INFO train_lst: iter 3120/30000 loss_long_asso 0.2242 loss_short_asso 0.0139 loss 0.2381 lr 4.93e-05 skipped 128760 420.4s peak 822 MB
+2026-11-01 15:59:52,688 INFO train_lst: iter 3140/30000 loss_long_asso 0.1620 loss_short_asso 0.0291 loss 0.1912 lr 4.93e-05 skipped 129418 423.3s peak 822 MB
+2026-11-01 15:59:55,643 INFO train_lst: iter 3160/30000 loss_long_asso 1.5343 loss_short_asso 0.1673 loss 1.7016 lr 4.93e-05 skipped 130186 426.2s peak 822 MB
+2026-11-01 15:59:59,562 INFO train_lst: iter 3180/30000 loss_long_asso 0.3431 loss_short_asso 0.1040 loss 0.4471 lr 4.93e-05 skipped 131528 430.1s peak 822 MB
+2026-11-01 16:00:02,251 INFO train_lst: iter 3200/30000 loss_long_asso 0.0556 loss_short_asso 0.0432 loss 0.0988 lr 4.93e-05 skipped 132314 432.8s peak 822 MB
+2026-11-01 16:00:04,924 INFO train_lst: iter 3220/30000 loss_long_asso 0.0276 loss_short_asso 0.0334 loss 0.0610 lr 4.93e-05 skipped 133055 435.5s peak 822 MB
+2026-11-01 16:00:07,739 INFO train_lst: iter 3240/30000 loss_long_asso 0.6659 loss_short_asso 0.0272 loss 0.6931 lr 4.93e-05 skipped 133956 438.3s peak 822 MB
+2026-11-01 16:00:09,715 INFO train_lst: iter 3260/30000 loss_long_asso 0.0080 loss_short_asso 0.0032 loss 0.0111 lr 4.93e-05 skipped 134489 440.3s peak 822 MB
+2026-11-01 16:00:11,990 INFO train_lst: iter 3280/30000 loss_long_asso 0.4287 loss_short_asso 0.0352 loss 0.4639 lr 4.92e-05 skipped 135215 442.6s peak 822 MB
+2026-11-01 16:00:14,359 INFO train_lst: iter 3300/30000 loss_long_asso 0.4729 loss_short_asso 0.0710 loss 0.5439 lr 4.92e-05 skipped 136123 444.9s peak 822 MB
+2026-11-01 16:00:16,744 INFO train_lst: iter 3320/30000 loss_long_asso 0.2556 loss_short_asso 0.1444 loss 0.4000 lr 4.92e-05 skipped 137076 447.3s peak 822 MB
+2026-11-01 16:00:18,757 INFO train_lst: iter 3340/30000 loss_long_asso 0.0278 loss_short_asso 0.0044 loss 0.0322 lr 4.92e-05 skipped 137595 449.3s peak 822 MB
+2026-11-01 16:00:21,098 INFO train_lst: iter 3360/30000 loss_long_asso 0.0408 loss_short_asso 0.1008 loss 0.1416 lr 4.92e-05 skipped 138470 451.7s peak 822 MB
+2026-11-01 16:00:23,363 INFO train_lst: iter 3380/30000 loss_long_asso 1.8577 loss_short_asso 3.3445 loss 5.2021 lr 4.92e-05 skipped 139216 453.9s peak 822 MB
+2026-11-01 16:00:25,836 INFO train_lst: iter 3400/30000 loss_long_asso 0.4074 loss_short_asso 0.1812 loss 0.5886 lr 4.92e-05 skipped 140224 456.4s peak 822 MB
+2026-11-01 16:00:28,418 INFO train_lst: iter 3420/30000 loss_long_asso 0.0016 loss_short_asso 0.0039 loss 0.0055 lr 4.91e-05 skipped 141301 459.0s peak 822 MB
+2026-11-01 16:00:30,517 INFO train_lst: iter 3440/30000 loss_long_asso 0.4757 loss_short_asso 0.2697 loss 0.7454 lr 4.91e-05 skipped 142010 461.1s peak 822 MB
+2026-11-01 16:00:32,675 INFO train_lst: iter 3460/30000 loss_long_asso 0.0876 loss_short_asso 0.0580 loss 0.1456 lr 4.91e-05 skipped 142626 463.3s peak 822 MB
+2026-11-01 16:00:35,333 INFO train_lst: iter 3480/30000 loss_long_asso 1.9755 loss_short_asso 0.7814 loss 2.7569 lr 4.91e-05 skipped 143754 465.9s peak 822 MB
+2026-11-01 16:00:37,820 INFO train_lst: iter 3500/30000 loss_long_asso 0.0721 loss_short_asso 0.0201 loss 0.0922 lr 4.91e-05 skipped 144538 468.4s peak 822 MB
+2026-11-01 16:00:41,312 INFO train_lst: iter 3520/30000 loss_long_asso 0.0884 loss_short_asso 0.0006 loss 0.0890 lr 4.91e-05 skipped 145489 471.9s peak 822 MB
+2026-11-01 16:00:44,621 INFO train_lst: iter 3540/30000 loss_long_asso 0.0206 loss_short_asso 0.0105 loss 0.0311 lr 4.91e-05 skipped 146483 475.2s peak 822 MB
+2026-11-01 16:00:47,452 INFO train_lst: iter 3560/30000 loss_long_asso 0.2095 loss_short_asso 0.1799 loss 0.3894 lr 4.90e-05 skipped 147167 478.0s peak 822 MB
+2026-11-01 16:00:50,527 INFO train_lst: iter 3580/30000 loss_long_asso 0.0155 loss_short_asso 0.0015 loss 0.0171 lr 4.90e-05 skipped 147947 481.1s peak 822 MB
+2026-11-01 16:00:53,484 INFO train_lst: iter 3600/30000 loss_long_asso 0.0017 loss_short_asso 0.0069 loss 0.0087 lr 4.90e-05 skipped 148641 484.1s peak 822 MB
+2026-11-01 16:00:56,308 INFO train_lst: iter 3620/30000 loss_long_asso 0.0429 loss_short_asso 0.0010 loss 0.0439 lr 4.90e-05 skipped 149322 486.9s peak 822 MB
+2026-11-01 16:00:59,231 INFO train_lst: iter 3640/30000 loss_long_asso 0.1599 loss_short_asso 0.0149 loss 0.1749 lr 4.90e-05 skipped 150053 489.8s peak 822 MB
+2026-11-01 16:01:01,694 INFO train_lst: iter 3660/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.90e-05 skipped 150451 492.3s peak 822 MB
+2026-11-01 16:01:04,651 INFO train_lst: iter 3680/30000 loss_long_asso 1.4916 loss_short_asso 0.2279 loss 1.7195 lr 4.90e-05 skipped 151270 495.2s peak 822 MB
+2026-11-01 16:01:07,100 INFO train_lst: iter 3700/30000 loss_long_asso 0.1201 loss_short_asso 0.0602 loss 0.1803 lr 4.89e-05 skipped 151902 497.7s peak 822 MB
+2026-11-01 16:01:09,602 INFO train_lst: iter 3720/30000 loss_long_asso 0.0000 loss_short_asso 0.0778 loss 0.0778 lr 4.89e-05 skipped 152938 500.2s peak 822 MB
+2026-11-01 16:01:11,821 INFO train_lst: iter 3740/30000 loss_long_asso 0.0915 loss_short_asso 0.0000 loss 0.0916 lr 4.89e-05 skipped 153676 502.4s peak 822 MB
+2026-11-01 16:01:14,097 INFO train_lst: iter 3760/30000 loss_long_asso 0.1195 loss_short_asso 0.0001 loss 0.1196 lr 4.89e-05 skipped 154490 504.7s peak 822 MB
+2026-11-01 16:01:16,351 INFO train_lst: iter 3780/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0001 lr 4.89e-05 skipped 155393 506.9s peak 822 MB
+2026-11-01 16:01:18,995 INFO train_lst: iter 3800/30000 loss_long_asso 0.0108 loss_short_asso 0.0290 loss 0.0398 lr 4.89e-05 skipped 156606 509.6s peak 822 MB
+2026-11-01 16:01:21,525 INFO train_lst: iter 3820/30000 loss_long_asso 0.0367 loss_short_asso 0.0002 loss 0.0369 lr 4.88e-05 skipped 157525 512.1s peak 822 MB
+2026-11-01 16:01:23,758 INFO train_lst: iter 3840/30000 loss_long_asso 0.0049 loss_short_asso 0.0059 loss 0.0108 lr 4.88e-05 skipped 158399 514.3s peak 822 MB
+2026-11-01 16:01:25,792 INFO train_lst: iter 3860/30000 loss_long_asso 0.0814 loss_short_asso 0.0782 loss 0.1597 lr 4.88e-05 skipped 159076 516.4s peak 822 MB
+2026-11-01 16:01:27,909 INFO train_lst: iter 3880/30000 loss_long_asso 0.0629 loss_short_asso 0.0000 loss 0.0630 lr 4.88e-05 skipped 159816 518.5s peak 822 MB
+2026-11-01 16:01:30,589 INFO train_lst: iter 3900/30000 loss_long_asso 0.0027 loss_short_asso 0.0083 loss 0.0110 lr 4.88e-05 skipped 161014 521.2s peak 822 MB
+2026-11-01 16:01:32,935 INFO train_lst: iter 3920/30000 loss_long_asso 0.3032 loss_short_asso 0.0405 loss 0.3437 lr 4.88e-05 skipped 161900 523.5s peak 822 MB
+2026-11-01 16:01:34,999 INFO train_lst: iter 3940/30000 loss_long_asso 0.0025 loss_short_asso 0.0000 loss 0.0025 lr 4.87e-05 skipped 162567 525.6s peak 822 MB
+2026-11-01 16:01:37,502 INFO train_lst: iter 3960/30000 loss_long_asso 0.0000 loss_short_asso 0.0002 loss 0.0002 lr 4.87e-05 skipped 163356 528.1s peak 822 MB
+2026-11-01 16:01:39,938 INFO train_lst: iter 3980/30000 loss_long_asso 0.0370 loss_short_asso 0.0001 loss 0.0370 lr 4.87e-05 skipped 163818 530.5s peak 822 MB
+2026-11-01 16:01:43,304 INFO train_lst: iter 4000/30000 loss_long_asso 0.0021 loss_short_asso 0.0000 loss 0.0022 lr 4.87e-05 skipped 164884 533.9s peak 822 MB
+2026-11-01 16:01:50,713 INFO train_lst: val iter 4000: IDF1 0.08 MOTA -6.09 MOTP 76.43 MT 0.0 ML 100.0
+2026-11-01 16:01:53,144 INFO train_lst: iter 4020/30000 loss_long_asso 0.0254 loss_short_asso 0.0073 loss 0.0326 lr 4.87e-05 skipped 165583 543.7s peak 822 MB
+2026-11-01 16:01:55,579 INFO train_lst: iter 4040/30000 loss_long_asso 0.0188 loss_short_asso 0.1473 loss 0.1660 lr 4.87e-05 skipped 166562 546.2s peak 822 MB
+2026-11-01 16:01:58,228 INFO train_lst: iter 4060/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.86e-05 skipped 167365 548.8s peak 822 MB
+2026-11-01 16:02:00,869 INFO train_lst: iter 4080/30000 loss_long_asso 0.4195 loss_short_asso 0.0135 loss 0.4330 lr 4.86e-05 skipped 168015 551.4s peak 822 MB
+2026-11-01 16:02:03,684 INFO train_lst: iter 4100/30000 loss_long_asso 0.1344 loss_short_asso 0.0015 loss 0.1359 lr 4.86e-05 skipped 168944 554.3s peak 822 MB
+2026-11-01 16:02:06,457 INFO train_lst: iter 4120/30000 loss_long_asso 0.0368 loss_short_asso 0.0074 loss 0.0442 lr 4.86e-05 skipped 169827 557.0s peak 822 MB
+2026-11-01 16:02:08,872 INFO train_lst: iter 4140/30000 loss_long_asso 0.0037 loss_short_asso 0.0010 loss 0.0048 lr 4.86e-05 skipped 170700 559.4s peak 822 MB
+2026-11-01 16:02:11,119 INFO train_lst: iter 4160/30000 loss_long_asso 0.0037 loss_short_asso 0.0000 loss 0.0037 lr 4.85e-05 skipped 171456 561.7s peak 822 MB
+2026-11-01 16:02:13,501 INFO train_lst: iter 4180/30000 loss_long_asso 0.0026 loss_short_asso 0.0293 loss 0.0319 lr 4.85e-05 skipped 172471 564.1s peak 822 MB
+2026-11-01 16:02:16,136 INFO train_lst: iter 4200/30000 loss_long_asso 0.0004 loss_short_asso 0.0000 loss 0.0004 lr 4.85e-05 skipped 173535 566.7s peak 822 MB
+2026-11-01 16:02:18,060 INFO train_lst: iter 4220/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.85e-05 skipped 174032 568.6s peak 822 MB
+2026-11-01 16:02:20,609 INFO train_lst: iter 4240/30000 loss_long_asso 0.0428 loss_short_asso 0.0000 loss 0.0428 lr 4.85e-05 skipped 175107 571.2s peak 822 MB
+2026-11-01 16:02:22,545 INFO train_lst: iter 4260/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.85e-05 skipped 175713 573.1s peak 822 MB
+2026-11-01 16:02:24,583 INFO train_lst: iter 4280/30000 loss_long_asso 0.8129 loss_short_asso 0.0001 loss 0.8130 lr 4.84e-05 skipped 176299 575.2s peak 822 MB
+2026-11-01 16:02:26,781 INFO train_lst: iter 4300/30000 loss_long_asso 0.1009 loss_short_asso 0.0001 loss 0.1010 lr 4.84e-05 skipped 177139 577.4s peak 822 MB
+2026-11-01 16:02:28,809 INFO train_lst: iter 4320/30000 loss_long_asso 0.1232 loss_short_asso 0.0000 loss 0.1232 lr 4.84e-05 skipped 177809 579.4s peak 822 MB
+2026-11-01 16:02:31,527 INFO train_lst: iter 4340/30000 loss_long_asso 0.0085 loss_short_asso 0.0001 loss 0.0086 lr 4.84e-05 skipped 178999 582.1s peak 822 MB
+2026-11-01 16:02:33,731 INFO train_lst: iter 4360/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.84e-05 skipped 179750 584.3s peak 822 MB
+2026-11-01 16:02:36,024 INFO train_lst: iter 4380/30000 loss_long_asso 0.0724 loss_short_asso 0.0000 loss 0.0724 lr 4.83e-05 skipped 180571 586.6s peak 822 MB
+2026-11-01 16:02:38,455 INFO train_lst: iter 4400/30000 loss_long_asso 0.0459 loss_short_asso 0.0911 loss 0.1370 lr 4.83e-05 skipped 181365 589.0s peak 822 MB
+2026-11-01 16:02:40,706 INFO train_lst: iter 4420/30000 loss_long_asso 0.0000 loss_short_asso 0.0001 loss 0.0001 lr 4.83e-05 skipped 181886 591.3s peak 822 MB
+2026-11-01 16:02:43,590 INFO train_lst: iter 4440/30000 loss_long_asso 0.0057 loss_short_asso 0.0001 loss 0.0058 lr 4.83e-05 skipped 183001 594.2s peak 822 MB
+2026-11-01 16:02:46,042 INFO train_lst: iter 4460/30000 loss_long_asso 0.3856 loss_short_asso 0.1029 loss 0.4884 lr 4.83e-05 skipped 183758 596.6s peak 822 MB
+2026-11-01 16:02:48,917 INFO train_lst: iter 4480/30000 loss_long_asso 0.1494 loss_short_asso 0.2075 loss 0.3569 lr 4.82e-05 skipped 184826 599.5s peak 822 MB
+2026-11-01 16:02:51,789 INFO train_lst: iter 4500/30000 loss_long_asso 0.6009 loss_short_asso 1.3855 loss 1.9864 lr 4.82e-05 skipped 185556 602.4s peak 822 MB
+2026-11-01 16:02:54,348 INFO train_lst: iter 4520/30000 loss_long_asso 1.3281 loss_short_asso 0.0001 loss 1.3281 lr 4.82e-05 skipped 186292 604.9s peak 822 MB
+2026-11-01 16:02:56,431 INFO train_lst: iter 4540/30000 loss_long_asso 0.1246 loss_short_asso 0.2319 loss 0.3566 lr 4.82e-05 skipped 186814 607.0s peak 822 MB
+2026-11-01 16:02:59,502 INFO train_lst: iter 4560/30000 loss_long_asso 1.2058 loss_short_asso 0.0233 loss 1.2291 lr 4.82e-05 skipped 187991 610.1s peak 822 MB
+2026-11-01 16:03:01,981 INFO train_lst: iter 4580/30000 loss_long_asso 0.0003 loss_short_asso 0.0015 loss 0.0018 lr 4.81e-05 skipped 188615 612.6s peak 822 MB
+2026-11-01 16:03:04,750 INFO train_lst: iter 4600/30000 loss_long_asso 0.0027 loss_short_asso 0.1145 loss 0.1172 lr 4.81e-05 skipped 189653 615.3s peak 822 MB
+2026-11-01 16:03:07,101 INFO train_lst: iter 4620/30000 loss_long_asso 0.0038 loss_short_asso 0.0008 loss 0.0046 lr 4.81e-05 skipped 190347 617.7s peak 822 MB
+2026-11-01 16:03:09,491 INFO train_lst: iter 4640/30000 loss_long_asso 0.0010 loss_short_asso 0.0000 loss 0.0011 lr 4.81e-05 skipped 191330 620.1s peak 822 MB
+2026-11-01 16:03:11,979 INFO train_lst: iter 4660/30000 loss_long_asso 0.0057 loss_short_asso 0.0001 loss 0.0059 lr 4.81e-05 skipped 192391 622.6s peak 822 MB
+2026-11-01 16:03:14,046 INFO train_lst: iter 4680/30000 loss_long_asso 0.0641 loss_short_asso 0.0004 loss 0.0645 lr 4.80e-05 skipped 193008 624.6s peak 822 MB
+2026-11-01 16:03:16,394 INFO train_lst: iter 4700/30000 loss_long_asso 0.4217 loss_short_asso 0.0164 loss 0.4381 lr 4.80e-05 skipped 193976 627.0s peak 822 MB
+2026-11-01 16:03:18,760 INFO train_lst: iter 4720/30000 loss_long_asso 0.0003 loss_short_asso 0.0008 loss 0.0011 lr 4.80e-05 skipped 194792 629.3s peak 822 MB
+2026-11-01 16:03:20,933 INFO train_lst: iter 4740/30000 loss_long_asso 0.0896 loss_short_asso 0.0281 loss 0.1177 lr 4.80e-05 skipped 195477 631.5s peak 822 MB
+2026-11-01 16:03:23,013 INFO train_lst: iter 4760/30000 loss_long_asso 0.0393 loss_short_asso 0.0019 loss 0.0412 lr 4.80e-05 skipped 196203 633.6s peak 822 MB
+2026-11-01 16:03:24,978 INFO train_lst: iter 4780/30000 loss_long_asso 0.2489 loss_short_asso 0.0312 loss 0.2801 lr 4.79e-05 skipped 196753 635.6s peak 822 MB
+2026-11-01 16:03:27,636 INFO train_lst: iter 4800/30000 loss_long_asso 0.0036 loss_short_asso 0.0003 loss 0.0039 lr 4.79e-05 skipped 197959 638.2s peak 822 MB
+2026-11-01 16:03:29,836 INFO train_lst: iter 4820/30000 loss_long_asso 0.0155 loss_short_asso 0.0015 loss 0.0170 lr 4.79e-05 skipped 198789 640.4s peak 822 MB
+2026-11-01 16:03:32,034 INFO train_lst: iter 4840/30000 loss_long_asso 0.0358 loss_short_asso 0.0001 loss 0.0358 lr 4.79e-05 skipped 199523 642.6s peak 822 MB
+2026-11-01 16:03:34,632 INFO train_lst: iter 4860/30000 loss_long_asso 0.0321 loss_short_asso 0.0045 loss 0.0365 lr 4.78e-05 skipped 200594 645.2s peak 822 MB
+2026-11-01 16:03:36,874 INFO train_lst: iter 4880/30000 loss_long_asso 0.1774 loss_short_asso 0.0321 loss 0.2094 lr 4.78e-05 skipped 201321 647.5s peak 822 MB
+2026-11-01 16:03:39,998 INFO train_lst: iter 4900/30000 loss_long_asso 0.0090 loss_short_asso 0.0554 loss 0.0643 lr 4.78e-05 skipped 202225 650.6s peak 822 MB
+2026-11-01 16:03:42,991 INFO train_lst: iter 4920/30000 loss_long_asso 0.0044 loss_short_asso 0.4079 loss 0.4122 lr 4.78e-05 skipped 202989 653.6s peak 822 MB
+2026-11-01 16:03:45,671 INFO train_lst: iter 4940/30000 loss_long_asso 0.0000 loss_short_asso 0.0081 loss 0.0081 lr 4.78e-05 skipped 203683 656.2s peak 822 MB
+2026-11-01 16:03:48,733 INFO train_lst: iter 4960/30000 loss_long_asso 0.0048 loss_short_asso 0.0000 loss 0.0048 lr 4.77e-05 skipped 204538 659.3s peak 822 MB
+2026-11-01 16:03:52,774 INFO train_lst: iter 4980/30000 loss_long_asso 0.0110 loss_short_asso 0.0003 loss 0.0113 lr 4.77e-05 skipped 206001 663.4s peak 822 MB
+2026-11-01 16:03:55,256 INFO train_lst: iter 5000/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.77e-05 skipped 206554 665.8s peak 822 MB
+2026-11-01 16:04:03,395 INFO train_lst: val iter 5000: IDF1 0.08 MOTA -6.09 MOTP 76.43 MT 0.0 ML 100.0
+2026-11-01 16:04:06,508 INFO train_lst: iter 5020/30000 loss_long_asso 0.2305 loss_short_asso 0.0076 loss 0.2381 lr 4.77e-05 skipped 207387 677.1s peak 822 MB
+2026-11-01 16:04:08,796 INFO train_lst: iter 5040/30000 loss_long_asso 0.0015 loss_short_asso 0.0064 loss 0.0079 lr 4.76e-05 skipped 208171 679.4s peak 822 MB
+2026-11-01 16:04:11,061 INFO train_lst: iter 5060/30000 loss_long_asso 0.0180 loss_short_asso 0.0071 loss 0.0251 lr 4.76e-05 skipped 208955 681.6s peak 822 MB
+2026-11-01 16:04:13,009 INFO train_lst: iter 5080/30000 loss_long_asso 0.0222 loss_short_asso 0.0410 loss 0.0632 lr 4.76e-05 skipped 209469 683.6s peak 822 MB
+2026-11-01 16:04:15,151 INFO train_lst: iter 5100/30000 loss_long_asso 0.0124 loss_short_asso 0.0052 loss 0.0177 lr 4.76e-05 skipped 210063 685.7s peak 822 MB
+2026-11-01 16:04:17,627 INFO train_lst: iter 5120/30000 loss_long_asso 0.0058 loss_short_asso 0.3140 loss 0.3198 lr 4.76e-05 skipped 210985 688.2s peak 822 MB
+2026-11-01 16:04:20,172 INFO train_lst: iter 5140/30000 loss_long_asso 0.2619 loss_short_asso 0.1848 loss 0.4467 lr 4.75e-05 skipped 212047 690.7s peak 822 MB
+2026-11-01 16:04:24,104 INFO train_lst: iter 5160/30000 loss_long_asso 0.0338 loss_short_asso 0.0488 loss 0.0825 lr 4.75e-05 skipped 212798 694.7s peak 822 MB
+2026-11-01 16:04:30,062 INFO train_lst: iter 5180/30000 loss_long_asso 0.0480 loss_short_asso 0.0009 loss 0.0489 lr 4.75e-05 skipped 213608 700.6s peak 822 MB
+2026-11-01 16:04:35,445 INFO train_lst: iter 5200/30000 loss_long_asso 0.0004 loss_short_asso 0.0932 loss 0.0936 lr 4.75e-05 skipped 214283 706.0s peak 822 MB
+2026-11-01 16:04:41,285 INFO train_lst: iter 5220/30000 loss_long_asso 0.0298 loss_short_asso 0.0000 loss 0.0298 lr 4.74e-05 skipped 215047 711.9s peak 822 MB
+2026-11-01 16:04:47,995 INFO train_lst: iter 5240/30000 loss_long_asso 0.4987 loss_short_asso 0.1810 loss 0.6796 lr 4.74e-05 skipped 215991 718.6s peak 822 MB
+2026-11-01 16:04:55,754 INFO train_lst: iter 5260/30000 loss_long_asso 0.0191 loss_short_asso 0.1257 loss 0.1449 lr 4.74e-05 skipped 216999 726.3s peak 822 MB
+2026-11-01 16:05:02,295 INFO train_lst: iter 5280/30000 loss_long_asso 0.0193 loss_short_asso 0.0010 loss 0.0204 lr 4.74e-05 skipped 217733 732.9s peak 822 MB
+2026-11-01 16:05:08,185 INFO train_lst: iter 5300/30000 loss_long_asso 0.0190 loss_short_asso 0.0000 loss 0.0190 lr 4.73e-05 skipped 218559 738.8s peak 822 MB
+2026-11-01 16:05:13,940 INFO train_lst: iter 5320/30000 loss_long_asso 0.0003 loss_short_asso 0.0540 loss 0.0543 lr 4.73e-05 skipped 219321 744.5s peak 822 MB
+2026-11-01 16:05:19,457 INFO train_lst: iter 5340/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.73e-05 skipped 220016 750.0s peak 822 MB
+2026-11-01 16:05:25,370 INFO train_lst: iter 5360/30000 loss_long_asso 0.0118 loss_short_asso 0.0000 loss 0.0118 lr 4.73e-05 skipped 220723 755.9s peak 822 MB
+2026-11-01 16:05:31,818 INFO train_lst: iter 5380/30000 loss_long_asso 0.2617 loss_short_asso 0.2694 loss 0.5312 lr 4.72e-05 skipped 221487 762.4s peak 822 MB
+2026-11-01 16:05:37,532 INFO train_lst: iter 5400/30000 loss_long_asso 0.0049 loss_short_asso 0.0233 loss 0.0282 lr 4.72e-05 skipped 222350 768.1s peak 822 MB
+2026-11-01 16:05:44,387 INFO train_lst: iter 5420/30000 loss_long_asso 0.0149 loss_short_asso 0.0396 loss 0.0545 lr 4.72e-05 skipped 223440 775.0s peak 822 MB
+2026-11-01 16:05:51,479 INFO train_lst: iter 5440/30000 loss_long_asso 0.0002 loss_short_asso 0.0414 loss 0.0416 lr 4.72e-05 skipped 224580 782.1s peak 822 MB
+2026-11-01 16:05:57,851 INFO train_lst: iter 5460/30000 loss_long_asso 0.0020 loss_short_asso 0.0001 loss 0.0021 lr 4.71e-05 skipped 225359 788.4s peak 822 MB
+2026-11-01 16:06:03,872 INFO train_lst: iter 5480/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.71e-05 skipped 226131 794.4s peak 822 MB
+2026-11-01 16:06:09,422 INFO train_lst: iter 5500/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.71e-05 skipped 226803 800.0s peak 822 MB
+2026-11-01 16:06:16,459 INFO train_lst: iter 5520/30000 loss_long_asso 0.0137 loss_short_asso 0.0000 loss 0.0137 lr 4.71e-05 skipped 227772 807.0s peak 822 MB
+2026-11-01 16:06:22,307 INFO train_lst: iter 5540/30000 loss_long_asso 0.0010 loss_short_asso 0.0008 loss 0.0018 lr 4.70e-05 skipped 228548 812.9s peak 822 MB
+2026-11-01 16:06:28,516 INFO train_lst: iter 5560/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.70e-05 skipped 229354 819.1s peak 822 MB
+2026-11-01 16:06:35,086 INFO train_lst: iter 5580/30000 loss_long_asso 0.0001 loss_short_asso 0.0361 loss 0.0362 lr 4.70e-05 skipped 230256 825.7s peak 822 MB
+2026-11-01 16:06:40,798 INFO train_lst: iter 5600/30000 loss_long_asso 0.0000 loss_short_asso 0.0131 loss 0.0131 lr 4.70e-05 skipped 230980 831.4s peak 822 MB
+2026-11-01 16:06:46,340 INFO train_lst: iter 5620/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.69e-05 skipped 231684 836.9s peak 822 MB
+2026-11-01 16:06:52,172 INFO train_lst: iter 5640/30000 loss_long_asso 0.0004 loss_short_asso 0.0000 loss 0.0004 lr 4.69e-05 skipped 232412 842.7s peak 822 MB
+2026-11-01 16:06:58,231 INFO train_lst: iter 5660/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.69e-05 skipped 233271 848.8s peak 822 MB
+2026-11-01 16:07:04,378 INFO train_lst: iter 5680/30000 loss_long_asso 0.0415 loss_short_asso 0.0000 loss 0.0415 lr 4.69e-05 skipped 234112 855.0s peak 822 MB
+2026-11-01 16:07:10,372 INFO train_lst: iter 5700/30000 loss_long_asso 0.3862 loss_short_asso 0.0000 loss 0.3863 lr 4.68e-05 skipped 234910 860.9s peak 822 MB
+2026-11-01 16:07:17,018 INFO train_lst: iter 5720/30000 loss_long_asso 0.0002 loss_short_asso 0.0000 loss 0.0002 lr 4.68e-05 skipped 235780 867.6s peak 822 MB
+2026-11-01 16:07:23,312 INFO train_lst: iter 5740/30000 loss_long_asso 0.0569 loss_short_asso 0.0000 loss 0.0569 lr 4.68e-05 skipped 236692 873.9s peak 822 MB
+2026-11-01 16:07:29,520 INFO train_lst: iter 5760/30000 loss_long_asso 0.0002 loss_short_asso 0.0000 loss 0.0002 lr 4.67e-05 skipped 237541 880.1s peak 822 MB
+2026-11-01 16:07:36,072 INFO train_lst: iter 5780/30000 loss_long_asso 0.0079 loss_short_asso 0.0000 loss 0.0079 lr 4.67e-05 skipped 238573 886.6s peak 822 MB
+2026-11-01 16:07:41,704 INFO train_lst: iter 5800/30000 loss_long_asso 0.0880 loss_short_asso 0.0003 loss 0.0883 lr 4.67e-05 skipped 239316 892.3s peak 822 MB
+2026-11-01 16:07:46,698 INFO train_lst: iter 5820/30000 loss_long_asso 0.0660 loss_short_asso 0.0066 loss 0.0726 lr 4.67e-05 skipped 239798 897.3s peak 822 MB
+2026-11-01 16:07:52,356 INFO train_lst: iter 5840/30000 loss_long_asso 0.0000 loss_short_asso 0.0010 loss 0.0010 lr 4.66e-05 skipped 240512 902.9s peak 822 MB
+2026-11-01 16:07:59,099 INFO train_lst: iter 5860/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.66e-05 skipped 241614 909.7s peak 822 MB
+2026-11-01 16:08:04,822 INFO train_lst: iter 5880/30000 loss_long_asso 0.2203 loss_short_asso 0.9026 loss 1.1229 lr 4.66e-05 skipped 242347 915.4s peak 822 MB
+2026-11-01 16:08:12,190 INFO train_lst: iter 5900/30000 loss_long_asso 0.0002 loss_short_asso 0.0000 loss 0.0002 lr 4.66e-05 skipped 243553 922.8s peak 822 MB
+2026-11-01 16:08:17,022 INFO train_lst: iter 5920/30000 loss_long_asso 0.0423 loss_short_asso 0.0009 loss 0.0432 lr 4.65e-05 skipped 244106 927.6s peak 822 MB
+2026-11-01 16:08:23,201 INFO train_lst: iter 5940/30000 loss_long_asso 0.0141 loss_short_asso 0.0000 loss 0.0141 lr 4.65e-05 skipped 244995 933.8s peak 822 MB
+2026-11-01 16:08:29,108 INFO train_lst: iter 5960/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.65e-05 skipped 245775 939.7s peak 822 MB
+2026-11-01 16:08:35,459 INFO train_lst: iter 5980/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.64e-05 skipped 246778 946.0s peak 822 MB
+2026-11-01 16:08:40,516 INFO train_lst: iter 6000/30000 loss_long_asso 0.0124 loss_short_asso 0.0000 loss 0.0124 lr 4.64e-05 skipped 247271 951.1s peak 822 MB
+2026-11-01 16:08:57,309 INFO train_lst: val iter 6000: IDF1 0.08 MOTA -6.09 MOTP 76.43 MT 0.0 ML 100.0
+2026-11-01 16:09:03,485 INFO train_lst: iter 6020/30000 loss_long_asso 0.2626 loss_short_asso 0.1133 loss 0.3759 lr 4.64e-05 skipped 248064 974.1s peak 822 MB
+2026-11-01 16:09:09,072 INFO train_lst: iter 6040/30000 loss_long_asso 0.0061 loss_short_asso 0.0005 loss 0.0067 lr 4.64e-05 skipped 248738 979.6s peak 822 MB
+2026-11-01 16:09:15,908 INFO train_lst: iter 6060/30000 loss_long_asso 0.1133 loss_short_asso 0.0125 loss 0.1258 lr 4.63e-05 skipped 249813 986.5s peak 822 MB
+2026-11-01 16:09:22,027 INFO train_lst: iter 6080/30000 loss_long_asso 0.0003 loss_short_asso 0.0000 loss 0.0003 lr 4.63e-05 skipped 250575 992.6s peak 822 MB
+2026-11-01 16:09:28,491 INFO train_lst: iter 6100/30000 loss_long_asso 0.0011 loss_short_asso 0.0669 loss 0.0680 lr 4.63e-05 skipped 251467 999.1s peak 822 MB
+2026-11-01 16:09:34,080 INFO train_lst: iter 6120/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.63e-05 skipped 252246 1004.7s peak 822 MB
+2026-11-01 16:09:39,812 INFO train_lst: iter 6140/30000 loss_long_asso 0.0466 loss_short_asso 0.0005 loss 0.0471 lr 4.62e-05 skipped 252925 1010.4s peak 822 MB
+2026-11-01 16:09:46,350 INFO train_lst: iter 6160/30000 loss_long_asso 0.0020 loss_short_asso 0.0000 loss 0.0020 lr 4.62e-05 skipped 253896 1016.9s peak 822 MB
+2026-11-01 16:09:52,337 INFO train_lst: iter 6180/30000 loss_long_asso 0.0000 loss_short_asso 0.0004 loss 0.0004 lr 4.62e-05 skipped 254734 1022.9s peak 822 MB
+2026-11-01 16:09:58,176 INFO train_lst: iter 6200/30000 loss_long_asso 0.0010 loss_short_asso 0.0000 loss 0.0010 lr 4.61e-05 skipped 255549 1028.8s peak 822 MB
+2026-11-01 16:10:02,501 INFO train_lst: iter 6220/30000 loss_long_asso 0.0030 loss_short_asso 0.0474 loss 0.0504 lr 4.61e-05 skipped 256366 1033.1s peak 822 MB
+2026-11-01 16:10:04,794 INFO train_lst: iter 6240/30000 loss_long_asso 0.0431 loss_short_asso 0.0000 loss 0.0431 lr 4.61e-05 skipped 257157 1035.4s peak 822 MB
+2026-11-01 16:10:07,415 INFO train_lst: iter 6260/30000 loss_long_asso 0.1797 loss_short_asso 0.0186 loss 0.1983 lr 4.60e-05 skipped 258134 1038.0s peak 822 MB
+2026-11-01 16:10:09,868 INFO train_lst: iter 6280/30000 loss_long_asso 0.0046 loss_short_asso 0.0046 loss 0.0092 lr 4.60e-05 skipped 259046 1040.4s peak 822 MB
+2026-11-01 16:10:12,038 INFO train_lst: iter 6300/30000 loss_long_asso 0.0943 loss_short_asso 0.0092 loss 0.1035 lr 4.60e-05 skipped 259730 1042.6s peak 822 MB
+2026-11-01 16:10:14,433 INFO train_lst: iter 6320/30000 loss_long_asso 0.0100 loss_short_asso 0.0682 loss 0.0782 lr 4.60e-05 skipped 260646 1045.0s peak 822 MB
+2026-11-01 16:10:16,782 INFO train_lst: iter 6340/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.59e-05 skipped 261543 1047.4s peak 822 MB
+2026-11-01 16:10:19,219 INFO train_lst: iter 6360/30000 loss_long_asso 0.0034 loss_short_asso 0.0000 loss 0.0034 lr 4.59e-05 skipped 262571 1049.8s peak 822 MB
+2026-11-01 16:10:21,504 INFO train_lst: iter 6380/30000 loss_long_asso 0.0824 loss_short_asso 0.0109 loss 0.0934 lr 4.59e-05 skipped 263367 1052.1s peak 822 MB
+2026-11-01 16:10:23,712 INFO train_lst: iter 6400/30000 loss_long_asso 0.0059 loss_short_asso 0.0000 loss 0.0059 lr 4.58e-05 skipped 264105 1054.3s peak 822 MB
+2026-11-01 16:10:26,083 INFO train_lst: iter 6420/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.58e-05 skipped 265021 1056.7s peak 822 MB
+2026-11-01 16:10:28,306 INFO train_lst: iter 6440/30000 loss_long_asso 0.3964 loss_short_asso 0.0000 loss 0.3964 lr 4.58e-05 skipped 265836 1058.9s peak 822 MB
+2026-11-01 16:10:30,431 INFO train_lst: iter 6460/30000 loss_long_asso 0.0045 loss_short_asso 0.0000 loss 0.0045 lr 4.58e-05 skipped 266490 1061.0s peak 822 MB
+2026-11-01 16:10:32,729 INFO train_lst: iter 6480/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.57e-05 skipped 267305 1063.3s peak 822 MB
+2026-11-01 16:10:35,000 INFO train_lst: iter 6500/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.57e-05 skipped 268173 1065.6s peak 822 MB
+2026-11-01 16:10:37,183 INFO train_lst: iter 6520/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.57e-05 skipped 268860 1067.8s peak 822 MB
+2026-11-01 16:10:39,781 INFO train_lst: iter 6540/30000 loss_long_asso 0.0128 loss_short_asso 0.0000 loss 0.0128 lr 4.56e-05 skipped 269626 1070.4s peak 822 MB
+2026-11-01 16:10:42,246 INFO train_lst: iter 6560/30000 loss_long_asso 0.0073 loss_short_asso 0.0001 loss 0.0074 lr 4.56e-05 skipped 270370 1072.8s peak 822 MB
+2026-11-01 16:10:45,683 INFO train_lst: iter 6580/30000 loss_long_asso 0.0550 loss_short_asso 0.0247 loss 0.0796 lr 4.56e-05 skipped 271588 1076.3s peak 822 MB
+2026-11-01 16:10:48,173 INFO train_lst: iter 6600/30000 loss_long_asso 0.0005 loss_short_asso 0.0501 loss 0.0506 lr 4.55e-05 skipped 272230 1078.8s peak 822 MB
+2026-11-01 16:10:50,502 INFO train_lst: iter 6620/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.55e-05 skipped 272820 1081.1s peak 822 MB
+2026-11-01 16:10:53,359 INFO train_lst: iter 6640/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.55e-05 skipped 273592 1083.9s peak 822 MB
+2026-11-01 16:10:55,959 INFO train_lst: iter 6660/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.54e-05 skipped 274370 1086.5s peak 822 MB
+2026-11-01 16:10:58,465 INFO train_lst: iter 6680/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.54e-05 skipped 275130 1089.0s peak 822 MB
+2026-11-01 16:11:00,968 INFO train_lst: iter 6700/30000 loss_long_asso 0.0354 loss_short_asso 0.0000 loss 0.0354 lr 4.54e-05 skipped 275852 1091.5s peak 822 MB
+2026-11-01 16:11:03,791 INFO train_lst: iter 6720/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.54e-05 skipped 276955 1094.4s peak 822 MB
+2026-11-01 16:11:06,665 INFO train_lst: iter 6740/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.53e-05 skipped 278120 1097.2s peak 822 MB
+2026-11-01 16:11:08,895 INFO train_lst: iter 6760/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.53e-05 skipped 279059 1099.5s peak 822 MB
+2026-11-01 16:11:10,897 INFO train_lst: iter 6780/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.53e-05 skipped 279656 1101.5s peak 822 MB
+2026-11-01 16:11:13,389 INFO train_lst: iter 6800/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.52e-05 skipped 280649 1104.0s peak 822 MB
+2026-11-01 16:11:15,533 INFO train_lst: iter 6820/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.52e-05 skipped 281388 1106.1s peak 822 MB
+2026-11-01 16:11:17,853 INFO train_lst: iter 6840/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.52e-05 skipped 282287 1108.4s peak 822 MB
+2026-11-01 16:11:19,953 INFO train_lst: iter 6860/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.51e-05 skipped 283073 1110.5s peak 822 MB
+2026-11-01 16:11:21,988 INFO train_lst: iter 6880/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.51e-05 skipped 283776 1112.6s peak 822 MB
+2026-11-01 16:11:24,407 INFO train_lst: iter 6900/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.51e-05 skipped 284728 1115.0s peak 822 MB
+2026-11-01 16:11:26,930 INFO train_lst: iter 6920/30000 loss_long_asso 0.0002 loss_short_asso 0.0000 loss 0.0002 lr 4.50e-05 skipped 285771 1117.5s peak 822 MB
+2026-11-01 16:11:29,077 INFO train_lst: iter 6940/30000 loss_long_asso 0.0995 loss_short_asso 0.0200 loss 0.1195 lr 4.50e-05 skipped 286492 1119.7s peak 822 MB
+2026-11-01 16:11:31,451 INFO train_lst: iter 6960/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.50e-05 skipped 287369 1122.0s peak 822 MB
+2026-11-01 16:11:33,549 INFO train_lst: iter 6980/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.49e-05 skipped 288152 1124.1s peak 822 MB
+2026-11-01 16:11:35,449 INFO train_lst: iter 7000/30000 loss_long_asso 0.0011 loss_short_asso 0.0000 loss 0.0011 lr 4.49e-05 skipped 288702 1126.0s peak 822 MB
+2026-11-01 16:11:42,751 INFO train_lst: val iter 7000: IDF1 0.08 MOTA -6.09 MOTP 76.43 MT 0.0 ML 100.0
+2026-11-01 16:11:45,665 INFO train_lst: iter 7020/30000 loss_long_asso 0.0633 loss_short_asso 0.0072 loss 0.0704 lr 4.49e-05 skipped 289467 1136.2s peak 822 MB
+2026-11-01 16:11:48,742 INFO train_lst: iter 7040/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.48e-05 skipped 290357 1139.3s peak 822 MB
+2026-11-01 16:11:52,123 INFO train_lst: iter 7060/30000 loss_long_asso 0.0016 loss_short_asso 0.0000 loss 0.0016 lr 4.48e-05 skipped 291222 1142.7s peak 822 MB
+2026-11-01 16:11:55,222 INFO train_lst: iter 7080/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.48e-05 skipped 292064 1145.8s peak 822 MB
+2026-11-01 16:11:57,622 INFO train_lst: iter 7100/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.47e-05 skipped 292524 1148.2s peak 822 MB
+2026-11-01 16:12:00,471 INFO train_lst: iter 7120/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.47e-05 skipped 293217 1151.0s peak 822 MB
+2026-11-01 16:12:03,175 INFO train_lst: iter 7140/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.47e-05 skipped 294040 1153.8s peak 822 MB
+2026-11-01 16:12:05,940 INFO train_lst: iter 7160/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.46e-05 skipped 294730 1156.5s peak 822 MB
+2026-11-01 16:12:08,592 INFO train_lst: iter 7180/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.46e-05 skipped 295710 1159.2s peak 822 MB
+2026-11-01 16:12:10,947 INFO train_lst: iter 7200/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.46e-05 skipped 296633 1161.5s peak 822 MB
+2026-11-01 16:12:13,481 INFO train_lst: iter 7220/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.45e-05 skipped 297540 1164.1s peak 822 MB
+2026-11-01 16:12:15,891 INFO train_lst: iter 7240/30000 loss_long_asso 0.0508 loss_short_asso 0.0000 loss 0.0508 lr 4.45e-05 skipped 298333 1166.5s peak 822 MB
+2026-11-01 16:12:18,499 INFO train_lst: iter 7260/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.45e-05 skipped 299338 1169.1s peak 822 MB
+2026-11-01 16:12:20,615 INFO train_lst: iter 7280/30000 loss_long_asso 0.0901 loss_short_asso 0.0188 loss 0.1089 lr 4.44e-05 skipped 300042 1171.2s peak 822 MB
+2026-11-01 16:12:22,968 INFO train_lst: iter 7300/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.44e-05 skipped 301008 1173.5s peak 822 MB
+2026-11-01 16:12:25,145 INFO train_lst: iter 7320/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.44e-05 skipped 301714 1175.7s peak 822 MB
+2026-11-01 16:12:27,419 INFO train_lst: iter 7340/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.43e-05 skipped 302571 1178.0s peak 822 MB
+2026-11-01 16:12:30,038 INFO train_lst: iter 7360/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.43e-05 skipped 303441 1180.6s peak 822 MB
+2026-11-01 16:12:32,084 INFO train_lst: iter 7380/30000 loss_long_asso 0.0000 loss_short_asso 0.0001 loss 0.0002 lr 4.43e-05 skipped 303999 1182.7s peak 822 MB
+2026-11-01 16:12:34,588 INFO train_lst: iter 7400/30000 loss_long_asso 0.0014 loss_short_asso 0.0017 loss 0.0031 lr 4.42e-05 skipped 304898 1185.2s peak 822 MB
+2026-11-01 16:12:36,888 INFO train_lst: iter 7420/30000 loss_long_asso 0.0098 loss_short_asso 0.0001 loss 0.0099 lr 4.42e-05 skipped 305600 1187.5s peak 822 MB
+2026-11-01 16:12:39,355 INFO train_lst: iter 7440/30000 loss_long_asso 0.0000 loss_short_asso 0.0556 loss 0.0556 lr 4.42e-05 skipped 306096 1189.9s peak 822 MB
+2026-11-01 16:12:42,711 INFO train_lst: iter 7460/30000 loss_long_asso 0.2846 loss_short_asso 0.9187 loss 1.2033 lr 4.41e-05 skipped 307198 1193.3s peak 822 MB
+2026-11-01 16:12:45,832 INFO train_lst: iter 7480/30000 loss_long_asso 0.0084 loss_short_asso 0.0000 loss 0.0084 lr 4.41e-05 skipped 308056 1196.4s peak 822 MB
+2026-11-01 16:12:49,340 INFO train_lst: iter 7500/30000 loss_long_asso 0.0991 loss_short_asso 0.0025 loss 0.1015 lr 4.41e-05 skipped 309201 1199.9s peak 822 MB
+2026-11-01 16:12:52,414 INFO train_lst: iter 7520/30000 loss_long_asso 1.0153 loss_short_asso 0.3003 loss 1.3157 lr 4.40e-05 skipped 310095 1203.0s peak 822 MB
+2026-11-01 16:12:55,001 INFO train_lst: iter 7540/30000 loss_long_asso 0.1322 loss_short_asso 0.0997 loss 0.2319 lr 4.40e-05 skipped 310693 1205.6s peak 822 MB
+2026-11-01 16:12:58,207 INFO train_lst: iter 7560/30000 loss_long_asso 13.7770 loss_short_asso 0.5894 loss 14.3664 lr 4.39e-05 skipped 311675 1208.8s peak 822 MB
+2026-11-01 16:13:01,008 INFO train_lst: iter 7580/30000 loss_long_asso 5.7851 loss_short_asso 0.1880 loss 5.9731 lr 4.39e-05 skipped 312393 1211.6s peak 822 MB
+2026-11-01 16:13:03,582 INFO train_lst: iter 7600/30000 loss_long_asso 0.5950 loss_short_asso 1.1217 loss 1.7167 lr 4.39e-05 skipped 313137 1214.2s peak 822 MB
+2026-11-01 16:13:06,339 INFO train_lst: iter 7620/30000 loss_long_asso 0.0001 loss_short_asso 0.0000 loss 0.0001 lr 4.38e-05 skipped 313800 1216.9s peak 822 MB
+2026-11-01 16:13:08,741 INFO train_lst: iter 7640/30000 loss_long_asso 0.4170 loss_short_asso 0.7235 loss 1.1405 lr 4.38e-05 skipped 314815 1219.3s peak 822 MB
+2026-11-01 16:13:11,074 INFO train_lst: iter 7660/30000 loss_long_asso 1.1453 loss_short_asso 0.0000 loss 1.1454 lr 4.38e-05 skipped 315720 1221.7s peak 822 MB
+2026-11-01 16:13:13,192 INFO train_lst: iter 7680/30000 loss_long_asso 0.0122 loss_short_asso 0.0000 loss 0.0122 lr 4.37e-05 skipped 316522 1223.8s peak 822 MB
+2026-11-01 16:13:15,802 INFO train_lst: iter 7700/30000 loss_long_asso 0.0003 loss_short_asso 0.0357 loss 0.0360 lr 4.37e-05 skipped 317571 1226.4s peak 822 MB
+2026-11-01 16:13:17,872 INFO train_lst: iter 7720/30000 loss_long_asso 0.4674 loss_short_asso 0.2395 loss 0.7068 lr 4.37e-05 skipped 318259 1228.4s peak 822 MB
+2026-11-01 16:13:20,113 INFO train_lst: iter 7740/30000 loss_long_asso 0.2786 loss_short_asso 0.1196 loss 0.3983 lr 4.36e-05 skipped 319049 1230.7s peak 822 MB
+2026-11-01 16:13:22,645 INFO train_lst: iter 7760/30000 loss_long_asso 0.0051 loss_short_asso 0.0001 loss 0.0052 lr 4.36e-05 skipped 320100 1233.2s peak 822 MB
+2026-11-01 16:13:25,001 INFO train_lst: iter 7780/30000 loss_long_asso 0.5930 loss_short_asso 0.2542 loss 0.8471 lr 4.36e-05 skipped 320974 1235.6s peak 822 MB
+2026-11-01 16:13:27,196 INFO train_lst: iter 7800/30000 loss_long_asso 0.5581 loss_short_asso 0.3382 loss 0.8963 lr 4.35e-05 skipped 321810 1237.8s peak 822 MB
+2026-11-01 16:13:29,377 INFO train_lst: iter 7820/30000 loss_long_asso 0.2354 loss_short_asso 0.1283 loss 0.3637 lr 4.35e-05 skipped 322615 1240.0s peak 822 MB
+2026-11-01 16:13:31,596 INFO train_lst: iter 7840/30000 loss_long_asso 0.7379 loss_short_asso 0.0026 loss 0.7405 lr 4.34e-05 skipped 323310 1242.2s peak 822 MB
+2026-11-01 16:13:34,325 INFO train_lst: iter 7860/30000 loss_long_asso 0.0000 loss_short_asso 0.0084 loss 0.0084 lr 4.34e-05 skipped 324627 1244.9s peak 822 MB
+2026-11-01 16:13:36,578 INFO train_lst: iter 7880/30000 loss_long_asso 0.0166 loss_short_asso 0.2673 loss 0.2839 lr 4.34e-05 skipped 325484 1247.2s peak 822 MB
+2026-11-01 16:13:39,763 INFO train_lst: iter 7900/30000 loss_long_asso 0.0021 loss_short_asso 0.0330 loss 0.0351 lr 4.33e-05 skipped 326496 1250.3s peak 822 MB
+2026-11-01 16:13:42,051 INFO train_lst: iter 7920/30000 loss_long_asso 0.5677 loss_short_asso 0.0000 loss 0.5677 lr 4.33e-05 skipped 326910 1252.6s peak 822 MB
+2026-11-01 16:13:44,400 INFO train_lst: iter 7940/30000 loss_long_asso 0.0579 loss_short_asso 0.0000 loss 0.0579 lr 4.33e-05 skipped 327382 1255.0s peak 822 MB
+2026-11-01 16:13:47,178 INFO train_lst: iter 7960/30000 loss_long_asso 1.1657 loss_short_asso 0.0000 loss 1.1657 lr 4.32e-05 skipped 328225 1257.8s peak 822 MB
+2026-11-01 16:13:50,319 INFO train_lst: iter 7980/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.32e-05 skipped 329060 1260.9s peak 822 MB
+2026-11-01 16:13:52,901 INFO train_lst: iter 8000/30000 loss_long_asso 6.5799 loss_short_asso 0.0238 loss 6.6037 lr 4.31e-05 skipped 329809 1263.5s peak 822 MB
+2026-11-01 16:14:00,600 INFO train_lst: val iter 8000: IDF1 0.08 MOTA -6.09 MOTP 76.43 MT 0.0 ML 100.0
+2026-11-01 16:14:03,500 INFO train_lst: iter 8020/30000 loss_long_asso 0.0000 loss_short_asso 0.0002 loss 0.0002 lr 4.31e-05 skipped 330897 1274.1s peak 822 MB
+2026-11-01 16:14:06,340 INFO train_lst: iter 8040/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.31e-05 skipped 331712 1276.9s peak 822 MB
+2026-11-01 16:14:08,742 INFO train_lst: iter 8060/30000 loss_long_asso 0.0001 loss_short_asso 0.0000 loss 0.0001 lr 4.30e-05 skipped 332527 1279.3s peak 822 MB
+2026-11-01 16:14:11,104 INFO train_lst: iter 8080/30000 loss_long_asso 0.0369 loss_short_asso 0.0000 loss 0.0369 lr 4.30e-05 skipped 333477 1281.7s peak 822 MB
+2026-11-01 16:14:13,528 INFO train_lst: iter 8100/30000 loss_long_asso 0.0048 loss_short_asso 0.0000 loss 0.0048 lr 4.30e-05 skipped 334453 1284.1s peak 822 MB
+2026-11-01 16:14:15,760 INFO train_lst: iter 8120/30000 loss_long_asso 0.0930 loss_short_asso 0.0076 loss 0.1006 lr 4.29e-05 skipped 335277 1286.3s peak 822 MB
+2026-11-01 16:14:17,853 INFO train_lst: iter 8140/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.29e-05 skipped 335915 1288.4s peak 822 MB
+2026-11-01 16:14:19,836 INFO train_lst: iter 8160/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.28e-05 skipped 336542 1290.4s peak 822 MB
+2026-11-01 16:14:22,183 INFO train_lst: iter 8180/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.28e-05 skipped 337307 1292.8s peak 822 MB
+2026-11-01 16:14:24,421 INFO train_lst: iter 8200/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.28e-05 skipped 338138 1295.0s peak 822 MB
+2026-11-01 16:14:26,722 INFO train_lst: iter 8220/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.27e-05 skipped 339048 1297.3s peak 822 MB
+2026-11-01 16:14:28,833 INFO train_lst: iter 8240/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.27e-05 skipped 339690 1299.4s peak 822 MB
+2026-11-01 16:14:31,259 INFO train_lst: iter 8260/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.27e-05 skipped 340635 1301.8s peak 822 MB
+2026-11-01 16:14:33,250 INFO train_lst: iter 8280/30000 loss_long_asso 0.0000 loss_short_asso 0.0007 loss 0.0007 lr 4.26e-05 skipped 341253 1303.8s peak 822 MB
+2026-11-01 16:14:35,432 INFO train_lst: iter 8300/30000 loss_long_asso 0.0002 loss_short_asso 0.5632 loss 0.5633 lr 4.26e-05 skipped 341988 1306.0s peak 822 MB
+2026-11-01 16:14:37,807 INFO train_lst: iter 8320/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.25e-05 skipped 342849 1308.4s peak 822 MB
+2026-11-01 16:14:40,769 INFO train_lst: iter 8340/30000 loss_long_asso 0.0274 loss_short_asso 0.0000 loss 0.0274 lr 4.25e-05 skipped 343808 1311.3s peak 822 MB
+2026-11-01 16:14:43,141 INFO train_lst: iter 8360/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.25e-05 skipped 344486 1313.7s peak 822 MB
+2026-11-01 16:14:46,128 INFO train_lst: iter 8380/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.24e-05 skipped 345530 1316.7s peak 822 MB
+2026-11-01 16:14:48,627 INFO train_lst: iter 8400/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.24e-05 skipped 346343 1319.2s peak 822 MB
+2026-11-01 16:14:51,153 INFO train_lst: iter 8420/30000 loss_long_asso 0.0000 loss_short_asso 0.0007 loss 0.0007 lr 4.23e-05 skipped 346970 1321.7s peak 822 MB
+2026-11-01 16:14:53,761 INFO train_lst: iter 8440/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.23e-05 skipped 347949 1324.3s peak 822 MB
+2026-11-01 16:14:56,340 INFO train_lst: iter 8460/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.23e-05 skipped 348826 1326.9s peak 822 MB
+2026-11-01 16:14:58,862 INFO train_lst: iter 8480/30000 loss_long_asso 0.0000 loss_short_asso 0.0171 loss 0.0171 lr 4.22e-05 skipped 349618 1329.4s peak 822 MB
+2026-11-01 16:15:01,346 INFO train_lst: iter 8500/30000 loss_long_asso 0.0000 loss_short_asso 0.0069 loss 0.0069 lr 4.22e-05 skipped 350417 1331.9s peak 822 MB
+2026-11-01 16:15:04,768 INFO train_lst: iter 8520/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.22e-05 skipped 351492 1335.3s peak 822 MB
+2026-11-01 16:15:07,111 INFO train_lst: iter 8540/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.21e-05 skipped 352260 1337.7s peak 822 MB
+2026-11-01 16:15:09,222 INFO train_lst: iter 8560/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.21e-05 skipped 352859 1339.8s peak 822 MB
+2026-11-01 16:15:11,798 INFO train_lst: iter 8580/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.20e-05 skipped 353865 1342.4s peak 822 MB
+2026-11-01 16:15:14,076 INFO train_lst: iter 8600/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.20e-05 skipped 354596 1344.7s peak 822 MB
+2026-11-01 16:15:16,609 INFO train_lst: iter 8620/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.20e-05 skipped 355493 1347.2s peak 822 MB
+2026-11-01 16:15:18,582 INFO train_lst: iter 8640/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.19e-05 skipped 356105 1349.2s peak 822 MB
+2026-11-01 16:15:20,791 INFO train_lst: iter 8660/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.19e-05 skipped 356887 1351.4s peak 822 MB
+2026-11-01 16:15:23,220 INFO train_lst: iter 8680/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.18e-05 skipped 357797 1353.8s peak 822 MB
+2026-11-01 16:15:25,688 INFO train_lst: iter 8700/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.18e-05 skipped 358725 1356.3s peak 822 MB
+2026-11-01 16:15:27,897 INFO train_lst: iter 8720/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.18e-05 skipped 359478 1358.5s peak 822 MB
+2026-11-01 16:15:30,235 INFO train_lst: iter 8740/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.17e-05 skipped 360300 1360.8s peak 822 MB
+2026-11-01 16:15:32,514 INFO train_lst: iter 8760/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.17e-05 skipped 361033 1363.1s peak 822 MB
+2026-11-01 16:20:16,721 INFO train_lst: iter 8780/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.16e-05 skipped 361881 1647.3s peak 822 MB
+2026-11-01 16:20:18,701 INFO train_lst: iter 8800/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.16e-05 skipped 362771 1649.3s peak 822 MB
+2026-11-01 16:20:20,959 INFO train_lst: iter 8820/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.16e-05 skipped 363751 1651.5s peak 822 MB
+2026-11-01 16:20:23,527 INFO train_lst: iter 8840/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.15e-05 skipped 364716 1654.1s peak 822 MB
+2026-11-01 16:20:26,525 INFO train_lst: iter 8860/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.15e-05 skipped 365799 1657.1s peak 822 MB
+2026-11-01 16:20:28,973 INFO train_lst: iter 8880/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.14e-05 skipped 366497 1659.5s peak 822 MB
+2026-11-01 16:20:31,092 INFO train_lst: iter 8900/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.14e-05 skipped 367122 1661.7s peak 822 MB
+2026-11-01 16:20:33,444 INFO train_lst: iter 8920/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.13e-05 skipped 367975 1664.0s peak 822 MB
+2026-11-01 16:20:35,763 INFO train_lst: iter 8940/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.13e-05 skipped 368669 1666.3s peak 822 MB
+2026-11-01 16:20:39,447 INFO train_lst: iter 8960/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.13e-05 skipped 369603 1670.0s peak 822 MB
+2026-11-01 16:20:45,284 INFO train_lst: iter 8980/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.12e-05 skipped 370141 1675.9s peak 822 MB
+2026-11-01 16:20:51,529 INFO train_lst: iter 9000/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.12e-05 skipped 370933 1682.1s peak 822 MB
+2026-11-01 16:21:09,552 INFO train_lst: val iter 9000: IDF1 0.08 MOTA -6.09 MOTP 76.43 MT 0.0 ML 100.0
+2026-11-01 16:21:15,452 INFO train_lst: iter 9020/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.11e-05 skipped 371572 1706.0s peak 822 MB
+2026-11-01 16:21:22,003 INFO train_lst: iter 9040/30000 loss_long_asso 0.0000 loss_short_asso 0.0000 loss 0.0000 lr 4.11e-05 skipped 372442 1712.6s peak 822 MB
+2026-11-01 20:24:10,693 INFO run_pipeline: pipeline exp=E5-lst ds=icdar2015v split=val videos=5 stages=track,eval det_exp=det_ppyoloe_r_text_s lsc_exp=E3-lsc force=False
+2026-11-01 20:25:02,215 INFO run_pipeline: pipeline exp=E5-lst ds=icdar2015v split=val videos=5 stages=fuse det_exp=det_ppyoloe_r_text_s lsc_exp=E3-lsc force=False
+2026-11-01 20:25:02,221 INFO run_pipeline: Video_2_1_2: 19 boxes fused
+2026-11-01 20:25:02,291 INFO run_pipeline: Video_37_2_3: 2747 boxes fused
+2026-11-01 20:25:02,295 INFO run_pipeline: Video_45_6_4: 29 boxes fused
+2026-11-01 20:25:02,300 INFO run_pipeline: Video_47_6_4: 11 boxes fused
+2026-11-01 20:25:02,311 INFO run_pipeline: Video_4_4_2: 189 boxes fused
+2026-11-01 20:25:02,322 INFO run_pipeline: stage fuse  ran     0.11 s
+2026-11-01 20:25:02,358 INFO run_pipeline: pipeline done in 0.76 s
+2026-11-01 20:25:20,300 INFO run_pipeline: pipeline exp=E5-lst ds=icdar2015v split=val videos=5 stages=track,eval det_exp=det_ppyoloe_r_text_s lsc_exp=E3-lsc force=False
+2026-11-01 20:25:22,571 INFO run_pipeline: Video_2_1_2: 2 boxes, 1 tracks
+2026-11-01 20:25:24,001 INFO run_pipeline: Video_37_2_3: 25 boxes, 20 tracks
+2026-11-01 20:25:24,297 INFO run_pipeline: Video_45_6_4: 3 boxes, 2 tracks
+2026-11-01 20:25:24,564 INFO run_pipeline: Video_47_6_4: 0 boxes, 0 tracks
+2026-11-01 20:25:24,845 INFO run_pipeline: Video_4_4_2: 0 boxes, 0 tracks
+2026-11-01 20:25:24,861 INFO run_pipeline: stage track ran     4.56 s
+2026-11-01 20:25:24,893 INFO run_pipeline: stage vote  ran     0.03 s (implicit)
+2026-11-01 20:25:30,234 INFO run_pipeline: eval det: precision=1.41 recall=0.04 f=0.08
+2026-11-01 20:25:30,235 INFO run_pipeline: eval track: MOTA=-0.29 MOTP=76.43 IDF1=0.08 MT=0.00 ML=100.00
+2026-11-01 20:25:30,235 INFO run_pipeline: eval spot: MOTA=-0.35 MOTP=76.14 IDF1=0.03 MT=0.00 ML=100.00
+2026-11-01 20:25:30,238 INFO run_pipeline: stage eval  ran     5.34 s
+2026-11-01 20:25:30,278 INFO run_pipeline: pipeline done in 11.71 s
+2026-11-01 20:28:34,509 INFO sweep_threshold: exp=E5-lst ds=icdar2015v split=val fuse_exp=E5-lst lsc_exp=E3-lsc thrs=[0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+2026-11-01 20:28:37,617 INFO sweep_threshold: Video_2_1_2: tracked at 7 thresholds
+2026-11-01 20:28:45,200 INFO sweep_threshold: Video_37_2_3: tracked at 7 thresholds
+2026-11-01 20:28:50,474 INFO sweep_threshold: Video_45_6_4: tracked at 7 thresholds
+2026-11-01 20:28:55,531 INFO sweep_threshold: Video_47_6_4: tracked at 7 thresholds
+2026-11-01 20:29:00,494 INFO sweep_threshold: Video_4_4_2: tracked at 7 thresholds
+2026-11-01 20:29:05,507 INFO sweep_threshold: thr=0.30 track MOTA=-2.70 IDF1=0.08 | spot MOTA=-0.36 IDF1=0.03
+2026-11-01 20:29:10,683 INFO sweep_threshold: thr=0.40 track MOTA=-2.87 IDF1=0.08 | spot MOTA=-0.35 IDF1=0.03
+2026-11-01 20:29:15,535 INFO sweep_threshold: thr=0.50 track MOTA=-2.87 IDF1=0.08 | spot MOTA=-0.35 IDF1=0.03
+2026-11-01 20:29:20,545 INFO sweep_threshold: thr=0.60 track MOTA=-2.87 IDF1=0.08 | spot MOTA=-0.35 IDF1=0.03
+2026-11-01 20:29:25,298 INFO sweep_threshold: thr=0.70 track MOTA=-1.22 IDF1=0.00 | spot MOTA=-0.18 IDF1=0.00
+2026-11-01 20:29:30,198 INFO sweep_threshold: thr=0.80 track MOTA=-0.14 IDF1=0.00 | spot MOTA=-0.01 IDF1=0.00
+2026-11-01 20:29:34,896 INFO sweep_threshold: thr=0.90 track MOTA=0.00 IDF1=0.00 | spot MOTA=0.00 IDF1=0.00
+2026-11-01 20:29:36,807 INFO sweep_threshold: best tracking thr=0.30 (IDF1 0.08, MOTA -2.70)
+2026-11-02 08:03:17,279 INFO error_analysis: error_analysis exp=E5-lst ds=icdar2015v split=val videos=5 iou=0.50 tracks=E:\Logo_Video_Text_Spotting\runs\E5-lst\track\icdar2015v
+2026-11-02 08:03:19,745 INFO error_analysis: totals: missed_gt=7211 false_positive=24 wrong_text=2 id_switch=0 fragmentation=1
+2026-11-02 08:03:19,745 INFO error_analysis: The two largest error categories are missed GT (7211, 99.6% of all errors) and false positives (24, 0.3%).
+2026-11-02 08:12:48,771 INFO sweep_fusion: exp=E5-lst ds=icdar2015v split=val lsc_exp=E3-lsc tracker=lst modes=['hard', 'soft'] ws=[0.3, 0.5, 0.7] thrs=[0.4, 0.5, 0.6, 0.7, 0.8, 0.9] soft_source=p_eos
+2026-11-02 08:12:56,942 INFO sweep_fusion: Video_2_1_2: tracked 36 settings
+2026-11-02 08:13:20,116 INFO sweep_fusion: Video_37_2_3: tracked 36 settings
+2026-11-02 08:13:30,055 INFO sweep_fusion: Video_45_6_4: tracked 36 settings
+2026-11-02 08:13:40,605 INFO sweep_fusion: Video_47_6_4: tracked 36 settings
+2026-11-02 08:13:50,938 INFO sweep_fusion: Video_4_4_2: tracked 36 settings
+2026-11-02 08:13:52,726 INFO sweep_fusion: hard w=0.30 thr=0.40 track MOTA=-0.73 IDF1=0.00 | spot MOTA=-0.11 IDF1=0.00
+2026-11-02 08:13:54,254 INFO sweep_fusion: hard w=0.30 thr=0.50 track MOTA=-0.72 IDF1=0.00 | spot MOTA=-0.11 IDF1=0.00
+2026-11-02 08:13:55,911 INFO sweep_fusion: hard w=0.30 thr=0.60 track MOTA=-0.87 IDF1=0.00 | spot MOTA=-0.17 IDF1=0.00
+2026-11-02 08:13:59,986 INFO sweep_fusion: hard w=0.30 thr=0.70 track MOTA=-0.15 IDF1=0.00 | spot MOTA=-0.01 IDF1=0.00
+2026-11-02 08:14:03,477 INFO sweep_fusion: hard w=0.30 thr=0.80 track MOTA=-0.01 IDF1=0.00 | spot MOTA=0.00 IDF1=0.00
+2026-11-02 08:14:05,031 INFO sweep_fusion: hard w=0.30 thr=0.90 track MOTA=0.00 IDF1=0.00 | spot MOTA=0.00 IDF1=0.00
+2026-11-02 08:14:06,603 INFO sweep_fusion: hard w=0.50 thr=0.40 track MOTA=-2.87 IDF1=0.08 | spot MOTA=-0.35 IDF1=0.03
+2026-11-02 08:14:08,200 INFO sweep_fusion: hard w=0.50 thr=0.50 track MOTA=-2.87 IDF1=0.08 | spot MOTA=-0.35 IDF1=0.03
+2026-11-02 08:14:09,852 INFO sweep_fusion: hard w=0.50 thr=0.60 track MOTA=-2.87 IDF1=0.08 | spot MOTA=-0.35 IDF1=0.03
+2026-11-02 08:14:11,552 INFO sweep_fusion: hard w=0.50 thr=0.70 track MOTA=-1.22 IDF1=0.00 | spot MOTA=-0.18 IDF1=0.00
+2026-11-02 08:14:13,749 INFO sweep_fusion: hard w=0.50 thr=0.80 track MOTA=-0.14 IDF1=0.00 | spot MOTA=-0.01 IDF1=0.00
+2026-11-02 08:14:15,534 INFO sweep_fusion: hard w=0.50 thr=0.90 track MOTA=0.00 IDF1=0.00 | spot MOTA=0.00 IDF1=0.00
+2026-11-02 08:14:17,301 INFO sweep_fusion: hard w=0.70 thr=0.40 track MOTA=-2.87 IDF1=0.08 | spot MOTA=-0.35 IDF1=0.03
+2026-11-02 08:14:18,899 INFO sweep_fusion: hard w=0.70 thr=0.50 track MOTA=-2.87 IDF1=0.08 | spot MOTA=-0.35 IDF1=0.03
+2026-11-02 08:14:21,131 INFO sweep_fusion: hard w=0.70 thr=0.60 track MOTA=-2.87 IDF1=0.08 | spot MOTA=-0.35 IDF1=0.03
+2026-11-02 08:14:25,454 INFO sweep_fusion: hard w=0.70 thr=0.70 track MOTA=-2.87 IDF1=0.08 | spot MOTA=-0.35 IDF1=0.03
+2026-11-02 08:14:27,260 INFO sweep_fusion: hard w=0.70 thr=0.80 track MOTA=-2.19 IDF1=0.05 | spot MOTA=-0.35 IDF1=0.00
+2026-11-02 08:14:28,877 INFO sweep_fusion: hard w=0.70 thr=0.90 track MOTA=-0.04 IDF1=0.00 | spot MOTA=0.00 IDF1=0.00
+2026-11-02 08:14:30,622 INFO sweep_fusion: soft w=0.30 thr=0.40 track MOTA=-0.40 IDF1=0.00 | spot MOTA=-0.06 IDF1=0.00
+2026-11-02 08:14:32,224 INFO sweep_fusion: soft w=0.30 thr=0.50 track MOTA=-0.50 IDF1=0.00 | spot MOTA=-0.10 IDF1=0.00
+2026-11-02 08:14:35,648 INFO sweep_fusion: soft w=0.30 thr=0.60 track MOTA=-0.55 IDF1=0.00 | spot MOTA=-0.11 IDF1=0.00
+2026-11-02 08:14:41,285 INFO sweep_fusion: soft w=0.30 thr=0.70 track MOTA=-0.10 IDF1=0.00 | spot MOTA=-0.01 IDF1=0.00
+2026-11-02 08:14:46,973 INFO sweep_fusion: soft w=0.30 thr=0.80 track MOTA=0.00 IDF1=0.00 | spot MOTA=0.00 IDF1=0.00
+2026-11-02 08:14:52,454 INFO sweep_fusion: soft w=0.30 thr=0.90 track MOTA=0.00 IDF1=0.00 | spot MOTA=0.00 IDF1=0.00
+2026-11-02 08:14:58,087 INFO sweep_fusion: soft w=0.50 thr=0.40 track MOTA=-1.71 IDF1=0.08 | spot MOTA=-0.26 IDF1=0.03
+2026-11-02 08:15:03,641 INFO sweep_fusion: soft w=0.50 thr=0.50 track MOTA=-2.40 IDF1=0.08 | spot MOTA=-0.19 IDF1=0.03
+2026-11-02 08:15:08,894 INFO sweep_fusion: soft w=0.50 thr=0.60 track MOTA=-1.97 IDF1=0.08 | spot MOTA=-0.29 IDF1=0.03
+2026-11-02 08:15:14,222 INFO sweep_fusion: soft w=0.50 thr=0.70 track MOTA=-0.49 IDF1=0.00 | spot MOTA=-0.10 IDF1=0.00
+2026-11-02 08:15:19,556 INFO sweep_fusion: soft w=0.50 thr=0.80 track MOTA=-0.01 IDF1=0.00 | spot MOTA=0.00 IDF1=0.00
+2026-11-02 08:15:25,085 INFO sweep_fusion: soft w=0.50 thr=0.90 track MOTA=0.00 IDF1=0.00 | spot MOTA=0.00 IDF1=0.00
+2026-11-02 08:15:30,674 INFO sweep_fusion: soft w=0.70 thr=0.40 track MOTA=-2.98 IDF1=0.08 | spot MOTA=-0.37 IDF1=0.03
+2026-11-02 08:15:34,903 INFO sweep_fusion: soft w=0.70 thr=0.50 track MOTA=-2.80 IDF1=0.08 | spot MOTA=-0.28 IDF1=0.03
+2026-11-02 08:15:36,684 INFO sweep_fusion: soft w=0.70 thr=0.60 track MOTA=-2.56 IDF1=0.08 | spot MOTA=-0.33 IDF1=0.03
+2026-11-02 08:15:38,471 INFO sweep_fusion: soft w=0.70 thr=0.70 track MOTA=-1.87 IDF1=0.08 | spot MOTA=-0.29 IDF1=0.03
+2026-11-02 08:15:44,517 INFO sweep_fusion: soft w=0.70 thr=0.80 track MOTA=-0.50 IDF1=0.03 | spot MOTA=-0.10 IDF1=0.00
+2026-11-02 08:15:47,156 INFO sweep_fusion: soft w=0.70 thr=0.90 track MOTA=0.00 IDF1=0.00 | spot MOTA=0.00 IDF1=0.00
+2026-11-02 08:15:48,680 INFO sweep_fusion: best spotting: soft w=0.50 thr=0.50 (IDF1 0.03, MOTA -0.19)
+2026-11-02 08:23:09,819 INFO sweep_voting: exp=E5-lst ds=icdar2015v split=val track_exp=E5-lst taus=[0.0, 0.3, 0.5, 0.7] min_lens=[1, 3, 5, 10]
+2026-11-02 08:23:09,863 INFO sweep_voting: Video_2_1_2: voted 16 settings
+2026-11-02 08:23:09,968 INFO sweep_voting: Video_37_2_3: voted 16 settings
+2026-11-02 08:23:09,994 INFO sweep_voting: Video_45_6_4: voted 16 settings
+2026-11-02 08:23:10,027 INFO sweep_voting: Video_47_6_4: voted 16 settings
+2026-11-02 08:23:10,065 INFO sweep_voting: Video_4_4_2: voted 16 settings
+2026-11-02 08:23:11,534 INFO sweep_voting: off: tracks=23 track MOTA=-0.29 IDF1=0.08 | spot MOTA=-0.35 IDF1=0.03
+2026-11-02 08:23:12,942 INFO sweep_voting: tau_0.00/min_len_1: tracks=23 track MOTA=-0.29 IDF1=0.08 | spot MOTA=-0.37 IDF1=0.00
+2026-11-02 08:23:14,370 INFO sweep_voting: tau_0.00/min_len_3: tracks=1 track MOTA=0.04 IDF1=0.08 | spot MOTA=-0.04 IDF1=0.00
+2026-11-02 08:23:15,717 INFO sweep_voting: tau_0.00/min_len_5: tracks=0 track MOTA=0.00 IDF1=0.00 | spot MOTA=0.00 IDF1=0.00
+2026-11-02 08:23:17,118 INFO sweep_voting: tau_0.00/min_len_10: tracks=0 track MOTA=0.00 IDF1=0.00 | spot MOTA=0.00 IDF1=0.00
+2026-11-02 08:23:18,474 INFO sweep_voting: tau_0.30/min_len_1: tracks=23 track MOTA=-0.29 IDF1=0.08 | spot MOTA=-0.37 IDF1=0.00
+2026-11-02 08:23:19,921 INFO sweep_voting: tau_0.30/min_len_3: tracks=1 track MOTA=0.04 IDF1=0.08 | spot MOTA=-0.04 IDF1=0.00
+2026-11-02 08:23:21,255 INFO sweep_voting: tau_0.30/min_len_5: tracks=0 track MOTA=0.00 IDF1=0.00 | spot MOTA=0.00 IDF1=0.00
+2026-11-02 08:23:22,641 INFO sweep_voting: tau_0.30/min_len_10: tracks=0 track MOTA=0.00 IDF1=0.00 | spot MOTA=0.00 IDF1=0.00
+2026-11-02 08:23:23,993 INFO sweep_voting: tau_0.50/min_len_1: tracks=23 track MOTA=-0.29 IDF1=0.08 | spot MOTA=-0.37 IDF1=0.00
+2026-11-02 08:23:25,385 INFO sweep_voting: tau_0.50/min_len_3: tracks=1 track MOTA=0.04 IDF1=0.08 | spot MOTA=-0.04 IDF1=0.00
+2026-11-02 08:23:26,723 INFO sweep_voting: tau_0.50/min_len_5: tracks=0 track MOTA=0.00 IDF1=0.00 | spot MOTA=0.00 IDF1=0.00
+2026-11-02 08:23:28,082 INFO sweep_voting: tau_0.50/min_len_10: tracks=0 track MOTA=0.00 IDF1=0.00 | spot MOTA=0.00 IDF1=0.00
+2026-11-02 08:23:29,487 INFO sweep_voting: tau_0.70/min_len_1: tracks=23 track MOTA=-0.29 IDF1=0.08 | spot MOTA=-0.37 IDF1=0.00
+2026-11-02 08:23:30,828 INFO sweep_voting: tau_0.70/min_len_3: tracks=1 track MOTA=0.04 IDF1=0.08 | spot MOTA=-0.04 IDF1=0.00
+2026-11-02 08:23:32,221 INFO sweep_voting: tau_0.70/min_len_5: tracks=0 track MOTA=0.00 IDF1=0.00 | spot MOTA=0.00 IDF1=0.00
+2026-11-02 08:23:33,567 INFO sweep_voting: tau_0.70/min_len_10: tracks=0 track MOTA=0.00 IDF1=0.00 | spot MOTA=0.00 IDF1=0.00
+2026-11-02 08:23:33,584 INFO sweep_voting: best spotting: tau=0.00 min_len=5 (IDF1 0.00, MOTA 0.00); off IDF1 0.03
+2026-11-02 08:23:39,175 INFO run_pipeline: pipeline exp=E5-lst ds=icdar2015v split=val videos=5 stages=vote,eval det_exp=det_ppyoloe_r_text_s lsc_exp=E3-lsc force=True
+2026-11-02 08:23:39,192 INFO run_pipeline: stage vote  ran     0.02 s
+2026-11-02 08:23:41,111 INFO run_pipeline: eval det: precision=1.41 recall=0.04 f=0.08
+2026-11-02 08:23:41,111 INFO run_pipeline: eval track: MOTA=-0.29 MOTP=76.43 IDF1=0.08 MT=0.00 ML=100.00
+2026-11-02 08:23:41,111 INFO run_pipeline: eval spot: MOTA=-0.35 MOTP=76.14 IDF1=0.03 MT=0.00 ML=100.00
+2026-11-02 08:23:41,111 INFO run_pipeline: stage eval  ran     1.92 s
+2026-11-02 08:23:41,133 INFO run_pipeline: pipeline done in 2.58 s

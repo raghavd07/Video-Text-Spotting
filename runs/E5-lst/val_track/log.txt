@@ -1,0 +1,18 @@
+2026-11-01 15:55:06,594 INFO evaluate: mode=track iou=0.50 videos=5 gt=E:\Logo_Video_Text_Spotting\data\processed\icdar2015v pred=E:\Logo_Video_Text_Spotting\runs\E5-lst\val_track\icdar2015v
+2026-11-01 15:55:07,414 INFO evaluate: track: MOTA=-6.09 MOTP=76.43 IDF1=0.08 MT=0.00 ML=100.00
+2026-11-01 15:57:20,179 INFO evaluate: mode=track iou=0.50 videos=5 gt=E:\Logo_Video_Text_Spotting\data\processed\icdar2015v pred=E:\Logo_Video_Text_Spotting\runs\E5-lst\val_track\icdar2015v
+2026-11-01 15:57:21,015 INFO evaluate: track: MOTA=-6.09 MOTP=76.43 IDF1=0.08 MT=0.00 ML=100.00
+2026-11-01 15:59:30,403 INFO evaluate: mode=track iou=0.50 videos=5 gt=E:\Logo_Video_Text_Spotting\data\processed\icdar2015v pred=E:\Logo_Video_Text_Spotting\runs\E5-lst\val_track\icdar2015v
+2026-11-01 15:59:31,251 INFO evaluate: track: MOTA=-6.09 MOTP=76.43 IDF1=0.08 MT=0.00 ML=100.00
+2026-11-01 16:01:49,139 INFO evaluate: mode=track iou=0.50 videos=5 gt=E:\Logo_Video_Text_Spotting\data\processed\icdar2015v pred=E:\Logo_Video_Text_Spotting\runs\E5-lst\val_track\icdar2015v
+2026-11-01 16:01:49,921 INFO evaluate: track: MOTA=-6.09 MOTP=76.43 IDF1=0.08 MT=0.00 ML=100.00
+2026-11-01 16:04:01,449 INFO evaluate: mode=track iou=0.50 videos=5 gt=E:\Logo_Video_Text_Spotting\data\processed\icdar2015v pred=E:\Logo_Video_Text_Spotting\runs\E5-lst\val_track\icdar2015v
+2026-11-01 16:04:02,262 INFO evaluate: track: MOTA=-6.09 MOTP=76.43 IDF1=0.08 MT=0.00 ML=100.00
+2026-11-01 16:08:52,373 INFO evaluate: mode=track iou=0.50 videos=5 gt=E:\Logo_Video_Text_Spotting\data\processed\icdar2015v pred=E:\Logo_Video_Text_Spotting\runs\E5-lst\val_track\icdar2015v
+2026-11-01 16:08:55,805 INFO evaluate: track: MOTA=-6.09 MOTP=76.43 IDF1=0.08 MT=0.00 ML=100.00
+2026-11-01 16:11:41,133 INFO evaluate: mode=track iou=0.50 videos=5 gt=E:\Logo_Video_Text_Spotting\data\processed\icdar2015v pred=E:\Logo_Video_Text_Spotting\runs\E5-lst\val_track\icdar2015v
+2026-11-01 16:11:41,968 INFO evaluate: track: MOTA=-6.09 MOTP=76.43 IDF1=0.08 MT=0.00 ML=100.00
+2026-11-01 16:13:58,410 INFO evaluate: mode=track iou=0.50 videos=5 gt=E:\Logo_Video_Text_Spotting\data\processed\icdar2015v pred=E:\Logo_Video_Text_Spotting\runs\E5-lst\val_track\icdar2015v
+2026-11-01 16:13:59,250 INFO evaluate: track: MOTA=-6.09 MOTP=76.43 IDF1=0.08 MT=0.00 ML=100.00
+2026-11-01 16:21:04,162 INFO evaluate: mode=track iou=0.50 videos=5 gt=E:\Logo_Video_Text_Spotting\data\processed\icdar2015v pred=E:\Logo_Video_Text_Spotting\runs\E5-lst\val_track\icdar2015v
+2026-11-01 16:21:07,919 INFO evaluate: track: MOTA=-6.09 MOTP=76.43 IDF1=0.08 MT=0.00 ML=100.00

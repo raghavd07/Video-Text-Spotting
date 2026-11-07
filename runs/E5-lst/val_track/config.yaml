@@ -1,0 +1,4 @@
+exp_id: val_track
+eval:
+  iou: 0.5
+  spotting: false
