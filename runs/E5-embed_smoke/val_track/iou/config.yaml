@@ -1,0 +1,4 @@
+exp_id: iou
+eval:
+  iou: 0.5
+  spotting: false

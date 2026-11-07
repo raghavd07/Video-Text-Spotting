@@ -1,0 +1,231 @@
+2026-11-01 18:07:52,552 INFO train_embed: exp=E5-embed smoke=False device=cuda amp=True feats=[26,512] train=20 videos, 132/10220 clips with positives, val=5 videos, params=15241600, iters=3000, lam=0.50
+2026-11-01 18:07:55,247 INFO train_embed: iter 20/3000 loss 0.8929 lr 2.01e-05 epoch 0 2.7s
+2026-11-01 18:07:56,117 INFO train_embed: iter 40/3000 loss 1.4805 lr 4.01e-05 epoch 0 3.6s
+2026-11-01 18:07:56,826 INFO train_embed: iter 60/3000 loss 1.1156 lr 6.00e-05 epoch 0 4.3s
+2026-11-01 18:07:57,556 INFO train_embed: iter 80/3000 loss 1.4477 lr 8.00e-05 epoch 0 5.0s
+2026-11-01 18:07:58,435 INFO train_embed: iter 100/3000 loss 1.3626 lr 1.00e-04 epoch 0 5.9s
+2026-11-01 18:07:59,267 INFO train_embed: iter 120/3000 loss 1.2772 lr 1.00e-04 epoch 0 6.7s
+2026-11-01 18:08:00,009 INFO train_embed: iter 140/3000 loss 1.7631 lr 1.00e-04 epoch 1 7.5s
+2026-11-01 18:08:00,818 INFO train_embed: iter 160/3000 loss 1.1146 lr 9.99e-05 epoch 1 8.3s
+2026-11-01 18:08:01,624 INFO train_embed: iter 180/3000 loss 1.0962 lr 9.98e-05 epoch 1 9.1s
+2026-11-01 18:08:02,355 INFO train_embed: iter 200/3000 loss 0.9229 lr 9.97e-05 epoch 1 9.8s
+2026-11-01 18:08:03,131 INFO train_embed: iter 220/3000 loss 1.3004 lr 9.96e-05 epoch 1 10.6s
+2026-11-01 18:08:03,895 INFO train_embed: iter 240/3000 loss 1.2386 lr 9.94e-05 epoch 1 11.3s
+2026-11-01 18:08:12,896 INFO train_embed: val iter 250: embed IDF1 0.03 MOTA -2.95 | iou IDF1 0.03 MOTA -2.95 *best*
+2026-11-01 18:08:13,565 INFO train_embed: iter 260/3000 loss 0.9513 lr 9.93e-05 epoch 1 21.0s
+2026-11-01 18:08:14,314 INFO train_embed: iter 280/3000 loss 1.1009 lr 9.91e-05 epoch 2 21.8s
+2026-11-01 18:08:15,077 INFO train_embed: iter 300/3000 loss 0.8859 lr 9.88e-05 epoch 2 22.5s
+2026-11-01 18:08:15,951 INFO train_embed: iter 320/3000 loss 1.0872 lr 9.86e-05 epoch 2 23.4s
+2026-11-01 18:08:16,770 INFO train_embed: iter 340/3000 loss 1.2962 lr 9.83e-05 epoch 2 24.2s
+2026-11-01 18:08:17,569 INFO train_embed: iter 360/3000 loss 1.0737 lr 9.80e-05 epoch 2 25.0s
+2026-11-01 18:08:18,336 INFO train_embed: iter 380/3000 loss 0.9436 lr 9.77e-05 epoch 2 25.8s
+2026-11-01 18:08:19,102 INFO train_embed: iter 400/3000 loss 1.0956 lr 9.74e-05 epoch 3 26.5s
+2026-11-01 18:08:19,921 INFO train_embed: iter 420/3000 loss 0.8273 lr 9.70e-05 epoch 3 27.4s
+2026-11-01 18:08:20,838 INFO train_embed: iter 440/3000 loss 0.9169 lr 9.66e-05 epoch 3 28.3s
+2026-11-01 18:08:21,658 INFO train_embed: iter 460/3000 loss 0.9831 lr 9.62e-05 epoch 3 29.1s
+2026-11-01 18:08:22,447 INFO train_embed: iter 480/3000 loss 0.9112 lr 9.58e-05 epoch 3 29.9s
+2026-11-01 18:08:23,260 INFO train_embed: iter 500/3000 loss 0.7230 lr 9.54e-05 epoch 3 30.7s
+2026-11-01 18:08:26,783 INFO train_embed: val iter 500: embed IDF1 0.03 MOTA -2.95 | iou IDF1 0.03 MOTA -2.95
+2026-11-01 18:08:27,702 INFO train_embed: iter 520/3000 loss 1.1606 lr 9.49e-05 epoch 3 35.1s
+2026-11-01 18:08:28,505 INFO train_embed: iter 540/3000 loss 0.8309 lr 9.44e-05 epoch 4 36.0s
+2026-11-01 18:08:29,305 INFO train_embed: iter 560/3000 loss 1.3894 lr 9.39e-05 epoch 4 36.8s
+2026-11-01 18:08:30,143 INFO train_embed: iter 580/3000 loss 0.9673 lr 9.34e-05 epoch 4 37.6s
+2026-11-01 18:08:30,942 INFO train_embed: iter 600/3000 loss 0.8026 lr 9.28e-05 epoch 4 38.4s
+2026-11-01 18:08:31,730 INFO train_embed: iter 620/3000 loss 1.1822 lr 9.23e-05 epoch 4 39.2s
+2026-11-01 18:08:32,613 INFO train_embed: iter 640/3000 loss 0.9502 lr 9.17e-05 epoch 4 40.1s
+2026-11-01 18:08:33,411 INFO train_embed: iter 660/3000 loss 0.9134 lr 9.11e-05 epoch 4 40.9s
+2026-11-01 18:08:34,222 INFO train_embed: iter 680/3000 loss 0.5891 lr 9.05e-05 epoch 5 41.7s
+2026-11-01 18:08:35,048 INFO train_embed: iter 700/3000 loss 1.0724 lr 8.98e-05 epoch 5 42.5s
+2026-11-01 18:08:35,760 INFO train_embed: iter 720/3000 loss 0.8411 lr 8.91e-05 epoch 5 43.2s
+2026-11-01 18:08:36,521 INFO train_embed: iter 740/3000 loss 0.9263 lr 8.85e-05 epoch 5 44.0s
+2026-11-01 18:08:40,367 INFO train_embed: val iter 750: embed IDF1 0.03 MOTA -2.95 | iou IDF1 0.03 MOTA -2.95
+2026-11-01 18:08:40,823 INFO train_embed: iter 760/3000 loss 0.9357 lr 8.78e-05 epoch 5 48.3s
+2026-11-01 18:08:41,636 INFO train_embed: iter 780/3000 loss 0.7895 lr 8.70e-05 epoch 5 49.1s
+2026-11-01 18:08:42,516 INFO train_embed: iter 800/3000 loss 0.9240 lr 8.63e-05 epoch 6 50.0s
+2026-11-01 18:08:43,475 INFO train_embed: iter 820/3000 loss 0.7444 lr 8.55e-05 epoch 6 50.9s
+2026-11-01 18:08:44,349 INFO train_embed: iter 840/3000 loss 0.8540 lr 8.48e-05 epoch 6 51.8s
+2026-11-01 18:08:45,224 INFO train_embed: iter 860/3000 loss 0.9225 lr 8.40e-05 epoch 6 52.7s
+2026-11-01 18:08:45,995 INFO train_embed: iter 880/3000 loss 0.7065 lr 8.32e-05 epoch 6 53.4s
+2026-11-01 18:08:46,459 INFO train_embed: iter 900/3000 loss 1.0109 lr 8.24e-05 epoch 6 53.9s
+2026-11-01 18:08:46,918 INFO train_embed: iter 920/3000 loss 0.8007 lr 8.15e-05 epoch 6 54.4s
+2026-11-01 18:08:47,381 INFO train_embed: iter 940/3000 loss 0.7475 lr 8.07e-05 epoch 7 54.8s
+2026-11-01 18:08:47,764 INFO train_embed: iter 960/3000 loss 0.7643 lr 7.98e-05 epoch 7 55.2s
+2026-11-01 18:08:48,158 INFO train_embed: iter 980/3000 loss 0.9139 lr 7.89e-05 epoch 7 55.6s
+2026-11-01 18:08:48,577 INFO train_embed: iter 1000/3000 loss 0.8042 lr 7.81e-05 epoch 7 56.0s
+2026-11-01 18:08:49,550 INFO train_embed: val iter 1000: embed IDF1 0.03 MOTA -2.95 | iou IDF1 0.03 MOTA -2.95
+2026-11-01 18:08:49,980 INFO train_embed: iter 1020/3000 loss 0.9263 lr 7.72e-05 epoch 7 57.4s
+2026-11-01 18:08:50,363 INFO train_embed: iter 1040/3000 loss 0.7473 lr 7.62e-05 epoch 7 57.8s
+2026-11-01 18:08:50,748 INFO train_embed: iter 1060/3000 loss 0.7497 lr 7.53e-05 epoch 8 58.2s
+2026-11-01 18:08:51,155 INFO train_embed: iter 1080/3000 loss 0.7255 lr 7.44e-05 epoch 8 58.6s
+2026-11-01 18:08:51,548 INFO train_embed: iter 1100/3000 loss 0.8062 lr 7.34e-05 epoch 8 59.0s
+2026-11-01 18:08:51,936 INFO train_embed: iter 1120/3000 loss 0.8388 lr 7.25e-05 epoch 8 59.4s
+2026-11-01 18:08:52,357 INFO train_embed: iter 1140/3000 loss 0.9103 lr 7.15e-05 epoch 8 59.8s
+2026-11-01 18:08:52,778 INFO train_embed: iter 1160/3000 loss 0.6702 lr 7.05e-05 epoch 8 60.2s
+2026-11-01 18:08:53,200 INFO train_embed: iter 1180/3000 loss 0.8517 lr 6.95e-05 epoch 8 60.6s
+2026-11-01 18:08:53,629 INFO train_embed: iter 1200/3000 loss 1.0037 lr 6.85e-05 epoch 9 61.1s
+2026-11-01 18:08:54,072 INFO train_embed: iter 1220/3000 loss 0.6097 lr 6.75e-05 epoch 9 61.5s
+2026-11-01 18:08:54,509 INFO train_embed: iter 1240/3000 loss 0.7963 lr 6.65e-05 epoch 9 62.0s
+2026-11-01 18:08:55,774 INFO train_embed: val iter 1250: embed IDF1 0.03 MOTA -2.95 | iou IDF1 0.03 MOTA -2.95
+2026-11-01 18:08:55,993 INFO train_embed: iter 1260/3000 loss 0.6273 lr 6.55e-05 epoch 9 63.4s
+2026-11-01 18:08:56,420 INFO train_embed: iter 1280/3000 loss 0.7484 lr 6.44e-05 epoch 9 63.9s
+2026-11-01 18:08:56,853 INFO train_embed: iter 1300/3000 loss 0.8524 lr 6.34e-05 epoch 9 64.3s
+2026-11-01 18:08:57,234 INFO train_embed: iter 1320/3000 loss 0.8407 lr 6.23e-05 epoch 9 64.7s
+2026-11-01 18:08:57,637 INFO train_embed: iter 1340/3000 loss 0.7442 lr 6.13e-05 epoch 10 65.1s
+2026-11-01 18:08:58,057 INFO train_embed: iter 1360/3000 loss 0.7824 lr 6.02e-05 epoch 10 65.5s
+2026-11-01 18:08:58,477 INFO train_embed: iter 1380/3000 loss 0.9630 lr 5.92e-05 epoch 10 65.9s
+2026-11-01 18:08:58,888 INFO train_embed: iter 1400/3000 loss 0.6866 lr 5.81e-05 epoch 10 66.3s
+2026-11-01 18:08:59,302 INFO train_embed: iter 1420/3000 loss 0.6823 lr 5.70e-05 epoch 10 66.7s
+2026-11-01 18:08:59,727 INFO train_embed: iter 1440/3000 loss 0.6514 lr 5.59e-05 epoch 10 67.2s
+2026-11-01 18:09:00,157 INFO train_embed: iter 1460/3000 loss 0.8418 lr 5.49e-05 epoch 11 67.6s
+2026-11-01 18:09:00,537 INFO train_embed: iter 1480/3000 loss 0.6046 lr 5.38e-05 epoch 11 68.0s
+2026-11-01 18:09:00,958 INFO train_embed: iter 1500/3000 loss 0.8472 lr 5.27e-05 epoch 11 68.4s
+2026-11-01 18:09:01,920 INFO train_embed: val iter 1500: embed IDF1 0.03 MOTA -2.95 | iou IDF1 0.03 MOTA -2.95
+2026-11-01 18:09:02,335 INFO train_embed: iter 1520/3000 loss 0.7255 lr 5.16e-05 epoch 11 69.8s
+2026-11-01 18:09:02,763 INFO train_embed: iter 1540/3000 loss 0.7121 lr 5.05e-05 epoch 11 70.2s
+2026-11-01 18:09:03,175 INFO train_embed: iter 1560/3000 loss 0.8730 lr 4.95e-05 epoch 11 70.6s
+2026-11-01 18:09:03,580 INFO train_embed: iter 1580/3000 loss 0.6587 lr 4.84e-05 epoch 11 71.0s
+2026-11-01 18:09:04,004 INFO train_embed: iter 1600/3000 loss 0.8093 lr 4.73e-05 epoch 12 71.5s
+2026-11-01 18:09:04,414 INFO train_embed: iter 1620/3000 loss 0.7829 lr 4.62e-05 epoch 12 71.9s
+2026-11-01 18:09:04,842 INFO train_embed: iter 1640/3000 loss 0.7246 lr 4.51e-05 epoch 12 72.3s
+2026-11-01 18:09:05,271 INFO train_embed: iter 1660/3000 loss 0.7265 lr 4.41e-05 epoch 12 72.7s
+2026-11-01 18:09:05,691 INFO train_embed: iter 1680/3000 loss 0.6715 lr 4.30e-05 epoch 12 73.1s
+2026-11-01 18:09:06,121 INFO train_embed: iter 1700/3000 loss 0.7321 lr 4.19e-05 epoch 12 73.6s
+2026-11-01 18:09:06,539 INFO train_embed: iter 1720/3000 loss 0.8145 lr 4.08e-05 epoch 13 74.0s
+2026-11-01 18:09:06,933 INFO train_embed: iter 1740/3000 loss 0.7022 lr 3.98e-05 epoch 13 74.4s
+2026-11-01 18:09:08,102 INFO train_embed: val iter 1750: embed IDF1 0.03 MOTA -2.95 | iou IDF1 0.03 MOTA -2.95
+2026-11-01 18:09:08,311 INFO train_embed: iter 1760/3000 loss 0.7062 lr 3.87e-05 epoch 13 75.8s
+2026-11-01 18:09:08,677 INFO train_embed: iter 1780/3000 loss 0.7752 lr 3.77e-05 epoch 13 76.1s
+2026-11-01 18:09:09,061 INFO train_embed: iter 1800/3000 loss 0.8019 lr 3.66e-05 epoch 13 76.5s
+2026-11-01 18:09:09,430 INFO train_embed: iter 1820/3000 loss 0.8988 lr 3.56e-05 epoch 13 76.9s
+2026-11-01 18:09:09,804 INFO train_embed: iter 1840/3000 loss 0.5719 lr 3.45e-05 epoch 13 77.3s
+2026-11-01 18:09:10,160 INFO train_embed: iter 1860/3000 loss 0.7288 lr 3.35e-05 epoch 14 77.6s
+2026-11-01 18:09:10,536 INFO train_embed: iter 1880/3000 loss 0.7439 lr 3.25e-05 epoch 14 78.0s
+2026-11-01 18:09:10,915 INFO train_embed: iter 1900/3000 loss 0.9537 lr 3.15e-05 epoch 14 78.4s
+2026-11-01 18:09:11,283 INFO train_embed: iter 1920/3000 loss 0.9678 lr 3.05e-05 epoch 14 78.7s
+2026-11-01 18:09:11,662 INFO train_embed: iter 1940/3000 loss 0.5990 lr 2.95e-05 epoch 14 79.1s
+2026-11-01 18:09:12,047 INFO train_embed: iter 1960/3000 loss 0.6147 lr 2.85e-05 epoch 14 79.5s
+2026-11-01 18:09:12,434 INFO train_embed: iter 1980/3000 loss 0.6234 lr 2.75e-05 epoch 14 79.9s
+2026-11-01 18:09:12,849 INFO train_embed: iter 2000/3000 loss 0.8674 lr 2.66e-05 epoch 15 80.3s
+2026-11-01 18:09:13,844 INFO train_embed: val iter 2000: embed IDF1 0.03 MOTA -2.95 | iou IDF1 0.03 MOTA -2.95
+2026-11-01 18:09:14,216 INFO train_embed: iter 2020/3000 loss 0.7917 lr 2.56e-05 epoch 15 81.7s
+2026-11-01 18:09:14,579 INFO train_embed: iter 2040/3000 loss 0.6909 lr 2.47e-05 epoch 15 82.0s
+2026-11-01 18:09:14,977 INFO train_embed: iter 2060/3000 loss 0.7515 lr 2.38e-05 epoch 15 82.4s
+2026-11-01 18:09:15,345 INFO train_embed: iter 2080/3000 loss 0.7479 lr 2.28e-05 epoch 15 82.8s
+2026-11-01 18:09:15,714 INFO train_embed: iter 2100/3000 loss 0.5606 lr 2.19e-05 epoch 15 83.2s
+2026-11-01 18:09:16,088 INFO train_embed: iter 2120/3000 loss 0.8934 lr 2.11e-05 epoch 16 83.5s
+2026-11-01 18:09:16,483 INFO train_embed: iter 2140/3000 loss 0.5585 lr 2.02e-05 epoch 16 83.9s
+2026-11-01 18:09:16,912 INFO train_embed: iter 2160/3000 loss 0.8426 lr 1.93e-05 epoch 16 84.4s
+2026-11-01 18:09:17,303 INFO train_embed: iter 2180/3000 loss 0.6442 lr 1.85e-05 epoch 16 84.7s
+2026-11-01 18:09:17,708 INFO train_embed: iter 2200/3000 loss 0.8858 lr 1.76e-05 epoch 16 85.2s
+2026-11-01 18:09:18,099 INFO train_embed: iter 2220/3000 loss 0.8537 lr 1.68e-05 epoch 16 85.5s
+2026-11-01 18:09:18,471 INFO train_embed: iter 2240/3000 loss 0.5190 lr 1.60e-05 epoch 16 85.9s
+2026-11-01 18:09:19,686 INFO train_embed: val iter 2250: embed IDF1 0.03 MOTA -2.95 | iou IDF1 0.03 MOTA -2.95
+2026-11-01 18:09:19,909 INFO train_embed: iter 2260/3000 loss 0.9431 lr 1.52e-05 epoch 17 87.4s
+2026-11-01 18:09:20,320 INFO train_embed: iter 2280/3000 loss 0.7924 lr 1.45e-05 epoch 17 87.8s
+2026-11-01 18:09:20,692 INFO train_embed: iter 2300/3000 loss 0.8478 lr 1.37e-05 epoch 17 88.1s
+2026-11-01 18:09:21,063 INFO train_embed: iter 2320/3000 loss 0.5415 lr 1.30e-05 epoch 17 88.5s
+2026-11-01 18:09:21,426 INFO train_embed: iter 2340/3000 loss 0.6684 lr 1.22e-05 epoch 17 88.9s
+2026-11-01 18:09:21,794 INFO train_embed: iter 2360/3000 loss 0.7254 lr 1.15e-05 epoch 17 89.2s
+2026-11-01 18:09:22,160 INFO train_embed: iter 2380/3000 loss 0.7779 lr 1.09e-05 epoch 18 89.6s
+2026-11-01 18:09:22,550 INFO train_embed: iter 2400/3000 loss 0.8062 lr 1.02e-05 epoch 18 90.0s
+2026-11-01 18:09:22,931 INFO train_embed: iter 2420/3000 loss 0.6821 lr 9.55e-06 epoch 18 90.4s
+2026-11-01 18:09:23,316 INFO train_embed: iter 2440/3000 loss 0.8430 lr 8.92e-06 epoch 18 90.8s
+2026-11-01 18:09:23,700 INFO train_embed: iter 2460/3000 loss 0.4331 lr 8.31e-06 epoch 18 91.1s
+2026-11-01 18:09:24,062 INFO train_embed: iter 2480/3000 loss 0.6369 lr 7.73e-06 epoch 18 91.5s
+2026-11-01 18:09:24,430 INFO train_embed: iter 2500/3000 loss 0.9566 lr 7.16e-06 epoch 18 91.9s
+2026-11-01 18:09:25,404 INFO train_embed: val iter 2500: embed IDF1 0.03 MOTA -2.95 | iou IDF1 0.03 MOTA -2.95
+2026-11-01 18:09:25,811 INFO train_embed: iter 2520/3000 loss 0.7755 lr 6.61e-06 epoch 19 93.3s
+2026-11-01 18:09:26,212 INFO train_embed: iter 2540/3000 loss 0.6839 lr 6.08e-06 epoch 19 93.7s
+2026-11-01 18:09:26,599 INFO train_embed: iter 2560/3000 loss 0.8253 lr 5.57e-06 epoch 19 94.0s
+2026-11-01 18:09:26,976 INFO train_embed: iter 2580/3000 loss 0.6888 lr 5.09e-06 epoch 19 94.4s
+2026-11-01 18:09:27,334 INFO train_embed: iter 2600/3000 loss 0.8844 lr 4.62e-06 epoch 19 94.8s
+2026-11-01 18:09:27,697 INFO train_embed: iter 2620/3000 loss 0.8205 lr 4.18e-06 epoch 19 95.1s
+2026-11-01 18:09:28,085 INFO train_embed: iter 2640/3000 loss 0.5929 lr 3.75e-06 epoch 19 95.5s
+2026-11-01 18:09:28,473 INFO train_embed: iter 2660/3000 loss 0.8690 lr 3.35e-06 epoch 20 95.9s
+2026-11-01 18:09:28,849 INFO train_embed: iter 2680/3000 loss 0.6033 lr 2.97e-06 epoch 20 96.3s
+2026-11-01 18:09:29,222 INFO train_embed: iter 2700/3000 loss 0.7841 lr 2.62e-06 epoch 20 96.7s
+2026-11-01 18:09:29,635 INFO train_embed: iter 2720/3000 loss 0.7071 lr 2.28e-06 epoch 20 97.1s
+2026-11-01 18:09:30,021 INFO train_embed: iter 2740/3000 loss 0.6238 lr 1.97e-06 epoch 20 97.5s
+2026-11-01 18:09:31,188 INFO train_embed: val iter 2750: embed IDF1 0.03 MOTA -2.95 | iou IDF1 0.03 MOTA -2.95
+2026-11-01 18:09:31,403 INFO train_embed: iter 2760/3000 loss 0.8740 lr 1.68e-06 epoch 20 98.8s
+2026-11-01 18:09:31,769 INFO train_embed: iter 2780/3000 loss 0.6929 lr 1.41e-06 epoch 21 99.2s
+2026-11-01 18:09:32,162 INFO train_embed: iter 2800/3000 loss 0.7054 lr 1.17e-06 epoch 21 99.6s
+2026-11-01 18:09:32,542 INFO train_embed: iter 2820/3000 loss 0.5703 lr 9.48e-07 epoch 21 100.0s
+2026-11-01 18:09:32,914 INFO train_embed: iter 2840/3000 loss 0.9959 lr 7.49e-07 epoch 21 100.4s
+2026-11-01 18:09:33,288 INFO train_embed: iter 2860/3000 loss 0.7370 lr 5.74e-07 epoch 21 100.7s
+2026-11-01 18:09:33,665 INFO train_embed: iter 2880/3000 loss 0.8594 lr 4.22e-07 epoch 21 101.1s
+2026-11-01 18:09:34,038 INFO train_embed: iter 2900/3000 loss 0.5391 lr 2.93e-07 epoch 21 101.5s
+2026-11-01 18:09:34,471 INFO train_embed: iter 2920/3000 loss 0.8457 lr 1.88e-07 epoch 22 101.9s
+2026-11-01 18:09:34,852 INFO train_embed: iter 2940/3000 loss 0.8607 lr 1.06e-07 epoch 22 102.3s
+2026-11-01 18:09:35,219 INFO train_embed: iter 2960/3000 loss 0.7551 lr 4.69e-08 epoch 22 102.7s
+2026-11-01 18:09:35,641 INFO train_embed: iter 2980/3000 loss 0.6598 lr 1.17e-08 epoch 22 103.1s
+2026-11-01 18:09:36,009 INFO train_embed: iter 3000/3000 loss 0.7029 lr 0.00e+00 epoch 22 103.5s
+2026-11-01 18:09:36,967 INFO train_embed: val iter 3000: embed IDF1 0.03 MOTA -2.95 | iou IDF1 0.03 MOTA -2.95
+2026-11-01 18:09:36,995 INFO train_embed: done: 3000 iters, best iter 250 IDF1 0.03 vs IoU tracker 0.03 (delta +0.00)
+2026-11-01 18:13:07,977 INFO run_pipeline: pipeline exp=E5-embed ds=icdar2015v split=val videos=5 stages=track,eval det_exp=det_ppyoloe_r_text_s lsc_exp=E3-lsc force=False
+2026-11-01 18:18:59,810 INFO run_pipeline: pipeline exp=E5-embed ds=icdar2015v split=val videos=5 stages=fuse,track,eval det_exp=det_ppyoloe_r_text_s lsc_exp=E3-lsc force=False
+2026-11-01 18:18:59,842 INFO run_pipeline: Video_2_1_2: 19 boxes fused
+2026-11-01 18:18:59,973 INFO run_pipeline: Video_37_2_3: 2747 boxes fused
+2026-11-01 18:18:59,988 INFO run_pipeline: Video_45_6_4: 29 boxes fused
+2026-11-01 18:19:00,001 INFO run_pipeline: Video_47_6_4: 11 boxes fused
+2026-11-01 18:19:00,027 INFO run_pipeline: Video_4_4_2: 189 boxes fused
+2026-11-01 18:19:00,035 INFO run_pipeline: stage fuse  ran     0.23 s
+2026-11-01 18:19:00,934 INFO run_pipeline: Video_2_1_2: 5 boxes, 4 tracks
+2026-11-01 18:19:01,265 INFO run_pipeline: Video_37_2_3: 211 boxes, 187 tracks
+2026-11-01 18:19:01,302 INFO run_pipeline: Video_45_6_4: 3 boxes, 2 tracks
+2026-11-01 18:19:01,343 INFO run_pipeline: Video_47_6_4: 0 boxes, 0 tracks
+2026-11-01 18:19:01,407 INFO run_pipeline: Video_4_4_2: 1 boxes, 1 tracks
+2026-11-01 18:19:01,421 INFO run_pipeline: stage track ran     1.39 s
+2026-11-01 18:31:59,179 INFO run_pipeline: pipeline exp=E5-embed ds=icdar2015v split=val videos=5 stages=fuse,track,eval det_exp=det_ppyoloe_r_text_s lsc_exp=E3-lsc force=False
+2026-11-01 18:31:59,180 INFO run_pipeline: stage fuse  skipped 0.00 s
+2026-11-01 18:31:59,180 INFO run_pipeline: stage track skipped 0.00 s
+2026-11-01 18:32:43,258 INFO run_pipeline: pipeline exp=E5-embed ds=icdar2015v split=val videos=5 stages=fuse,track,eval det_exp=det_ppyoloe_r_text_s lsc_exp=E3-lsc force=True
+2026-11-01 18:32:43,264 INFO run_pipeline: Video_2_1_2: 19 boxes fused
+2026-11-01 18:32:43,331 INFO run_pipeline: Video_37_2_3: 2747 boxes fused
+2026-11-01 18:32:43,335 INFO run_pipeline: Video_45_6_4: 29 boxes fused
+2026-11-01 18:32:43,338 INFO run_pipeline: Video_47_6_4: 11 boxes fused
+2026-11-01 18:32:43,345 INFO run_pipeline: Video_4_4_2: 189 boxes fused
+2026-11-01 18:32:43,349 INFO run_pipeline: stage fuse  ran     0.09 s
+2026-11-01 18:32:44,619 INFO run_pipeline: Video_2_1_2: 5 boxes, 4 tracks
+2026-11-01 18:32:45,024 INFO run_pipeline: Video_37_2_3: 211 boxes, 187 tracks
+2026-11-01 18:32:45,062 INFO run_pipeline: Video_45_6_4: 3 boxes, 2 tracks
+2026-11-01 18:32:45,101 INFO run_pipeline: Video_47_6_4: 0 boxes, 0 tracks
+2026-11-01 18:32:45,149 INFO run_pipeline: Video_4_4_2: 1 boxes, 1 tracks
+2026-11-01 18:32:45,153 INFO run_pipeline: stage track ran     1.80 s
+2026-11-01 18:35:38,715 INFO run_pipeline: pipeline exp=E5-embed ds=icdar2015v split=val videos=5 stages=fuse,track,eval det_exp=det_ppyoloe_r_text_s lsc_exp=E3-lsc force=True
+2026-11-01 18:35:38,721 INFO run_pipeline: Video_2_1_2: 19 boxes fused
+2026-11-01 18:35:38,787 INFO run_pipeline: Video_37_2_3: 2747 boxes fused
+2026-11-01 18:35:38,791 INFO run_pipeline: Video_45_6_4: 29 boxes fused
+2026-11-01 18:35:38,795 INFO run_pipeline: Video_47_6_4: 11 boxes fused
+2026-11-01 18:35:38,802 INFO run_pipeline: Video_4_4_2: 189 boxes fused
+2026-11-01 18:35:38,804 INFO run_pipeline: stage fuse  ran     0.09 s
+2026-11-01 18:35:39,968 INFO run_pipeline: Video_2_1_2: 5 boxes, 4 tracks
+2026-11-01 18:35:40,324 INFO run_pipeline: Video_37_2_3: 211 boxes, 187 tracks
+2026-11-01 18:35:40,366 INFO run_pipeline: Video_45_6_4: 3 boxes, 2 tracks
+2026-11-01 18:35:40,415 INFO run_pipeline: Video_47_6_4: 0 boxes, 0 tracks
+2026-11-01 18:35:40,497 INFO run_pipeline: Video_4_4_2: 1 boxes, 1 tracks
+2026-11-01 18:35:40,504 INFO run_pipeline: stage track ran     1.70 s
+2026-11-01 18:35:40,534 INFO run_pipeline: stage vote  ran     0.03 s (implicit)
+2026-11-01 18:35:42,683 INFO run_pipeline: eval det: precision=1.41 recall=0.04 f=0.08
+2026-11-01 18:35:42,683 INFO run_pipeline: eval track: MOTA=-2.95 MOTP=76.43 IDF1=0.03 MT=0.00 ML=100.00
+2026-11-01 18:35:42,683 INFO run_pipeline: eval spot: MOTA=-2.98 MOTP=76.14 IDF1=0.03 MT=0.00 ML=100.00
+2026-11-01 18:35:42,683 INFO run_pipeline: stage eval  ran     2.15 s
+2026-11-01 18:35:42,699 INFO run_pipeline: pipeline done in 4.64 s
+2026-11-01 18:42:30,063 INFO run_pipeline: pipeline exp=E5-embed ds=icdar2015v split=val videos=5 stages=track,eval det_exp=det_ppyoloe_r_text_s lsc_exp=E3-lsc force=False
+2026-11-01 18:42:30,064 INFO run_pipeline: stage track skipped 0.00 s
+2026-11-01 18:42:30,065 INFO run_pipeline: stage vote  skipped 0.00 s (implicit)
+2026-11-01 18:42:30,065 INFO run_pipeline: stage eval  skipped 0.00 s
+2026-11-01 18:42:30,068 INFO run_pipeline: pipeline done in 1.76 s
+2026-11-01 18:43:20,738 INFO run_pipeline: pipeline exp=E5-embed ds=icdar2015v split=val videos=5 stages=track,eval det_exp=det_ppyoloe_r_text_s lsc_exp=E3-lsc force=True
+2026-11-01 18:43:21,941 INFO run_pipeline: Video_2_1_2: 5 boxes, 4 tracks
+2026-11-01 18:43:22,325 INFO run_pipeline: Video_37_2_3: 211 boxes, 187 tracks
+2026-11-01 18:43:22,352 INFO run_pipeline: Video_45_6_4: 3 boxes, 2 tracks
+2026-11-01 18:43:22,388 INFO run_pipeline: Video_47_6_4: 0 boxes, 0 tracks
+2026-11-01 18:43:22,418 INFO run_pipeline: Video_4_4_2: 1 boxes, 1 tracks
+2026-11-01 18:43:22,445 INFO run_pipeline: stage track ran     1.71 s
+2026-11-01 18:43:22,479 INFO run_pipeline: stage vote  ran     0.03 s (implicit)
+2026-11-01 18:43:24,780 INFO run_pipeline: eval det: precision=1.41 recall=0.04 f=0.08
+2026-11-01 18:43:24,781 INFO run_pipeline: eval track: MOTA=-2.95 MOTP=76.43 IDF1=0.03 MT=0.00 ML=100.00
+2026-11-01 18:43:24,781 INFO run_pipeline: eval spot: MOTA=-2.98 MOTP=76.14 IDF1=0.03 MT=0.00 ML=100.00
+2026-11-01 18:43:24,781 INFO run_pipeline: stage eval  ran     2.30 s
+2026-11-01 18:43:24,786 INFO run_pipeline: pipeline done in 5.77 s

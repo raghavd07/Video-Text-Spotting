@@ -1,0 +1,86 @@
+2026-11-01 01:08:20,845 INFO run_pipeline: pipeline exp=E4-base ds=icdar2015v split=val videos=5 stages=lsc,fuse,track,eval det_exp=det_ppyoloe_r_text_s lsc_exp=E4-lsc force=False
+2026-11-01 01:13:25,235 INFO run_pipeline: pipeline exp=E4-base ds=icdar2015v split=val videos=5 stages=lsc,fuse,track,eval det_exp=det_yolo11s_obb_dota lsc_exp=E4-lsc force=False
+2026-11-01 12:51:29,278 INFO run_track: exp=E4-base fuse_exp=E4-base tracker={'high_thr': 0.6, 'low_thr': 0.3, 'iou_gate': 0.3, 'max_age': 15, 'text_window': 10}
+2026-11-01 12:56:40,698 INFO run_pipeline: pipeline exp=E4-base ds=icdar2015v split=val videos=5 stages=det,fuse det_exp=det_yolo11s_obb_dota lsc_exp=E4-lsc force=False
+2026-11-01 12:56:40,700 INFO run_pipeline: stage det   checked 0.00 s
+2026-11-01 12:56:40,707 INFO run_pipeline: Video_2_1_2: 19 boxes fused
+2026-11-01 12:56:40,772 INFO run_pipeline: Video_37_2_3: 2747 boxes fused
+2026-11-01 12:56:40,776 INFO run_pipeline: Video_45_6_4: 29 boxes fused
+2026-11-01 12:56:40,780 INFO run_pipeline: Video_47_6_4: 11 boxes fused
+2026-11-01 12:56:40,787 INFO run_pipeline: Video_4_4_2: 189 boxes fused
+2026-11-01 12:56:40,789 INFO run_pipeline: stage fuse  ran     0.09 s
+2026-11-01 12:56:40,803 INFO run_pipeline: pipeline done in 5.50 s
+2026-11-01 12:56:47,049 INFO run_track: exp=E4-base fuse_exp=E4-base tracker={'high_thr': 0.6, 'low_thr': 0.3, 'iou_gate': 0.3, 'max_age': 15, 'text_window': 10}
+2026-11-01 12:56:47,065 INFO run_track: Video_2_1_2: 0 boxes, 0 tracks
+2026-11-01 12:56:47,166 INFO run_track: Video_37_2_3: 301 boxes, 165 tracks
+2026-11-01 12:56:47,187 INFO run_track: Video_45_6_4: 5 boxes, 2 tracks
+2026-11-01 12:56:47,209 INFO run_track: Video_47_6_4: 4 boxes, 1 tracks
+2026-11-01 12:56:47,260 INFO run_track: Video_4_4_2: 80 boxes, 8 tracks
+2026-11-01 12:56:47,273 INFO run_track: icdar2015v/val: {'videos': 5, 'boxes': 390, 'tracks': 176, 'fuse_exp': 'E4-base', 'tracker': {'high_thr': 0.6, 'low_thr': 0.3, 'iou_gate': 0.3, 'max_age': 15, 'text_window': 10}}
+2026-11-01 13:00:24,049 INFO run_pipeline: pipeline exp=E4-base ds=icdar2015v split=val videos=5 stages=lsc,fuse,track,eval det_exp=det_ppyoloe_r_text_s lsc_exp=E4-lsc force=False
+2026-11-01 13:00:24,051 INFO run_pipeline: stage lsc   checked 0.00 s
+2026-11-01 13:00:24,051 INFO run_pipeline: stage fuse  skipped 0.00 s
+2026-11-01 13:00:24,052 INFO run_pipeline: stage track skipped 0.00 s
+2026-11-01 13:00:57,035 INFO run_pipeline: pipeline exp=E4-base ds=icdar2015v split=val videos=5 stages=vote det_exp=det_ppyoloe_r_text_s lsc_exp=E4-lsc force=False
+2026-11-01 13:00:57,075 INFO run_pipeline: stage vote  ran     0.04 s
+2026-11-01 13:00:57,077 INFO run_pipeline: pipeline done in 3.25 s
+2026-11-01 13:01:19,564 INFO run_pipeline: pipeline exp=E4-base ds=icdar2015v split=val videos=5 stages=eval det_exp=det_ppyoloe_r_text_s lsc_exp=E4-lsc force=False
+2026-11-01 13:01:21,716 INFO run_pipeline: eval det: precision=0.00 recall=0.00 f=0.00
+2026-11-01 13:01:21,716 INFO run_pipeline: eval track: MOTA=-5.41 MOTP=0.00 IDF1=0.00 MT=0.00 ML=100.00
+2026-11-01 13:01:21,716 INFO run_pipeline: eval spot: MOTA=-5.41 MOTP=0.00 IDF1=0.00 MT=0.00 ML=100.00
+2026-11-01 13:01:21,716 INFO run_pipeline: stage eval  ran     2.15 s
+2026-11-01 13:01:21,732 INFO run_pipeline: pipeline done in 6.53 s
+2026-11-01 13:25:42,326 INFO run_pipeline: pipeline exp=E4-base ds=icdar2015v split=val videos=5 stages=lsc,fuse,track,vote,eval det_exp=det_yolo11s_obb_dota lsc_exp=E4-lsc force=False
+2026-11-01 13:25:42,328 INFO run_pipeline: stage lsc   checked 0.00 s
+2026-11-01 13:25:42,329 INFO run_pipeline: stage fuse  skipped 0.00 s
+2026-11-01 13:25:42,330 INFO run_pipeline: stage track skipped 0.00 s
+2026-11-01 13:25:42,330 INFO run_pipeline: stage vote  skipped 0.00 s
+2026-11-01 13:25:42,331 INFO run_pipeline: stage eval  skipped 0.00 s
+2026-11-01 13:25:42,334 INFO run_pipeline: pipeline done in 6.30 s
+2026-11-01 13:26:27,634 INFO run_pipeline: pipeline exp=E4-base ds=icdar2015v split=val videos=5 stages=lsc,fuse,track,vote,eval det_exp=det_yolo11s_obb_dota lsc_exp=E4-lsc force=False
+2026-11-01 13:26:27,636 INFO run_pipeline: stage lsc   checked 0.00 s
+2026-11-01 13:26:27,636 INFO run_pipeline: stage fuse  skipped 0.00 s
+2026-11-01 13:26:27,637 INFO run_pipeline: stage track skipped 0.00 s
+2026-11-01 13:26:27,638 INFO run_pipeline: stage vote  skipped 0.00 s
+2026-11-01 13:26:27,638 INFO run_pipeline: stage eval  skipped 0.00 s
+2026-11-01 13:26:27,640 INFO run_pipeline: pipeline done in 4.52 s
+2026-11-01 13:26:56,900 INFO run_pipeline: pipeline exp=E4-base ds=icdar2015v split=val videos=5 stages=lsc,fuse,track,vote,eval det_exp=det_yolo11s_obb_dota lsc_exp=E4-lsc force=False
+2026-11-01 13:26:56,901 INFO run_pipeline: stage lsc   checked 0.00 s
+2026-11-01 13:26:56,902 INFO run_pipeline: stage fuse  skipped 0.00 s
+2026-11-01 13:26:56,903 INFO run_pipeline: stage track skipped 0.00 s
+2026-11-01 13:26:56,903 INFO run_pipeline: stage vote  skipped 0.00 s
+2026-11-01 13:26:56,918 INFO run_pipeline: stage eval  skipped 0.01 s
+2026-11-01 13:26:56,920 INFO run_pipeline: pipeline done in 6.33 s
+2026-11-01 13:27:07,678 INFO run_pipeline: pipeline exp=E4-base ds=icdar2015v split=val videos=5 stages=lsc,fuse,track,vote,eval det_exp=det_yolo11s_obb_dota lsc_exp=E4-lsc force=False
+2026-11-01 13:27:07,678 INFO run_pipeline: stage lsc   checked 0.00 s
+2026-11-01 13:27:07,680 INFO run_pipeline: stage fuse  skipped 0.00 s
+2026-11-01 13:27:07,681 INFO run_pipeline: stage track skipped 0.00 s
+2026-11-01 13:27:07,681 INFO run_pipeline: stage vote  skipped 0.00 s
+2026-11-01 13:27:07,690 INFO run_pipeline: stage eval  skipped 0.01 s
+2026-11-01 13:27:07,691 INFO run_pipeline: pipeline done in 3.59 s
+2026-11-01 13:28:39,476 INFO run_pipeline: pipeline exp=E4-base ds=icdar2015v split=val videos=5 stages=lsc,fuse,track,vote,eval det_exp=det_yolo11s_obb_dota lsc_exp=E4-lsc force=True
+2026-11-01 13:28:39,478 INFO run_pipeline: stage lsc   checked 0.00 s
+2026-11-01 13:28:39,481 INFO run_pipeline: Video_2_1_2: 19 boxes fused
+2026-11-01 13:28:39,549 INFO run_pipeline: Video_37_2_3: 2747 boxes fused
+2026-11-01 13:28:39,553 INFO run_pipeline: Video_45_6_4: 29 boxes fused
+2026-11-01 13:28:39,556 INFO run_pipeline: Video_47_6_4: 11 boxes fused
+2026-11-01 13:28:39,564 INFO run_pipeline: Video_4_4_2: 189 boxes fused
+2026-11-01 13:28:39,579 INFO run_pipeline: stage fuse  ran     0.10 s
+2026-11-01 13:28:39,589 INFO run_pipeline: Video_2_1_2: 0 boxes, 0 tracks
+2026-11-01 13:28:39,721 INFO run_pipeline: Video_37_2_3: 301 boxes, 165 tracks
+2026-11-01 13:28:39,743 INFO run_pipeline: Video_45_6_4: 5 boxes, 2 tracks
+2026-11-01 13:28:39,782 INFO run_pipeline: Video_47_6_4: 4 boxes, 1 tracks
+2026-11-01 13:28:39,819 INFO run_pipeline: Video_4_4_2: 80 boxes, 8 tracks
+2026-11-01 13:28:39,823 INFO run_pipeline: stage track ran     0.24 s
+2026-11-01 13:28:39,886 INFO run_pipeline: stage vote  ran     0.06 s
+2026-11-01 13:28:42,141 INFO run_pipeline: eval det: precision=0.00 recall=0.00 f=0.00
+2026-11-01 13:28:42,141 INFO run_pipeline: eval track: MOTA=-5.41 MOTP=0.00 IDF1=0.00 MT=0.00 ML=100.00
+2026-11-01 13:28:42,142 INFO run_pipeline: eval spot: MOTA=-5.41 MOTP=0.00 IDF1=0.00 MT=0.00 ML=100.00
+2026-11-01 13:28:42,142 INFO run_pipeline: stage eval  ran     2.26 s
+2026-11-01 13:28:42,145 INFO run_pipeline: pipeline done in 7.15 s
+2026-11-01 14:49:09,463 INFO run_pipeline: pipeline exp=E4-base ds=icdar2015v split=val videos=5 stages=lsc,fuse,track,eval det_exp=det_ppyoloe_r_text_s lsc_exp=E4-lsc force=False
+2026-11-01 14:49:09,465 INFO run_pipeline: stage lsc   checked 0.00 s
+2026-11-01 14:49:09,467 INFO run_pipeline: stage fuse  skipped 0.00 s
+2026-11-01 14:49:09,469 INFO run_pipeline: stage track skipped 0.00 s
+2026-11-01 14:49:09,469 INFO run_pipeline: stage eval  skipped 0.00 s
+2026-11-01 14:49:09,471 INFO run_pipeline: pipeline done in 4.46 s

@@ -1,0 +1,27 @@
+2026-11-02 01:26:06,228 INFO run_pipeline: pipeline exp=E4-base_yolo ds=icdar2015v split=val videos=5 stages=det,lsc,fuse,track,vote,eval det_exp=det_yolo11s_obb_text lsc_exp=E4-lsc_yolo force=False
+2026-11-02 01:26:06,229 INFO run_pipeline: stage det   checked 0.00 s
+2026-11-02 01:26:06,231 INFO run_pipeline: stage lsc   checked 0.00 s
+2026-11-02 01:26:06,266 INFO run_pipeline: Video_2_1_2: 1174 boxes fused
+2026-11-02 01:26:06,360 INFO run_pipeline: Video_37_2_3: 3880 boxes fused
+2026-11-02 01:26:06,484 INFO run_pipeline: Video_45_6_4: 1252 boxes fused
+2026-11-02 01:26:06,501 INFO run_pipeline: Video_47_6_4: 595 boxes fused
+2026-11-02 01:26:06,520 INFO run_pipeline: Video_4_4_2: 590 boxes fused
+2026-11-02 01:26:06,523 INFO run_pipeline: stage fuse  ran     0.29 s
+2026-11-02 01:26:06,726 INFO run_pipeline: Video_2_1_2: 989 boxes, 136 tracks
+2026-11-02 01:26:07,309 INFO run_pipeline: Video_37_2_3: 3430 boxes, 146 tracks
+2026-11-02 01:26:07,580 INFO run_pipeline: Video_45_6_4: 1140 boxes, 235 tracks
+2026-11-02 01:26:07,707 INFO run_pipeline: Video_47_6_4: 520 boxes, 90 tracks
+2026-11-02 01:26:07,808 INFO run_pipeline: Video_4_4_2: 371 boxes, 67 tracks
+2026-11-02 01:26:07,832 INFO run_pipeline: stage track ran     1.31 s
+2026-11-02 01:26:07,990 INFO run_pipeline: stage vote  ran     0.16 s
+2026-11-02 01:26:12,981 INFO run_pipeline: eval det: precision=83.32 recall=63.09 f=71.80
+2026-11-02 01:26:12,982 INFO run_pipeline: eval track: MOTA=46.01 MOTP=74.74 IDF1=57.80 MT=44.05 ML=37.44
+2026-11-02 01:26:12,982 INFO run_pipeline: eval spot: MOTA=-6.20 MOTP=77.50 IDF1=33.90 MT=17.62 ML=60.79
+2026-11-02 01:26:12,983 INFO run_pipeline: stage eval  ran     4.99 s
+2026-11-02 01:36:11,681 INFO run_pipeline: pipeline exp=E4-base_yolo ds=icdar2015v split=val videos=5 stages=det,lsc,fuse,track,vote,eval det_exp=det_yolo11s_obb_text lsc_exp=E4-lsc_yolo force=False
+2026-11-02 01:36:11,683 INFO run_pipeline: stage det   checked 0.00 s
+2026-11-02 01:36:11,685 INFO run_pipeline: stage lsc   checked 0.00 s
+2026-11-02 01:36:11,686 INFO run_pipeline: stage fuse  skipped 0.00 s
+2026-11-02 01:36:11,687 INFO run_pipeline: stage track skipped 0.00 s
+2026-11-02 01:36:11,688 INFO run_pipeline: stage vote  skipped 0.00 s
+2026-11-02 01:36:11,698 INFO run_pipeline: stage eval  skipped 0.01 s

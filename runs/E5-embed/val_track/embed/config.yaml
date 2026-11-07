@@ -1,0 +1,4 @@
+exp_id: embed
+eval:
+  iou: 0.5
+  spotting: false

@@ -1,0 +1,6 @@
+2026-11-01 02:17:34,518 INFO train_lsc: exp=E3-lsc_smoke smoke=True device=cuda amp=True init=E:\Logo_Video_Text_Spotting\third_party\ABINet\workdir\train-abinet\best-train-abinet.pth train=200 val=200 bs=24 accum=2 epochs=1 glyph=off
+2026-11-01 02:20:53,533 INFO train_lsc: exp=E3-lsc_smoke smoke=True device=cuda amp=True init=E:\Logo_Video_Text_Spotting\third_party\ABINet\workdir\train-abinet\best-train-abinet.pth train=200 val=200 bs=4 accum=2 epochs=1 glyph=off
+2026-11-01 02:21:03,192 WARNING train_lsc: CUDA OOM: micro-batch -> 2 (effective batch unchanged)
+2026-11-01 08:58:44,254 INFO train_lsc: exp=E3-lsc_smoke smoke=True device=cuda amp=True init=E:\Logo_Video_Text_Spotting\third_party\ABINet\workdir\train-abinet\best-train-abinet.pth train=200 val=200 bs=24 accum=2 epochs=1 glyph=off
+2026-11-01 08:59:01,874 INFO train_lsc: ep 1/1 lr 1.0e-04 train_loss 8.4322 | val loss 11.0489 tb_acc 47.50% word_acc 71.58% (pos 95, neg 105) 17s *best*
+2026-11-01 08:59:01,875 INFO train_lsc: best epoch 1: tb_acc 47.50% word_acc 71.58% -> E:\Logo_Video_Text_Spotting\runs\E3-lsc_smoke\checkpoints\best.pth
