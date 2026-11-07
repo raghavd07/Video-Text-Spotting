@@ -1,0 +1,3 @@
+2026-11-01 12:22:27,279 INFO train_lsc: exp=E3-lsc-glyph_smoke smoke=True device=cuda amp=True init=E:\Logo_Video_Text_Spotting\third_party\ABINet\workdir\train-abinet\best-train-abinet.pth train=200 val=200 bs=24 accum=2 epochs=1 glyph={'enabled': True, 'weight': 1.0, 'loss': 'mse', 'masks_tsv': 'masks.tsv', 'neg_zero': False}
+2026-11-01 12:22:45,427 INFO train_lsc: ep 1/1 lr 1.0e-04 train_loss 8.6672 | val loss 11.0516 tb_acc 47.50% word_acc 71.58% (pos 95, neg 105) 18s *best*
+2026-11-01 12:22:45,428 INFO train_lsc: best epoch 1: tb_acc 47.50% word_acc 71.58% -> E:\Logo_Video_Text_Spotting\runs\E3-lsc-glyph_smoke\checkpoints\best.pth
