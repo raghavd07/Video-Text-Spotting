@@ -1,0 +1,25 @@
+2026-11-02 08:34:36,311 INFO run_pipeline: pipeline exp=A-all_yolo ds=icdar2015v split=val videos=5 stages=det,lsc,fuse,track,vote,eval det_exp=det_yolo11s_obb_text lsc_exp=E4-lsc_yolo force=False
+2026-11-02 08:34:36,312 INFO run_pipeline: stage det   checked 0.00 s
+2026-11-02 08:34:36,313 INFO run_pipeline: stage lsc   checked 0.00 s
+2026-11-02 08:34:36,346 INFO run_pipeline: Video_2_1_2: 1174 boxes fused
+2026-11-02 08:34:36,443 INFO run_pipeline: Video_37_2_3: 3880 boxes fused
+2026-11-02 08:34:36,480 INFO run_pipeline: Video_45_6_4: 1252 boxes fused
+2026-11-02 08:34:36,569 INFO run_pipeline: Video_47_6_4: 595 boxes fused
+2026-11-02 08:34:36,593 INFO run_pipeline: Video_4_4_2: 590 boxes fused
+2026-11-02 08:34:36,597 INFO run_pipeline: stage fuse  ran     0.28 s
+2026-11-02 08:34:39,448 INFO run_pipeline: Video_2_1_2: 974 boxes, 68 tracks
+2026-11-02 08:34:43,053 INFO run_pipeline: Video_37_2_3: 3646 boxes, 130 tracks
+2026-11-02 08:34:45,232 INFO run_pipeline: Video_45_6_4: 1028 boxes, 142 tracks
+2026-11-02 08:34:47,004 INFO run_pipeline: Video_47_6_4: 535 boxes, 37 tracks
+2026-11-02 08:34:48,314 INFO run_pipeline: Video_4_4_2: 361 boxes, 81 tracks
+2026-11-02 08:34:48,317 INFO run_pipeline: stage track ran     11.72 s
+2026-11-02 08:34:48,378 INFO run_pipeline: Video_2_1_2: 46/68 tracks kept, 944/974 boxes
+2026-11-02 08:34:48,490 INFO run_pipeline: Video_37_2_3: 91/130 tracks kept, 3596/3646 boxes
+2026-11-02 08:34:48,616 INFO run_pipeline: Video_45_6_4: 98/142 tracks kept, 963/1028 boxes
+2026-11-02 08:34:48,650 INFO run_pipeline: Video_47_6_4: 27/37 tracks kept, 523/535 boxes
+2026-11-02 08:34:48,679 INFO run_pipeline: Video_4_4_2: 52/81 tracks kept, 319/361 boxes
+2026-11-02 08:34:48,691 INFO run_pipeline: stage vote  ran     0.38 s
+2026-11-02 08:34:53,659 INFO run_pipeline: eval det: precision=81.11 recall=66.95 f=73.35
+2026-11-02 08:34:53,659 INFO run_pipeline: eval track: MOTA=45.80 MOTP=74.58 IDF1=53.06 MT=40.97 ML=39.65
+2026-11-02 08:34:53,659 INFO run_pipeline: eval spot: MOTA=-13.13 MOTP=76.94 IDF1=32.15 MT=9.25 ML=71.81
+2026-11-02 08:34:53,659 INFO run_pipeline: stage eval  ran     4.97 s
