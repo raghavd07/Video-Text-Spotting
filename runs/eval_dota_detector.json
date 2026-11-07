@@ -1,0 +1,1 @@
+{"det":{"precision":0.0,"recall":0.0,"f":0.0},"track":{},"spot":{},"per_video":{},"meta":{"det":{"counts":{"tp":0,"fp":3,"fn":768,"ignored":0},"per_video":{"Video_2_1_2":{"tp":0,"fp":3,"fn":768,"ignored":0}},"gt_dir":"data\\processed\\icdar2015v","pred_dir":"runs\\det_ppyoloe_r_s_dota\\det\\icdar2015v","videos":"splits\\icdar2015v_eval_one.txt","num_videos":1,"iou":0.5}}}

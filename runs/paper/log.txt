@@ -1,0 +1,61 @@
+2026-11-02 11:04:02,752 INFO make_tables: skip det_yolo11s_obb_text meta.efficiency_icdar2015v_test (test split needs --final)
+2026-11-02 11:04:02,851 INFO make_tables: table ablation_icdar2015v_val: 7 rows -> C:\Users\dsair\AppData\Local\Temp\claude\mt\tex\ablation_icdar2015v_val.tex
+2026-11-02 11:04:02,851 INFO make_tables: table comparison_icdar2013v: 2 rows -> C:\Users\dsair\AppData\Local\Temp\claude\mt\tex\comparison_icdar2013v.tex
+2026-11-02 11:04:02,852 INFO make_tables: table comparison_icdar2015v: 3 rows -> C:\Users\dsair\AppData\Local\Temp\claude\mt\tex\comparison_icdar2015v.tex
+2026-11-02 11:04:02,852 INFO make_tables: table threshold_E5-lst_icdar2015v_val: 6 rows -> C:\Users\dsair\AppData\Local\Temp\claude\mt\tex\threshold_E5-lst_icdar2015v_val.tex
+2026-11-02 11:04:02,853 INFO make_tables: table voting_E5-lst_icdar2015v_val: 17 rows -> C:\Users\dsair\AppData\Local\Temp\claude\mt\tex\voting_E5-lst_icdar2015v_val.tex
+2026-11-02 11:04:02,854 INFO make_tables: table efficiency_icdar2013v_val: 1 rows -> C:\Users\dsair\AppData\Local\Temp\claude\mt\tex\efficiency_icdar2013v_val.tex
+2026-11-02 11:04:02,855 INFO make_tables: table efficiency_icdar2015v_val: 5 rows -> C:\Users\dsair\AppData\Local\Temp\claude\mt\tex\efficiency_icdar2015v_val.tex
+2026-11-02 11:04:02,856 INFO make_tables: table errors_icdar2015v_val: 1 rows -> C:\Users\dsair\AppData\Local\Temp\claude\mt\tex\errors_icdar2015v_val.tex
+2026-11-02 11:04:02,856 INFO make_tables: table errors_bins_E5-lst_icdar2015v_val: 5 rows -> C:\Users\dsair\AppData\Local\Temp\claude\mt\tex\errors_bins_E5-lst_icdar2015v_val.tex
+2026-11-02 11:04:02,856 INFO make_tables: table ci: 4 rows -> C:\Users\dsair\AppData\Local\Temp\claude\mt\tex\ci.tex
+2026-11-02 11:04:02,868 INFO make_tables: 10 tables written
+2026-11-02 11:06:47,035 INFO make_figures: figure threshold -> C:\Users\dsair\AppData\Local\Temp\claude\e--Logo-Video-Text-Spotting\01c73876-41bf-4c9d-bfc2-76d41c0f00d0\scratchpad\figs\threshold_E5-lst_icdar2015v_val.pdf
+2026-11-02 11:06:47,035 INFO make_figures: figure ci -> C:\Users\dsair\AppData\Local\Temp\claude\e--Logo-Video-Text-Spotting\01c73876-41bf-4c9d-bfc2-76d41c0f00d0\scratchpad\figs\ci_runs.pdf
+2026-11-02 11:06:47,036 INFO make_figures: figure ci -> C:\Users\dsair\AppData\Local\Temp\claude\e--Logo-Video-Text-Spotting\01c73876-41bf-4c9d-bfc2-76d41c0f00d0\scratchpad\figs\ci_diff.pdf
+2026-11-02 11:06:47,036 INFO make_figures: figure rescore -> C:\Users\dsair\AppData\Local\Temp\claude\e--Logo-Video-Text-Spotting\01c73876-41bf-4c9d-bfc2-76d41c0f00d0\scratchpad\figs\rescore_FINAL-icdar2015v_Video_2_1_2_f258.pdf
+2026-11-02 11:06:47,036 INFO make_figures: figure overlay -> C:\Users\dsair\AppData\Local\Temp\claude\e--Logo-Video-Text-Spotting\01c73876-41bf-4c9d-bfc2-76d41c0f00d0\scratchpad\figs\overlay_FINAL-icdar2015v_Video_2_1_2.pdf
+2026-11-02 11:06:47,036 INFO make_figures: figure failures -> C:\Users\dsair\AppData\Local\Temp\claude\e--Logo-Video-Text-Spotting\01c73876-41bf-4c9d-bfc2-76d41c0f00d0\scratchpad\figs\failures_FINAL-icdar2015v_icdar2015v_val.pdf
+2026-11-02 11:06:47,042 INFO make_figures: 6 figures written
+2026-11-02 11:14:41,044 INFO make_tables: skip det_yolo11s_obb_text meta.efficiency_icdar2015v_test (test split needs --final)
+2026-11-02 11:14:41,082 INFO make_tables: table ablation_icdar2015v_val: 7 rows -> E:\Logo_Video_Text_Spotting\paper\tables\ablation_icdar2015v_val.tex
+2026-11-02 11:14:41,083 INFO make_tables: table comparison_icdar2013v: 2 rows -> E:\Logo_Video_Text_Spotting\paper\tables\comparison_icdar2013v.tex
+2026-11-02 11:14:41,083 INFO make_tables: table comparison_icdar2015v: 3 rows -> E:\Logo_Video_Text_Spotting\paper\tables\comparison_icdar2015v.tex
+2026-11-02 11:14:41,084 INFO make_tables: table threshold_E5-lst_icdar2015v_val: 6 rows -> E:\Logo_Video_Text_Spotting\paper\tables\threshold_E5-lst_icdar2015v_val.tex
+2026-11-02 11:14:41,085 INFO make_tables: table voting_E5-lst_icdar2015v_val: 17 rows -> E:\Logo_Video_Text_Spotting\paper\tables\voting_E5-lst_icdar2015v_val.tex
+2026-11-02 11:14:41,085 INFO make_tables: table efficiency_icdar2013v_val: 1 rows -> E:\Logo_Video_Text_Spotting\paper\tables\efficiency_icdar2013v_val.tex
+2026-11-02 11:14:41,086 INFO make_tables: table efficiency_icdar2015v_val: 5 rows -> E:\Logo_Video_Text_Spotting\paper\tables\efficiency_icdar2015v_val.tex
+2026-11-02 11:14:41,086 INFO make_tables: table errors_icdar2015v_val: 1 rows -> E:\Logo_Video_Text_Spotting\paper\tables\errors_icdar2015v_val.tex
+2026-11-02 11:14:41,086 INFO make_tables: table errors_bins_E5-lst_icdar2015v_val: 5 rows -> E:\Logo_Video_Text_Spotting\paper\tables\errors_bins_E5-lst_icdar2015v_val.tex
+2026-11-02 11:14:41,086 INFO make_tables: table ci: 4 rows -> E:\Logo_Video_Text_Spotting\paper\tables\ci.tex
+2026-11-02 11:14:41,092 INFO make_tables: 10 tables written
+2026-11-02 11:15:08,939 INFO make_figures: figure threshold -> E:\Logo_Video_Text_Spotting\paper\figs\threshold_E5-lst_icdar2015v_val.pdf
+2026-11-02 11:15:08,939 INFO make_figures: figure ci -> E:\Logo_Video_Text_Spotting\paper\figs\ci_runs.pdf
+2026-11-02 11:15:08,939 INFO make_figures: figure ci -> E:\Logo_Video_Text_Spotting\paper\figs\ci_diff.pdf
+2026-11-02 11:15:08,940 INFO make_figures: figure rescore -> E:\Logo_Video_Text_Spotting\paper\figs\rescore_FINAL-icdar2015v_Video_2_1_2_f258.pdf
+2026-11-02 11:15:08,940 INFO make_figures: figure overlay -> E:\Logo_Video_Text_Spotting\paper\figs\overlay_FINAL-icdar2015v_Video_2_1_2.pdf
+2026-11-02 11:15:08,940 INFO make_figures: figure failures -> E:\Logo_Video_Text_Spotting\paper\figs\failures_FINAL-icdar2015v_icdar2015v_val.pdf
+2026-11-02 11:15:08,946 INFO make_figures: 6 figures written
+2026-11-02 13:16:06,862 INFO make_tables: skip det_yolo11s_obb_text meta.efficiency_icdar2015v_test (test split needs --final)
+2026-11-02 13:16:06,904 INFO make_tables: table ablation_icdar2015v_val: 7 rows -> E:\Logo_Video_Text_Spotting\paper\tables\ablation_icdar2015v_val.tex
+2026-11-02 13:16:06,919 INFO make_tables: table comparison_icdar2013v: 2 rows -> E:\Logo_Video_Text_Spotting\paper\tables\comparison_icdar2013v.tex
+2026-11-02 13:16:06,922 INFO make_tables: table comparison_icdar2015v: 3 rows -> E:\Logo_Video_Text_Spotting\paper\tables\comparison_icdar2015v.tex
+2026-11-02 13:16:06,925 INFO make_tables: table threshold_E5-lst_icdar2015v_val: 6 rows -> E:\Logo_Video_Text_Spotting\paper\tables\threshold_E5-lst_icdar2015v_val.tex
+2026-11-02 13:16:06,926 INFO make_tables: table threshold_E5-lst_yolo_icdar2015v_val: 6 rows -> E:\Logo_Video_Text_Spotting\paper\tables\threshold_E5-lst_yolo_icdar2015v_val.tex
+2026-11-02 13:16:06,926 INFO make_tables: table voting_E5-lst_icdar2015v_val: 17 rows -> E:\Logo_Video_Text_Spotting\paper\tables\voting_E5-lst_icdar2015v_val.tex
+2026-11-02 13:16:06,930 INFO make_tables: table voting_E5-lst_yolo_icdar2015v_val: 17 rows -> E:\Logo_Video_Text_Spotting\paper\tables\voting_E5-lst_yolo_icdar2015v_val.tex
+2026-11-02 13:16:06,933 INFO make_tables: table efficiency_icdar2013v_val: 1 rows -> E:\Logo_Video_Text_Spotting\paper\tables\efficiency_icdar2013v_val.tex
+2026-11-02 13:16:06,937 INFO make_tables: table efficiency_icdar2015v_val: 5 rows -> E:\Logo_Video_Text_Spotting\paper\tables\efficiency_icdar2015v_val.tex
+2026-11-02 13:16:06,938 INFO make_tables: table errors_icdar2015v_val: 2 rows -> E:\Logo_Video_Text_Spotting\paper\tables\errors_icdar2015v_val.tex
+2026-11-02 13:16:06,940 INFO make_tables: table errors_bins_E5-lst_icdar2015v_val: 5 rows -> E:\Logo_Video_Text_Spotting\paper\tables\errors_bins_E5-lst_icdar2015v_val.tex
+2026-11-02 13:16:06,940 INFO make_tables: table errors_bins_FINAL-icdar2015v_icdar2015v_val: 5 rows -> E:\Logo_Video_Text_Spotting\paper\tables\errors_bins_FINAL-icdar2015v_icdar2015v_val.tex
+2026-11-02 13:16:06,940 INFO make_tables: table ci: 4 rows -> E:\Logo_Video_Text_Spotting\paper\tables\ci.tex
+2026-11-02 13:16:06,949 INFO make_tables: 13 tables written
+2026-11-02 13:16:31,587 INFO make_figures: figure threshold -> E:\Logo_Video_Text_Spotting\paper\figs\threshold_E5-lst_icdar2015v_val.pdf
+2026-11-02 13:16:31,588 INFO make_figures: figure threshold -> E:\Logo_Video_Text_Spotting\paper\figs\threshold_E5-lst_yolo_icdar2015v_val.pdf
+2026-11-02 13:16:31,589 INFO make_figures: figure ci -> E:\Logo_Video_Text_Spotting\paper\figs\ci_runs.pdf
+2026-11-02 13:16:31,589 INFO make_figures: figure ci -> E:\Logo_Video_Text_Spotting\paper\figs\ci_diff.pdf
+2026-11-02 13:16:31,590 INFO make_figures: figure rescore -> E:\Logo_Video_Text_Spotting\paper\figs\rescore_FINAL-icdar2015v_Video_2_1_2_f258.pdf
+2026-11-02 13:16:31,590 INFO make_figures: figure overlay -> E:\Logo_Video_Text_Spotting\paper\figs\overlay_FINAL-icdar2015v_Video_2_1_2.pdf
+2026-11-02 13:16:31,591 INFO make_figures: figure failures -> E:\Logo_Video_Text_Spotting\paper\figs\failures_FINAL-icdar2015v_icdar2015v_val.pdf
+2026-11-02 13:16:31,596 INFO make_figures: 7 figures written

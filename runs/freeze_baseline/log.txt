@@ -1,0 +1,84 @@
+2026-11-01 20:46:54,421 INFO freeze_baseline: === row +LSC hard (E4-lsc, configs/E4-lsc.yaml)
+2026-11-01 20:47:07,577 INFO freeze_baseline: === row +LSC hard (E4-lsc, configs/E4-lsc.yaml)
+2026-11-01 21:33:23,695 INFO freeze_baseline: === row +LSC hard (E4-lsc, configs/E4-lsc.yaml)
+2026-11-01 21:41:44,223 INFO freeze_baseline: === row +LSC hard (E4-lsc, configs/E4-lsc.yaml)
+2026-11-02 01:25:24,637 INFO freeze_baseline: === row +LSC hard (E4-lsc_yolo, configs/E4-lsc.yaml)
+2026-11-02 01:26:06,225 INFO freeze_baseline: === row Baseline (E4-base_yolo, configs/E4-base.yaml)
+2026-11-02 01:26:13,015 INFO freeze_baseline: === row +GS (E4-glyph_yolo, configs/E4-glyph.yaml)
+2026-11-02 01:26:50,338 INFO freeze_baseline: === row +VPMM/LST (E5-lst_yolo, configs/E5-lst.yaml)
+2026-11-02 01:27:08,131 INFO freeze_baseline: === profile E4-base_yolo
+2026-11-02 01:27:13,883 INFO freeze_baseline: lsc: {'params': 36738703, 'peak_mem_mb': 303.4, 'frames': 200, 'ms_per_frame': 21.942, 'boxes': 175, 'batch_size': 64}
+2026-11-02 01:27:13,884 INFO freeze_baseline: fuse: {'params': 0, 'peak_mem_mb': None, 'frames': 200, 'ms_per_frame': 0.001}
+2026-11-02 01:27:13,884 INFO freeze_baseline: track: {'params': 0, 'peak_mem_mb': None, 'frames': 200, 'ms_per_frame': 0.168, 'type': 'simple'}
+2026-11-02 01:27:13,884 INFO freeze_baseline: e2e: {'total_ms_per_frame': 47.768, 'fps': 20.93, 'params': 46437877, 'max_peak_mem_mb': 303.4, 'det_included': True, 'stages': ['det', 'lsc', 'fuse', 'track']}
+2026-11-02 01:27:13,892 INFO freeze_baseline: === profile E4-lsc_yolo
+2026-11-02 01:27:18,673 INFO freeze_baseline: lsc: {'params': 36738703, 'peak_mem_mb': 303.9, 'frames': 200, 'ms_per_frame': 20.053, 'boxes': 175, 'batch_size': 64}
+2026-11-02 01:27:18,674 INFO freeze_baseline: fuse: {'params': 0, 'peak_mem_mb': None, 'frames': 200, 'ms_per_frame': 0.001}
+2026-11-02 01:27:18,674 INFO freeze_baseline: track: {'params': 0, 'peak_mem_mb': None, 'frames': 200, 'ms_per_frame': 0.146, 'type': 'simple'}
+2026-11-02 01:27:18,675 INFO freeze_baseline: e2e: {'total_ms_per_frame': 45.857, 'fps': 21.81, 'params': 46437877, 'max_peak_mem_mb': 303.9, 'det_included': True, 'stages': ['det', 'lsc', 'fuse', 'track']}
+2026-11-02 01:27:18,689 INFO freeze_baseline: === profile E4-glyph_yolo
+2026-11-02 01:27:23,601 INFO freeze_baseline: lsc: {'params': 36738703, 'peak_mem_mb': 303.9, 'frames': 200, 'ms_per_frame': 20.385, 'boxes': 175, 'batch_size': 64}
+2026-11-02 01:27:23,602 INFO freeze_baseline: fuse: {'params': 0, 'peak_mem_mb': None, 'frames': 200, 'ms_per_frame': 0.002}
+2026-11-02 01:27:23,602 INFO freeze_baseline: track: {'params': 0, 'peak_mem_mb': None, 'frames': 200, 'ms_per_frame': 0.198, 'type': 'simple'}
+2026-11-02 01:27:23,603 INFO freeze_baseline: e2e: {'total_ms_per_frame': 46.242, 'fps': 21.63, 'params': 46437877, 'max_peak_mem_mb': 303.9, 'det_included': True, 'stages': ['det', 'lsc', 'fuse', 'track']}
+2026-11-02 01:27:23,629 INFO freeze_baseline: === profile E5-lst_yolo
+2026-11-02 01:27:30,168 INFO freeze_baseline: lsc: {'params': 36738703, 'peak_mem_mb': 303.9, 'frames': 200, 'ms_per_frame': 20.865, 'boxes': 175, 'batch_size': 64}
+2026-11-02 01:27:30,168 INFO freeze_baseline: fuse: {'params': 0, 'peak_mem_mb': None, 'frames': 200, 'ms_per_frame': 0.002}
+2026-11-02 01:27:30,169 INFO freeze_baseline: vpmm: {'params': 14946304, 'peak_mem_mb': 198.1, 'frames': 200, 'ms_per_frame': 2.234, 'ckpt': 'E:\\Logo_Video_Text_Spotting\\runs\\E5-lst\\checkpoints\\best.pth'}
+2026-11-02 01:27:30,169 INFO freeze_baseline: track: {'params': 27289600, 'peak_mem_mb': 169.6, 'frames': 200, 'ms_per_frame': 2.528, 'type': 'lst', 'thr': 0.4, 'traj_thr': 0.6}
+2026-11-02 01:27:30,169 INFO freeze_baseline: e2e: {'total_ms_per_frame': 51.286, 'fps': 19.5, 'params': 88673781, 'max_peak_mem_mb': 303.9, 'det_included': True, 'stages': ['det', 'lsc', 'fuse', 'vpmm', 'track']}
+2026-11-02 01:27:30,190 INFO freeze_baseline: === reproducibility: re-running E4-lsc_yolo with force
+2026-11-02 01:28:08,300 INFO freeze_baseline: repro det.f: |delta| = 0.0000
+2026-11-02 01:28:08,300 INFO freeze_baseline: repro det.precision: |delta| = 0.0000
+2026-11-02 01:28:08,301 INFO freeze_baseline: repro det.recall: |delta| = 0.0000
+2026-11-02 01:28:08,301 INFO freeze_baseline: repro track.IDF1: |delta| = 0.0000
+2026-11-02 01:28:08,301 INFO freeze_baseline: repro track.ML: |delta| = 0.0000
+2026-11-02 01:28:08,301 INFO freeze_baseline: repro track.MOTA: |delta| = 0.0000
+2026-11-02 01:28:08,301 INFO freeze_baseline: repro track.MOTP: |delta| = 0.0000
+2026-11-02 01:28:08,301 INFO freeze_baseline: repro track.MT: |delta| = 0.0000
+2026-11-02 01:28:08,302 INFO freeze_baseline: repro spot.IDF1: |delta| = 0.0000
+2026-11-02 01:28:08,302 INFO freeze_baseline: repro spot.ML: |delta| = 0.0000
+2026-11-02 01:28:08,302 INFO freeze_baseline: repro spot.MOTA: |delta| = 0.0000
+2026-11-02 01:28:08,302 INFO freeze_baseline: repro spot.MOTP: |delta| = 0.0000
+2026-11-02 01:28:08,302 INFO freeze_baseline: repro spot.MT: |delta| = 0.0000
+2026-11-02 01:28:08,377 INFO freeze_baseline: report: E:\Logo_Video_Text_Spotting\docs\baseline_report.md
+2026-11-02 01:36:11,649 INFO freeze_baseline: === row +LSC hard (E4-lsc_yolo, configs/E4-lsc.yaml)
+2026-11-02 01:36:11,679 INFO freeze_baseline: === row Baseline (E4-base_yolo, configs/E4-base.yaml)
+2026-11-02 01:36:11,713 INFO freeze_baseline: === row +GS (E4-glyph_yolo, configs/E4-glyph.yaml)
+2026-11-02 01:36:11,757 INFO freeze_baseline: === row +VPMM/LST (E5-lst_yolo, configs/E5-lst.yaml)
+2026-11-02 01:36:11,838 INFO freeze_baseline: === profile E4-base_yolo
+2026-11-02 01:36:23,587 INFO freeze_baseline: lsc: {'params': 36738703, 'peak_mem_mb': 303.5, 'frames': 200, 'ms_per_frame': 36.457, 'boxes': 175, 'batch_size': 64}
+2026-11-02 01:36:23,588 INFO freeze_baseline: fuse: {'params': 0, 'peak_mem_mb': None, 'frames': 200, 'ms_per_frame': 0.001}
+2026-11-02 01:36:23,589 INFO freeze_baseline: track: {'params': 0, 'peak_mem_mb': None, 'frames': 200, 'ms_per_frame': 0.564, 'type': 'simple'}
+2026-11-02 01:36:23,591 INFO freeze_baseline: e2e: {'total_ms_per_frame': 62.679, 'fps': 15.95, 'params': 46437877, 'max_peak_mem_mb': 303.5, 'det_included': True, 'stages': ['det', 'lsc', 'fuse', 'track']}
+2026-11-02 01:36:23,609 INFO freeze_baseline: === profile E4-lsc_yolo
+2026-11-02 01:36:36,709 INFO freeze_baseline: lsc: {'params': 36738703, 'peak_mem_mb': 304.5, 'frames': 200, 'ms_per_frame': 55.581, 'boxes': 175, 'batch_size': 64}
+2026-11-02 01:36:36,710 INFO freeze_baseline: fuse: {'params': 0, 'peak_mem_mb': None, 'frames': 200, 'ms_per_frame': 0.001}
+2026-11-02 01:36:36,710 INFO freeze_baseline: track: {'params': 0, 'peak_mem_mb': None, 'frames': 200, 'ms_per_frame': 0.133, 'type': 'simple'}
+2026-11-02 01:36:36,711 INFO freeze_baseline: e2e: {'total_ms_per_frame': 81.372, 'fps': 12.29, 'params': 46437877, 'max_peak_mem_mb': 304.5, 'det_included': True, 'stages': ['det', 'lsc', 'fuse', 'track']}
+2026-11-02 01:36:36,718 INFO freeze_baseline: === profile E4-glyph_yolo
+2026-11-02 01:36:42,683 INFO freeze_baseline: lsc: {'params': 36738703, 'peak_mem_mb': 304.5, 'frames': 200, 'ms_per_frame': 26.101, 'boxes': 175, 'batch_size': 64}
+2026-11-02 01:36:42,683 INFO freeze_baseline: fuse: {'params': 0, 'peak_mem_mb': None, 'frames': 200, 'ms_per_frame': 0.001}
+2026-11-02 01:36:42,683 INFO freeze_baseline: track: {'params': 0, 'peak_mem_mb': None, 'frames': 200, 'ms_per_frame': 0.155, 'type': 'simple'}
+2026-11-02 01:36:42,683 INFO freeze_baseline: e2e: {'total_ms_per_frame': 51.914, 'fps': 19.26, 'params': 46437877, 'max_peak_mem_mb': 304.5, 'det_included': True, 'stages': ['det', 'lsc', 'fuse', 'track']}
+2026-11-02 01:36:42,696 INFO freeze_baseline: === profile E5-lst_yolo
+2026-11-02 01:36:50,741 INFO freeze_baseline: lsc: {'params': 36738703, 'peak_mem_mb': 304.5, 'frames': 200, 'ms_per_frame': 26.346, 'boxes': 175, 'batch_size': 64}
+2026-11-02 01:36:50,742 INFO freeze_baseline: fuse: {'params': 0, 'peak_mem_mb': None, 'frames': 200, 'ms_per_frame': 0.002}
+2026-11-02 01:36:50,742 INFO freeze_baseline: vpmm: {'params': 14946304, 'peak_mem_mb': 199.9, 'frames': 200, 'ms_per_frame': 2.565, 'ckpt': 'E:\\Logo_Video_Text_Spotting\\runs\\E5-lst\\checkpoints\\best.pth'}
+2026-11-02 01:36:50,743 INFO freeze_baseline: track: {'params': 27289600, 'peak_mem_mb': 170.6, 'frames': 200, 'ms_per_frame': 3.582, 'type': 'lst', 'thr': 0.4, 'traj_thr': 0.6}
+2026-11-02 01:36:50,743 INFO freeze_baseline: e2e: {'total_ms_per_frame': 58.152, 'fps': 17.2, 'params': 88673781, 'max_peak_mem_mb': 304.5, 'det_included': True, 'stages': ['det', 'lsc', 'fuse', 'vpmm', 'track']}
+2026-11-02 01:36:50,753 INFO freeze_baseline: === reproducibility: re-running E4-lsc_yolo with force
+2026-11-02 01:37:29,178 INFO freeze_baseline: repro det.f: |delta| = 0.0000
+2026-11-02 01:37:29,178 INFO freeze_baseline: repro det.precision: |delta| = 0.0000
+2026-11-02 01:37:29,178 INFO freeze_baseline: repro det.recall: |delta| = 0.0000
+2026-11-02 01:37:29,178 INFO freeze_baseline: repro track.IDF1: |delta| = 0.0000
+2026-11-02 01:37:29,178 INFO freeze_baseline: repro track.ML: |delta| = 0.0000
+2026-11-02 01:37:29,179 INFO freeze_baseline: repro track.MOTA: |delta| = 0.0000
+2026-11-02 01:37:29,179 INFO freeze_baseline: repro track.MOTP: |delta| = 0.0000
+2026-11-02 01:37:29,179 INFO freeze_baseline: repro track.MT: |delta| = 0.0000
+2026-11-02 01:37:29,179 INFO freeze_baseline: repro spot.IDF1: |delta| = 0.0000
+2026-11-02 01:37:29,179 INFO freeze_baseline: repro spot.ML: |delta| = 0.0000
+2026-11-02 01:37:29,179 INFO freeze_baseline: repro spot.MOTA: |delta| = 0.0000
+2026-11-02 01:37:29,179 INFO freeze_baseline: repro spot.MOTP: |delta| = 0.0000
+2026-11-02 01:37:29,179 INFO freeze_baseline: repro spot.MT: |delta| = 0.0000
+2026-11-02 01:37:29,252 INFO freeze_baseline: report: E:\Logo_Video_Text_Spotting\docs\baseline_report.md

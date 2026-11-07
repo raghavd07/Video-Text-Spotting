@@ -1,0 +1,43 @@
+{
+  "exp_id": "paper",
+  "seed": 42,
+  "comparison": {
+    "reported": "configs/reported_numbers.yaml",
+    "ours": [
+      {
+        "label": "LOGO (reproduced)",
+        "exp_id": "E5-lst_yolo"
+      },
+      {
+        "label": "LOGO + C2 + C3 (final)",
+        "exp_id": "FINAL-icdar2015v"
+      },
+      {
+        "label": "LOGO + C2 + C3 (final)",
+        "exp_id": "FINAL-icdar2013v"
+      }
+    ]
+  },
+  "threshold": {
+    "w": 0.5
+  },
+  "figures": {
+    "rescore": {
+      "exp_id": "FINAL-icdar2015v",
+      "video": null,
+      "frame": null
+    },
+    "overlay": {
+      "exp_id": "FINAL-icdar2015v",
+      "stage": "vote",
+      "video": null,
+      "frames": 4
+    },
+    "failures": {
+      "exp_id": "FINAL-icdar2015v",
+      "stage": "vote",
+      "per_cat": 3,
+      "iou": null
+    }
+  }
+}

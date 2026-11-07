@@ -1,0 +1,1 @@
+{"det":{"precision":100.0,"recall":100.0,"f":100.0},"track":{},"spot":{},"per_video":{},"meta":{"det":{"counts":{"tp":768,"fp":0,"fn":0,"ignored":1094},"per_video":{"Video_2_1_2":{"tp":768,"fp":0,"fn":0,"ignored":1094}},"gt_dir":"data\\processed\\icdar2015v","pred_dir":"runs\\p13_smoke_gtdet\\det\\icdar2015v","videos":"splits\\icdar2015v_eval_one.txt","num_videos":1,"iou":0.5}}}

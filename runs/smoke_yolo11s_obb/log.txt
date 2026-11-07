@@ -1,0 +1,3 @@
+2026-10-26 22:54:09,983 INFO infer_obb: exp=smoke_yolo11s_obb ds=icdar2015v split=val videos=1 device=gpu
+2026-10-26 22:54:44,059 INFO infer_obb: Video_2_1_2: 40 frames, 2 boxes, 86.8 ms/frame
+2026-10-26 22:54:44,062 INFO infer_obb: done: 1 videos, 40 frames, 86.92 ms/frame (model 79.67), peak GPU mem 231.5 MB

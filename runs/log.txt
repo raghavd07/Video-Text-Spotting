@@ -1,0 +1,36 @@
+2026-10-26 21:50:57,858 INFO evaluate: mode=spot iou=0.50 videos=5 gt=data\processed\icdar2015v pred=runs\YOUR_EXPERIMENT\track\icdar2015v
+2026-10-27 08:42:50,262 INFO evaluate: mode=spot iou=0.50 videos=5 gt=data\processed\icdar2015v pred=runs\p13_smoke_gtdet\det\icdar2015v
+2026-10-27 08:42:59,499 INFO evaluate: mode=spot iou=0.50 videos=5 gt=data\processed\icdar2015v pred=runs\p13_smoke_gtdet\det\icdar2015v
+2026-10-27 08:44:31,344 INFO evaluate: mode=det iou=0.50 videos=5 gt=data\processed\icdar2015v pred=runs\p13_smoke_gtdet\det\icdar2015v
+2026-10-27 08:45:00,539 INFO evaluate: mode=det iou=0.50 videos=1 gt=data\processed\icdar2015v pred=runs\p13_smoke_gtdet\det\icdar2015v
+2026-10-27 08:45:00,776 INFO evaluate: det: precision=100.00 recall=100.00 f=100.00
+2026-10-27 08:45:29,895 INFO evaluate: mode=spot iou=0.50 videos=5 gt=data\processed\icdar2015v pred=data\processed\icdar2015v
+2026-10-27 08:46:02,984 INFO evaluate: mode=spot iou=0.50 videos=5 gt=data\processed\icdar2015v pred=runs\gt_as_pred\icdar2015v
+2026-10-27 08:46:05,253 INFO evaluate: spot: MOTA=100.00 MOTP=100.00 IDF1=100.00 MT=100.00 ML=0.00
+2026-10-27 08:46:24,415 INFO evaluate: mode=det iou=0.50 videos=1 gt=data\processed\icdar2015v pred=runs\p13_smoke_gtdet\det\icdar2015v
+2026-10-27 08:46:24,652 INFO evaluate: det: precision=100.00 recall=100.00 f=100.00
+2026-10-27 08:47:54,191 INFO evaluate: mode=det iou=0.50 videos=1 gt=data\processed\icdar2015v pred=runs\det_ppyoloe_r_s_dota\det\icdar2015v
+2026-10-27 08:47:54,279 INFO evaluate: det: precision=0.00 recall=0.00 f=0.00
+2026-10-27 08:49:13,244 INFO evaluate: mode=spot iou=0.50 videos=5 gt=data\processed\icdar2015v pred=runs\gt_as_pred\icdar2015v
+2026-10-27 08:49:15,372 INFO evaluate: spot: MOTA=100.00 MOTP=100.00 IDF1=100.00 MT=100.00 ML=0.00
+2026-11-01 01:39:46,852 INFO evaluate: mode=spot iou=0.50 videos=5 gt=data\processed\icdar2015v pred=data\processed\icdar2015v
+2026-11-01 01:40:43,585 INFO evaluate: mode=spot iou=0.50 videos=5 gt=data\processed\icdar2015v pred=runs\gt_as_pred\icdar2015v
+2026-11-01 01:40:46,097 INFO evaluate: spot: MOTA=100.00 MOTP=100.00 IDF1=100.00 MT=100.00 ML=0.00
+2026-11-01 09:59:46,572 INFO evaluate: mode=det iou=0.50 videos=5 gt=data\processed\icdar2015v pred=runs\det_yolo11s_obb_dota\det\icdar2015v
+2026-11-01 09:59:46,573 INFO evaluate: keeping predictions with score > 0.300
+2026-11-01 09:59:47,471 INFO evaluate: det: precision=0.13 recall=0.06 f=0.08
+2026-11-01 09:59:54,553 INFO evaluate: mode=det iou=0.50 videos=5 gt=data\processed\icdar2015v pred=runs\E3-lsc\fuse\icdar2015v
+2026-11-01 09:59:54,554 INFO evaluate: keeping predictions with score_fused > 0.300
+2026-11-01 09:59:55,270 INFO evaluate: det: precision=0.67 recall=0.04 f=0.08
+2026-11-01 10:00:08,661 INFO evaluate: mode=det iou=0.50 videos=5 gt=data\processed\icdar2015v pred=runs\E3-lsc\fuse\icdar2015v
+2026-11-01 10:00:08,661 INFO evaluate: keeping predictions with score_fused > 0.500
+2026-11-01 10:00:09,249 INFO evaluate: det: precision=1.41 recall=0.04 f=0.08
+2026-11-01 10:23:38,990 INFO evaluate: mode=det iou=0.50 videos=5 gt=data\processed\icdar2015v pred=runs\det_yolo11s_obb_dota\det\icdar2015v
+2026-11-01 10:23:38,990 INFO evaluate: keeping predictions with score > 0.300
+2026-11-01 10:23:39,882 INFO evaluate: det: precision=0.13 recall=0.06 f=0.08
+2026-11-01 10:23:42,132 INFO evaluate: mode=det iou=0.50 videos=5 gt=data\processed\icdar2015v pred=runs\E3-lsc\fuse\icdar2015v
+2026-11-01 10:23:42,132 INFO evaluate: keeping predictions with score_fused > 0.300
+2026-11-01 10:23:42,871 INFO evaluate: det: precision=0.67 recall=0.04 f=0.08
+2026-11-01 10:23:45,565 INFO evaluate: mode=det iou=0.50 videos=5 gt=data\processed\icdar2015v pred=runs\E3-lsc\fuse\icdar2015v
+2026-11-01 10:23:45,566 INFO evaluate: keeping predictions with score_fused > 0.500
+2026-11-01 10:23:46,116 INFO evaluate: det: precision=1.41 recall=0.04 f=0.08
