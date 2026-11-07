@@ -1,0 +1,18 @@
+2026-11-01 12:47:09,274 INFO compare_glyph: exp=E3-lsc-glyph_compare split=val crops=5026 pos=2513 ckpts={'base': 'runs\\E3-lsc\\checkpoints\\best.pth', 'glyph': 'runs\\E3-lsc-glyph\\checkpoints\\best.pth'}
+2026-11-01 12:47:28,819 INFO compare_glyph: base: predicted 5026 crops
+2026-11-01 12:47:40,730 INFO compare_glyph: glyph: predicted 5026 crops
+2026-11-01 12:47:40,813 INFO compare_glyph: [full] base       word_acc 69.52% (pos 2513) tb_acc 94.79%
+2026-11-01 12:47:40,813 INFO compare_glyph: [full] glyph      word_acc 74.37% (pos 2513) tb_acc 95.40%
+2026-11-01 12:47:40,814 INFO compare_glyph: [full] glyph - base: +4.85 pts, McNemar p=8.8e-12, CI95 [+3.50, +6.25] -> better
+2026-11-01 12:47:40,814 INFO compare_glyph: [noisy] base       word_acc 43.82% (pos 267) tb_acc 92.64%
+2026-11-01 12:47:40,815 INFO compare_glyph: [noisy] glyph      word_acc 43.07% (pos 267) tb_acc 93.50%
+2026-11-01 12:47:40,815 INFO compare_glyph: [noisy] glyph - base: -0.75 pts, McNemar p=0.871, CI95 [-5.24, +3.75] -> within noise
+2026-11-01 12:47:54,708 INFO compare_glyph: exp=E3-lsc-glyph_compare split=val crops=5026 pos=2513 ckpts={'base': 'runs\\E3-lsc\\checkpoints\\best.pth', 'glyph': 'runs\\E3-lsc-glyph\\checkpoints\\best.pth'}
+2026-11-01 12:48:11,256 INFO compare_glyph: base: predicted 5026 crops
+2026-11-01 12:48:23,005 INFO compare_glyph: glyph: predicted 5026 crops
+2026-11-01 12:48:23,087 INFO compare_glyph: [full] base       word_acc 69.52% (pos 2513) tb_acc 94.79%
+2026-11-01 12:48:23,087 INFO compare_glyph: [full] glyph      word_acc 74.37% (pos 2513) tb_acc 95.40%
+2026-11-01 12:48:23,088 INFO compare_glyph: [full] glyph - base: +4.85 pts, McNemar p=8.8e-12, CI95 [+3.50, +6.25] -> better
+2026-11-01 12:48:23,088 INFO compare_glyph: [noisy] base       word_acc 43.82% (pos 267) tb_acc 92.64%
+2026-11-01 12:48:23,088 INFO compare_glyph: [noisy] glyph      word_acc 43.07% (pos 267) tb_acc 93.50%
+2026-11-01 12:48:23,088 INFO compare_glyph: [noisy] glyph - base: -0.75 pts, McNemar p=0.871, CI95 [-5.24, +3.75] -> within noise

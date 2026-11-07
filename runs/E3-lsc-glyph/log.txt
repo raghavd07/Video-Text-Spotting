@@ -1,0 +1,27 @@
+2026-11-01 12:23:22,274 INFO train_lsc: exp=E3-lsc-glyph smoke=False device=cuda amp=True init=E:\Logo_Video_Text_Spotting\third_party\ABINet\workdir\train-abinet\best-train-abinet.pth train=3568 val=5026 bs=24 accum=2 epochs=10 glyph={'enabled': True, 'weight': 1.0, 'loss': 'mse', 'masks_tsv': 'masks.tsv', 'neg_zero': False}
+2026-11-01 12:23:53,569 INFO train_lsc: ep 1 step 50 loss 1.8453 lr 1.0e-04
+2026-11-01 12:24:28,972 INFO train_lsc: ep 1/10 lr 1.0e-04 train_loss 3.3258 | val loss 2.5487 tb_acc 94.51% word_acc 71.23% (pos 2513, neg 2513) 66s *best*
+2026-11-01 12:24:40,700 INFO train_lsc: ep 2 step 100 loss 0.7044 lr 1.0e-04
+2026-11-01 12:25:06,336 INFO train_lsc: ep 2 step 150 loss 1.1081 lr 1.0e-04
+2026-11-01 12:25:18,720 INFO train_lsc: ep 2/10 lr 1.0e-04 train_loss 1.7600 | val loss 2.4956 tb_acc 94.81% word_acc 72.38% (pos 2513, neg 2513) 50s *best*
+2026-11-01 12:25:40,851 INFO train_lsc: ep 3 step 200 loss 0.8878 lr 1.0e-04
+2026-11-01 12:26:06,900 INFO train_lsc: ep 3/10 lr 1.0e-04 train_loss 1.2623 | val loss 2.5301 tb_acc 94.19% word_acc 72.78% (pos 2513, neg 2513) 48s
+2026-11-01 12:26:17,998 INFO train_lsc: ep 4 step 250 loss 1.0236 lr 1.0e-04
+2026-11-01 12:26:39,904 INFO train_lsc: ep 4 step 300 loss 3.1054 lr 1.0e-04
+2026-11-01 12:26:52,604 INFO train_lsc: ep 4/10 lr 1.0e-04 train_loss 1.0568 | val loss 2.7893 tb_acc 95.40% word_acc 74.37% (pos 2513, neg 2513) 45s *best*
+2026-11-01 12:27:15,354 INFO train_lsc: ep 5 step 350 loss 0.6920 lr 1.0e-04
+2026-11-01 12:27:37,732 INFO train_lsc: ep 5/10 lr 1.0e-04 train_loss 0.9239 | val loss 2.9961 tb_acc 92.76% word_acc 72.38% (pos 2513, neg 2513) 45s
+2026-11-01 12:27:52,919 INFO train_lsc: ep 6 step 400 loss 0.3298 lr 1.0e-04
+2026-11-01 12:28:17,170 INFO train_lsc: ep 6 step 450 loss 0.9796 lr 1.0e-04
+2026-11-01 12:28:29,558 INFO train_lsc: ep 6/10 lr 1.0e-04 train_loss 0.7845 | val loss 3.3760 tb_acc 93.26% word_acc 70.08% (pos 2513, neg 2513) 52s
+2026-11-01 12:28:53,609 INFO train_lsc: ep 7 step 500 loss 0.7039 lr 1.0e-05
+2026-11-01 12:29:18,000 INFO train_lsc: ep 7/10 lr 1.0e-05 train_loss 0.6304 | val loss 3.3462 tb_acc 94.93% word_acc 69.88% (pos 2513, neg 2513) 48s
+2026-11-01 12:29:28,938 INFO train_lsc: ep 8 step 550 loss 0.7204 lr 1.0e-05
+2026-11-01 12:29:52,879 INFO train_lsc: ep 8 step 600 loss 0.3237 lr 1.0e-05
+2026-11-01 12:30:06,203 INFO train_lsc: ep 8/10 lr 1.0e-05 train_loss 0.6536 | val loss 3.4344 tb_acc 94.45% word_acc 70.00% (pos 2513, neg 2513) 48s
+2026-11-01 12:30:28,992 INFO train_lsc: ep 9 step 650 loss 0.7637 lr 1.0e-05
+2026-11-01 12:30:54,416 INFO train_lsc: ep 9/10 lr 1.0e-05 train_loss 0.6113 | val loss 3.4825 tb_acc 94.49% word_acc 70.19% (pos 2513, neg 2513) 48s
+2026-11-01 12:31:14,862 INFO train_lsc: ep 10 step 700 loss 1.3243 lr 1.0e-05
+2026-11-01 12:31:54,674 INFO train_lsc: ep 10 step 750 loss 0.7884 lr 1.0e-05
+2026-11-01 12:32:12,457 INFO train_lsc: ep 10/10 lr 1.0e-05 train_loss 0.6418 | val loss 3.4181 tb_acc 95.03% word_acc 70.23% (pos 2513, neg 2513) 78s
+2026-11-01 12:32:12,464 INFO train_lsc: best epoch 4: tb_acc 95.40% word_acc 74.37% -> E:\Logo_Video_Text_Spotting\runs\E3-lsc-glyph\checkpoints\best.pth
